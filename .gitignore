@@ -3,6 +3,7 @@ data/*
 results/*.npz
 results/*.pt
 results/*.pth
+results/*.json
 !results/.gitkeep
 __pycache__/
 *.py[cod]

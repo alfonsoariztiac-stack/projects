@@ -105,7 +105,7 @@ def plot_misclassified_examples(n_examples=10):
 
     cols = 5
     rows = (len(wrong_indices) + cols - 1) // cols
-    plt.figure(figsize=(cols * 2, rows * 2.2))
+    plt.figure(figsize=(cols * 2, rows * 2.6))
 
     for i, idx in enumerate(wrong_indices):
         image, _ = test_dataset[idx]
@@ -115,7 +115,10 @@ def plot_misclassified_examples(n_examples=10):
         plt.axis("off")
 
     plt.suptitle("Ejemplos mal clasificados (version PyTorch)")
-    plt.tight_layout()
+    # hspace mas grande deja espacio vertical entre filas para que los
+    # titulos de una fila no se superpongan con las imagenes de arriba
+    plt.tight_layout(rect=[0, 0, 1, 0.96])
+    plt.subplots_adjust(hspace=0.5)
     plt.savefig(RESULTS_DIR / "misclassified_examples.png", dpi=150)
     plt.close()
     print("Guardado: results/misclassified_examples.png")
