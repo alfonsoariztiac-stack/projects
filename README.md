@@ -111,7 +111,7 @@ mnist-neural-network/
 ## Instalación y uso
  
 ```bash
-git clone <url-de-tu-repo>
+git clone https://github.com/alfonsoariztiac-stack/mnist-neural-network.git
 cd mnist-neural-network
  
 python3 -m venv venv
