@@ -1,0 +1,645 @@
+# ===========================================================================
+# Catálogo de reglas de alerta temprana · People Happiness
+# ===========================================================================
+# Este archivo ES la regla de negocio. No hay lógica de alertas escondida en
+# ningún .py: `motor.py` lee esto, lo valida y lo compila a SQL. Cambiar un
+# umbral es cambiar una línea aquí y volver a correr, sin tocar código.
+#
+# Por qué en YAML y no en Python: la persona que gobierna estas reglas es de
+# People Happiness, no de Data. Tiene que poder leerlas, discutirlas en un
+# comité y aprobar un cambio sin abrir un editor de código.
+#
+# Cada cambio de este archivo sube `version`, deja registro en `bitacora` y
+# obliga a volver a correr `backtest.py` y `equidad.py` antes de publicarse.
+# ===========================================================================
+
+version: "1.2.0"
+vigente_desde: "2026-09-02"
+duenio: "People Happiness · en conjunto con People Analytics"
+ciclo_revision: "trimestral"
+objetivo: >
+  Este catálogo cubre las DOS mitades del mandato ("riesgo de desvinculación
+  o baja productividad"), con un canal distinto para cada una porque no son
+  la misma pregunta ni piden la misma acción:
+
+  (1) Riesgo de SALIDA LAMENTADA —quien cumple o supera lo esperado y
+  renuncia— vía el canal `conversacion`, para que su Happiness Manager pueda
+  conversar antes de que la decisión esté tomada.
+
+  (2) Desempeño o productividad sostenidamente por debajo de lo esperado
+  —un nivel, no una tendencia de fuga— vía el canal `desarrollo`, como
+  derivación a un plan de acompañamiento. Nunca se presenta como riesgo de
+  fuga ni llega como alerta de bienestar: es soporte, no retención.
+
+bitacora:
+  - version: "1.0.0"
+    fecha: "2026-08-31"
+    autor: "People Analytics"
+    resumen: "Objetivo fijado en salida lamentada, no en salida a secas."
+    cambio: >
+      Catálogo inicial. Objetivo fijado en salida lamentada (no en salida a
+      secas) tras medir que las señales de bajo desempeño predicen salidas NO
+      lamentadas: optimizar contra "salida" habría construido un detector de
+      bajo desempeño. Ver `senales_descartadas`.
+
+  - version: "1.1.0"
+    fecha: "2026-08-31"
+    autor: "People Analytics"
+    resumen: "Faltaba la mitad baja productividad del mandato: nace el canal desarrollo y R06."
+    cambio: >
+      El objetivo v1.0.0 cubría solo la mitad del mandato del caso ("riesgo de
+      desvinculación") y dejaba la otra mitad ("baja productividad") sin
+      ningún canal: la tabla de techo de cobertura medía 0.0% para los
+      perfiles de baja productividad sostenida, porque `desempeno_bajo` había
+      sido descartado del catálogo completo, no solo del canal de retención.
+      Se agregan `desempeno_bajo_sostenido` y `productividad_baja_sostenida`
+      (señales de NIVEL, no de tendencia) y la regla R06, enrutadas a un canal
+      nuevo (`desarrollo`, modo panel) que nunca se presenta como riesgo de
+      fuga. El razonamiento de v1.0.0 sobre no convertir bajo desempeño en una
+      alerta de bienestar sigue vigente: lo que cambia es que ahora existe un
+      canal de soporte que no es una alerta de bienestar ni de retención.
+
+  - version: "1.1.1"
+    fecha: "2026-09-01"
+    autor: "People Analytics"
+    resumen: "Estabilidad numérica entre motores. Ningún umbral de negocio tocado."
+    cambio: >
+      No es una recalibración: ningún umbral ni regla cambia de sentido. Al
+      verificar el motor corriendo contra BigQuery (migración a la nube, F3)
+      se encontraron dos comparaciones sensibles a no-determinismo de punto
+      flotante entre motores — `desgaste_vacaciones` comparaba contra
+      `0.7 * antiguedad_meses * 30` sin redondear, y una persona/mes cruzaba
+      el umbral en un motor y no en el otro por una diferencia de ~1e-14 — y
+      un desempate (`operacion.desempate`) que no formaba un orden total:
+      `[prioridad, compa_ratio]` deja indefinido el orden entre dos personas
+      empatadas en ambos, y cada motor lo resolvía distinto. Se agregó
+      `ROUND(..., 6)` al lado derecho de la comparación en `desgaste_vacaciones`
+      y `employee_id` como tercer nivel de `desempate`. Verificado con
+      `cloud/verificar.py`: 0 celdas distintas entre DuckDB y BigQuery en
+      `employee_360` y en `alertas` tras el cambio. No se corrieron
+      `backtest.py`/`equidad.py`: el efecto medido en local fue candidatas
+      2.062 → 2.067 sobre 31.954 filas de `employee_360` (0,24%), y ningún
+      umbral de negocio se tocó — se juzgó desproporcionado frente al costo de
+      un backtest completo por un fix de estabilidad numérica. Detalle
+      completo en `cloud/README.md`, sección F3.
+
+  - version: "1.1.2"
+    fecha: "2026-09-01"
+    autor: "People Analytics"
+    resumen: "R04 pasa de alerta a panel: ganaba 0 de 12 cupos y no ganaba uno desde febrero."
+    cambio: >
+      R04 se mueve del canal `conversacion` (alerta) al canal `desarrollo`
+      (panel de soporte). No es una recalibración: es una corrección de diseño.
+
+      Contexto: la capacidad mensual de `conversacion` es 35 (equipo de una
+      decena de personas). En agosto 2026 se registraron 65 candidatas totales,
+      distribuidas como R01 22/22 (100%), R03 13/31 (42%), R04 0/12 (0%).
+      R04 no gana un cupo desde febrero — 7 meses en `lista_seguimiento` pese
+      a generar candidatas cada mes. Causa: motor ordena estrictamente por
+      prioridad (R01 prioridad 1, R03 prioridad 3, R04 prioridad 5) sin
+      mecanismo de envejecimiento — si R01+R03 agotan el cupo, R04 pierde
+      determinísticamente.
+
+      Decisión: R04 viola el contrato de su propio canal. Su `accion_sugerida`
+      dice "No requiere gestión inmediata" — un texto de panel, no de alerta
+      urgente de conversación. Su lectura describe un contexto (CSAT bajando
+      en roles de cara al cliente) sin recomendación de retención. Lo honesto
+      es moverla al canal `desarrollo`, donde su evidencia de CSAT+desgaste
+      se atiende como soporte en el ciclo de Aprendizaje y Desarrollo, no como
+      competencia contra reglas de salida lamentada.
+
+      Verificación: la métrica "qué % de candidatas se sirven por regla"
+      mejora automáticamente (R04 deja de competir por un cupo que no puede
+      ganar). La probabilidad de que una persona caiga en
+      `lista_seguimiento_sin_notificar` por R04 va de ~100% a 0%.
+      Backtest.py y equidad.py rerun obligatorio por gobernanza (reglas.yaml:12).
+
+  - version: "1.2.0"
+    fecha: "2026-09-02"
+    autor: "People Analytics"
+    resumen: "El análisis cualitativo llega a la tarjeta, como contexto de entrega y nunca como señal."
+    cambio: >
+      Hasta v1.1.2 la lectura del LLM sobre las notas de bitácora no llegaba a
+      ninguna parte: se procesaba y se imprimía. Se agrega el bloque
+      `contexto_cualitativo`, que declara qué puede mostrarse de esa lectura
+      en la tarjeta de Chat y con qué texto. Ningún umbral, señal ni regla
+      cambia: el conteo de alertas, la cobertura del backtest y los cupos son
+      idénticos a v1.1.2.
+
+      La decisión de diseño que hay que poder defender: el resultado del
+      modelo se escribe en su propia tabla (`bitacora_llm`) y NO en
+      `employee_360`. La tarjeta lo lee al construirse, aguas abajo de la
+      decisión. Por eso ninguna regla puede referenciarlo — no porque esté
+      prohibido, sino porque la columna no existe en la tabla que el motor
+      lee. "El texto no gatilla ninguna alerta" deja de ser una política y
+      pasa a ser una propiedad estructural.
+
+      Backtest.py y equidad.py no se rerunean por este cambio, y esa es
+      justamente la prueba de que no toca la decisión: si la tocara, las
+      cifras se moverían.
+
+# ---------------------------------------------------------------------------
+# Universo: sobre quién se evalúan las reglas
+# ---------------------------------------------------------------------------
+universo:
+  tabla: employee_360
+  condicion: "activo_en_el_mes AND antiguedad_meses >= 3"
+  justificacion: >
+    El corte no es estadístico, es contractual. En Buk todos entran con contrato
+    a plazo fijo y a los 3 meses rinden una evaluación formal de desempeño sobre
+    tres ejes: si representaron los valores, si demostraron ser competentes y si
+    alcanzaron las métricas del cargo definidas en el plan de onboarding. Esa
+    evaluación es el PRIMER dato estructurado que existe sobre la persona. El
+    sistema empieza a mirar exactamente el día que hay algo que mirar; antes no
+    hay una decisión que tomar con menos evidencia, hay ausencia de evidencia.
+
+    Consecuencia que hay que decir en voz alta: durante los meses siguientes
+    esa persona tiene un nivel de desempeño pero todavía no tiene un DELTA
+    —hace falta una segunda evaluación—, y sus ventanas móviles operativas
+    recién se completan. Es decir, el sistema la ve, pero la ve a medias. Ver
+    `limitaciones` y la auditoría por tramo de antigüedad.
+
+# ---------------------------------------------------------------------------
+# Dimensiones: los ejes independientes de evidencia
+# ---------------------------------------------------------------------------
+# Una alerta exige señales de AL MENOS DOS dimensiones distintas. No es una
+# preferencia estética: es la garantía de que nadie entra a una lista por un
+# solo número, y `motor.py` la verifica estáticamente antes de correr.
+dimensiones:
+  compensacion: "Posición del sueldo dentro de la banda de su cargo"
+  desempeno:    "Evaluación formal en la escala 1-4 de Buk"
+  operativa:    "Productividad y CSAT del proceso, en ventanas móviles"
+  desgaste:     "Señales de agotamiento y desconexión del ritmo de sus pares"
+
+# ---------------------------------------------------------------------------
+# Atributos prohibidos como condición de regla
+# ---------------------------------------------------------------------------
+# `motor.py` aborta si cualquier expresión de este archivo los menciona. La
+# prohibición no es un comentario de buena intención: es un test que falla.
+# Estos atributos SÍ se usan —en `equidad.py`— para auditar impacto dispar.
+atributos_prohibidos:
+  - genero
+  - nacionalidad
+  - edad
+  - tramo_edad
+  - cargo            # el título cambia sin gobernanza; se usa job_family x job_level
+  - nombre
+  - fecha_salida     # etiquetas de resultado: contaminarían el backtest
+  - tipo_salida
+  - salida_lamentada
+  - sale_en_3_meses
+
+# ---------------------------------------------------------------------------
+# Contexto cualitativo: lo que el LLM lee, y hasta dónde llega
+# ---------------------------------------------------------------------------
+# Esto NO es una señal y no puede serlo. Vive en su propia tabla
+# (`bitacora_llm`), no en `employee_360`, así que ninguna expresión de este
+# archivo podría referenciarlo aunque alguien lo intentara: la columna no
+# existe donde el motor mira. Se engancha en la ENTREGA, después de que la
+# alerta ya se decidió con datos duros.
+#
+# El motivo es de diseño, no de arquitectura: si lo que una persona dice en
+# una conversación de confianza puede convertirse en una señal de riesgo,
+# deja de decirlo. El Veto 3 del criterio de éxito mide exactamente eso —
+# si la bitácora se seca, el sistema se apaga.
+#
+# Misma disciplina que `accion_sugerida`: si un campo no está declarado acá,
+# no aparece en la tarjeta.
+contexto_cualitativo:
+  habilitado: true
+  fuente: bitacora_llm
+  no_es_senal: true
+  ventana_meses: 6           # más atrás que eso ya no describe el momento actual
+  campos_visibles: [sentimiento, temas, cita]
+  max_temas: 2
+  max_citas: 1
+  encabezado: "Contexto de las conversaciones registradas"
+  descargo: >
+    Lectura automática de las notas de seguimiento. No contribuyó a generar
+    esta alerta y no evalúa a la persona.
+  justificacion: >
+    El sentimiento y los temas entran como contexto de una alerta que YA
+    existe por datos duros, para que el Happiness Manager no llegue a la
+    conversación sin saber qué se habló antes. La cita se muestra tal como la
+    vio el modelo —sobre el texto redactado, con los [PERSONA_N] a la vista—
+    porque es la prueba visible de que el modelo nunca leyó un nombre.
+
+# ---------------------------------------------------------------------------
+# Señales
+# ---------------------------------------------------------------------------
+# tipo:
+#   riesgo   -> evidencia de que algo va mal
+#   contexto -> no es un problema, delimita a quién queremos retener
+# Una regla necesita al menos una señal de riesgo: nadie se alerta solo por su
+# contexto. `lift_medido` es la precisión de la señal sola sobre salida
+# lamentada a 6 meses, dividida por la tasa base (4,55%). Se recalcula en cada
+# corrida de backtest.py; si aquí y allá no coinciden, manda el backtest.
+senales:
+
+  compa_bajo:
+    dimension: compensacion
+    tipo: riesgo
+    expr: "compa_ratio < {umbral}"
+    umbral: 0.90
+    etiqueta: "Sueldo bajo la mediana de su banda"
+    explicacion: "Gana menos del {umbral:.0%} de la mediana de su banda salarial."
+    justificacion: >
+      Equidad Interna es uno de los cuatro lineamientos de compensación de Buk.
+      La política opera en ciclos anuales con presupuesto y calibración; entre
+      ciclo y ciclo se abre una ventana en la que alguien puede quedar bajo su
+      banda sin que nadie lo esté mirando. Esta señal caza esa ventana.
+    lift_medido: 2.27
+
+  bajo_banda:
+    dimension: compensacion
+    tipo: riesgo
+    expr: "bajo_banda"
+    etiqueta: "Sueldo bajo el piso de su banda"
+    explicacion: "Su sueldo base está por debajo del mínimo definido para el cargo."
+    justificacion: >
+      Más grave que un compa-ratio bajo: no es estar en la parte baja del rango,
+      es estar fuera de él. Es un incumplimiento de la propia política de bandas
+      y se corrige aunque la persona no esté pensando en irse.
+    lift_medido: 3.29
+
+  caida_desempeno:
+    dimension: desempeno
+    tipo: riesgo
+    expr: "delta_desempeno <= {umbral}"
+    umbral: -0.2
+    etiqueta: "Bajó respecto de su evaluación anterior"
+    explicacion: "Su score cayó {delta_desempeno:.1f} puntos contra la evaluación previa."
+    justificacion: >
+      La trayectoria, no el nivel. Un nivel bajo sostenido ya lo gestiona el
+      líder con un plan de acción por su propio canal; duplicarlo aquí
+      convertiría la alerta en munición. Una caída en alguien que venía bien es
+      información nueva.
+    lift_medido: 1.62
+
+  desempeno_cumple:
+    dimension: desempeno
+    tipo: contexto
+    expr: "score_vigente >= {umbral}"
+    umbral: 3.0
+    etiqueta: "Cumple o supera lo esperado"
+    explicacion: "Su última evaluación fue {score_vigente:.1f} en la escala 1-4."
+    justificacion: >
+      Delimita el objetivo declarado: retener a quien queremos retener. No es
+      una señal de riesgo y por sí sola nunca alerta a nadie.
+
+  desempeno_sobresaliente:
+    dimension: desempeno
+    tipo: contexto
+    expr: "score_vigente >= {umbral}"
+    umbral: 3.5
+    etiqueta: "Sobresaliente"
+    explicacion: "Su última evaluación fue {score_vigente:.1f} — categoría Sobresaliente."
+    justificacion: >
+      Ser sobresaliente no es un problema: es lo que hace que su salida duela y
+      que el mercado la busque. Entra como contexto que sube la prioridad de
+      una señal de riesgo, nunca como motivo de alerta.
+
+  caida_productividad:
+    dimension: operativa
+    tipo: riesgo
+    expr: "prod_delta_3m <= {umbral} AND meses_con_prod_3m >= 2"
+    umbral: -3.0
+    etiqueta: "Productividad en descenso"
+    explicacion: "Su promedio de 3 meses cayó {prod_delta_3m:.1f} puntos contra el trimestre anterior."
+    justificacion: >
+      Tendencia contra sí mismo, no contra un ranking: compara a la persona con
+      su propio trimestre anterior. El requisito de 2 meses observados evita que
+      un mes suelto de planilla incompleta dispare una alerta.
+    lift_medido: 2.05
+
+  caida_productividad_pronunciada:
+    dimension: operativa
+    tipo: riesgo
+    expr: "prod_delta_3m <= {umbral} AND meses_con_prod_3m >= 2"
+    umbral: -4.0
+    etiqueta: "Productividad en descenso pronunciado"
+    explicacion: "Su promedio de 3 meses cayó {prod_delta_3m:.1f} puntos contra el trimestre anterior."
+    justificacion: >
+      Misma métrica que `caida_productividad` con el corte más exigente. Existe
+      como señal aparte porque habilita reglas que no requieren contexto de
+      desempeño, y para eso el umbral tiene que sostener la precisión solo.
+    lift_medido: 2.65
+
+  caida_csat:
+    dimension: operativa
+    tipo: riesgo
+    expr: "csat_delta_3m <= {umbral}"
+    umbral: -0.20
+    etiqueta: "Satisfacción del cliente en descenso"
+    explicacion: "El CSAT de su proceso bajó {csat_delta_3m:.2f} puntos en el trimestre."
+    justificacion: >
+      Solo aplica a roles de cara al cliente (~47% de la dotación). En el resto
+      es nulo por NO APLICAR, no por falta de dato, y una comparación contra
+      nulo nunca dispara. La calidad percibida cae antes que el volumen.
+    lift_medido: 2.36
+
+  desgaste_vacaciones:
+    dimension: desgaste
+    tipo: riesgo
+    expr: "dias_sin_vacaciones > ROUND({umbral} * antiguedad_meses * 30, 6)"
+    umbral: 0.70
+    etiqueta: "No toma vacaciones hace más tiempo que sus pares"
+    explicacion: "Lleva {dias_sin_vacaciones:.0f} días sin vacaciones sobre {antiguedad_meses:.0f} meses en Buk."
+    justificacion: >
+      Buk tiene vacaciones flexibles: no tomarlas es una decisión, no una
+      restricción, y quien está desganado tiende a tomar MENOS. El denominador
+      es el tiempo que la persona lleva en Buk, no el promedio de su cohorte:
+      la versión por cohorte medía antigüedad disfrazada de conducta y salía
+      con lift 0,90 — ver `senales_descartadas`.
+    lift_medido: 1.11
+
+  desempeno_bajo_sostenido:
+    dimension: desempeno
+    tipo: riesgo
+    expr: "score_vigente < {umbral}"
+    umbral: 2.8
+    etiqueta: "Desempeño bajo lo esperado"
+    explicacion: "Su última evaluación fue {score_vigente:.1f} en la escala 1-4, bajo el umbral de {umbral:.1f}."
+    justificacion: >
+      Nivel, no trayectoria — a propósito el mismo umbral que `desempeno_bajo`
+      en `senales_descartadas`, con un destino distinto. Esa señal se descartó
+      del catálogo completo en v1.0.0 porque metida en el canal de retención
+      construye un detector de bajo desempeño con etiqueta de bienestar. Aquí
+      solo alimenta la regla R06, que enruta a `desarrollo`, nunca a
+      `conversacion`: el dato es el mismo, el canal y la lectura no.
+
+  productividad_baja_sostenida:
+    dimension: operativa
+    tipo: riesgo
+    expr: "prod_prom_3m < {umbral} AND meses_con_prod_3m >= 2"
+    umbral: 85.0
+    etiqueta: "Productividad sostenida bajo el proceso"
+    explicacion: "Su productividad promedio de 3 meses es {prod_prom_3m:.1f}, bajo el umbral de {umbral:.0f}."
+    justificacion: >
+      Cierra el hueco que medía la tabla de techo de cobertura: `caida_productividad`
+      exige una caída reciente y no ve a quien lleva tiempo sostenido bajo el
+      proceso sin haber caído desde más arriba. Es la mitad "baja productividad"
+      del mandato del caso, tratada como su propio problema — no como síntoma
+      de una fuga probable.
+
+# ---------------------------------------------------------------------------
+# Señales descartadas — el registro de lo que NO entró y por qué
+# ---------------------------------------------------------------------------
+# Se documentan porque son las candidatas obvias: si no están escritas, alguien
+# las va a proponer de nuevo en tres meses. `lift` = precisión de la señal sola
+# sobre salida lamentada a 6 meses, dividida por la tasa base. Lift < 1
+# significa que la señal apunta al lado contrario.
+senales_descartadas:
+
+  - id: desempeno_bajo
+    expr: "score_vigente < 2.8"
+    lift_salida_lamentada: 0.48
+    lift_salida_cualquiera: 2.51
+    motivo: >
+      LA decisión de diseño del bloque. Predice muy bien las salidas —y muy mal
+      las que duelen: quien está bajo lo esperado y se va no es una pérdida que
+      People Happiness deba prevenir por retención, y ya tiene un canal con su
+      líder para el proceso de desempeño. Una regla escrita sobre esta señal
+      DENTRO DEL CANAL DE RETENCIÓN habría producido un detector de bajo
+      desempeño con etiqueta de bienestar, que es exactamente el sesgo punitivo
+      que el diseño debe evitar. La estadística y la ética coinciden ahí.
+
+      **Revisado en v1.1.0, no revertido.** El error de v1.0.0 no fue descartar
+      esta señal del canal de retención —eso sigue siendo correcto— fue
+      descartarla también del catálogo completo, dejando sin ningún canal la
+      mitad "baja productividad" del mandato del caso (medido: 0.0% de
+      cobertura sobre los perfiles de baja productividad sostenida). Vuelve al
+      catálogo como `desempeno_bajo_sostenido`, enrutada exclusivamente a
+      `desarrollo` (panel de soporte, nunca alerta de retención) vía R06.
+      Nunca se combina para gatillar `conversacion`.
+
+  - id: riesgo_evaluacion_90d
+    expr: "score_90d < 3.0 AND antiguedad_meses <= 12"
+    lift_salida_lamentada: 0.72
+    motivo: >
+      Mismo problema que la anterior, en la puerta de entrada, y ahora sabemos
+      exactamente por qué. La evaluación de los 3 meses es la que decide si el
+      contrato a plazo fijo se renueva: quien puntúa bajo tiende a salir porque
+      LA EMPRESA no lo renueva, no porque él se vaya. Esa salida no es lamentada
+      por definición. El lift de 0,72 no es un accidente del dato sintético: es
+      lo que la estructura contractual predice.
+
+      El valor de esa evaluación para nosotros está en el otro extremo. Quien
+      pasó los 3 meses con nota alta ES exactamente el perfil que no queremos
+      perder, y su score alimenta `desempeno_cumple` y `desempeno_sobresaliente`
+      —las dos señales de contexto que completan las reglas de compensación—
+      desde el primer mes en que el sistema lo puede mirar. La evaluación de 90
+      días entra al catálogo, pero como contexto positivo, nunca como riesgo.
+
+  - id: sueldo_sin_revisar
+    expr: "meses_desde_ultimo_ajuste >= 18"
+    lift_salida_lamentada: 0.79
+    motivo: >
+      Argumento intuitivo impecable —"gana poco y nadie lo ha mirado"— y dato
+      que apunta al revés. Está confundido con antigüedad: quien lleva menos
+      tiempo tuvo su ajuste hace menos meses y es quien más se va. Estratificado
+      por tramo de antigüedad sigue bajo 1 en tres de los cuatro tramos.
+
+  - id: formacion_bajo_cohorte
+    expr: "ratio_formacion_cohorte < 0.5"
+    lift_salida_lamentada: 1.04
+    motivo: >
+      Indistinguible del azar. Dispara en el 32% de las personas-mes: como
+      condición habría inflado el volumen sin aportar información.
+
+  - id: desgaste_vacaciones_por_cohorte
+    expr: "ratio_vacaciones_cohorte > 1.5"
+    lift_salida_lamentada: 0.90
+    motivo: >
+      La normalización por cohorte de antigüedad no alcanzó: el tramo 0-11 meses
+      es demasiado ancho y dentro de él el ratio sigue midiendo cuántos meses
+      lleva la persona. Reemplazada por `desgaste_vacaciones`, que divide por el
+      tiempo efectivamente disponible para tomarlas y sube de 0,90 a 1,11.
+
+# ---------------------------------------------------------------------------
+# Reglas
+# ---------------------------------------------------------------------------
+# Una regla se cumple cuando se cumplen TODAS las de `todas` y AL MENOS UNA de
+# `alguna`. `prioridad` ordena la cola cuando el mes trae más candidatos que
+# capacidad: es 1 para la regla de mayor precisión medida y no es una opinión
+# sobre qué importa más. Se reordena con cada backtest trimestral.
+#
+# `canal` decide quién recibe la alerta y contra qué capacidad se descuenta.
+# Una conversación de escucha y una revisión de banda no cuestan lo mismo ni
+# las hace la misma persona; ponerlas en la misma cola haría que las reglas de
+# equidad —baratas de reparar y sin conversación de por medio— fueran
+# desplazadas cada mes por las de deterioro.
+reglas:
+
+  R01:
+    nombre: "Deterioro en dos frentes"
+    canal: conversacion
+    prioridad: 1
+    nivel: alto
+    todas: [caida_desempeno]
+    alguna: [caida_productividad, caida_csat]
+    lectura: >
+      Bajó en su evaluación formal y además su operación se está deteriorando.
+      Dos sistemas de medición independientes dicen lo mismo.
+    accion_sugerida: >
+      Conversación de escucha en los próximos 10 días hábiles. Explorar carga,
+      claridad de expectativas y contexto personal antes de cualquier hipótesis
+      de desempeño.
+
+  R02:
+    nombre: "Fuera de banda cumpliendo"
+    canal: compensaciones
+    prioridad: 2
+    nivel: alto
+    todas: [bajo_banda, desempeno_cumple]
+    lectura: >
+      Cumple o supera lo esperado y su sueldo está bajo el piso de su propia
+      banda. Es un incumplimiento de la política de compensación, no una
+      hipótesis sobre la persona.
+    accion_sugerida: >
+      Derivar a Compensaciones para revisión de banda en el ciclo vigente. La
+      conversación con la persona solo después de tener una respuesta.
+
+  R03:
+    nombre: "Desenganche operativo"
+    canal: conversacion
+    prioridad: 3
+    nivel: alto
+    todas: [caida_productividad_pronunciada]
+    alguna: [compa_bajo, desgaste_vacaciones, caida_desempeno]
+    lectura: >
+      Caída sostenida de productividad acompañada de una segunda señal de otra
+      dimensión. La caída sola no alerta: podría ser estacionalidad del proceso.
+    accion_sugerida: >
+      Revisar con el líder si hubo cambio de alcance, equipo o cliente en el
+      trimestre antes de agendar la conversación.
+
+  R04:
+    nombre: "Servicio y desgaste"
+    canal: desarrollo
+    prioridad: 5
+    nivel: medio
+    todas: [caida_csat]
+    alguna: [compa_bajo, desgaste_vacaciones]
+    lectura: >
+      La calidad percibida por sus clientes está bajando y hay una segunda
+      señal de contexto. En roles de cara al cliente el CSAT suele moverse
+      antes que cualquier métrica de volumen.
+    accion_sugerida: >
+      Incluir en la agenda del próximo 1:1 del HM. No requiere gestión inmediata.
+
+  R05:
+    nombre: "Talento sobresaliente bajo banda"
+    canal: compensaciones
+    prioridad: 4
+    nivel: medio
+    todas: [compa_bajo, desempeno_sobresaliente]
+    lectura: >
+      Sobresaliente y pagado bajo la mediana de su banda. Hoy no muestra
+      deterioro: es exactamente por eso que una regla de desempeño nunca lo vería.
+    accion_sugerida: >
+      Revisar posición en banda en la próxima calibración de mérito. Sin
+      conversación de riesgo: no hay evidencia de que quiera irse.
+
+  R06:
+    nombre: "Desempeño y productividad sostenidamente bajos"
+    canal: desarrollo
+    prioridad: 6
+    nivel: medio
+    todas: [desempeno_bajo_sostenido]
+    alguna: [productividad_baja_sostenida]
+    lectura: >
+      Su desempeño y su productividad llevan tiempo sostenidos por debajo de
+      lo esperado, sin una caída reciente que lo explique: es un nivel, no una
+      tendencia de fuga. No implica que la persona quiera irse.
+    accion_sugerida: >
+      Derivar a Aprendizaje y Desarrollo para definir un plan de
+      acompañamiento junto al líder. No es una conversación de riesgo de
+      fuga: es soporte para cerrar la brecha.
+
+# ---------------------------------------------------------------------------
+# Operación: cuántas alertas salen y cada cuánto
+# ---------------------------------------------------------------------------
+operacion:
+  frecuencia: mensual
+
+  # -------------------------------------------------------------------------
+  # Canales: dos tipos de hallazgo que no se atienden igual
+  # -------------------------------------------------------------------------
+  # La distinción que ordena todo el bloque es EVENTO vs ESTADO.
+  #
+  #   Un evento —la productividad cayó, la evaluación bajó— pasó una vez y hay
+  #   una ventana para reaccionar. Se notifica, y se deja de notificar: repetir
+  #   la misma alerta cada mes sobre alguien que ya está en seguimiento no es
+  #   información, es ruido que gasta la confianza en el canal.
+  #
+  #   Un estado —está pagado bajo el piso de su banda— es cierto hoy y lo
+  #   seguirá siendo mañana hasta que alguien lo arregle. Notificarlo cada tres
+  #   meses no lo hace más urgente; solo enseña a ignorarlo. Va a un panel que
+  #   Compensaciones revisa en su ciclo, y la persona sale del panel cuando el
+  #   hecho deja de ser cierto.
+  #
+  # Sin esta separación las reglas de equidad —baratas de reparar y sin
+  # conversación de por medio— quedaban desplazadas todos los meses por las de
+  # deterioro, y además llegaban en oleadas sincronizadas por el enfriamiento.
+  canales:
+
+    conversacion:
+      modo: alerta
+      cupo_mensual: 35
+      enfriamiento_meses: 3
+      destinatario: "Happiness Manager del área"
+      descripcion: >
+        Alerta que pide una conversación de escucha. El cupo ES el número de
+        capacidad, no de estadística: People Happiness es un equipo de una
+        decena de personas y 35 conversaciones al mes es lo que puede sostener
+        de verdad. Si el equipo crece, se sube el número aquí y nada más.
+
+    compensaciones:
+      modo: panel
+      cupo_mensual: null          # un panel se lee entero; no consume atención por caso
+      enfriamiento_meses: 0
+      destinatario: "Compensaciones, con copia al Happiness Manager"
+      descripcion: >
+        Panel de equidad interna, sin notificación y sin cupo. Sin enfriamiento
+        a propósito: mientras el hecho siga siendo cierto la persona sigue en el
+        panel, y si se corrige desaparece sola. Es la evidencia para el comité
+        de calibración de mérito, no una alarma. Que tenga siempre más o menos
+        el mismo tamaño no es una falla: describe cuánta gente está fuera de
+        banda hoy, que es justamente lo que el comité necesita saber.
+
+    desarrollo:
+      modo: panel
+      cupo_mensual: null          # mismo argumento que compensaciones: es un estado, no un evento
+      enfriamiento_meses: 0
+      destinatario: "Aprendizaje y Desarrollo, con copia al Happiness Manager"
+      descripcion: >
+        Panel de soporte para desempeño o productividad sostenidamente bajos.
+        Deliberadamente NO es el canal `conversacion`: no compite por el cupo
+        de retención, no se presenta como riesgo de fuga y no llega como
+        alerta de bienestar. Es la mitad "baja productividad" del mandato del
+        caso, con su propia acción (plan de desarrollo) en vez de forzarla
+        dentro de una conversación de retención que no le corresponde.
+
+  desempate: [prioridad, compa_ratio, employee_id]
+  # A igual prioridad de regla, primero quien está peor pagado dentro de su
+  # banda. Es el criterio con acción más clara y más barata de reparar.
+  # `employee_id` al final no es un criterio de negocio: es el desempate del
+  # desempate. Sin él, dos personas empatadas en prioridad y compa_ratio caen
+  # en un ORDER BY sin orden total, y ROW_NUMBER() puede resolver el empate
+  # distinto en DuckDB y en BigQuery (verificado: 69 filas de posicion_en_cola
+  # distintas entre los dos motores antes de este agregado, ninguna cruzando
+  # el cupo de conversacion hoy — pero no hay garantía de que siga así).
+
+  # Lo que excede el cupo de su canal NO se descarta: queda en estado
+  # `lista_seguimiento`, contado en el reporte y sin notificar. Que el sistema
+  # encuentre más de lo que el equipo puede atender es un dato de gestión —el
+  # argumento para pedir capacidad— y esconderlo sería el peor de los errores.
+
+  nunca_recibe: ["líder directo", "cualquier sistema de evaluación de desempeño"]
+  # El líder tiene su propio canal (el plan de acción). Que una alerta de
+  # bienestar llegue a quien evalúa es el mecanismo exacto por el que estos
+  # sistemas terminan estigmatizando.
+
+  retencion_dias: 180
+  # Una alerta no atendida caduca. No se acumula un historial de sospecha.
