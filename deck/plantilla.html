@@ -1,0 +1,1386 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Caso práctico · People Data &amp; Automation Specialist · Buk</title>
+<!--
+  Deck autocontenido. Sin CDN, sin fuentes remotas, sin backend, sin red.
+  Los datos vienen horneados por deck/construir.py desde los artefactos reales
+  de la corrida; si una cifra no cuadra con los .parquet, el build falla antes
+  de generar este archivo.
+-->
+<style>
+:root{
+  --navy:#00002E; --azul:#2E6EC8; --mid:#243C9C; --ambar:#B45309; --ambar-bg:#FEF3E2;
+  --tinta:#1A1D2E; --gris:#5A6072; --tenue:#8A90A3;
+  --borde:#E3E6EF; --panel:#F7F8FC; --panel2:#EEF1F9; --verde:#15803D; --verde-bg:#ECFDF3;
+  --w:1280px; --h:720px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  background:var(--navy); color:var(--tinta); overflow:hidden;
+  font-family:ui-sans-serif,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  -webkit-font-smoothing:antialiased; font-variant-numeric:tabular-nums;
+}
+#escenario{position:fixed;inset:0;display:grid;place-items:center}
+#stage{width:var(--w);height:var(--h);position:relative;transform-origin:center center}
+
+/* ── Slides ───────────────────────────────────────────────────────────── */
+.slide{
+  position:absolute;inset:0;background:#fff;padding:46px 56px 52px;
+  display:none;flex-direction:column;overflow:hidden;
+}
+.slide.viva{display:flex}
+.kicker{
+  font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--azul);
+  font-weight:700;margin-bottom:10px;display:flex;gap:10px;align-items:center;
+}
+.kicker::after{content:"";flex:1;height:1px;background:var(--borde)}
+h1{font-size:40px;line-height:1.1;letter-spacing:-.02em;color:var(--navy);font-weight:800}
+h1 em{font-style:normal;color:var(--azul)}
+h2{font-size:15px;font-weight:800;color:var(--navy);letter-spacing:-.01em}
+h3{font-size:11px;font-weight:800;color:var(--gris);letter-spacing:.09em;text-transform:uppercase}
+p{font-size:13.5px;line-height:1.5;color:var(--gris)}
+b,strong{color:var(--tinta);font-weight:700}
+.mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace}
+
+/* ── Revelado progresivo ──────────────────────────────────────────────── */
+.beat{opacity:0;transform:translateY(7px);transition:opacity .32s ease,transform .32s ease}
+.beat.on{opacity:1;transform:none}
+
+/* ── Piezas ───────────────────────────────────────────────────────────── */
+.tarjeta{background:var(--panel);border:1px solid var(--borde);border-radius:12px;padding:14px 16px}
+.tarjeta.acento{border-left:3px solid var(--azul)}
+.tarjeta.ambar{background:var(--ambar-bg);border-color:#F5D9AE;border-left:3px solid var(--ambar)}
+.tarjeta.verde{background:var(--verde-bg);border-color:#BBF7D0;border-left:3px solid var(--verde)}
+.tarjeta.oscura{background:var(--navy);border-color:var(--navy);color:#fff}
+.tarjeta.oscura p,.tarjeta.oscura h3{color:#B9C0D8}
+.tarjeta.oscura b{color:#fff}
+.grid{display:grid;gap:14px}
+.fila{display:flex;gap:14px}
+.crece{flex:1;min-width:0}
+.chip{
+  display:inline-flex;align-items:center;gap:6px;padding:3px 9px;border-radius:99px;
+  font-size:11px;font-weight:700;background:var(--panel2);color:var(--mid);border:1px solid var(--borde);
+}
+.chip.alto{background:var(--ambar-bg);color:var(--ambar);border-color:#F5D9AE}
+.chip.medio{background:var(--panel2);color:var(--mid)}
+.chip.ok{background:var(--verde-bg);color:var(--verde);border-color:#BBF7D0}
+.kpi{text-align:left}
+.kpi .n{font-size:30px;font-weight:800;color:var(--navy);letter-spacing:-.03em;line-height:1}
+.kpi .n small{font-size:15px;font-weight:700;color:var(--gris)}
+.kpi .l{font-size:10.5px;color:var(--tenue);margin-top:5px;line-height:1.35;font-weight:600}
+.kpi.destacado .n{color:var(--azul)}
+.lista{list-style:none;display:grid;gap:7px}
+.lista li{font-size:12.5px;line-height:1.45;color:var(--gris);padding-left:16px;position:relative}
+.lista li::before{content:"";position:absolute;left:0;top:7px;width:6px;height:6px;border-radius:2px;background:var(--azul)}
+.lista.tache li::before{background:var(--tenue);border-radius:99px;height:2px;top:9px}
+.nota-pie{font-size:10.5px;color:var(--tenue);line-height:1.4}
+
+/* Nivel de regla: se lee como enrutamiento, así que alto y medio tienen que
+   distinguirse de un vistazo desde el otro lado de una videollamada. */
+.p-alto,.p-medio{display:inline-block;padding:1px 7px;border-radius:99px;
+  font-size:10.5px;font-weight:800;letter-spacing:.02em;text-transform:uppercase}
+.p-alto{background:var(--ambar-bg);color:var(--ambar);border:1px solid #F5D9AE}
+.p-medio{background:var(--panel2);color:var(--mid);border:1px solid var(--borde)}
+.t-reglas td{vertical-align:middle;padding:3px 6px 3px 0}
+.t-reglas th{padding:0 6px 5px 0}
+.t-reglas .nom{font-size:11px;line-height:1.25}
+.t-reglas .rid{font-weight:800;color:var(--azul);font-size:11px}
+.t-reglas .cruza{font-size:10px;color:var(--gris);line-height:1.25}
+.t-reglas .cruza b{color:var(--navy)}
+.t-reglas .entrega{font-size:10px;color:var(--tenue);line-height:1.25}
+.t-reglas .entrega.alerta{color:var(--ambar);font-weight:700}
+
+/* Franja de bitácora: gobernanza como práctica, no como promesa. */
+.bitacora-franja{margin-top:10px;border-top:1px solid var(--borde);padding-top:8px}
+.bit-etq{font-size:9.5px;text-transform:uppercase;letter-spacing:.07em;
+  color:var(--tenue);font-weight:800;margin-bottom:6px}
+#bitacora-lista{display:grid;gap:5px}
+.bit-item{min-width:0;border-left:2px solid var(--borde);padding-left:8px}
+.bit-item.ultima{border-left-color:var(--azul)}
+.bit-v{font-size:11px;font-weight:800;color:var(--navy)}
+.bit-item.ultima .bit-v{color:var(--azul)}
+.bit-f{font-size:9.5px;color:var(--tenue);font-weight:700}
+.bit-r{font-size:10px;color:var(--gris);line-height:1.3;margin-top:1px}
+table{width:100%;border-collapse:collapse;font-size:11.5px}
+th{text-align:left;font-size:9.5px;text-transform:uppercase;letter-spacing:.07em;color:var(--tenue);
+   font-weight:800;padding:0 8px 6px 0;border-bottom:1px solid var(--borde)}
+td{padding:5px 8px 5px 0;border-bottom:1px solid #F1F3F9;color:var(--gris)}
+td.f{font-weight:700;color:var(--tinta)}
+tr.sel td{background:#EEF4FE}
+.num{text-align:right}
+
+/* ── Barra inferior / navegación ──────────────────────────────────────── */
+#barra{
+  position:absolute;left:0;right:0;bottom:0;height:26px;display:flex;align-items:center;
+  gap:12px;padding:0 56px;font-size:10px;color:var(--tenue);border-top:1px solid var(--borde);
+  background:#fff;
+}
+#puntos{display:flex;gap:5px}
+#puntos i{width:16px;height:3px;border-radius:2px;background:var(--borde);transition:.2s;cursor:pointer}
+#puntos i.on{background:var(--azul);width:26px}
+#reloj{margin-left:auto;font-weight:700;letter-spacing:.04em}
+#reloj.tarde{color:var(--ambar)}
+
+/* ── Notas del orador ─────────────────────────────────────────────────── */
+#notas{
+  position:fixed;left:0;right:0;bottom:0;max-height:44vh;overflow:auto;z-index:50;
+  background:#0B0E22;color:#D5DAEC;padding:20px 30px 26px;border-top:2px solid var(--azul);
+  transform:translateY(101%);transition:transform .28s ease;
+  font-size:14px;line-height:1.6;
+}
+#notas.abierto{transform:none}
+#notas h4{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#7E8CC4;margin-bottom:10px}
+#notas .guion{max-width:1000px;margin:0 auto}
+#notas p{color:#D5DAEC;font-size:14px;margin-bottom:9px}
+#notas b{color:#fff}
+#notas .min{color:#FFB020;font-weight:700}
+#notas .preg{border-left:2px solid #2E6EC8;padding-left:12px;margin-top:6px;font-size:13px;color:#AEB8DC}
+#notas .preg b{color:#8FB4F0}
+.notas-fuente{display:none}
+
+/* ── Ayuda ────────────────────────────────────────────────────────────── */
+#ayuda{position:fixed;inset:0;background:rgba(0,0,46,.94);color:#fff;z-index:60;
+  display:none;place-items:center;font-size:15px}
+#ayuda.abierto{display:grid}
+#ayuda kbd{display:inline-block;min-width:26px;text-align:center;padding:3px 7px;border-radius:5px;
+  background:#1C2246;border:1px solid #39406E;font-family:ui-monospace,monospace;font-size:13px;margin-right:8px}
+#ayuda table td{color:#C3CAE6;border:0;padding:7px 0;font-size:14px}
+
+/* ── Componente: flujo del pipeline ───────────────────────────────────── */
+.flujo{display:flex;align-items:stretch;gap:0}
+.etapa{
+  flex:1;background:#fff;border:1px solid var(--borde);border-radius:10px;padding:9px 11px;
+  position:relative;transition:.3s;opacity:.42;
+}
+.etapa.on{opacity:1;border-color:var(--azul);box-shadow:0 3px 14px rgba(46,110,200,.14)}
+.etapa.on .et-n{color:var(--azul)}
+.etapa .et-n{font-size:9px;font-weight:800;color:var(--tenue);letter-spacing:.08em}
+.etapa .et-t{font-size:12px;font-weight:800;color:var(--navy);margin:3px 0 3px}
+.etapa .et-d{font-size:10px;color:var(--gris);line-height:1.35}
+.etapa .et-c{font-size:10px;font-weight:800;color:var(--azul);margin-top:5px}
+.flecha{width:22px;display:grid;place-items:center;color:var(--borde);font-size:15px;flex:0 0 22px}
+.etapa.on+.flecha{color:var(--azul)}
+
+/* ── Componente: calibración ──────────────────────────────────────────── */
+.calib-cifras{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.calib-cifras .kpi .n{font-size:23px}
+input[type=range]{width:100%;accent-color:var(--azul);height:20px}
+.cupo-etq{display:flex;justify-content:space-between;font-size:9.5px;color:var(--tenue);font-weight:700}
+
+/* ── Componente: scrubber ─────────────────────────────────────────────── */
+.scrub-caja{background:#fff;border:1px solid var(--borde);border-radius:9px;padding:10px 12px;
+  font-size:11px;line-height:1.5;color:var(--gris);height:194px;overflow:auto}
+mark{background:#FDE9C8;color:var(--ambar);font-weight:700;border-radius:3px;padding:0 3px;
+  font-family:ui-monospace,monospace;font-size:10.5px}
+mark.falso{background:#FFE0E0;color:#B91C1C;text-decoration:underline dotted}
+textarea{width:100%;border:1px solid var(--borde);border-radius:9px;padding:9px 11px;font:inherit;
+  font-size:11.5px;line-height:1.5;resize:none;height:82px;color:var(--tinta);background:#fff}
+textarea:focus{outline:2px solid var(--azul);outline-offset:-1px}
+.btn{border:1px solid var(--borde);background:#fff;border-radius:8px;padding:5px 11px;font:inherit;
+  font-size:11px;font-weight:700;color:var(--gris);cursor:pointer;transition:.15s;white-space:nowrap}
+.btn:hover{border-color:var(--azul);color:var(--azul)}
+.btn.on{background:var(--azul);border-color:var(--azul);color:#fff}
+
+/* ── Componente: tarjeta de Chat ──────────────────────────────────────── */
+.chat{width:340px;border:1px solid #DADCE0;border-radius:10px;overflow:hidden;background:#fff;
+  box-shadow:0 2px 10px rgba(0,0,46,.09);font-size:11.5px}
+.chat-h{background:#1a73e8;color:#fff;padding:8px 12px}
+.chat-h .t{font-size:12px;font-weight:700;line-height:1.3}
+.chat-h .s{font-size:10px;opacity:.85;margin-top:2px}
+.chat-s{padding:4px 12px;border-top:1px solid #EDEEF0}
+.chat-s h5{font-size:9px;text-transform:uppercase;letter-spacing:.07em;color:#5F6368;margin-bottom:2px;font-weight:800}
+.chat-s p,.chat-s li{font-size:10.5px;line-height:1.38;color:#3C4043}
+.chat-s ul{list-style:none;display:grid;gap:3px}
+.chat-s ul li{padding-left:13px;position:relative}
+.chat-s ul li::before{content:"";position:absolute;left:2px;top:6px;width:4px;height:4px;
+  border-radius:99px;background:#1a73e8}
+.chat-s .ev{color:#80868B;font-size:10px;display:block;margin-top:1px}
+.chat-b{display:flex;gap:6px;padding:7px 12px;flex-wrap:wrap;border-top:1px solid #EDEEF0}
+.chat-b span{border:1px solid #DADCE0;border-radius:6px;padding:4px 8px;font-size:10px;
+  font-weight:700;color:#1a73e8}
+.chat-p{padding:7px 12px;background:#F8F9FA;font-size:9.5px;color:#5F6368;line-height:1.4;border-top:1px solid #EDEEF0}
+.callout{position:relative;font-size:10.5px;line-height:1.4;color:var(--gris);
+  padding-left:14px;border-left:2px solid var(--azul)}
+.callout b{color:var(--navy)}
+</style>
+</head>
+<body>
+<div id="escenario"><div id="stage">
+
+<!-- ══ S1 · El problema y la tesis ══════════════════════════════════════ -->
+<section class="slide" data-min="0" data-titulo="El problema y la tesis">
+  <div class="kicker">Caso práctico · People Data &amp; Automation Specialist · Alfonso Ariztía</div>
+  <h1 class="beat">People Happiness pierde <em>15 horas por semana</em><br>cruzando planillas para ver algo que ya pasó.</h1>
+
+  <div class="fila beat" style="margin-top:26px">
+    <div class="tarjeta crece acento">
+      <h3>Lo que pide el caso</h3>
+      <p style="margin-top:6px">Detectar <b>señales tempranas de riesgo de desvinculación</b> cruzando desempeño,
+      compensación, productividad y notas cualitativas.</p>
+    </div>
+    <div class="tarjeta crece ambar">
+      <h3>Lo que pide el mismo caso, tres párrafos después</h3>
+      <p style="margin-top:6px">Que los líderes <b>no estigmaticen</b> a las personas señaladas por el sistema.</p>
+    </div>
+  </div>
+
+  <div class="tarjeta oscura beat" style="margin-top:16px;padding:20px 24px">
+    <h3 style="color:#7E8CC4">La tesis</h3>
+    <p style="font-size:19px;line-height:1.45;color:#fff;margin-top:8px;font-weight:600">
+      No construí un detector de fuga. Construí un sistema que le entrega a la Happiness Manager
+      <b style="color:#8FB4F0">una hipótesis con evidencia, una acción sugerida y una fecha de vencimiento.</b>
+    </p>
+    <p style="margin-top:10px;font-size:13px">Esa diferencia no es de tono. Cambia quién recibe la alerta,
+    qué columnas se pueden proyectar, cuánto dura el dato y qué se mide como éxito.</p>
+  </div>
+
+  <div class="fila beat" style="margin-top:auto;padding-top:18px;gap:34px;align-items:flex-end">
+    <div class="kpi"><div class="n" data-d="escala.personas"></div><div class="l">personas simuladas<br>en 5 países</div></div>
+    <div class="kpi"><div class="n" data-d="escala.meses"></div><div class="l">meses de historia<br>2025-03 → 2026-08</div></div>
+    <div class="kpi"><div class="n" data-d="escala.filas"></div><div class="l">filas persona-mes<br>en una sola tabla</div></div>
+    <div class="kpi destacado"><div class="n" data-d="alertas.filas"></div><div class="l">alertas generadas<br>por 6 reglas versionadas</div></div>
+    <div class="kpi crece" style="text-align:right">
+      <div class="n" style="font-size:20px"><span data-d="orquestacion.duracion_s"></span> s</div>
+      <div class="l">la corrida mensual <b>en Cloud Run</b>,<br>exit 0 · <span data-d="orquestacion.tarjetas_enviadas"></span> tarjetas posteadas</div></div>
+  </div>
+
+  <div class="notas-fuente">
+    <p><span class="min">0:00 — 2:00</span></p>
+    <p><b>Abre con la tensión, no con la solución.</b> «El enunciado me pidió dos cosas que se contradicen:
+    detectar riesgo de desvinculación, y que los líderes no estigmaticen. Todo lo que voy a mostrar sale
+    de haber tomado esa contradicción en serio en vez de elegir un lado.»</p>
+    <p><b>La tesis, lento y con pausa.</b> Es la única frase de la presentación que conviene decir textual.
+    Después del «fecha de vencimiento», espera un segundo antes de seguir.</p>
+    <p><b>La línea de escala es credibilidad, no lucimiento.</b> «El caso pedía el esqueleto teórico.
+    Lo construí funcionando y desplegado: 2.581 personas, 18 meses, y la corrida mensual
+    de verdad en Cloud Run — 57,7 segundos, exit 0, dos tarjetas posteadas a un Space real.
+    Todo lo que van a ver son datos sintéticos generados por mí, pero el sistema que los procesa
+    es el que propondría el lunes.»</p>
+    <p class="preg"><b>Si preguntan por qué datos sintéticos:</b> «Porque no tengo los de Buk, y porque
+    necesitaba control sobre la verdad latente para poder medir si el sistema acierta. En el generador
+    sé quién se iba a ir y por qué; eso es lo que me permite mostrarles un backtest y no una intuición.»</p>
+  </div>
+</section>
+
+<!-- ══ S2 · Ejes 1 y 2 ═════════════════════════════════════════════════ -->
+<section class="slide" data-min="2" data-titulo="Ejes 1 y 2 — del dato a la señal">
+  <div class="kicker">Eje 1 · Arquitectura de automatización &nbsp;·&nbsp; Eje 2 · IA generativa sobre texto</div>
+
+  <div id="s2a">
+    <h1 style="font-size:27px">Del dato a la señal, sin que nadie abra una planilla.</h1>
+
+    <div class="flujo beat" style="margin-top:20px">
+      <div class="etapa" data-etapa="1">
+        <div class="et-n">01 · FUENTES</div><div class="et-t">6 sistemas → 9 tablas</div>
+        <div class="et-d">Las 6 del enunciado: directorio · evaluaciones 90d y semestral · operación
+        (productividad, CSAT/NPS) · compensaciones y banda · desarrollo y escucha · histórico de salidas.</div>
+        <div class="et-c">63.182 filas leídas</div>
+      </div><div class="flecha">→</div>
+      <div class="etapa" data-etapa="2">
+        <div class="et-n">02 · CONTRATO</div><div class="et-t">Validación declarativa</div>
+        <div class="et-d">Lo que no cumple va a <b>cuarentena</b>, no se descarta en silencio. Corte duro sobre 5% de rechazo.</div>
+        <div class="et-c">62.267 válidas · 98,6%</div>
+      </div><div class="flecha">→</div>
+      <div class="etapa" data-etapa="3">
+        <div class="et-n">03 · MODELOS</div><div class="et-t">5 modelos SQL</div>
+        <div class="et-d">Escritos en el subconjunto que DuckDB y BigQuery interpretan igual.</div>
+        <div class="et-c">sin dialecto propietario</div>
+      </div><div class="flecha">→</div>
+      <div class="etapa" data-etapa="4">
+        <div class="et-n">04 · TABLA ÚNICA</div><div class="et-t">employee_360</div>
+        <div class="et-d">Una persona, un mes, una fila. Todo lo demás lee de acá.</div>
+        <div class="et-c"><span data-d="escala.filas"></span> filas · <span data-d="escala.personas"></span> personas</div>
+      </div><div class="flecha">→</div>
+      <div class="etapa" data-etapa="5">
+        <div class="et-n">05 · CATÁLOGO</div><div class="et-t">reglas.yaml v<span data-d="catalogo.version"></span></div>
+        <div class="et-d">6 reglas, 3 canales, mínimo 2 dimensiones. Fuera del código.</div>
+        <div class="et-c"><span data-d="alertas.filas"></span> alertas / <span data-d="escala.meses"></span> meses</div>
+      </div><div class="flecha">→</div>
+      <div class="etapa" data-etapa="6">
+        <div class="et-n">06 · ENTREGA</div><div class="et-t">Chat + paneles</div>
+        <div class="et-d">Solo el canal de conversación llega como tarjeta al Happiness Manager.</div>
+        <div class="et-c"><span data-d="backtest.alertas_mes"></span> alertas al mes</div>
+      </div>
+    </div>
+
+    <div class="fila beat" style="margin-top:18px">
+      <div class="tarjeta crece acento">
+        <h3>Orquestación — corriendo, no propuesta</h3>
+        <p style="margin-top:7px"><b class="mono" style="font-size:12px">Cloud Scheduler → Cloud Run Job → BigQuery → Chat API</b></p>
+        <ul class="lista" style="margin-top:7px">
+          <li><span class="mono" data-d="orquestacion.scheduler"></span> · <span data-d="orquestacion.scheduler_region"></span>
+              → <span class="mono" data-d="orquestacion.job"></span> · <span data-d="orquestacion.job_region"></span></li>
+          <li><b>Próximo disparo real: <span data-d="orquestacion.proximo_disparo"></span></b> (<span data-d="orquestacion.cron"></span>).</li>
+          <li>Corrida de referencia: <b><span data-d="orquestacion.duracion_s"></span> s · exit <span data-d="orquestacion.exit_code"></span> ·
+              <span data-d="orquestacion.tarjetas_enviadas"></span> tarjetas reales</b>.</li>
+        </ul>
+      </div>
+      <div class="tarjeta crece">
+        <h3>Por qué mensual, y qué descarté</h3>
+        <ul class="lista" style="margin-top:7px">
+          <li><b>Mensual es una decisión medida, no un default:</b> las ventanas de comparación son de 3 meses
+            y el enfriamiento también — correr semanal no descubre gente nueva, repite a la misma.</li>
+          <li><b>Descarté n8n y Composer:</b> Buk es casa GCP y esto no necesita un orquestador visual ni un
+            scheduler persistente que alguien opere. Necesita un job idempotente con logs y reintentos.</li>
+          <li>Ingesta idempotente por período: reprocesar un mes no duplica ni una fila.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="s2b" style="display:none">
+    <h1 style="font-size:27px">Eje 2 — el texto entra al modelo <em>anonimizado</em>, y sale <em>estructurado</em>.</h1>
+
+    <div class="fila" style="margin-top:16px;gap:16px">
+      <div class="crece" style="max-width:700px">
+        <div class="fila" style="gap:10px;align-items:center;margin-bottom:8px">
+          <h3 style="margin:0">Redacción determinista · replay sobre notas reales</h3>
+          <div id="scrub-tabs" class="fila" style="gap:5px;margin-left:auto"></div>
+        </div>
+        <div class="fila" style="gap:10px">
+          <div class="crece">
+            <div class="cupo-etq" style="margin-bottom:4px"><span>NOTA ORIGINAL (nunca sale del perímetro)</span></div>
+            <div class="scrub-caja" id="scrub-orig"></div>
+          </div>
+          <div class="crece">
+            <div class="cupo-etq" style="margin-bottom:4px"><span>LO QUE VIAJA AL MODELO</span><span id="scrub-check" style="color:var(--verde)"></span></div>
+            <div class="scrub-caja" id="scrub-red"></div>
+          </div>
+        </div>
+        <div class="cupo-etq" style="margin:9px 0 4px"><span>Y ESTO ES LO QUE DEVUELVE — ESQUEMA CERRADO, NADA DE TEXTO LIBRE</span></div>
+        <div class="tarjeta" style="padding:8px 11px;background:#fff" id="scrub-salida"></div>
+        <div class="fila" style="gap:10px;margin-top:10px;align-items:flex-start">
+          <div class="crece">
+            <div class="cupo-etq" style="margin-bottom:4px"><span>ESCRIBA UNA FRASE Y VEA QUÉ SALE</span></div>
+            <textarea id="scrub-libre" spellcheck="false"></textarea>
+          </div>
+          <div class="crece">
+            <div class="cupo-etq" style="margin-bottom:4px"><span>RESULTADO EN VIVO</span></div>
+            <div class="scrub-caja" id="scrub-libre-out" style="height:82px"></div>
+          </div>
+        </div>
+        <p class="nota-pie" id="scrub-honestidad" style="margin-top:8px"></p>
+      </div>
+
+      <div class="crece" style="display:grid;gap:9px;align-content:start">
+        <div class="tarjeta" style="padding:10px 13px">
+          <h3>4 precauciones, cada una verificable</h3>
+          <ul class="lista" style="margin-top:6px">
+            <li><b>Anonimización determinista</b> con la lista de nombres del directorio real
+              (<span data-d="scrubber.tokens.length"></span> tokens). Producción: Cloud DLP.</li>
+            <li><b>Residencia:</b> corre hoy en <span class="mono">Vertex AI</span>,
+              <span class="mono">southamerica-west1</span> — región Santiago, el dato no sale del perímetro
+              contractual de GCP. La capa es agnóstica al proveedor: cambiar de modelo son veinte líneas.</li>
+            <li><b>Esquema cerrado:</b> el prompt prohíbe inferir salud, situación familiar, orientación sexual,
+              religión, nacionalidad e intención de renuncia — y <b>esas categorías no existen en el esquema</b>,
+              así que no hay dónde ponerlas.</li>
+            <li><b>Verificación de citas:</b> cada tema debe venir con una cita textual de la nota.
+              Detección de alucinación sin un segundo modelo. E <span class="mono">insuficiente</span> es respuesta válida.</li>
+          </ul>
+        </div>
+        <div class="tarjeta verde" style="padding:9px 13px">
+          <div class="fila" style="gap:22px">
+            <div class="kpi"><div class="n" style="font-size:22px;color:var(--verde)">30<small>/30</small></div><div class="l">notas procesadas</div></div>
+            <div class="kpi"><div class="n" style="font-size:22px;color:var(--verde)">100<small>%</small></div><div class="l">acierto de sentimiento<br>y de tema principal</div></div>
+            <div class="kpi"><div class="n" style="font-size:22px;color:var(--verde)">0</div><div class="l">salidas fuera<br>del esquema</div></div>
+          </div>
+        </div>
+        <div class="tarjeta oscura" style="padding:13px 16px">
+          <p style="font-size:14.5px;line-height:1.4;color:#fff;font-weight:600">
+            Y con todo eso funcionando: <b style="color:#8FB4F0">el texto no gatilla ninguna alerta.</b></p>
+          <p style="margin-top:7px;font-size:12px">Si lo que dices en una conversación de confianza puede volverse
+          una señal de riesgo, dejas de decirlo — y el sistema se come su propia materia prima.
+          La IA <b>resume y enriquece el contexto de una alerta que ya existe</b>. Nunca la crea.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="notas-fuente">
+    <p><span class="min">2:00 — 5:30</span> · dos tiempos: el diagrama, y después el zoom a la caja de la bitácora.</p>
+    <p><b>Tiempo 1 — el diagrama es el protagonista.</b> Recorre las seis cajas de izquierda a derecha
+    y detente solo en dos: <b>cuarentena</b> («lo que no valida no se descarta en silencio: queda en una tabla
+    aparte con el motivo, y si una fuente supera 5% de rechazo el pipeline se detiene») y <b>employee_360</b>
+    («una persona, un mes, una fila — todo lo demás lee de acá, así que no hay dos definiciones de antigüedad
+    dando vueltas»).</p>
+    <p><b>Orquestación — el punto es el tiempo verbal.</b> «Esto no es lo que propondría: es lo que está
+    agendado. Cloud Scheduler dispara un Cloud Run Job el día 1 de cada mes a las 8:30 de Santiago, el job
+    corre el SQL en BigQuery y publica en Chat. La última corrida tomó 57,7 segundos, salió con exit 0 y
+    posteó dos tarjetas a un Space de verdad. El próximo disparo es el 1 de octubre y va a ocurrir tanto si
+    estamos mirando como si no.» Mensual es decisión medida, no default: las ventanas son de 3 meses.</p>
+    <p><b>Si preguntan por la portabilidad del SQL</b> (no lo pongas en pantalla, no le importa a Personas):
+    «el SQL no usa <span class="mono">DATE_DIFF</span>, <span class="mono">DATE_TRUNC</span> ni
+    <span class="mono">SAFE_CAST</span>, así que corre igual en DuckDB local y en BigQuery. Migrar a
+    producción fue cambiar el conector y el nombre del dataset; el SQL no se tocó.»</p>
+    <p><b>Las 6 etapas son las 6 fuentes del enunciado, sin agregar ni quitar ninguna.</b> «Directorio es el
+    HRIS, evaluaciones es la de 90 días más la semestral, operación es productividad y CSAT/NPS, compensaciones
+    es sueldo y banda, desarrollo junta cursos finalizados con la bitácora de seguimiento, e histórico de
+    salidas alimenta el backtest — nunca dispara una alerta sobre alguien activo.»</p>
+    <p class="preg"><b>¿Por qué no Airflow o Cloud Composer?</b> «Porque para una corrida mensual es
+    sobre-ingeniería: agregaría un scheduler persistente que alguien tiene que operar. Cloud Run Job más
+    Cloud Scheduler es serverless, sin cluster que mantener, y alcanza sobrado para esta cadencia.»</p>
+    <p class="preg"><b>¿Por qué BigQuery y no seguir en Sheets?</b> «Porque las mismas 15 horas semanales del
+    enunciado son el síntoma de Sheets a esta escala. BigQuery da joins y consultas sobre 9 tablas sin que
+    nadie cruce planillas a mano, y es el ambiente que Buk ya declaró que usa.»</p>
+    <p><b>Tiempo 2 — el zoom.</b> Antes de mostrar el replay: «acá está la parte donde todos se ponen nerviosos,
+    con razón: mandar notas de una conversación de confianza a un modelo de un tercero.» Después corre el replay
+    y deja que se vea solo.</p>
+    <p><b>El bug que se encontró y se cerró, cuéntalo tú.</b> «Mientras armaba este deck, el scrubber se
+    comía la palabra "del" —una preposición, no un dato personal— 14.104 veces sobre 9.274 notas, porque
+    "del" aparece dentro de nombres compuestos del directorio real, como "Ana del Carmen Soto". Lo medí
+    sobre el corpus completo, lo corregí filtrando partículas y títulos y priorizando el nombre completo
+    sobre el token suelto, y le dejé una guarda: si algún nombre vuelve a concentrar más del 20% de las
+    redacciones de una corrida, el build se detiene solo, no sigue redactando en silencio. Por eso hoy no
+    hay nada subrayado en rojo — y es exactamente el argumento de por qué en producción esto es Cloud DLP,
+    no una lista de regex mía.»</p>
+    <p><b>El remate.</b> «El texto no gatilla ninguna alerta» es la frase que más los va a hacer pensar.
+    Dila y quédate callado.</p>
+    <p class="preg"><b>¿El análisis de sentimiento dispara la alerta?</b> «No, y es deliberado. Si dispara,
+    la bitácora se vacía en tres meses. El sentimiento entra al contexto de una alerta que ya existe por datos
+    duros, y en el criterio de éxito hay un veto que mide justamente si la bitácora se está secando.»</p>
+    <p class="preg"><b>¿Qué modelo corre esto?</b> «Hoy Gemini en Vertex AI, región Santiago —
+    <span class="mono">southamerica-west1</span>— porque es lo que tenía a mano y porque mantiene el dato
+    dentro del perímetro de GCP, que es el requisito que sí importa. La elección de proveedor no está
+    horneada: la capa es una función <span class="mono">llamar(prompt)</span> con caché por hash, y cambiar
+    a Claude por Model Garden son veinte líneas. Lo que no cambiaría es el esquema cerrado ni la
+    anonimización previa; eso es lo que hace segura la llamada, no la marca del modelo.»</p>
+  </div>
+</section>
+<!-- ══ S3 · Eje 3 ═══════════════════════════════════════════════════════ -->
+<section class="slide" data-min="5.5" data-titulo="Eje 3 — reglas de negocio y gobernanza">
+  <div class="kicker">Eje 3 · Reglas de negocio y gobernanza del dato</div>
+
+  <div id="s3a">
+    <h1 style="font-size:27px">La regla no vive en el código. Vive en un <em>YAML versionado</em>,<br>y quien lo gobierna es People Happiness.</h1>
+
+    <div class="fila" style="margin-top:20px;gap:16px">
+      <div class="crece beat">
+        <div class="tarjeta acento">
+          <div class="fila" style="align-items:baseline;gap:8px">
+            <h2 style="font-size:14px">reglas.yaml</h2><span class="chip">v<span data-d="catalogo.version"></span></span>
+          </div>
+          <table style="margin-top:9px">
+            <tr><td class="f">Dueño</td><td>People Happiness, con People Analytics</td></tr>
+            <tr><td class="f">Revisión</td><td><span data-d="catalogo.ciclo_revision"></span>, con bitácora de cambios</td></tr>
+            <tr><td class="f">Retención</td><td><span data-d="catalogo.retencion_dias"></span> días</td></tr>
+            <tr><td class="f">Universo</td><td class="mono" style="font-size:10px" data-d="catalogo.universo"></td></tr>
+          </table>
+          <p style="margin-top:9px"><b>Cambiar un umbral es un pull request de una línea que aprueba
+          quien es dueño del proceso</b>, no un ticket a Data.</p>
+        </div>
+        <div class="tarjeta ambar" style="margin-top:12px">
+          <h3>Si mañana cambia la estructura de cargos</h3>
+          <p style="margin-top:6px"><span class="mono">dim_cargos</span> es una dimensión externa con vigencia.
+          Si aparece un cargo sin banda salarial definida, <b>el pipeline se detiene</b>. No adivina, no imputa,
+          no compara contra una banda que no existe.</p>
+          <p style="margin-top:6px">Buk registró <b>325 cambios internos en un año</b>. Esto no es hipotético:
+          es el caso normal.</p>
+        </div>
+      </div>
+
+      <div class="crece beat" style="max-width:330px">
+        <div class="tarjeta">
+          <h3>10 atributos prohibidos</h3>
+          <p style="margin-top:6px">Género, edad, nacionalidad, estado civil, hijos, discapacidad y 4 más
+          <b>no pueden entrar en ninguna regla</b>. La garantía es de catálogo: si aparecen, el catálogo no valida.</p>
+        </div>
+        <div class="tarjeta verde" style="margin-top:10px">
+          <h3>Y la prohibición se compra con la obligación de medir</h3>
+          <p style="margin-top:6px">Auditoría de impacto dispar con el estándar EEOC sobre <b>6 cortes</b>,
+          <b>antes de publicar cada versión</b>. Lo que se marca no se archiva: pasa por un
+          <b>protocolo de 3 pasos</b> que distingue seguir el riesgo de crearlo.</p>
+        </div>
+        <div class="tarjeta" style="margin-top:10px">
+          <h3>6 garantías, antes de correr</h3>
+          <p style="margin-top:6px">Se validan al cargar el catálogo, no en un test. Si una falla:
+          <span class="mono">CatalogoInvalido</span> y <b>cero alertas</b>. El sistema prefiere no correr
+          antes que correr mal.</p>
+        </div>
+      </div>
+
+      <div class="crece beat" style="max-width:300px">
+        <div class="bit-etq">Bitácora del catálogo — 4 versiones en 3 días, cada una con su razón medida</div>
+        <div id="bitacora-lista"></div>
+        <p style="margin-top:10px;font-size:12.5px">La última es la que más me gusta: <b>saqué una regla del
+        canal de alertas</b> porque ganaba 0 de 12 cupos. La gobernanza se demuestra sacando cosas.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="s3a2" style="display:none">
+    <h1 style="font-size:27px">Las 6 reglas — y <em>ninguna</em> se dispara<br>con una sola dimensión.</h1>
+
+    <div class="fila" style="margin-top:20px;gap:16px">
+      <div class="crece beat">
+        <div class="tarjeta">
+          <table class="t-reglas">
+            <thead><tr><th></th><th>Regla</th><th>Cruza</th><th>Nivel</th><th>Llega como</th></tr></thead>
+            <tbody id="tabla-reglas"></tbody>
+          </table>
+          <p style="margin-top:9px"><b>El nivel no es un adjetivo, es un enrutamiento.</b>
+          <span class="p-alto">alto</span> = evento reciente confirmado en 2+ dimensiones, o incumplimiento
+          objetivo de banda → <b>interrumpe el día</b> con una tarjeta.
+          <span class="p-medio">medio</span> = estado sostenido → <b>se revisa en ciclo, nunca interrumpe</b>.</p>
+          <p style="margin-top:7px">Por eso <b>no hay ninguna tarjeta de nivel medio</b>: si algo no amerita
+          interrumpir a alguien, tampoco debería llegar como interrupción.</p>
+        </div>
+      </div>
+
+      <div class="crece beat" style="max-width:430px">
+        <div class="tarjeta">
+          <h2 style="font-size:14px">Por qué el mínimo son dos dimensiones</h2>
+          <p style="margin-top:6px">No es prudencia estética. Es lo que muestran los perfiles latentes:
+          <b>ninguna variable sola separa a quien se va de quien se queda.</b></p>
+          <table style="margin-top:9px">
+            <thead><tr><th>Perfil latente</th><th class="num">Compa-ratio</th><th class="num">Desempeño</th><th class="num">Δ productividad</th></tr></thead>
+            <tbody id="tabla-perfiles"></tbody>
+          </table>
+          <p style="margin-top:8px"><b>La estrella subpagada tiene buen desempeño</b> — mirar desempeño no la ve.
+          <b>El deterioro tiene sueldo normal</b> — mirar compensación no lo ve. Por eso el mínimo es dos
+          dimensiones distintas, y por eso hay <b data-d="alertas.dimensiones.0.filas"></b> alertas de 2 dimensiones,
+          <b data-d="alertas.dimensiones.1.filas"></b> de 3, <b data-d="alertas.dimensiones.2.filas"></b> de 4,
+          y <b>cero de una sola</b>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="s3b" style="display:none">
+    <h1 style="font-size:27px">Los números, con el costo incluido.</h1>
+
+    <div class="fila" style="margin-top:16px;gap:16px">
+      <div class="crece">
+        <div class="tarjeta beat" style="padding:14px 18px">
+          <div class="fila" style="align-items:baseline">
+            <h2 style="font-size:14px">Cupo mensual de alertas</h2>
+            <span class="chip" style="margin-left:auto">cupo actual: <b id="cupo-val"></b></span>
+          </div>
+          <input type="range" id="cupo" min="0" max="6" value="2" step="1" style="margin-top:8px">
+          <div class="cupo-etq" id="cupo-marcas"></div>
+          <div class="calib-cifras" style="margin-top:14px">
+            <div class="kpi"><div class="n" id="c-alertas"></div><div class="l">alertas al mes</div></div>
+            <div class="kpi destacado"><div class="n" id="c-precision"></div><div class="l">precisión sobre<br>salida lamentada</div></div>
+            <div class="kpi destacado"><div class="n" id="c-lift"></div><div class="l">lift sobre la base<br>de 4,5%</div></div>
+            <div class="kpi"><div class="n" id="c-cobertura"></div><div class="l">cobertura de las 341<br>salidas lamentadas</div></div>
+            <div class="kpi"><div class="n" id="c-carga" style="color:var(--ambar)"></div><div class="l">carga sobre quien<br><b>se queda</b></div></div>
+          </div>
+          <svg id="curva" viewBox="0 0 560 132" style="width:100%;height:132px;margin-top:12px"></svg>
+          <p class="nota-pie" style="margin-top:2px">Cada punto es una corrida completa del backtest sobre los 18 meses,
+          reordenando por prioridad y cortando en el cupo. La curva se aplana sola en <span data-d="backtest.saturacion_pct"></span>%.</p>
+        </div>
+        <div class="tarjeta beat" style="margin-top:11px">
+          <h3>La palanca no era el cupo. Era el enfriamiento.</h3>
+          <table style="margin-top:7px">
+            <thead><tr><th>Enfriamiento</th><th class="num">Alertas/mes</th><th class="num">Cobertura</th></tr></thead>
+            <tbody id="tabla-enfr"></tbody>
+          </table>
+          <p style="margin-top:7px">Sin enfriamiento el volumen sube <b>+<span data-d="backtest.enfriamiento_volumen_pct"></span>%</b>
+          y la cobertura sube <b><span data-d="backtest.enfriamiento_cobertura_pts"></span> puntos</b>. Era la misma gente avisada más veces. <b>Más alertas no es más cobertura.</b></p>
+        </div>
+      </div>
+
+      <div class="crece" style="max-width:430px;display:grid;gap:11px;align-content:start">
+        <div class="tarjeta ambar beat">
+          <h3>La métrica que nadie muestra</h3>
+          <p style="margin-top:6px"><b id="carga-frase"></b></p>
+          <p style="margin-top:6px">Ese es el precio real de la herramienta: personas que van a recibir una
+          conversación que quizá no necesitaban. Es aceptable porque la conversación es de escucha y no queda
+          en el expediente — <b>pero es un costo, y prefiero ponerlo en la lámina antes de que me lo pregunten.</b></p>
+        </div>
+        <div class="tarjeta oscura beat">
+          <h3 style="color:#FFB020">El hallazgo, y lo declaro antes de que pregunten</h3>
+          <p style="margin-top:6px;color:#D5DAEC">La cohorte de <b style="color:#fff">0 a 11 meses concentra el
+          <span data-d="hallazgo_antiguedad.concentra_pct"></span>% de las salidas lamentadas</b> y este catálogo
+          la cubre al <b style="color:#fff"><span data-d="hallazgo_antiguedad.cobertura_pct"></span>%</b>.</p>
+          <p style="margin-top:6px;color:#D5DAEC">Por cabeza parecía un sesgo de
+          <span data-d="hallazgo_antiguedad.indice_por_cabeza"></span>x. Medido por mes-persona expuesto se da
+          vuelta: <b style="color:#fff"><span data-d="hallazgo_antiguedad.alertas_1000m_0_11"></span></b> alertas
+          por mil meses contra <b style="color:#fff"><span data-d="hallazgo_antiguedad.alertas_1000m_12_23"></span></b>
+          del tramo siguiente. Es exposición: están en el universo
+          <b style="color:#fff"><span data-d="hallazgo_antiguedad.meses_expuesto"></span> meses</b> contra
+          <span data-d="hallazgo_antiguedad.meses_expuesto_resto"></span> del tramo siguiente, y el sistema
+          los mira recién desde el mes 3.</p>
+          <p style="margin-top:7px;color:#8FB4F0;font-weight:700">Este catálogo no es un instrumento de onboarding
+          y no lo voy a vender como tal. Para eso se necesita una encuesta 30/60/90.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="notas-fuente">
+    <p><span class="min">5:30 — 9:30</span> · tres tiempos: la gobernanza, las reglas, y después los números.</p>
+    <p><b>Empieza por el YAML.</b> «La pregunta del caso era cómo se mantienen las reglas si cambia la estructura
+    de cargos. Mi respuesta es que la regla no puede vivir en el código, porque entonces la mantiene Data y
+    la entiende Data. Vive en un YAML con dueño, versión y bitácora — y ese dueño es de People Happiness.»</p>
+    <p><b>Cierra la primera lámina con la bitácora, en diez segundos.</b> «Cuatro versiones en tres días,
+    cada una con su razón medida. La última es la que más me gusta: saqué una regla del canal de alertas
+    porque ganaba 0 de 12 cupos y no ganaba uno desde febrero. La gobernanza se demuestra sacando cosas,
+    no agregándolas.»</p>
+    <p><b>Segunda lámina: la tabla de las 6 reglas — es la respuesta literal del enunciado.</b>
+    «Me pidieron qué reglas de negocio dispararían riesgo medio o alto. Son estas seis, y lo importante
+    de la tabla es la última columna: el nivel no es un adjetivo, es un enrutamiento. Alto interrumpe el
+    día de alguien con una tarjeta. Medio se revisa en el ciclo, en un panel. Fíjense que no hay ninguna
+    tarjeta de nivel medio: si algo no amerita interrumpir, no debería llegar como interrupción.»</p>
+    <p><b>Si preguntan por qué R01 y R06 cruzan lo mismo:</b> «cruzan las mismas dimensiones y se enrutan
+    distinto porque la diferencia es temporal, no de contenido. R01 es un deterioro reciente confirmado y
+    por eso interrumpe; R06 es un estado sostenido y por eso va a panel. La dimensión <i>operación</i>
+    agrupa productividad y CSAT: son la misma familia de señal operativa, medidas por sistemas distintos.»</p>
+    <p class="preg"><b>El detalle de la auditoría EEOC, si preguntan</b> (no va en pantalla a propósito, el
+    tiempo no da): «seis cortes —género, tramo de edad, nacionalidad, familia de cargo, país de contrato y
+    tramo de antigüedad—. Un grupo se marca cuando el índice sale de la banda 0,80–1,25, que es la regla de
+    los cuatro quintos de la EEOC, <b>y además</b> la diferencia no la explica el azar binomial, |z| mayor a 2.
+    Las dos condiciones juntas: marcar de más entrena al comité a ignorar la lista. Y el denominador es
+    persona-mes expuesta, no cabezas — medir por cabeza compara gente que corrió distancias distintas.»</p>
+    <p class="preg"><b>Y si preguntan qué salió marcado — esta es la respuesta importante, dila completa.</b>
+    «Siete grupos, y dos de ellos son de nacionalidad, que es atributo protegido: mexicana y peruana, ambos
+    por índice de alerta. No lo voy a suavizar. El protocolo tiene tres pasos y en el caso de peruana ninguno
+    lo cierra: el paso uno lo contradice —su tasa de salida lamentada es la más baja de los grupos grandes,
+    o sea le alertamos 45% más a un grupo que se va menos—; el paso dos explica de dónde salen las alertas,
+    las métricas de origen sí se deterioran más, pero no las justifica. <b>Ese es un hallazgo abierto y es
+    exactamente lo que el veto de auditoría existe para detener:</b> esta versión del catálogo no se publica
+    sola hasta que se entienda. Está escrito así en REGLAS.md, con fecha. La alternativa era no auditar y no
+    tener nada que declarar, y eso no es mejor: es lo mismo sin saberlo.»</p>
+    <p class="preg"><b>Si te apuntan la contradicción con "un catálogo que no pasa la auditoría no se
+    despliega"</b> (el Veto 2 de la última lámina): «tiene toda la razón, y por eso lo digo. El job está
+    agendado y va a correr el 1 de octubre; lo que la auditoría bloquea es <b>publicar esta versión como
+    definitiva</b>, no que el sistema exista. En un equipo real esto es un ítem con dueño y fecha antes del
+    próximo release, no un semáforo verde.»</p>
+    <p><b>El dato de los 325 cambios internos es del Culture Code de ellos.</b> Úsalo: «no estoy inventando un
+    escenario, ustedes movieron 325 personas de cargo en un año».</p>
+    <p><b>La tabla de perfiles es el argumento, no la decoración.</b> Apunta dos filas: estrella subpagada
+    (desempeño 3,31, compa 0,845) y deterioro (compa 0,98, productividad −3,5). «Si miro solo desempeño, no veo
+    a la primera. Si miro solo sueldo, no veo al segundo. Por eso el mínimo son dos dimensiones distintas,
+    y por eso no hay ni una sola alerta de una dimensión en <b data-d="alertas.filas"></b>.»</p>
+    <p><b>El slider — úsalo, no lo expliques.</b> Muévelo de 15 a infinito mientras hablas y deja que la curva
+    se aplane sola. «Acá está la respuesta a por qué 35 y no 100.»</p>
+    <p><b>El hallazgo es tu mejor carta, no tu peor.</b> Nadie que presenta un caso declara la limitación
+    más grave de su propio sistema. Dilo con calma: «este catálogo cubre al <b data-d="hallazgo_antiguedad.cobertura_pct"></b>% de donde está el <b data-d="hallazgo_antiguedad.concentra_pct"></b>% del
+    problema». Y cierra con el pivote: «lo que descubrí es que el sistema no ve a quien recién llegó, y ahí
+    está la mayoría de las salidas que duelen. Ese es el primer proyecto que propondría en el trimestre dos.»</p>
+    <p class="preg"><b>¿Por qué 35 y no 100?</b> «Porque de 35 para arriba la cobertura crece 3 puntos y la carga
+    sobre quien se queda crece 8. Y porque 35 al mes es lo que una persona puede conversar de verdad: una alerta
+    que nadie atiende no es cobertura, es ruido con métrica.»</p>
+    <p class="preg"><b>¿14% de precisión no es muy bajo?</b> «Es 3,1 veces la base. Si eligiera 35 personas al azar
+    acertaría en 1,6; el sistema acierta en 4,9. Pero la comparación correcta no es contra un clasificador:
+    es contra las 15 horas de planilla. Y sobre todo, el costo de un falso positivo acá es una conversación de
+    escucha con alguien que estaba bien — que no es un costo, es una buena práctica.»</p>
+    <p class="preg"><b>¿Por qué no un modelo predictivo?</b> «Porque el día 1 no hay etiquetas: para entrenar
+    necesito salidas etiquetadas como lamentadas y eso son dos años de historia limpia. Y porque una regla se
+    explica en la tarjeta y un gradient boosting no. El backtest está construido justamente para que cuando haya
+    datos se pueda comparar el modelo contra estas reglas con la misma vara.»</p>
+    <p class="preg"><b>¿Y los cursos finalizados, los consideraron como señal?</b> «Sí, y la descarté con datos,
+    no por intuición: como ratio de formación contra la cohorte de antigüedad, dispara en el 32% de las
+    personas-mes y no separa a quien se va de quien se queda. Quedó registrada como señal descartada, con su
+    lift medido — el mismo tratamiento que le doy a cualquier señal que sí entra.»</p>
+    <p><b>Recordatorio operativo, no para decir en voz alta:</b> la salida a la nube (tecla <span class="mono">C</span>)
+    va justo después de esta slide y no tiene slide propia, así que el reloj no la mide. Al cerrar el overlay de
+    nube, presiona <span class="mono">T</span> para reiniciar el cronómetro antes de avanzar a la S4 — si no, el
+    reloj puede marcar «tarde» aunque el tiempo real vaya bien.</p>
+  </div>
+</section>
+<!-- ══ S4 · Eje 4a — la tarjeta ═════════════════════════════════════════ -->
+<section class="slide" data-min="12" data-titulo="Eje 4a — la interfaz de la alerta">
+  <div class="kicker">Eje 4 · Interfaz, ética y acción &nbsp;·&nbsp; cómo se ve la alerta</div>
+  <div class="fila" style="align-items:baseline">
+    <h1 style="font-size:23px">Todo lo anterior existe para producir <em>esto</em>.</h1>
+    <div class="fila" id="caso-tabs" style="gap:6px;margin-left:auto"></div>
+  </div>
+
+  <div class="fila" style="margin-top:13px;gap:18px;flex:1;min-height:0">
+    <div class="crece beat" style="max-width:400px">
+      <div class="tarjeta" style="padding:12px 15px">
+        <div class="fila" style="align-items:center;gap:8px">
+          <h2 style="font-size:14px" id="caso-nombre"></h2>
+          <span class="chip" id="caso-nivel" style="margin-left:auto"></span>
+        </div>
+        <p class="nota-pie" style="margin-top:3px" id="caso-meta"></p>
+        <h3 style="margin-top:11px">Regla que disparó</h3>
+        <p style="margin-top:4px"><b id="caso-regla"></b></p>
+        <p style="margin-top:5px" id="caso-lectura"></p>
+        <h3 style="margin-top:11px">Señales cruzadas <span id="caso-dims" class="chip" style="margin-left:4px"></span></h3>
+        <ul class="lista" id="caso-senales" style="margin-top:6px"></ul>
+      </div>
+      <div class="tarjeta ambar" style="margin-top:11px;padding:11px 14px">
+        <h3>Y lo que la tarjeta admite que no sabe</h3>
+        <ul class="lista" id="caso-nosabemos" style="margin-top:6px"></ul>
+        <p style="margin-top:7px">Esta sección <b>es obligatoria en el catálogo</b>: si una regla no declara
+        su punto ciego, no valida. Es la diferencia entre una hipótesis y un veredicto.</p>
+      </div>
+    </div>
+
+    <div class="beat" style="flex:0 0 340px">
+      <div class="chat" id="chat"></div>
+    </div>
+
+    <div class="crece beat" style="max-width:330px;display:grid;gap:10px;align-content:start">
+      <div class="callout"><b>El título dice «contexto para tu próxima conversación», no «alerta de riesgo sobre».</b>
+        Quien la abre a las 9 de la mañana lee una invitación, no una acusación.</div>
+      <div class="callout"><b>No hay ningún score.</b> Ni un porcentaje, ni un semáforo, ni la frase «riesgo de fuga».
+        Un número invita a rankear personas; una lista de señales invita a preguntar.</div>
+      <div class="callout"><b>El chip de nivel no es un score: es a dónde va la alerta.</b>
+        <span class="p-alto">alto</span> = evento reciente confirmado en 2+ dimensiones, o incumplimiento
+        objetivo de banda → <b>interrumpe el día, llega como tarjeta</b>.
+        <span class="p-medio">medio</span> = estado sostenido → <b>se revisa en ciclo, nunca interrumpe</b>.
+        Por eso <b>ninguna tarjeta de Chat es de nivel medio</b>: si algo no amerita interrumpir, no es una
+        tarjeta, es un panel.</div>
+      <div class="callout"><b>Cada señal viene con su evidencia y su período de corte.</b>
+        El Happiness Manager puede discutir el dato, no solo el veredicto.</div>
+      <div class="callout"><b>El tercer botón es «Descartar — no aplica».</b>
+        Descartar tiene que ser tan fácil como agendar, o el sistema deja de recibir la señal que lo corrige.
+        Ese botón <b>es la métrica de precisión del día 90.</b></div>
+      <div class="callout"><b>El destinatario está en el YAML, no en una intención:</b>
+        <span class="mono" style="font-size:10px">nunca_recibe: [líder directo, cualquier sistema de evaluación de desempeño]</span></div>
+      <div class="tarjeta" style="padding:10px 13px">
+        <h3>Y no todo se notifica</h3>
+        <p style="margin-top:5px">De <b data-d="alertas.filas"></b> alertas, solo el canal
+        <span class="mono">conversacion</span> llega como tarjeta: <b data-d="alertas.notificadas_mes"></b> al mes.
+        Compensaciones y desarrollo son <b>paneles</b>, porque son estados que se revisan en un ciclo,
+        no eventos que interrumpen el día de alguien.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="notas-fuente">
+    <p><span class="min">12:00 — 13:30</span> · <b>Vienes de la salida a la nube.</b> Retoma con:
+    «eso que vieron en BigQuery termina acá.»</p>
+    <p><b>Recorre los dos casos con el selector</b> — son las dos reglas que hoy llegan como tarjeta,
+    R01 y R03. El de 5 meses (Noelia, R03) es el que conecta con el hallazgo de la lámina anterior:
+    «fíjense que este caso tiene 5 meses de antigüedad — apenas entró al universo del sistema».</p>
+    <p><b>Nombra el chip de nivel antes de que te pregunten qué significa, y dilo como enrutamiento.</b>
+    «Alto no es "más grave", es "más urgente": una caída reciente confirmada en dos dimensiones, o un
+    incumplimiento objetivo de banda — ninguna de las dos requiere interpretación, y por eso interrumpe
+    el día de alguien. Medio es un estado sostenido, y se revisa en el ciclo. Fíjense en la consecuencia:
+    hoy <b>no existe ninguna tarjeta de nivel medio</b>. Si algo no amerita interrumpir, no es una tarjeta,
+    es un panel.»</p>
+    <p class="preg"><b>Si preguntan por qué solo dos casos:</b> «porque hoy solo dos reglas enrutan a tarjeta.
+    En la versión anterior eran tres: R04, servicio y desgaste. La saqué en la v<span data-d="catalogo.version"></span> porque ganó 0 de 12
+    cupos en agosto y no ganaba uno desde febrero — competía por un cupo que no podía ganar, y su propia
+    acción sugerida decía "no requiere gestión inmediata". Eso es texto de panel, no de alerta. Está en la
+    bitácora del catálogo.»</p>
+    <p><b>Lee el pie de la tarjeta textual.</b> «Esta alerta es una hipótesis basada en datos, no una evaluación
+    de la persona. Expira en 30 días. No forma parte de su expediente.» Y agrega: «los 30 días no son una frase
+    bonita: es un campo de caducidad, y a los 180 días el registro se borra.»</p>
+    <p><b>El botón de descartar es el punto no obvio.</b> «Descartar tiene que ser tan fácil como agendar.
+    Si esconder el "no aplica" hace subir mis métricas, mis métricas están mal diseñadas.»</p>
+    <p class="preg"><b>¿Y si el líder pide ver la alerta?</b> «No la recibe, y eso está en el YAML, no en una
+    política que alguien recuerda. El líder ya tiene su canal —la evaluación de desempeño— y ese canal sí es
+    evaluativo. Si mezclo los dos, la conversación de escucha se convierte en una instancia de evaluación
+    encubierta y deja de servir. Lo que sí puede hacer el Happiness Manager es llevar el tema a la conversación
+    con el líder, sin decir que hubo una alerta.»</p>
+    <p class="preg"><b>El caso menciona Chat o correo. ¿Por qué Chat y no correo?</b> «Porque el correo no
+    caduca: se reenvía, se archiva, vive indefinidamente en una bandeja. Eso choca directo con el mecanismo que
+    van a ver en la próxima lámina: 30 días de vigencia, fuera del expediente. Una tarjeta de Chat puedo hacerla
+    desaparecer del panel a los 30 días; un correo que alguien reenvió, no. Y la tarjeta tiene botones —agendar,
+    descartar— que un correo no da sin construirle un backend propio.»</p>
+  </div>
+</section>
+
+<!-- ══ S5 · Eje 4b — ética y criterio de éxito ══════════════════════════ -->
+<section class="slide" data-min="13.5" data-titulo="Eje 4b — ética y criterio de éxito">
+  <div class="kicker">Eje 4 · Cómo se evita el sesgo punitivo &nbsp;·&nbsp; y cuál es el criterio de éxito</div>
+
+  <div id="s5a">
+    <h1 style="font-size:27px">Cuatro mecanismos, no cuatro buenas intenciones.</h1>
+    <div class="grid" style="grid-template-columns:repeat(2,1fr);margin-top:20px">
+      <div class="tarjeta acento beat">
+        <h2 style="font-size:13.5px">1 · Separación de canales</h2>
+        <p style="margin-top:6px">El destinatario es el <b>Happiness Manager</b> y nunca el líder directo,
+        que ya tiene su propio canal — y ese sí es evaluativo. Están separados por diseño y declarado en el
+        catálogo, no por acuerdo verbal.</p>
+      </div>
+      <div class="tarjeta acento beat">
+        <h2 style="font-size:13.5px">2 · Lista blanca de 26 columnas</h2>
+        <p style="margin-top:6px">La tarjeta no proyecta lo que no está en la lista.
+        <span class="mono" style="font-size:10.5px">fecha_salida</span>,
+        <span class="mono" style="font-size:10.5px">tipo_salida</span> y
+        <span class="mono" style="font-size:10.5px">sale_en_3_meses</span> existen en el warehouse para el
+        backtest y <b>no se proyectan jamás</b> a la capa de entrega.</p>
+      </div>
+      <div class="tarjeta acento beat">
+        <h2 style="font-size:13.5px">3 · Caducidad</h2>
+        <p style="margin-top:6px">30 días de vigencia, 180 de retención, <b>fuera del expediente</b>.
+        Un dato de riesgo que se acumula durante tres años se convierte en un historial, y un historial
+        se usa para decidir sobre alguien.</p>
+      </div>
+      <div class="tarjeta beat" style="border-left:3px solid var(--verde);background:var(--verde-bg);border-color:#BBF7D0">
+        <h2 style="font-size:13.5px">4 · La señal que descarté, con evidencia</h2>
+        <p style="margin-top:6px"><span class="mono">desempeno_bajo</span> tiene lift <b>0,48</b> sobre salida
+        lamentada y <b>2,51</b> sobre cualquier salida.</p>
+        <p style="margin-top:6px"><b>Optimizar contra «salida» a secas construía un detector de bajo desempeño
+        con etiqueta de bienestar.</b> Lo saqué del canal de retención.</p>
+      </div>
+    </div>
+    <div class="tarjeta oscura beat" style="margin-top:16px;padding:15px 20px">
+      <p style="font-size:17px;color:#fff;font-weight:600;line-height:1.4">
+        La estadística y la ética coincidieron: <b style="color:#8FB4F0">la señal éticamente peligrosa era
+        también la estadísticamente inútil</b> para lo que este sistema quiere hacer.</p>
+      <p style="margin-top:8px;font-size:12.5px">Son 5 señales descartadas en total, cada una con su lift medido
+      y su motivo escrito en el catálogo. El registro de lo que <b>no</b> entró es parte de la gobernanza.</p>
+    </div>
+  </div>
+
+  <div id="s5b" style="display:none">
+    <h1 style="font-size:27px">El criterio de éxito: <em>tres horizontes y tres vetos</em>.</h1>
+    <div class="fila" style="margin-top:18px;gap:14px">
+      <div class="crece tarjeta beat">
+        <div class="fila" style="align-items:baseline;gap:8px">
+          <span class="chip">30 días</span><h2 style="font-size:13.5px">¿Corre solo?</h2>
+        </div>
+        <table style="margin-top:10px">
+          <tr><td>Horas manuales / semana</td><td class="f num">15 → ≤ 2</td></tr>
+          <tr><td>Corridas sin intervención</td><td class="f num">≥ 95%</td></tr>
+          <tr><td>Rechazo de ingesta por fuente</td><td class="f num">&lt; 5%</td></tr>
+        </table>
+        <p class="nota-pie" style="margin-top:9px">Es el piso. Si esto no se cumple, nada de lo demás importa
+        porque el sistema no está corriendo.</p>
+      </div>
+      <div class="crece tarjeta acento beat">
+        <div class="fila" style="align-items:baseline;gap:8px">
+          <span class="chip" style="background:#DCE8FB;border-color:#B7CFF5">90 días</span>
+          <h2 style="font-size:13.5px">¿La alerta se vuelve conversación?</h2>
+        </div>
+        <table style="margin-top:10px">
+          <tr><td>Acuse en ≤ 5 días hábiles</td><td class="f num">≥ 80%</td></tr>
+          <tr><td>Conversación registrada en ≤ 15 días</td><td class="f num">≥ 60%</td></tr>
+          <tr><td><b>Utilidad reconocida</b></td><td class="f num">≥ 75%</td></tr>
+          <tr><td><b>Descarte «no aplica»</b></td><td class="f num">≤ 25%</td></tr>
+          <tr><td>Volumen mensual</td><td class="f num">30 – 50</td></tr>
+        </table>
+        <p style="margin-top:9px"><b>Precisión estadística ≠ utilidad.</b> La verdad tarda 6 meses en llegar;
+        el juicio del Happiness Manager llega en 5 días. <b>Este es el horizonte que decide si el proyecto vive.</b></p>
+      </div>
+      <div class="crece tarjeta beat">
+        <div class="fila" style="align-items:baseline;gap:8px">
+          <span class="chip">12 meses</span><h2 style="font-size:13.5px">¿Cambió el resultado?</h2>
+        </div>
+        <table style="margin-top:10px">
+          <tr><td>Cobertura de salidas lamentadas</td><td class="f num"><span data-d="backtest.cobertura_pct"></span>% → ≥ 25%</td></tr>
+          <tr><td>Lift sostenido</td><td class="f num">≥ 2,5x</td></tr>
+          <tr><td>Retención: alertados atendidos<br>vs. alertados no atendidos</td><td class="f num">a medir</td></tr>
+        </table>
+        <p style="margin-top:9px"><b>Y el 25% no puede venir de alertar más</b>: la curva satura en <span data-d="backtest.saturacion_pct"></span>%.
+        Solo puede venir de instrumentar la cohorte de 0-11 meses con una encuesta 30/60/90.
+        <b>La meta obliga al proyecto correcto.</b></p>
+      </div>
+    </div>
+    <p class="nota-pie beat" style="margin-top:14px;font-size:12px;line-height:1.5;color:var(--gris)">
+      <b>Honestidad a declarar:</b> hoy la capa de IA corrió sobre 30 notas de muestra, no sobre las 9.250 de la
+      bitácora. El instrumento está validado — 100% de acierto contra etiquetas — pero la métrica de los 12 meses
+      todavía no está medida, y no voy a presentarla como si lo estuviera.</p>
+  </div>
+
+  <div id="s5c" style="display:none">
+    <h1 style="font-size:24px">Y tres vetos: si uno falla, <em>el desarrollo no fue exitoso</em> aunque todo lo demás cumpla.</h1>
+    <div class="fila" style="margin-top:12px;gap:12px">
+      <div class="crece tarjeta ambar beat">
+        <h2 style="font-size:13.5px">Veto 1 · Uso punitivo = 0</h2>
+        <p style="margin-top:6px">Auditoría trimestral cruzando el registro de alertas —los 180 días de
+        retención existen para esto— contra desvinculaciones y planes de acción de desempeño.</p>
+        <p style="margin-top:6px"><b>Una sola alerta que aparezca justificando una desvinculación
+        invalida el sistema completo.</b></p>
+      </div>
+      <div class="crece tarjeta ambar beat">
+        <h2 style="font-size:13.5px">Veto 2 · Paridad EEOC</h2>
+        <p style="margin-top:6px">En grupos protegidos, corrida <b>antes</b> de publicar cada versión del
+        catálogo, no después. Un catálogo que no pasa la auditoría no se despliega.</p>
+        <p style="margin-top:6px">Y extendida al panel <span class="mono">desarrollo</span>, que hoy no la tiene
+        — es la limitación #5 del sistema y está escrita como tal.</p>
+      </div>
+      <div class="crece tarjeta ambar beat">
+        <h2 style="font-size:13.5px">Veto 3 · La conversación no se secó</h2>
+        <p style="margin-top:6px">Dos conductas distintas, medidas por separado:</p>
+        <p style="margin-top:5px"><b>¿La HRBP sigue escribiendo?</b> → volumen de notas por persona activa.</p>
+        <p style="margin-top:4px"><b>¿El colaborador sigue hablando?</b> → tasa de
+        <span class="mono">insuficiente</span> y confianza media del modelo. Notas que se vacían de contenido
+        se detectan solas.</p>
+        <p style="margin-top:6px"><b>Acá cierra el círculo:</b> la promesa del Eje 2 se audita en el Eje 4,
+        y el LLM termina midiendo al sistema, no a la persona.</p>
+      </div>
+    </div>
+
+    <div class="fila beat" style="margin-top:9px;gap:14px">
+      <div class="crece tarjeta">
+        <h3>Anti-métricas — qué NO es éxito</h3>
+        <ul class="lista tache" style="margin-top:7px">
+          <li><b>La rotación total.</b> Sube y baja por el mercado laboral: atribuírsela es tomar un
+            crédito que no es tuyo y una culpa que tampoco.</li>
+          <li><b>El número de alertas</b> — y esto está medido: sin enfriamiento el volumen sube de
+            <span data-d="enfriamiento.1.alertas_mes"></span> a <span data-d="enfriamiento.0.alertas_mes"></span> al mes
+            (+<span data-d="backtest.enfriamiento_volumen_pct"></span>%) y la cobertura sube
+            <span data-d="backtest.enfriamiento_cobertura_pts"></span> puntos. Era la misma gente avisada más veces.</li>
+          <li><b>La precisión sola.</b> Se optimiza alertando solo lo obvio, y lo obvio ya lo sabe
+            el Happiness Manager sin mí.</li>
+        </ul>
+      </div>
+      <div class="crece tarjeta" style="max-width:330px">
+        <h3>Regla de retiro</h3>
+        <p style="margin-top:6px">Una señal que no sostenga <b>lift ≥ 1,5 en dos revisiones trimestrales
+        consecutivas</b> se retira del catálogo.</p>
+        <p style="margin-top:6px">Ya hay precedente: <b>5 señales descartadas</b>, cada una con su lift medido
+        y su motivo escrito. El sistema tiene que poder encoger, no solo crecer.</p>
+      </div>
+    </div>
+
+    <div class="tarjeta oscura beat" style="margin-top:7px;padding:9px 20px">
+      <p style="font-size:14.5px;color:#fff;font-weight:600;line-height:1.4">
+        Buk ya ofrece predicción de rotación y análisis de sentimiento hacia afuera, vía Buk AI.
+        Lo que propongo es <b style="color:#8FB4F0">aplicar ese mismo principio hacia adentro</b> — que People
+        Happiness sea el primer cliente de su propia capacidad predictiva, antes de perfeccionarla para el resto.</p>
+    </div>
+  </div>
+
+  <div class="notas-fuente">
+    <p><span class="min">13:30 — 15:00</span> · tres tiempos: ética, tablero, vetos. <b>Vas contra el reloj: si
+    llegas acá pasado el minuto 14, salta el tiempo 1 y ve directo al tablero.</b></p>
+    <p><b>Tiempo 1 — ética.</b> El punto fuerte es el cuarto recuadro, no los tres primeros. «Probé una señal de
+    desempeño bajo. Contra salida lamentada da lift 0,48 — peor que el azar. Contra cualquier salida da 2,51.
+    O sea: sí predice, pero predice que despiden a quien rinde poco. Eso ya lo sabe la organización y no
+    necesita una herramienta de bienestar para saberlo. La saqué.» Y remata: <b>«la estadística y la ética
+    coincidieron»</b>.</p>
+    <p><b>Tiempo 2 — el tablero.</b> No leas las tablas. Di la idea de cada columna: 30 días es «¿corre solo?»,
+    90 días es «¿la alerta se vuelve conversación?», 12 meses es «¿cambió el resultado?». Y detente en el punto
+    conceptual: <b>«la verdad tarda seis meses; el juicio del Happiness Manager llega en cinco días.
+    Por eso a los 90 días mido utilidad reconocida, no precisión.»</b></p>
+    <p><b>El 25% de cobertura es la parte que más los va a hacer asentir.</b> «Puse la meta en 25% sabiendo que
+    la curva satura en 14,7%. Es a propósito: es una meta que no se puede cumplir alertando más, solo se puede
+    cumplir instrumentando la cohorte que hoy no veo. La métrica obliga al proyecto correcto.»</p>
+    <p><b>Di la honestidad en voz alta.</b> «La capa de IA corrió sobre 30 notas, no sobre 9.250. El instrumento
+    está validado; la métrica no está medida.» Eso compra más credibilidad que cualquier número.</p>
+    <p><b>Tiempo 3 — los vetos y el cierre.</b> Los vetos en una frase cada uno. Después la anti-métrica de la
+    rotación total. Y cierra con la frase de Buk AI, mirando a la mesa, sin lámina que leer.</p>
+    <p class="preg"><b>¿Cómo mides «uso punitivo = 0» en la práctica?</b> «Cruzando el registro de alertas de los
+    últimos 180 días contra la lista de desvinculaciones y de planes de mejora del trimestre. Si una persona
+    desvinculada tuvo alerta y esa alerta aparece citada en el proceso, es un hallazgo. Es una consulta SQL,
+    y la corre People Analytics, no el dueño del proceso.»</p>
+    <p class="preg"><b>¿Y si el negocio pide subir el volumen igual?</b> «Le muestro la curva de enfriamiento:
+    +62% de alertas por 0,3 puntos de cobertura. No es que no quiera; es que no funciona, y lo medí.»</p>
+  </div>
+</section>
+
+<div id="barra">
+  <div id="puntos"></div>
+  <span id="titulo-slide"></span>
+  <span id="reloj">00:00</span>
+  <span style="opacity:.6">N notas · C nube · ? ayuda</span>
+</div>
+</div></div>
+
+<div id="notas"><div class="guion"><h4 id="notas-titulo">Notas del orador</h4><div id="notas-cuerpo"></div></div></div>
+
+<div id="ayuda"><div style="max-width:620px">
+  <h4 style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#7E8CC4;margin-bottom:16px">Controles</h4>
+  <table>
+    <tr><td><kbd>→</kbd><kbd>espacio</kbd></td><td>Avanzar un beat, y de slide cuando se acaban</td></tr>
+    <tr><td><kbd>←</kbd></td><td>Retroceder</td></tr>
+    <tr><td><kbd>↓</kbd><kbd>↑</kbd></td><td>Saltar de slide sin pasar por los beats</td></tr>
+    <tr><td><kbd>1</kbd>–<kbd>5</kbd></td><td>Ir directo a una slide, con todos sus beats abiertos</td></tr>
+    <tr><td><kbd>N</kbd></td><td>Notas del orador</td></tr>
+    <tr><td><kbd>C</kbd></td><td>Guion de la salida a la nube (BigQuery / Sheet / Chat)</td></tr>
+    <tr><td><kbd>T</kbd></td><td>Reiniciar el cronómetro</td></tr>
+    <tr><td><kbd>?</kbd></td><td>Esta ayuda</td></tr>
+  </table>
+  <p style="margin-top:18px;color:#7E8CC4;font-size:13px">Archivo autocontenido: no hace ninguna petición de red.</p>
+</div></div>
+
+<div id="nube" style="position:fixed;inset:0;background:rgba(0,0,46,.96);color:#fff;z-index:60;display:none;
+     place-items:center;padding:40px;overflow:auto">
+  <div style="max-width:900px;width:100%">
+    <h4 style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#7E8CC4;margin-bottom:6px">
+      Entre la slide 3 y la 4 · ~3 minutos</h4>
+    <h2 style="color:#fff;font-size:22px;margin-bottom:16px">Salida a la nube</h2>
+    <ol style="display:grid;gap:12px;padding-left:20px;color:#C3CAE6;font-size:14.5px;line-height:1.5">
+      <li><b style="color:#fff">Consola de BigQuery</b> — el dataset, y una consulta sobre
+        <span class="mono">alertas</span> corrida en vivo. El punto: «es el mismo SQL que corrió local».</li>
+      <li><b style="color:#fff">El Google Sheet fuente</b> — la bitácora tal como la llenaría una HRBP.
+        El punto: «la entrada del sistema es donde ya trabajan, no una herramienta nueva».</li>
+      <li><b style="color:#fff">La tarjeta real en Google Chat</b> — el mismo JSON que vieron renderizado en la
+        slide 4, entregado por la Chat API.</li>
+    </ol>
+    <div id="capturas" style="margin-top:22px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px"></div>
+    <p style="margin-top:18px;color:#7E8CC4;font-size:13px"><span id="capturas-pie"></span>
+      <kbd style="background:#1C2246;border:1px solid #39406E;padding:2px 6px;
+      border-radius:4px;font-family:ui-monospace,monospace">C</kbd> para volver.</p>
+  </div>
+</div>
+<script type="application/json" id="datos">/*__DATOS__*/</script>
+<script>
+"use strict";
+const D = JSON.parse(document.getElementById("datos").textContent);
+
+/* ── utilidades ───────────────────────────────────────────────────────── */
+const $ = (s, r) => (r || document).querySelector(s);
+const $$ = (s, r) => Array.from((r || document).querySelectorAll(s));
+const esc = s => String(s).replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
+
+/** Formato es-CL: miles con punto, decimales con coma y solo uno. */
+function fmt(v) {
+  if (typeof v !== "number") return String(v);
+  return Number.isInteger(v)
+    ? v.toLocaleString("es-CL")
+    : v.toLocaleString("es-CL", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+}
+const cava = (ruta) => ruta.split(".").reduce((o, k) => (o == null ? o : o[k]), D);
+
+/* Rellena cualquier [data-d="ruta.al.dato"] desde el JSON horneado. */
+$$("[data-d]").forEach(el => { el.textContent = fmt(cava(el.dataset.d)); });
+
+/* ── escalado del escenario ───────────────────────────────────────────── */
+const stage = $("#stage");
+function escalar() {
+  const k = Math.min(innerWidth / 1280, innerHeight / 720);
+  stage.style.transform = `scale(${k})`;
+}
+addEventListener("resize", escalar); escalar();
+
+/* ── navegación: slides, vistas y beats ───────────────────────────────── */
+const VISTAS = { 1: ["s2a", "s2b"], 2: ["s3a", "s3a2", "s3b"], 4: ["s5a", "s5b", "s5c"] };
+const slides = $$(".slide");
+
+/* Cada slide se aplana a una lista de pasos. Un paso = (vista, beats visibles).
+   Entrar a una vista ya enciende su primer beat: nunca se ve una vista vacía. */
+const PASOS = slides.map((sl, i) => {
+  const vistas = (VISTAS[i] || []).map(id => $("#" + id));
+  const grupos = vistas.length ? vistas : [sl];
+  const pasos = [];
+  grupos.forEach(g => {
+    const beats = $$(".beat", g);
+    const n = Math.max(1, beats.length);
+    for (let b = 1; b <= n; b++) pasos.push({ vista: vistas.length ? g : null, beats, hasta: b });
+  });
+  return pasos;
+});
+
+let si = 0, pi = 0;
+
+function pintar() {
+  slides.forEach((sl, i) => sl.classList.toggle("viva", i === si));
+  const paso = PASOS[si][pi];
+  (VISTAS[si] || []).forEach(id => {
+    const v = $("#" + id);
+    v.style.display = (v === paso.vista) ? "" : "none";
+  });
+  /* Los beats de la vista activa se encienden hasta el paso; los de las demás
+     vistas se apagan para que al volver atrás la revelación se rehaga. */
+  $$(".beat", slides[si]).forEach(b => b.classList.remove("on"));
+  paso.beats.slice(0, paso.hasta).forEach(b => b.classList.add("on"));
+
+  $$("#puntos i").forEach((p, i) => p.classList.toggle("on", i === si));
+  $("#titulo-slide").textContent = slides[si].dataset.titulo;
+  pintarNotas();
+  if (si === 1) animarFlujo();
+  if (si === 1 && paso.vista && paso.vista.id === "s2b") setTimeout(() => verNota(nota_i), 60);
+}
+
+function ir(ds, dp) {
+  if (dp) {
+    const n = pi + dp;
+    if (n >= 0 && n < PASOS[si].length) { pi = n; return pintar(); }
+    ds = dp > 0 ? 1 : -1;
+  }
+  const n = si + ds;
+  if (n < 0 || n >= slides.length) return;
+  si = n; pi = ds > 0 ? 0 : PASOS[si].length - 1; pintar();
+}
+
+$("#puntos").innerHTML = slides.map(() => "<i></i>").join("");
+$$("#puntos i").forEach((p, i) => p.onclick = () => { si = i; pi = 0; pintar(); });
+
+/* ── notas del orador ─────────────────────────────────────────────────── */
+function pintarNotas() {
+  const f = $(".notas-fuente", slides[si]);
+  $("#notas-cuerpo").innerHTML = f ? f.innerHTML : "";
+  $("#notas-titulo").textContent = `Slide ${si + 1} · ${slides[si].dataset.titulo}`;
+}
+
+/* ── cronómetro ───────────────────────────────────────────────────────── */
+let t0 = null;
+const mmss = s => `${String(Math.floor(s / 60)).padStart(2, "0")}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
+setInterval(() => {
+  if (t0 === null) return;
+  const s = (Date.now() - t0) / 1000;
+  const objetivo = parseFloat(slides[si].dataset.min) * 60;
+  const sig = si + 1 < slides.length ? parseFloat(slides[si + 1].dataset.min) * 60 : 15 * 60;
+  $("#reloj").textContent = `${mmss(s)} ▸ ${mmss(objetivo)}`;
+  $("#reloj").classList.toggle("tarde", s > sig);
+}, 500);
+
+/* ── teclado ──────────────────────────────────────────────────────────── */
+addEventListener("keydown", e => {
+  if (t0 === null) t0 = Date.now();
+  if (e.target.tagName === "TEXTAREA") return;
+  const k = e.key;
+  if (k === "ArrowRight" || k === " " || k === "PageDown") { e.preventDefault(); ir(0, 1); }
+  else if (k === "ArrowLeft" || k === "PageUp") { e.preventDefault(); ir(0, -1); }
+  else if (k === "ArrowDown") { e.preventDefault(); ir(1, 0); }
+  else if (k === "ArrowUp") { e.preventDefault(); ir(-1, 0); }
+  else if (k >= "1" && k <= "5") { si = +k - 1; pi = PASOS[si].length - 1; pintar(); }
+  else if (k === "n" || k === "N") $("#notas").classList.toggle("abierto");
+  else if (k === "c" || k === "C") { const n = $("#nube"); n.style.display = n.style.display === "grid" ? "none" : "grid"; }
+  else if (k === "t" || k === "T") t0 = Date.now();
+  else if (k === "?" || k === "/") $("#ayuda").classList.toggle("abierto");
+  else if (k === "Escape") { $("#ayuda").classList.remove("abierto"); $("#nube").style.display = "none"; }
+});
+
+/* ══ Componente · flujo del pipeline ═══════════════════════════════════ */
+let flujoCorrido = false;
+function animarFlujo() {
+  if (flujoCorrido) return; flujoCorrido = true;
+  $$(".etapa").forEach((e, i) => setTimeout(() => e.classList.add("on"), 130 + i * 190));
+}
+
+/* ══ Componente · curva de calibración ═════════════════════════════════ */
+(function calibracion() {
+  const C = D.calibracion, sl = $("#cupo");
+  const etq = c => c >= 9999 ? "∞" : String(c);
+  $("#cupo-marcas").innerHTML = C.map(p => `<span>${etq(p.cupo)}</span>`).join("");
+
+  const W = 560, H = 132, ML = 30, MR = 8, MT = 8, MB = 20, TOPE = 28;
+  const px = i => ML + i * (W - ML - MR) / (C.length - 1);
+  const py = v => MT + (1 - v / TOPE) * (H - MT - MB);
+  const linea = k => C.map((p, i) => `${i ? "L" : "M"}${px(i).toFixed(1)},${py(p[k]).toFixed(1)}`).join("");
+
+  function dibujar(i) {
+    const rej = [0, 10, 20].map(v =>
+      `<line x1="${ML}" x2="${W - MR}" y1="${py(v)}" y2="${py(v)}" stroke="#EEF1F9"/>
+       <text x="0" y="${py(v) + 3}" fill="#8A90A3" font-size="8" font-weight="700">${v}%</text>`).join("");
+    $("#curva").innerHTML = `${rej}
+      <path d="${linea("cobertura")}" fill="none" stroke="#2E6EC8" stroke-width="2.2"/>
+      <path d="${linea("carga_falsa")}" fill="none" stroke="#B45309" stroke-width="1.6" stroke-dasharray="4 3"/>
+      <line x1="${px(i)}" x2="${px(i)}" y1="${MT}" y2="${H - MB}" stroke="#00002E" stroke-width="1" opacity=".25"/>
+      <circle cx="${px(i)}" cy="${py(C[i].cobertura)}" r="4.5" fill="#2E6EC8"/>
+      <circle cx="${px(i)}" cy="${py(C[i].carga_falsa)}" r="3.5" fill="#B45309"/>
+      <line x1="${ML + 8}" x2="${ML + 26}" y1="16" y2="16" stroke="#2E6EC8" stroke-width="2.2"/>
+      <text x="${ML + 32}" y="19" fill="#2E6EC8" font-size="8.5" font-weight="800">cobertura de salidas lamentadas · satura en ${fmt(D.backtest.saturacion_pct)}%</text>
+      <line x1="${ML + 8}" x2="${ML + 26}" y1="29" y2="29" stroke="#B45309" stroke-width="1.6" stroke-dasharray="4 3"/>
+      <text x="${ML + 32}" y="32" fill="#B45309" font-size="8.5" font-weight="800">carga sobre quien se queda</text>`;
+  }
+
+  function ver() {
+    const i = +sl.value, p = C[i];
+    $("#cupo-val").textContent = etq(p.cupo);
+    $("#c-alertas").innerHTML = fmt(p.alertas_mes);
+    $("#c-precision").innerHTML = fmt(p.precision) + "<small>%</small>";
+    $("#c-lift").innerHTML = fmt(p.lift) + "<small>x</small>";
+    $("#c-cobertura").innerHTML = fmt(p.cobertura) + "<small>%</small>";
+    $("#c-carga").innerHTML = fmt(p.carga_falsa) + "<small>%</small>";
+    $("#carga-frase").textContent =
+      `Con cupo ${etq(p.cupo)}, el ${fmt(p.carga_falsa)}% de los ${fmt(D.backtest.activos)} activos ` +
+      `recibe al menos una alerta en 18 meses sin haberse ido.`;
+    dibujar(i);
+  }
+  sl.addEventListener("input", ver); ver();
+
+  $("#tabla-enfr").innerHTML = D.enfriamiento.map(e => `<tr${e.meses === 3 ? ' class="sel"' : ""}>
+      <td class="f">${e.meses === 0 ? "sin enfriamiento" : e.meses + " meses" + (e.meses === 3 ? " (vigente)" : "")}</td>
+      <td class="num">${fmt(e.alertas_mes)}</td><td class="num">${fmt(e.cobertura)}%</td></tr>`).join("");
+
+  const NOMBRE_PERFIL = {
+    estable: "estable", deterioro: "deterioro", estrella_subpagada: "estrella subpagada",
+    bajo_desempeno: "bajo desempeño", nuevo_dificil: "arranque difícil",
+  };
+  // Las 6 reglas salen del YAML: la tabla se dibuja, no se escribe.
+  const DIM = {desempeno: "desempeño", operativa: "operación (productividad · CSAT)",
+               compensacion: "compensación", desgaste: "desgaste"};
+  const dimNom = d => DIM[d] || d;
+  $("#tabla-reglas").innerHTML = D.reglas.map(r => {
+    const todas = r.dim_todas.map(dimNom).map(x => `<b>${x}</b>`).join(" + ");
+    const alguna = r.dim_alguna.map(dimNom).join(" | ");
+    const cruza = !alguna ? todas
+                : r.dim_alguna.length > 1 ? `${todas} + (${alguna})` : `${todas} + ${alguna}`;
+    const chat = r.canal === "conversacion";
+    return `<tr><td class="rid">${r.id}</td>
+      <td class="f nom">${r.nombre}</td>
+      <td class="cruza">${cruza}</td>
+      <td><span class="p-${r.nivel}">${r.nivel}</span></td>
+      <td class="entrega${chat ? " alerta" : ""}">${chat ? "tarjeta de Chat" : r.entrega}</td></tr>`;
+  }).join("");
+
+  // Bitácora: la última versión se destaca porque es la que está corriendo.
+  $("#bitacora-lista").innerHTML = D.bitacora.map((b, i) =>
+    `<div class="bit-item${i === D.bitacora.length - 1 ? " ultima" : ""}">
+       <div class="bit-v">v${b.version} <span class="bit-f">· ${b.fecha.slice(5)}</span></div>
+       <div class="bit-r">${b.resumen}</div>
+     </div>`).join("");
+
+  $("#tabla-perfiles").innerHTML = D.panel_perfiles.map(p => {
+    const foco = p.perfil === "estrella_subpagada" || p.perfil === "deterioro";
+    const dec = (v, n) => v.toFixed(n).replace(".", ",");
+    return `<tr${foco ? ' class="sel"' : ""}><td class="f">${NOMBRE_PERFIL[p.perfil] || p.perfil}</td>
+      <td class="num">${dec(p.compa, 3)}</td>
+      <td class="num">${dec(p.desempeno, 2)}</td>
+      <td class="num">${dec(p.delta_prod, 2)}</td></tr>`;
+  }).join("");
+})();
+
+/* ══ Componente · scrubber ═════════════════════════════════════════════
+   Reimplementación en JS del scrubber de src/llm/scrubber.py, con el mismo
+   orden de pasadas. Se verifica en vivo contra las notas ya redactadas por
+   Python: si divergiera, el contador de abajo lo diría en la propia lámina. */
+const Scrub = (() => {
+  const escRe = s => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const alt = xs => xs.slice().sort((a, b) => b.length - a.length).map(escRe).join("|");
+  /* \b de Python es Unicode-aware; el de JS no. Se replica con lookarounds. */
+  const B = "(?<![\\p{L}\\p{N}_])", B2 = "(?![\\p{L}\\p{N}_])";
+  const PASADAS = [
+    { re: /\bBUK\d{5}\b/gu, tag: () => "[ID]" },
+    { re: /[\w.+-]+@[\w.-]+\.\w+/gu, tag: () => "[CONTACTO]" },
+    { re: /\$\s?\d[\d.,]*|\b\d[\d.,]*\s?(?:mil|millones|CLP|PEN|COP|MXN|BRL|USD)\b/giu, tag: () => "[MONTO]" },
+    { re: new RegExp(alt(D.scrubber.clientes), "gu"), tag: () => "[CLIENTE]" },
+    { re: new RegExp(B + "(?:" + alt(D.scrubber.completos.concat(D.scrubber.tokens)) + ")" + B2, "gu"), persona: true },
+  ];
+
+  /** Devuelve segmentos: {crudo} o {orig, tag}. Aplicar sobre segmentos —y no
+      sobre el string completo— es lo que evita redactar dentro de un tag ya puesto. */
+  function segmentar(texto) {
+    let segs = [{ crudo: texto }];
+    const vistos = new Map();
+    for (const pasada of PASADAS) {
+      const out = [];
+      for (const s of segs) {
+        if (!s.crudo) { out.push(s); continue; }
+        let ult = 0; pasada.re.lastIndex = 0;
+        for (const m of s.crudo.matchAll(pasada.re)) {
+          if (m.index > ult) out.push({ crudo: s.crudo.slice(ult, m.index) });
+          let tag;
+          if (pasada.persona) {
+            if (!vistos.has(m[0])) vistos.set(m[0], `[PERSONA_${vistos.size + 1}]`);
+            tag = vistos.get(m[0]);
+          } else tag = pasada.tag();
+          out.push({ orig: m[0], tag });
+          ult = m.index + m[0].length;
+        }
+        if (ult < s.crudo.length) out.push({ crudo: s.crudo.slice(ult) });
+      }
+      segs = out;
+    }
+    return segs;
+  }
+
+  const texto = segs => segs.map(s => s.crudo != null ? s.crudo : s.tag).join("");
+  /* Un nombre propio va en mayúscula. Si lo que se redactó venía en minúscula,
+     es un falso positivo del regex, no un dato personal — y se marca como tal. */
+  const falso = s => /^[a-záéíóúñü]/.test(s.orig);
+  const html = (segs, lado) => segs.map(s => s.crudo != null ? esc(s.crudo)
+    : `<mark class="${falso(s) ? "falso" : ""}" title="${esc(s.orig)} → ${esc(s.tag)}">${esc(lado === "orig" ? s.orig : s.tag)}</mark>`).join("");
+
+  return { segmentar, texto, html, falso };
+})();
+
+let nota_i = 0;
+/* Elegidas para mostrar los 3 tipos de tag que sí aparecen en la bitácora
+   real (persona, cliente, y ambos combinados) — ID/CONTACTO/MONTO existen en
+   el scrubber pero el generador nunca los insertó en el texto libre; el
+   campo de prueba manual sí los cubre a los 5. */
+const REPLAY = [5, 16, 24].filter(i => D.notas_llm[i]);
+
+function verNota(k) {
+  nota_i = k;
+  const n = D.notas_llm[REPLAY[k]];
+  const segs = Scrub.segmentar(n.original);
+  $("#scrub-orig").innerHTML = Scrub.html(segs, "orig");
+  $("#scrub-red").innerHTML = Scrub.html(segs, "tag");
+  $("#scrub-salida").innerHTML =
+    `<div style="display:flex;gap:5px;flex-wrap:wrap;align-items:center">
+       <span class="chip ${n.sentimiento === "negativo" ? "alto" : "ok"}">${n.sentimiento}</span>
+       ${n.temas.map(x => `<span class="chip">${esc(x)}</span>`).join("")}
+       ${n.senales.map(x => `<span class="chip" style="background:#fff">señal: ${esc(x)}</span>`).join("")}
+       <span class="chip" style="margin-left:auto">confianza ${String(n.confianza).replace(".", ",")}</span></div>
+     <p class="nota-pie" style="margin-top:6px"><b>Cita de respaldo, verificada carácter a carácter contra la nota:</b>
+       «${esc((n.citas[0] || "").slice(0, 150))}»</p>`;
+  $$("#scrub-tabs .btn").forEach((b, i) => b.classList.toggle("on", i === k));
+}
+
+(function scrubberUI() {
+  $("#scrub-tabs").innerHTML = REPLAY.map((_, i) =>
+    `<button class="btn">nota ${i + 1}</button>`).join("");
+  $$("#scrub-tabs .btn").forEach((b, i) => b.onclick = () => verNota(i));
+
+  /* Verificación en vivo: el scrubber del navegador contra el de Python. */
+  let iguales = 0;
+  D.notas_llm.forEach(n => { if (Scrub.texto(Scrub.segmentar(n.original)) === n.scrubbed) iguales++; });
+  const total = D.notas_llm.length;
+  $("#scrub-check").textContent = iguales === total
+    ? `✓ idéntico al scrubber de Python en ${total}/${total} notas`
+    : `✗ diverge en ${total - iguales} de ${total} notas`;
+  $("#scrub-check").style.color = iguales === total ? "var(--verde)" : "#B91C1C";
+
+  const falsos = D.notas_llm.reduce((a, n) =>
+    a + Scrub.segmentar(n.original).filter(s => s.orig && Scrub.falso(s)).length, 0);
+  $("#scrub-honestidad").innerHTML = falsos === 0
+    ? `<b style="color:var(--verde)">Cero falsos positivos en ${total} notas.</b> Hubo uno real en el
+       desarrollo: "del" se leía como nombre porque aparece dentro de nombres compuestos del directorio
+       ("Ana del Carmen Soto"). Se corrigió filtrando partículas y priorizando el nombre completo sobre el
+       token suelto, y quedó una guarda que detiene la corrida si un nombre concentra más del 20% de las
+       redacciones — para que la próxima partícula rara no reintroduzca el bug en silencio.`
+    : `<b style="color:#B91C1C">Lo subrayado en rojo es un falso positivo del scrubber.</b>
+       Son ${falsos} casos en ${total} notas. <b>Sobre-redacta: es el error en la dirección segura</b>, y es
+       exactamente el argumento de por qué en producción esto es Cloud DLP y no una lista de regex mía.`;
+
+  const libre = $("#scrub-libre");
+  libre.value = "Josefa comentó que el cierre con Andes Retail salió bien. Le escribí a j.perez@buk.cl " +
+    "(BUK10432) y me contó que su contraoferta era de 2.400.000 CLP.";
+  const pintarLibre = () => {
+    $("#scrub-libre-out").innerHTML = Scrub.html(Scrub.segmentar(libre.value), "tag") ||
+      '<span style="color:#8A90A3">escriba algo con un nombre, un cliente, un correo, un ID o un monto…</span>';
+  };
+  libre.addEventListener("input", pintarLibre); pintarLibre();
+})();
+
+/* ══ Componente · anatomía de la alerta ════════════════════════════════ */
+(function alertas() {
+  const C = D.casos;
+  $("#caso-tabs").innerHTML = C.map(c =>
+    `<button class="btn">${c.regla} · ${c.nombre.split(" ")[0]}</button>`).join("");
+
+  function ver(k) {
+    const c = C[k];
+    $$("#caso-tabs .btn").forEach((b, i) => b.classList.toggle("on", i === k));
+    $("#caso-nombre").textContent = c.nombre;
+    $("#caso-nivel").textContent = `nivel ${c.nivel}`;
+    $("#caso-nivel").className = "chip " + c.nivel;
+    $("#caso-meta").textContent =
+      `${c.employee_id} · ${c.area} · ${c.job_family} ${c.etiqueta_nivel} · ${c.antiguedad_meses} meses en Buk · corte ${c.periodo}`;
+    $("#caso-regla").textContent = `${c.regla} — ${c.regla_nombre}`;
+    $("#caso-lectura").textContent = c.lectura;
+    $("#caso-dims").textContent = `${c.n_dimensiones} dimensiones`;
+    /* Sin la evidencia: eso ya está en la tarjeta y repetirlo la volvía redundante. */
+    $("#caso-senales").innerHTML = c.senales.map((s, i) =>
+      `<li title="${esc(c.evidencia[i] || "")}">${esc(s)}</li>`).join("");
+    $("#caso-nosabemos").innerHTML = c.no_sabemos.map(s => `<li>${esc(s)}</li>`).join("");
+
+    /* La tarjeta se arma con el mismo contenido que publica src/deliver/chat_card.py */
+    $("#chat").innerHTML = `
+      <div class="chat-h"><div class="t">Contexto para tu próxima conversación con ${esc(c.nombre)}</div>
+        <div class="s">${esc(c.area)} · ${esc(c.job_family)} ${esc(c.etiqueta_nivel)} · ${c.antiguedad_meses} meses en Buk</div></div>
+      <div class="chat-s"><h5>Por qué te lo mostramos</h5><p>${esc(c.lectura)}</p></div>
+      <div class="chat-s"><h5>Señales detectadas · ${c.n_dimensiones} dimensiones distintas</h5>
+        <ul>${c.senales.map((s, i) => `<li>${esc(s)}<span class="ev">${esc(c.evidencia[i] || "")}</span></li>`).join("")}</ul></div>
+      <div class="chat-s"><h5>Qué no sabemos</h5>
+        <ul>${c.no_sabemos.map(s => `<li>${esc(s)}</li>`).join("")}</ul></div>
+      <div class="chat-s"><h5>Qué sugerimos</h5>
+        <ul>${c.acciones.map(s => `<li>${esc(s)}</li>`).join("")}</ul></div>
+      <div class="chat-b"><span>Agendar conversación</span><span>Ya lo estoy abordando</span><span>Descartar — no aplica</span></div>
+      <div class="chat-p">${esc(c.pie)}</div>`;
+  }
+  $$("#caso-tabs .btn").forEach((b, i) => b.onclick = () => ver(i));
+  ver(0);
+})();
+
+/* ══ Capturas de respaldo de la salida a la nube ═══════════════════════ */
+$("#capturas").innerHTML = (D.capturas || []).map(c =>
+  `<figure><img src="data:${c.mime};base64,${c.b64}" style="width:100%;border-radius:8px;border:1px solid #39406E">
+   <figcaption style="color:#7E8CC4;font-size:11px;margin-top:5px">${esc(c.nombre)}</figcaption></figure>`).join("")
+  || "";
+// El pie dice la verdad sobre lo que hay embebido, en vez de prometerlo siempre.
+$("#capturas-pie").textContent = (D.capturas || []).length
+  ? "Si la red de la sala falla, las capturas de respaldo están embebidas acá arriba."
+  : "Sin plan B embebido: si la red falla, este recorrido se cuenta de memoria y se muestra el log local.";
+
+pintar();
+</script>
+</body>
+</html>
