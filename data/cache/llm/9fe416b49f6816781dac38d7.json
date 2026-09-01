@@ -1,0 +1,19 @@
+{
+  "hash_nota": "9fe416b49f6816781dac38d7",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:48:52.652803+00:00",
+  "texto_scrubbed": "Instancia de seguimiento posterior al cierre de OKRs del trimestre. Postuló a un movimiento interno y está muy motivado con la posibilidad. Está entusiasmado con el plan de formación que armó con su líder para el próximo semestre. Sin acciones pendientes de mi parte; se retoma en el próximo ciclo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "movilidad_interna",
+    "desarrollo_carrera",
+    "relacion_con_lider"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Postuló a un movimiento interno y está muy motivado con la posibilidad.",
+    "Está entusiasmado con el plan de formación que armó con su líder para el próximo semestre."
+  ],
+  "confianza": 0.95
+}

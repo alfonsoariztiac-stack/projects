@@ -1,0 +1,19 @@
+{
+  "hash_nota": "7788b4e7045d66cfb2da598f",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:49:21.335938+00:00",
+  "texto_scrubbed": "Instancia de seguimiento posterior al cierre de OKRs del trimestre. Destaca la mejora en el proceso de handoff con el equipo de implementación. Destaca que su líder reconoció públicamente el trabajo del último release en la reunión de área. Su líder lo había anticipado en el comité de calibración. Queda de compartir lo aprendido con el resto del equipo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "reconocimiento",
+    "herramientas_procesos",
+    "relacion_con_lider"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Destaca la mejora en el proceso de handoff con el equipo de implementación.",
+    "Destaca que su líder reconoció públicamente el trabajo del último release en la reunión de área."
+  ],
+  "confianza": 0.95
+}

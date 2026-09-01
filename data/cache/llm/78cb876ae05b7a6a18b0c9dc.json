@@ -1,0 +1,18 @@
+{
+  "hash_nota": "78cb876ae05b7a6a18b0c9dc",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:50:24.751060+00:00",
+  "texto_scrubbed": "Nos juntamos a raíz de la última encuesta de clima del equipo. Comenta que el equipo está en un momento de mucha exigencia pero con buena disposición. No hay antecedentes previos de este tema en su bitácora. Acordamos retomar el tema en la próxima instancia.",
+  "sentimiento": "neutro",
+  "temas": [
+    "clima_equipo",
+    "carga_trabajo"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Nos juntamos a raíz de la última encuesta de clima del equipo.",
+    "Comenta que el equipo está en un momento de mucha exigencia pero con buena disposición."
+  ],
+  "confianza": 0.9
+}

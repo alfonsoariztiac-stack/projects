@@ -1,0 +1,20 @@
+{
+  "hash_nota": "d2ff1676f368711491c9d25f",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:54:01.391994+00:00",
+  "texto_scrubbed": "Check-in de rutina del ciclo de Happiness. Está adaptándose al cambio de estructura del área; sin mayores complicaciones. No plantea el reconocimiento como un tema relevante para él en este momento. Su líder está al tanto y lo viene conversando con él. Sin acciones inmediatas; se deja registro para seguimiento.",
+  "sentimiento": "neutro",
+  "temas": [
+    "cambio_organizacional",
+    "reconocimiento",
+    "relacion_con_lider"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Está adaptándose al cambio de estructura del área; sin mayores complicaciones.",
+    "No plantea el reconocimiento como un tema relevante para él en este momento.",
+    "Su líder está al tanto y lo viene conversando con él."
+  ],
+  "confianza": 0.95
+}

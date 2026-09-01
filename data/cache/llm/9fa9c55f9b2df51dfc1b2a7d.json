@@ -1,0 +1,20 @@
+{
+  "hash_nota": "9fa9c55f9b2df51dfc1b2a7d",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:39:17.529120+00:00",
+  "texto_scrubbed": "Conversación breve después de la reunión de área. Tiene claridad de sus objetivos del semestre y cómo se miden. Aprovechó la política de vacaciones para tomarse dos semanas y volvió con mucha mejor energía. Destaca la mejora en el proceso de handoff con el equipo de implementación. Su líder lo había anticipado en el comité de calibración. Sin acciones pendientes de mi parte; se retoma en el próximo ciclo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "claridad_rol",
+    "balance_vida_trabajo",
+    "herramientas_procesos"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Tiene claridad de sus objetivos del semestre y cómo se miden.",
+    "Aprovechó la política de vacaciones para tomarse dos semanas y volvió con mucha mejor energía.",
+    "Destaca la mejora en el proceso de handoff con el equipo de implementación."
+  ],
+  "confianza": 0.95
+}

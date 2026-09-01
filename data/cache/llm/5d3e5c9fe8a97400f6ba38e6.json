@@ -1,0 +1,18 @@
+{
+  "hash_nota": "5d3e5c9fe8a97400f6ba38e6",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:50:53.213939+00:00",
+  "texto_scrubbed": "Café de seguimiento, sin agenda formal. Describe una relación muy buena con su líder, con feedback frecuente y directo. Se muestra contento con el reconocimiento recibido tras el cierre del proyecto con [CLIENTE]. Mencionó de paso que recomendó a un conocido para una vacante del área. Queda de compartir lo aprendido con el resto del equipo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "relacion_con_lider",
+    "reconocimiento"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Describe una relación muy buena con su líder, con feedback frecuente y directo.",
+    "Se muestra contento con el reconocimiento recibido tras el cierre del proyecto con [CLIENTE]."
+  ],
+  "confianza": 0.95
+}

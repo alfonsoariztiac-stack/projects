@@ -1,0 +1,18 @@
+{
+  "hash_nota": "f13e23107a3eeddd59c0a6ed",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:52:55.159318+00:00",
+  "texto_scrubbed": "Conversación breve después de la reunión de área. Comenta que la nueva organización del área le dio más autonomía. Su líder lo había anticipado en el comité de calibración. Acordamos mantener la cadencia mensual.",
+  "sentimiento": "positivo",
+  "temas": [
+    "cambio_organizacional",
+    "relacion_con_lider"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "la nueva organización del área le dio más autonomía",
+    "Su líder lo había anticipado en el comité de calibración."
+  ],
+  "confianza": 0.9
+}

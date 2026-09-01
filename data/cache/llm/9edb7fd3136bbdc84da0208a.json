@@ -1,0 +1,20 @@
+{
+  "hash_nota": "9edb7fd3136bbdc84da0208a",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-01T01:18:29.936020+00:00",
+  "texto_scrubbed": "Seguimiento agendado por la líder tras el mid year feedback. El cambio de estructura le resultó positivo: quedó más cerca de las decisiones de producto. Está entusiasmado con el plan de formación que armó con su líder para el próximo semestre. Postuló a un movimiento interno y está muy motivado con la posibilidad. Acordamos mantener la cadencia mensual.",
+  "sentimiento": "positivo",
+  "temas": [
+    "cambio_organizacional",
+    "desarrollo_carrera",
+    "movilidad_interna"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "El cambio de estructura le resultó positivo",
+    "Está entusiasmado con el plan de formación que armó con su líder para el próximo semestre.",
+    "Postuló a un movimiento interno y está muy motivado con la posibilidad."
+  ],
+  "confianza": 0.95
+}

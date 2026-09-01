@@ -1,0 +1,23 @@
+{
+  "hash_nota": "56e9cfcc35f65c149aa879f5",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:53:08.977186+00:00",
+  "texto_scrubbed": "Nos juntamos a raíz de la última encuesta de clima del equipo. Comenta que dejó de inscribirse en cursos porque no siente que aporten a un camino concreto. Queda con la sensación de no ser escuchado. Requiere seguimiento cercano.",
+  "sentimiento": "negativo",
+  "temas": [
+    "desarrollo_carrera",
+    "clima_equipo",
+    "reconocimiento"
+  ],
+  "senales": [
+    "desarrollo_carrera",
+    "reconocimiento"
+  ],
+  "citas_respaldo": [
+    "dejó de inscribirse en cursos porque no siente que aporten a un camino concreto",
+    "sensación de no ser escuchado",
+    "encuesta de clima del equipo"
+  ],
+  "confianza": 0.9
+}

@@ -1,0 +1,17 @@
+{
+  "hash_nota": "ad28e7f201c47132e794e87c",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:38:54.516230+00:00",
+  "texto_scrubbed": "Seguimiento agendado por la líder tras el mid year feedback. Conversamos sobre el alcance de su rol; quedaron algunos bordes por definir con su líder. Queda pendiente conversarlo con su líder.",
+  "sentimiento": "neutro",
+  "temas": [
+    "claridad_rol",
+    "relacion_con_lider"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Conversamos sobre el alcance de su rol; quedaron algunos bordes por definir con su líder."
+  ],
+  "confianza": 0.9
+}

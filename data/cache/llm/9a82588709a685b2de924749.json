@@ -1,0 +1,23 @@
+{
+  "hash_nota": "9a82588709a685b2de924749",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:40:01.453741+00:00",
+  "texto_scrubbed": "Instancia de seguimiento posterior al cierre de OKRs del trimestre. Señala que las últimas seis semanas ha estado trabajando fuera de horario de forma sistemática para no atrasar entregas. Describe un clima tenso en el equipo tras las últimas salidas, con conversaciones de pasillo sobre quién sigue. Es la tercera conversación consecutiva en que aparece el mismo punto. Le pedí que no lo deje pasar; quedo atenta a cómo evoluciona.",
+  "sentimiento": "negativo",
+  "temas": [
+    "carga_trabajo",
+    "balance_vida_trabajo",
+    "clima_equipo"
+  ],
+  "senales": [
+    "carga_trabajo",
+    "balance_vida_trabajo",
+    "clima_equipo"
+  ],
+  "citas_respaldo": [
+    "trabajando fuera de horario de forma sistemática para no atrasar entregas",
+    "Describe un clima tenso en el equipo tras las últimas salidas, con conversaciones de pasillo sobre quién sigue."
+  ],
+  "confianza": 0.95
+}

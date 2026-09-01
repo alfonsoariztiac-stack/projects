@@ -1,0 +1,18 @@
+{
+  "hash_nota": "8858513a195d4fd4a3639e65",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:38:41.080102+00:00",
+  "texto_scrubbed": "Instancia de seguimiento posterior al cierre de OKRs del trimestre. La relación con su líder es correcta; los 1:1 se realizan pero de forma irregular. Conversamos sobre sus tiempos de descanso; dice tenerlos razonablemente cubiertos. Queda pendiente conversarlo con su líder.",
+  "sentimiento": "neutro",
+  "temas": [
+    "relacion_con_lider",
+    "balance_vida_trabajo"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "La relación con su líder es correcta; los 1:1 se realizan pero de forma irregular.",
+    "Conversamos sobre sus tiempos de descanso; dice tenerlos razonablemente cubiertos."
+  ],
+  "confianza": 0.85
+}

@@ -1,0 +1,18 @@
+{
+  "hash_nota": "cd7a2d507c66cc4f1d9448de",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:51:23.060785+00:00",
+  "texto_scrubbed": "Conversación de seguimiento a solicitud del propio buker. Reporta un volumen de trabajo por sobre lo habitual, asociado a la temporada. Conversamos sobre sus tiempos de descanso; dice tenerlos razonablemente cubiertos. Coincide con el período de cierre trimestral del área. Acordamos retomar el tema en la próxima instancia.",
+  "sentimiento": "neutro",
+  "temas": [
+    "carga_trabajo",
+    "balance_vida_trabajo"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Reporta un volumen de trabajo por sobre lo habitual, asociado a la temporada.",
+    "Conversamos sobre sus tiempos de descanso; dice tenerlos razonablemente cubiertos."
+  ],
+  "confianza": 0.9
+}

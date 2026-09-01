@@ -1,0 +1,24 @@
+{
+  "hash_nota": "1a4e2205a148c026b1ed72a0",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:39:36.486934+00:00",
+  "texto_scrubbed": "Conversación breve después de la reunión de área. Dice que ve a pares con menos tiempo avanzando y que no entiende con qué criterio se decide. Comenta que supo de una contratación reciente en su mismo nivel con una renta mayor y que eso le generó ruido. Siente que la movilidad interna en su área está bloqueada porque no se abren cupos. Es la primera vez que menciona explícitamente estar mirando otras opciones. Acordamos volver a revisarlo en dos semanas.",
+  "sentimiento": "negativo",
+  "temas": [
+    "desarrollo_carrera",
+    "compensacion",
+    "movilidad_interna"
+  ],
+  "senales": [
+    "desarrollo_carrera",
+    "compensacion",
+    "movilidad_interna"
+  ],
+  "citas_respaldo": [
+    "ve a pares con menos tiempo avanzando y que no entiende con qué criterio se decide",
+    "supo de una contratación reciente en su mismo nivel con una renta mayor y que eso le generó ruido",
+    "Siente que la movilidad interna en su área está bloqueada porque no se abren cupos"
+  ],
+  "confianza": 0.95
+}

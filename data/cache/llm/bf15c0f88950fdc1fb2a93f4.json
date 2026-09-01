@@ -1,0 +1,19 @@
+{
+  "hash_nota": "bf15c0f88950fdc1fb2a93f4",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:51:52.456391+00:00",
+  "texto_scrubbed": "Conversación de seguimiento a solicitud del propio buker. Planea tomar vacaciones en el próximo trimestre, aún sin fecha. Le interesa el desarrollo técnico pero prefiere consolidarse en el rol actual antes de moverse. Su líder está al tanto y lo viene conversando con él. Queda pendiente conversarlo con su líder.",
+  "sentimiento": "neutro",
+  "temas": [
+    "desarrollo_carrera",
+    "movilidad_interna",
+    "relacion_con_lider"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Le interesa el desarrollo técnico pero prefiere consolidarse en el rol actual antes de moverse.",
+    "Su líder está al tanto y lo viene conversando con él."
+  ],
+  "confianza": 0.95
+}

@@ -1,0 +1,16 @@
+{
+  "hash_nota": "c063b95349638712aad8ea39",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:48:20.269931+00:00",
+  "texto_scrubbed": "Check-in de rutina del ciclo de Happiness. Le entusiasma la opción de rotar hacia otro equipo el próximo año. Mencionó de paso que recomendó a un conocido para una vacante del área. Queda de compartir lo aprendido con el resto del equipo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "movilidad_interna"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Le entusiasma la opción de rotar hacia otro equipo el próximo año."
+  ],
+  "confianza": 0.95
+}

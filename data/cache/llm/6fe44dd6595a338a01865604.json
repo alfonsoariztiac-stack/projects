@@ -1,0 +1,20 @@
+{
+  "hash_nota": "6fe44dd6595a338a01865604",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:47:49.744020+00:00",
+  "texto_scrubbed": "Nos juntamos a raíz de la última encuesta de clima del equipo. Menciona el reciente cambio organizacional como un tema en curso. El onboarding fue correcto; le faltó algo de contexto de negocio pero lo fue supliendo. Coincide con el período de cierre trimestral del área. Acordamos retomar el tema en la próxima instancia.",
+  "sentimiento": "neutro",
+  "temas": [
+    "clima_equipo",
+    "cambio_organizacional",
+    "onboarding"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Nos juntamos a raíz de la última encuesta de clima del equipo.",
+    "Menciona el reciente cambio organizacional como un tema en curso.",
+    "El onboarding fue correcto; le faltó algo de contexto de negocio pero lo fue supliendo."
+  ],
+  "confianza": 0.9
+}

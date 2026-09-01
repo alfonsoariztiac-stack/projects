@@ -1,0 +1,18 @@
+{
+  "hash_nota": "eb30d9c2f27f29c928841c1d",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:51:07.673140+00:00",
+  "texto_scrubbed": "Instancia de seguimiento posterior al cierre de OKRs del trimestre. Consultó cómo funciona la banda salarial de su cargo; se le explicó el modelo. No plantea el reconocimiento como un tema relevante para él en este momento. Coincide con el período de cierre trimestral del área. Acordamos retomar el tema en la próxima instancia.",
+  "sentimiento": "neutro",
+  "temas": [
+    "compensacion",
+    "reconocimiento"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Consultó cómo funciona la banda salarial de su cargo; se le explicó el modelo.",
+    "No plantea el reconocimiento como un tema relevante para él en este momento."
+  ],
+  "confianza": 0.95
+}

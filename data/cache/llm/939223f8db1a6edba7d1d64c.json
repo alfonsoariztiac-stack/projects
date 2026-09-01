@@ -1,0 +1,17 @@
+{
+  "hash_nota": "939223f8db1a6edba7d1d64c",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:40:17.021584+00:00",
+  "texto_scrubbed": "Conversamos en el 1:1 mensual. Valora las actividades de Happiness del último trimestre; dice que ayudaron a soltar tensión. Destaca lo rápido que se sintió parte del equipo. Viene de cerrar un trimestre por sobre meta y se le nota tranquilo. Acordamos mantener la cadencia mensual.",
+  "sentimiento": "positivo",
+  "temas": [
+    "clima_equipo"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Destaca lo rápido que se sintió parte del equipo.",
+    "Valora las actividades de Happiness del último trimestre; dice que ayudaron a soltar tensión."
+  ],
+  "confianza": 0.95
+}

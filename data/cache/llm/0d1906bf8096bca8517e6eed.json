@@ -1,0 +1,22 @@
+{
+  "hash_nota": "0d1906bf8096bca8517e6eed",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:52:39.232823+00:00",
+  "texto_scrubbed": "Check-in de rutina del ciclo de Happiness. Manifiesta que lleva más de dos años en el mismo nivel y que no tiene visibilidad de cuál sería el siguiente paso. Describe una relación tensa con su líder: dice que el feedback llega tarde y en tono correctivo. Evitó comprometerse con plazos cuando le pregunté por sus objetivos del semestre. Queda con la sensación de no ser escuchado. Requiere seguimiento cercano.",
+  "sentimiento": "negativo",
+  "temas": [
+    "desarrollo_carrera",
+    "relacion_con_lider"
+  ],
+  "senales": [
+    "desarrollo_carrera",
+    "relacion_con_lider"
+  ],
+  "citas_respaldo": [
+    "lleva más de dos años en el mismo nivel y que no tiene visibilidad de cuál sería el siguiente paso",
+    "Describe una relación tensa con su líder: dice que el feedback llega tarde y en tono correctivo.",
+    "Queda con la sensación de no ser escuchado."
+  ],
+  "confianza": 0.95
+}

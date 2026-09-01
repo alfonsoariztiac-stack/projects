@@ -1,0 +1,21 @@
+{
+  "hash_nota": "65defbe3402463eee7f572f0",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:48:50.401612+00:00",
+  "texto_scrubbed": "Instancia de seguimiento posterior al cierre de OKRs del trimestre. Plantea que hay superposición entre su rol y el de [PERSONA_1], y que eso genera fricción innecesaria. Describe una relación tensa con su líder: dice que el feedback llega tarde y en tono correctivo. Es la tercera conversación consecutiva en que aparece el mismo punto. Acordamos volver a revisarlo en dos semanas.",
+  "sentimiento": "negativo",
+  "temas": [
+    "claridad_rol",
+    "relacion_con_lider"
+  ],
+  "senales": [
+    "claridad_rol",
+    "relacion_con_lider"
+  ],
+  "citas_respaldo": [
+    "Plantea que hay superposición entre su rol y el de [PERSONA_1], y que eso genera fricción innecesaria.",
+    "Describe una relación tensa con su líder: dice que el feedback llega tarde y en tono correctivo."
+  ],
+  "confianza": 0.95
+}

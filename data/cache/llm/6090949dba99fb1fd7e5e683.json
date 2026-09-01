@@ -1,0 +1,18 @@
+{
+  "hash_nota": "6090949dba99fb1fd7e5e683",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:52:18.303758+00:00",
+  "texto_scrubbed": "Conversación de seguimiento a solicitud del propio buker. Dice que el rol que está haciendo no se parece al que le describieron en el proceso de selección. Evitó comprometerse con plazos cuando le pregunté por sus objetivos del semestre. Acordamos volver a revisarlo en dos semanas.",
+  "sentimiento": "negativo",
+  "temas": [
+    "claridad_rol"
+  ],
+  "senales": [
+    "claridad_rol"
+  ],
+  "citas_respaldo": [
+    "Dice que el rol que está haciendo no se parece al que le describieron en el proceso de selección."
+  ],
+  "confianza": 0.9
+}

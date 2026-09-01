@@ -1,0 +1,20 @@
+{
+  "hash_nota": "9b14700864a2247ab910729e",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:39:41.283754+00:00",
+  "texto_scrubbed": "Conversación de seguimiento a solicitud del propio buker. Valora especialmente las stock options y la flexibilidad por sobre el componente monetario. Viene de cerrar un trimestre por sobre meta y se le nota tranquilo. Queda de compartir lo aprendido con el resto del equipo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "compensacion",
+    "balance_vida_trabajo",
+    "clima_equipo"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Valora especialmente las stock options y la flexibilidad por sobre el componente monetario.",
+    "Viene de cerrar un trimestre por sobre meta y se le nota tranquilo.",
+    "Queda de compartir lo aprendido con el resto del equipo."
+  ],
+  "confianza": 0.95
+}

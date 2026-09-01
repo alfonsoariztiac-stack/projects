@@ -1,0 +1,20 @@
+{
+  "hash_nota": "f6d7cb8de417a91008c956f9",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:53:18.358221+00:00",
+  "texto_scrubbed": "Conversamos en el 1:1 mensual. Terminó dos rutas de Buk University y quiere seguir profundizando en la especialidad. Se mostró conforme con el último ajuste y valora la transparencia con que se le explicó la banda. Destaca que su líder reconoció públicamente el trabajo del último release en la reunión de área. Viene de cerrar un trimestre por sobre meta y se le nota tranquilo. Acordamos mantener la cadencia mensual.",
+  "sentimiento": "positivo",
+  "temas": [
+    "desarrollo_carrera",
+    "compensacion",
+    "reconocimiento"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Terminó dos rutas de Buk University y quiere seguir profundizando en la especialidad.",
+    "Se mostró conforme con el último ajuste y valora la transparencia con que se le explicó la banda.",
+    "Destaca que su líder reconoció públicamente el trabajo del último release en la reunión de área."
+  ],
+  "confianza": 0.95
+}

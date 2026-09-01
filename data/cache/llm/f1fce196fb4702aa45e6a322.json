@@ -1,0 +1,20 @@
+{
+  "hash_nota": "f1fce196fb4702aa45e6a322",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:52:46.751555+00:00",
+  "texto_scrubbed": "Nos juntamos a raíz de la última encuesta de clima del equipo. Destaca la mejora en el proceso de handoff con el equipo de implementación. Habla muy bien del clima del equipo y de la cercanía con sus pares. Lleva tres rutas de Buk University terminadas este semestre. Queda de compartir lo aprendido con el resto del equipo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "clima_equipo",
+    "herramientas_procesos",
+    "desarrollo_carrera"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Habla muy bien del clima del equipo y de la cercanía con sus pares.",
+    "Destaca la mejora en el proceso de handoff con el equipo de implementación.",
+    "Lleva tres rutas de Buk University terminadas este semestre."
+  ],
+  "confianza": 0.95
+}

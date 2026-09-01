@@ -1,0 +1,20 @@
+{
+  "hash_nota": "574f285e5afbaae3cbc970f9",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:51:16.589006+00:00",
+  "texto_scrubbed": "Conversación de seguimiento a solicitud del propio buker. Le hace sentido su objetivo anual aunque le cuesta traducirlo a métricas semanales. Queda pendiente conversarlo con su líder.",
+  "sentimiento": "neutro",
+  "temas": [
+    "claridad_rol",
+    "relacion_con_lider"
+  ],
+  "senales": [
+    "claridad_rol"
+  ],
+  "citas_respaldo": [
+    "Le hace sentido su objetivo anual aunque le cuesta traducirlo a métricas semanales.",
+    "Queda pendiente conversarlo con su líder."
+  ],
+  "confianza": 0.85
+}

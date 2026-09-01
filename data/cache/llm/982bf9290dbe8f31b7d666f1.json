@@ -1,0 +1,24 @@
+{
+  "hash_nota": "982bf9290dbe8f31b7d666f1",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:47:38.109123+00:00",
+  "texto_scrubbed": "Nos juntamos a raíz de la última encuesta de clima del equipo. Dice que hace tiempo no recibe feedback positivo y que no tiene claridad de si su trabajo se está valorando. Comenta que dejó de inscribirse en cursos porque no siente que aporten a un camino concreto. Dice que lleva más de un año sin ajuste pese a haber asumido responsabilidades adicionales. Se compromete a levantarlo con su líder; le ofrecí acompañar esa conversación.",
+  "sentimiento": "negativo",
+  "temas": [
+    "reconocimiento",
+    "desarrollo_carrera",
+    "compensacion"
+  ],
+  "senales": [
+    "reconocimiento",
+    "desarrollo_carrera",
+    "compensacion"
+  ],
+  "citas_respaldo": [
+    "hace tiempo no recibe feedback positivo y que no tiene claridad de si su trabajo se está valorando",
+    "dejó de inscribirse en cursos porque no siente que aporten a un camino concreto",
+    "lleva más de un año sin ajuste pese a haber asumido responsabilidades adicionales"
+  ],
+  "confianza": 0.95
+}

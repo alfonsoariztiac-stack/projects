@@ -1,0 +1,20 @@
+{
+  "hash_nota": "913c09fb5835ee8b9ff3f74c",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:48:24.725379+00:00",
+  "texto_scrubbed": "Nos juntamos a raíz de la última encuesta de clima del equipo. Todavía está calibrando expectativas propias del período de adaptación. Consultó cómo funciona la banda salarial de su cargo; se le explicó el modelo. Sugiere ajustes al proceso de documentación del área. Quedamos de retomarlo cuando esté cerrado el ciclo en curso. Sin acciones inmediatas; se deja registro para seguimiento.",
+  "sentimiento": "neutro",
+  "temas": [
+    "onboarding",
+    "compensacion",
+    "herramientas_procesos"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Todavía está calibrando expectativas propias del período de adaptación.",
+    "Consultó cómo funciona la banda salarial de su cargo; se le explicó el modelo.",
+    "Sugiere ajustes al proceso de documentación del área."
+  ],
+  "confianza": 0.92
+}

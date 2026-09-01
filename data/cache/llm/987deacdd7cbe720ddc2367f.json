@@ -1,0 +1,19 @@
+{
+  "hash_nota": "987deacdd7cbe720ddc2367f",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:39:38.624913+00:00",
+  "texto_scrubbed": "Seguimiento agendado por la líder tras el mid year feedback. Comenta que la definición del rol quedó mucho más nítida después del último ajuste de estructura. Valora las actividades de Happiness del último trimestre; dice que ayudaron a soltar tensión. Queda de compartir lo aprendido con el resto del equipo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "claridad_rol",
+    "cambio_organizacional",
+    "clima_equipo"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "la definición del rol quedó mucho más nítida después del último ajuste de estructura",
+    "Valora las actividades de Happiness del último trimestre; dice que ayudaron a soltar tensión."
+  ],
+  "confianza": 0.95
+}

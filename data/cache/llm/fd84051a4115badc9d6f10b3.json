@@ -1,0 +1,21 @@
+{
+  "hash_nota": "fd84051a4115badc9d6f10b3",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-01T01:18:13.713681+00:00",
+  "texto_scrubbed": "Conversamos en el 1:1 mensual. Le hace sentido su objetivo anual aunque le cuesta traducirlo a métricas semanales. Menciona fricciones menores con algunas herramientas internas, nada bloqueante. No hay antecedentes previos de este tema en su bitácora. Queda pendiente conversarlo con su líder.",
+  "sentimiento": "neutro",
+  "temas": [
+    "claridad_rol",
+    "herramientas_procesos"
+  ],
+  "senales": [
+    "claridad_rol",
+    "herramientas_procesos"
+  ],
+  "citas_respaldo": [
+    "le cuesta traducirlo a métricas semanales",
+    "fricciones menores con algunas herramientas internas, nada bloqueante"
+  ],
+  "confianza": 0.9
+}

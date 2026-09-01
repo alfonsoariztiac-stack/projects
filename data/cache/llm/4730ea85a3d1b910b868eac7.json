@@ -1,0 +1,16 @@
+{
+  "hash_nota": "4730ea85a3d1b910b868eac7",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:51:09.152644+00:00",
+  "texto_scrubbed": "Café de seguimiento, sin agenda formal. Pregunta por el calendario de revisión de rentas del próximo ciclo. No hay antecedentes previos de este tema en su bitácora. Sin acciones inmediatas; se deja registro para seguimiento.",
+  "sentimiento": "neutro",
+  "temas": [
+    "compensacion"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Pregunta por el calendario de revisión de rentas del próximo ciclo."
+  ],
+  "confianza": 0.95
+}

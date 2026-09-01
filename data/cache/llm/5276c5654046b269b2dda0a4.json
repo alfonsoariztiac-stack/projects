@@ -1,0 +1,18 @@
+{
+  "hash_nota": "5276c5654046b269b2dda0a4",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:54:02.966821+00:00",
+  "texto_scrubbed": "Instancia de seguimiento posterior al cierre de OKRs del trimestre. Menciona el reciente cambio organizacional como un tema en curso. No plantea el reconocimiento como un tema relevante para él en este momento. No hay antecedentes previos de este tema en su bitácora. Acordamos retomar el tema en la próxima instancia.",
+  "sentimiento": "neutro",
+  "temas": [
+    "cambio_organizacional",
+    "reconocimiento"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Menciona el reciente cambio organizacional como un tema en curso.",
+    "No plantea el reconocimiento como un tema relevante para él en este momento."
+  ],
+  "confianza": 0.9
+}

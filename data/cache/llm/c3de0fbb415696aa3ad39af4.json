@@ -1,0 +1,18 @@
+{
+  "hash_nota": "c3de0fbb415696aa3ad39af4",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:48:55.331304+00:00",
+  "texto_scrubbed": "Conversamos en el 1:1 mensual. Destaca lo rápido que se sintió parte del equipo. Valora las actividades de Happiness del último trimestre; dice que ayudaron a soltar tensión. El cambio de estructura le resultó positivo: quedó más cerca de las decisiones de producto. Viene de cerrar un trimestre por sobre meta y se le nota tranquilo. Queda de compartir lo aprendido con el resto del equipo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "clima_equipo",
+    "cambio_organizacional"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Destaca lo rápido que se sintió parte del equipo.",
+    "El cambio de estructura le resultó positivo: quedó más cerca de las decisiones de producto."
+  ],
+  "confianza": 0.95
+}

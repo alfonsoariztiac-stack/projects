@@ -1,0 +1,24 @@
+{
+  "hash_nota": "7b9fdf3fe7a079665b7cb83f",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:53:54.883174+00:00",
+  "texto_scrubbed": "Nos juntamos a raíz de la última encuesta de clima del equipo. Postuló a dos procesos internos y en ninguno recibió retroalimentación; dice que eso lo desanimó. Dice que hace tiempo no recibe feedback positivo y que no tiene claridad de si su trabajo se está valorando. Manifiesta que lleva más de dos años en el mismo nivel y que no tiene visibilidad de cuál sería el siguiente paso. Evitó comprometerse con plazos cuando le pregunté por sus objetivos del semestre. Le pedí que no lo deje pasar; quedo atenta a cómo evoluciona.",
+  "sentimiento": "negativo",
+  "temas": [
+    "movilidad_interna",
+    "reconocimiento",
+    "desarrollo_carrera"
+  ],
+  "senales": [
+    "movilidad_interna",
+    "reconocimiento",
+    "desarrollo_carrera"
+  ],
+  "citas_respaldo": [
+    "Postuló a dos procesos internos y en ninguno recibió retroalimentación; dice que eso lo desanimó.",
+    "Dice que hace tiempo no recibe feedback positivo y que no tiene claridad de si su trabajo se está valorando.",
+    "Manifiesta que lleva más de dos años en el mismo nivel y que no tiene visibilidad de cuál sería el siguiente paso."
+  ],
+  "confianza": 0.95
+}

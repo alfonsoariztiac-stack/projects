@@ -1,0 +1,16 @@
+{
+  "hash_nota": "8a53d7c434303097de6f9762",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:38:25.698854+00:00",
+  "texto_scrubbed": "Café de seguimiento, sin agenda formal. Valora enormemente el WFA; está trabajando desde el sur y le ha resultado muy bien. Es la segunda conversación seguida en que aparece este punto en positivo. Sin acciones pendientes de mi parte; se retoma en el próximo ciclo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "balance_vida_trabajo"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Valora enormemente el WFA; está trabajando desde el sur y le ha resultado muy bien."
+  ],
+  "confianza": 0.95
+}

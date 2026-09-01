@@ -1,0 +1,24 @@
+{
+  "hash_nota": "3358664415610272bf9feafc",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:39:08.781841+00:00",
+  "texto_scrubbed": "Conversación breve después de la reunión de área. Menciona con molestia que el mérito del último cierre se atribuyó al equipo completo sin mención a quienes lo empujaron. Siente que la movilidad interna en su área está bloqueada porque no se abren cupos. Plantea directamente que su renta quedó atrás respecto del mercado y que ha recibido acercamientos externos. Coincide con la caída que veníamos observando en sus indicadores del área. Le pedí que no lo deje pasar; quedo atenta a cómo evoluciona.",
+  "sentimiento": "negativo",
+  "temas": [
+    "reconocimiento",
+    "movilidad_interna",
+    "compensacion"
+  ],
+  "senales": [
+    "reconocimiento",
+    "movilidad_interna",
+    "compensacion"
+  ],
+  "citas_respaldo": [
+    "el mérito del último cierre se atribuyó al equipo completo sin mención a quienes lo empujaron",
+    "la movilidad interna en su área está bloqueada porque no se abren cupos",
+    "su renta quedó atrás respecto del mercado"
+  ],
+  "confianza": 0.95
+}

@@ -1,0 +1,21 @@
+{
+  "hash_nota": "6fe3e4c771067adfc1c9a024",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:49:30.514176+00:00",
+  "texto_scrubbed": "Instancia de seguimiento posterior al cierre de OKRs del trimestre. Comenta que no se siente cómodo planteando desacuerdos en su equipo. Plantea que hay superposición entre su rol y el de [PERSONA_1], y que eso genera fricción innecesaria. Le pedí que no lo deje pasar; quedo atenta a cómo evoluciona.",
+  "sentimiento": "negativo",
+  "temas": [
+    "clima_equipo",
+    "claridad_rol"
+  ],
+  "senales": [
+    "clima_equipo",
+    "claridad_rol"
+  ],
+  "citas_respaldo": [
+    "no se siente cómodo planteando desacuerdos en su equipo",
+    "hay superposición entre su rol y el de [PERSONA_1], y que eso genera fricción innecesaria"
+  ],
+  "confianza": 0.95
+}

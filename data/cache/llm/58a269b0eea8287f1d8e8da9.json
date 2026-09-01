@@ -1,0 +1,17 @@
+{
+  "hash_nota": "58a269b0eea8287f1d8e8da9",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:50:54.672385+00:00",
+  "texto_scrubbed": "Conversación de seguimiento a solicitud del propio buker. Valora las actividades de Happiness del último trimestre; dice que ayudaron a soltar tensión. Mencionó de paso que recomendó a un conocido para una vacante del área. Acordamos mantener la cadencia mensual.",
+  "sentimiento": "positivo",
+  "temas": [
+    "clima_equipo",
+    "balance_vida_trabajo"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Valora las actividades de Happiness del último trimestre; dice que ayudaron a soltar tensión."
+  ],
+  "confianza": 0.9
+}

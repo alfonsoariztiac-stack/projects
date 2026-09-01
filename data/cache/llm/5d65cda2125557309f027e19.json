@@ -1,0 +1,17 @@
+{
+  "hash_nota": "5d65cda2125557309f027e19",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:38:43.304136+00:00",
+  "texto_scrubbed": "Seguimiento agendado por la líder tras el mid year feedback. Destaca lo rápido que se sintió parte del equipo. Su líder lo había anticipado en el comité de calibración. Acordamos mantener la cadencia mensual.",
+  "sentimiento": "positivo",
+  "temas": [
+    "clima_equipo",
+    "relacion_con_lider"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Destaca lo rápido que se sintió parte del equipo."
+  ],
+  "confianza": 0.9
+}

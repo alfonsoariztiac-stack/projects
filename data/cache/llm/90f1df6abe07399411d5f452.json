@@ -1,0 +1,21 @@
+{
+  "hash_nota": "90f1df6abe07399411d5f452",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-01T21:37:09.403862+00:00",
+  "texto_scrubbed": "Conversamos en el 1:1 mensual. Postuló a dos procesos internos y en ninguno recibió retroalimentación; dice que eso lo desanimó. Plantea que el proyecto con [CLIENTE] lo sacó adelante prácticamente solo y que eso no se visibilizó en ninguna instancia. Le pedí que no lo deje pasar; quedo atenta a cómo evoluciona.",
+  "sentimiento": "negativo",
+  "temas": [
+    "movilidad_interna",
+    "reconocimiento"
+  ],
+  "senales": [
+    "movilidad_interna",
+    "reconocimiento"
+  ],
+  "citas_respaldo": [
+    "Postuló a dos procesos internos y en ninguno recibió retroalimentación; dice que eso lo desanimó.",
+    "Plantea que el proyecto con [CLIENTE] lo sacó adelante prácticamente solo y que eso no se visibilizó en ninguna instancia."
+  ],
+  "confianza": 0.95
+}

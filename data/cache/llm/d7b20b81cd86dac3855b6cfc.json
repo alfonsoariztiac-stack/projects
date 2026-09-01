@@ -1,0 +1,18 @@
+{
+  "hash_nota": "d7b20b81cd86dac3855b6cfc",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:51:17.666676+00:00",
+  "texto_scrubbed": "Instancia de seguimiento posterior al cierre de OKRs del trimestre. La relación con su líder es correcta; los 1:1 se realizan pero de forma irregular. Exploramos si le interesaría un movimiento interno; lo está pensando. Es primera vez que lo plantea en una instancia formal. Acordamos retomar el tema en la próxima instancia.",
+  "sentimiento": "neutro",
+  "temas": [
+    "relacion_con_lider",
+    "movilidad_interna"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "La relación con su líder es correcta; los 1:1 se realizan pero de forma irregular.",
+    "Exploramos si le interesaría un movimiento interno; lo está pensando."
+  ],
+  "confianza": 0.9
+}

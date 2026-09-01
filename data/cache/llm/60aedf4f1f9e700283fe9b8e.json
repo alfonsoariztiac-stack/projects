@@ -1,0 +1,17 @@
+{
+  "hash_nota": "60aedf4f1f9e700283fe9b8e",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:39:28.897858+00:00",
+  "texto_scrubbed": "Conversamos en el 1:1 mensual. Comenta que la definición del rol quedó mucho más nítida después del último ajuste de estructura. Acordamos mantener la cadencia mensual.",
+  "sentimiento": "positivo",
+  "temas": [
+    "claridad_rol",
+    "cambio_organizacional"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "la definición del rol quedó mucho más nítida después del último ajuste de estructura"
+  ],
+  "confianza": 0.95
+}

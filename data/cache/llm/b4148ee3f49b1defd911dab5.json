@@ -1,0 +1,20 @@
+{
+  "hash_nota": "b4148ee3f49b1defd911dab5",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:38:46.375089+00:00",
+  "texto_scrubbed": "Seguimiento agendado por la líder tras el mid year feedback. Destaca la mejora en el proceso de handoff con el equipo de implementación. Postuló a un movimiento interno y está muy motivado con la posibilidad. Comenta que la carga se estabilizó después de la redistribución del equipo y que hoy alcanza a cerrar sus temas dentro del horario. Queda de compartir lo aprendido con el resto del equipo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "movilidad_interna",
+    "carga_trabajo",
+    "herramientas_procesos"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Destaca la mejora en el proceso de handoff con el equipo de implementación.",
+    "Postuló a un movimiento interno y está muy motivado con la posibilidad.",
+    "Comenta que la carga se estabilizó después de la redistribución del equipo y que hoy alcanza a cerrar sus temas dentro del horario."
+  ],
+  "confianza": 0.95
+}

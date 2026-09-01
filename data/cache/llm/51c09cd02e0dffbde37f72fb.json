@@ -1,0 +1,20 @@
+{
+  "hash_nota": "51c09cd02e0dffbde37f72fb",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:49:04.230500+00:00",
+  "texto_scrubbed": "Nos juntamos a raíz de la última encuesta de clima del equipo. Menciona fricciones menores con algunas herramientas internas, nada bloqueante. Comenta que con el cambio de líder recién están calibrando la forma de trabajo. Coincide con el período de cierre trimestral del área. Queda pendiente conversarlo con su líder.",
+  "sentimiento": "neutro",
+  "temas": [
+    "clima_equipo",
+    "herramientas_procesos",
+    "relacion_con_lider"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Nos juntamos a raíz de la última encuesta de clima del equipo.",
+    "Menciona fricciones menores con algunas herramientas internas, nada bloqueante.",
+    "Comenta que con el cambio de líder recién están calibrando la forma de trabajo."
+  ],
+  "confianza": 0.9
+}

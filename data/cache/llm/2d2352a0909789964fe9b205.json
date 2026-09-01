@@ -1,0 +1,20 @@
+{
+  "hash_nota": "2d2352a0909789964fe9b205",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:53:20.439546+00:00",
+  "texto_scrubbed": "Instancia de seguimiento posterior al cierre de OKRs del trimestre. Destaca que su líder reconoció públicamente el trabajo del último release en la reunión de área. Terminó dos rutas de Buk University y quiere seguir profundizando en la especialidad. Le entusiasma la opción de rotar hacia otro equipo el próximo año. Mencionó de paso que recomendó a un conocido para una vacante del área. Queda de compartir lo aprendido con el resto del equipo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "reconocimiento",
+    "desarrollo_carrera",
+    "movilidad_interna"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "su líder reconoció públicamente el trabajo del último release en la reunión de área",
+    "Terminó dos rutas de Buk University y quiere seguir profundizando en la especialidad",
+    "Le entusiasma la opción de rotar hacia otro equipo el próximo año"
+  ],
+  "confianza": 0.95
+}

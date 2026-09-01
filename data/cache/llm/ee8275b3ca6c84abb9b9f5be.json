@@ -1,0 +1,16 @@
+{
+  "hash_nota": "ee8275b3ca6c84abb9b9f5be",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:51:20.523438+00:00",
+  "texto_scrubbed": "Instancia de seguimiento posterior al cierre de OKRs del trimestre. Exploramos si le interesaría un movimiento interno; lo está pensando. Quedamos de retomarlo cuando esté cerrado el ciclo en curso. Acordamos retomar el tema en la próxima instancia.",
+  "sentimiento": "neutro",
+  "temas": [
+    "movilidad_interna"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Exploramos si le interesaría un movimiento interno; lo está pensando."
+  ],
+  "confianza": 0.95
+}

@@ -1,0 +1,18 @@
+{
+  "hash_nota": "3ff693577b42ebecd7567b30",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:40:13.684105+00:00",
+  "texto_scrubbed": "Café de seguimiento, sin agenda formal. Menciona que la carga sube fuerte en cierres de mes y baja el resto, pero que ya lo tiene incorporado. Todavía está calibrando expectativas propias del período de adaptación. Sin acciones inmediatas; se deja registro para seguimiento.",
+  "sentimiento": "neutro",
+  "temas": [
+    "carga_trabajo",
+    "onboarding"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Menciona que la carga sube fuerte en cierres de mes y baja el resto, pero que ya lo tiene incorporado.",
+    "Todavía está calibrando expectativas propias del período de adaptación."
+  ],
+  "confianza": 0.9
+}

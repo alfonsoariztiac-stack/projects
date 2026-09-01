@@ -1,0 +1,18 @@
+{
+  "hash_nota": "5a93b6fb093bec94d983e4ac",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:50:44.812262+00:00",
+  "texto_scrubbed": "Instancia de seguimiento posterior al cierre de OKRs del trimestre. Menciona fricciones menores con algunas herramientas internas, nada bloqueante. Coincide con el período de cierre trimestral del área. Acordamos retomar el tema en la próxima instancia.",
+  "sentimiento": "neutro",
+  "temas": [
+    "herramientas_procesos"
+  ],
+  "senales": [
+    "herramientas_procesos"
+  ],
+  "citas_respaldo": [
+    "Menciona fricciones menores con algunas herramientas internas, nada bloqueante."
+  ],
+  "confianza": 0.9
+}

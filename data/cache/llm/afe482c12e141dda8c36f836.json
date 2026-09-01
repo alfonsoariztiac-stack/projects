@@ -1,0 +1,19 @@
+{
+  "hash_nota": "afe482c12e141dda8c36f836",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:51:50.331742+00:00",
+  "texto_scrubbed": "Nos juntamos a raíz de la última encuesta de clima del equipo. Valora el espacio que le da [PERSONA_1] para tomar decisiones sin microgestión. Comenta que la nueva organización del área le dio más autonomía. Queda de compartir lo aprendido con el resto del equipo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "relacion_con_lider",
+    "cambio_organizacional",
+    "clima_equipo"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Valora el espacio que le da [PERSONA_1] para tomar decisiones sin microgestión.",
+    "Comenta que la nueva organización del área le dio más autonomía."
+  ],
+  "confianza": 0.95
+}

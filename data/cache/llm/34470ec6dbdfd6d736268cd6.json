@@ -1,0 +1,18 @@
+{
+  "hash_nota": "34470ec6dbdfd6d736268cd6",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:51:26.043293+00:00",
+  "texto_scrubbed": "Conversamos en el 1:1 mensual. Muy buena evaluación del onboarding: dice que llegó con todo listo y con un buddy asignado. Valora enormemente el WFA; está trabajando desde el sur y le ha resultado muy bien. Su líder lo había anticipado en el comité de calibración. Queda de compartir lo aprendido con el resto del equipo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "onboarding",
+    "balance_vida_trabajo"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Muy buena evaluación del onboarding: dice que llegó con todo listo y con un buddy asignado.",
+    "Valora enormemente el WFA; está trabajando desde el sur y le ha resultado muy bien."
+  ],
+  "confianza": 0.95
+}

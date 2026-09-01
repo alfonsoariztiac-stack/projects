@@ -1,0 +1,18 @@
+{
+  "hash_nota": "07c66db826c3c39e3c22de29",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:51:49.521024+00:00",
+  "texto_scrubbed": "Café de seguimiento, sin agenda formal. Planea tomar vacaciones en el próximo trimestre, aún sin fecha. Reporta un volumen de trabajo por sobre lo habitual, asociado a la temporada. Coincide con el período de cierre trimestral del área. Acordamos retomar el tema en la próxima instancia.",
+  "sentimiento": "neutro",
+  "temas": [
+    "carga_trabajo"
+  ],
+  "senales": [
+    "carga_trabajo"
+  ],
+  "citas_respaldo": [
+    "Reporta un volumen de trabajo por sobre lo habitual, asociado a la temporada."
+  ],
+  "confianza": 0.85
+}

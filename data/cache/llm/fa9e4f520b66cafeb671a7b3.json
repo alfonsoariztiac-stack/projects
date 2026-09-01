@@ -1,0 +1,19 @@
+{
+  "hash_nota": "fa9e4f520b66cafeb671a7b3",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:51:18.493066+00:00",
+  "texto_scrubbed": "Check-in de rutina del ciclo de Happiness. Pregunta por el calendario de revisión de rentas del próximo ciclo. Conversamos sobre posibles rutas de desarrollo; todavía no tiene una definición. Su líder está al tanto y lo viene conversando con él. Queda pendiente conversarlo con su líder.",
+  "sentimiento": "neutro",
+  "temas": [
+    "compensacion",
+    "desarrollo_carrera",
+    "relacion_con_lider"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Pregunta por el calendario de revisión de rentas del próximo ciclo.",
+    "Conversamos sobre posibles rutas de desarrollo; todavía no tiene una definición."
+  ],
+  "confianza": 0.95
+}

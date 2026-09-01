@@ -1,0 +1,18 @@
+{
+  "hash_nota": "481b5f5b57a3df5645649015",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:52:48.913953+00:00",
+  "texto_scrubbed": "Conversación de seguimiento a solicitud del propio buker. Menciona que la carga sube fuerte en cierres de mes y baja el resto, pero que ya lo tiene incorporado. Comenta que el equipo está en un momento de mucha exigencia pero con buena disposición. Quedamos de retomarlo cuando esté cerrado el ciclo en curso. Sin acciones inmediatas; se deja registro para seguimiento.",
+  "sentimiento": "neutro",
+  "temas": [
+    "carga_trabajo",
+    "clima_equipo"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "la carga sube fuerte en cierres de mes y baja el resto, pero que ya lo tiene incorporado",
+    "el equipo está en un momento de mucha exigencia pero con buena disposición"
+  ],
+  "confianza": 0.9
+}

@@ -1,0 +1,18 @@
+{
+  "hash_nota": "a226a65a3a1b0f7c4871341d",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:40:09.644288+00:00",
+  "texto_scrubbed": "Conversamos en el 1:1 mensual. Destaca la mejora en el proceso de handoff con el equipo de implementación. Muy buena evaluación del onboarding: dice que llegó con todo listo y con un buddy asignado. Viene de cerrar un trimestre por sobre meta y se le nota tranquilo. Sin acciones pendientes de mi parte; se retoma en el próximo ciclo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "herramientas_procesos",
+    "onboarding"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Destaca la mejora en el proceso de handoff con el equipo de implementación.",
+    "Muy buena evaluación del onboarding: dice que llegó con todo listo y con un buddy asignado."
+  ],
+  "confianza": 0.95
+}

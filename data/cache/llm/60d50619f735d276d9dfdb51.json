@@ -1,0 +1,21 @@
+{
+  "hash_nota": "60d50619f735d276d9dfdb51",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:49:09.549993+00:00",
+  "texto_scrubbed": "Instancia de seguimiento posterior al cierre de OKRs del trimestre. Comenta que el equipo está en un momento de mucha exigencia pero con buena disposición. Le hace sentido su objetivo anual aunque le cuesta traducirlo a métricas semanales. Sin acciones inmediatas; se deja registro para seguimiento.",
+  "sentimiento": "neutro",
+  "temas": [
+    "carga_trabajo",
+    "clima_equipo",
+    "claridad_rol"
+  ],
+  "senales": [
+    "claridad_rol"
+  ],
+  "citas_respaldo": [
+    "el equipo está en un momento de mucha exigencia pero con buena disposición",
+    "le cuesta traducirlo a métricas semanales"
+  ],
+  "confianza": 0.85
+}

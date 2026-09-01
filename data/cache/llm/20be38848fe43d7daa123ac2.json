@@ -1,0 +1,24 @@
+{
+  "hash_nota": "20be38848fe43d7daa123ac2",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:40:22.079481+00:00",
+  "texto_scrubbed": "Café de seguimiento, sin agenda formal. Comenta que llegó sin accesos durante las primeras dos semanas y que eso le costó tomar ritmo. Describe una relación tensa con su líder: dice que el feedback llega tarde y en tono correctivo. Señala que las últimas seis semanas ha estado trabajando fuera de horario de forma sistemática para no atrasar entregas. Es la primera vez que menciona explícitamente estar mirando otras opciones. Queda con la sensación de no ser escuchado. Requiere seguimiento cercano.",
+  "sentimiento": "negativo",
+  "temas": [
+    "relacion_con_lider",
+    "balance_vida_trabajo",
+    "onboarding"
+  ],
+  "senales": [
+    "relacion_con_lider",
+    "balance_vida_trabajo",
+    "onboarding"
+  ],
+  "citas_respaldo": [
+    "Describe una relación tensa con su líder: dice que el feedback llega tarde y en tono correctivo.",
+    "Señala que las últimas seis semanas ha estado trabajando fuera de horario de forma sistemática para no atrasar entregas.",
+    "Comenta que llegó sin accesos durante las primeras dos semanas y que eso le costó tomar ritmo."
+  ],
+  "confianza": 0.95
+}

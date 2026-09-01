@@ -1,0 +1,16 @@
+{
+  "hash_nota": "7797c18d9d7dd47fe7881135",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:53:11.281176+00:00",
+  "texto_scrubbed": "Café de seguimiento, sin agenda formal. Conversamos sobre el alcance de su rol; quedaron algunos bordes por definir con su líder. Acordamos retomar el tema en la próxima instancia.",
+  "sentimiento": "neutro",
+  "temas": [
+    "claridad_rol"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Conversamos sobre el alcance de su rol; quedaron algunos bordes por definir con su líder."
+  ],
+  "confianza": 0.9
+}

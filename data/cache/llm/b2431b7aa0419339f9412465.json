@@ -1,0 +1,20 @@
+{
+  "hash_nota": "b2431b7aa0419339f9412465",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:48:45.229480+00:00",
+  "texto_scrubbed": "Conversación de seguimiento a solicitud del propio buker. Comenta que llegó sin accesos durante las primeras dos semanas y que eso le costó tomar ritmo. Es la primera vez que menciona explícitamente estar mirando otras opciones. Acordamos volver a revisarlo en dos semanas.",
+  "sentimiento": "negativo",
+  "temas": [
+    "onboarding",
+    "herramientas_procesos"
+  ],
+  "senales": [
+    "onboarding",
+    "herramientas_procesos"
+  ],
+  "citas_respaldo": [
+    "llegó sin accesos durante las primeras dos semanas y que eso le costó tomar ritmo"
+  ],
+  "confianza": 0.9
+}

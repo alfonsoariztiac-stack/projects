@@ -1,0 +1,21 @@
+{
+  "hash_nota": "aa826816fca9d8a915dabe40",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:48:59.938164+00:00",
+  "texto_scrubbed": "Conversación de seguimiento a solicitud del propio buker. Plantea directamente que su renta quedó atrás respecto del mercado y que ha recibido acercamientos externos. Manifiesta que lleva más de dos años en el mismo nivel y que no tiene visibilidad de cuál sería el siguiente paso. Es la tercera conversación consecutiva en que aparece el mismo punto. Acordamos volver a revisarlo en dos semanas.",
+  "sentimiento": "negativo",
+  "temas": [
+    "compensacion",
+    "desarrollo_carrera"
+  ],
+  "senales": [
+    "compensacion",
+    "desarrollo_carrera"
+  ],
+  "citas_respaldo": [
+    "su renta quedó atrás respecto del mercado",
+    "lleva más de dos años en el mismo nivel y que no tiene visibilidad de cuál sería el siguiente paso"
+  ],
+  "confianza": 0.95
+}

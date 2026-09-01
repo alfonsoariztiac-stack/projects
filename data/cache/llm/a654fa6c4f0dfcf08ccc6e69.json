@@ -1,0 +1,18 @@
+{
+  "hash_nota": "a654fa6c4f0dfcf08ccc6e69",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:51:39.391354+00:00",
+  "texto_scrubbed": "Seguimiento agendado por la líder tras el mid year feedback. Sugiere ajustes al proceso de documentación del área. Menciona que la carga sube fuerte en cierres de mes y baja el resto, pero que ya lo tiene incorporado. Quedamos de retomarlo cuando esté cerrado el ciclo en curso. Queda pendiente conversarlo con su líder.",
+  "sentimiento": "neutro",
+  "temas": [
+    "herramientas_procesos",
+    "carga_trabajo"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Sugiere ajustes al proceso de documentación del área.",
+    "Menciona que la carga sube fuerte en cierres de mes y baja el resto, pero que ya lo tiene incorporado."
+  ],
+  "confianza": 0.9
+}

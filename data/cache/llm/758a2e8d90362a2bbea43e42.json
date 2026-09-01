@@ -1,0 +1,19 @@
+{
+  "hash_nota": "758a2e8d90362a2bbea43e42",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:39:26.693500+00:00",
+  "texto_scrubbed": "Seguimiento agendado por la líder tras el mid year feedback. Comenta que con el cambio de líder recién están calibrando la forma de trabajo. Conversamos sobre sus tiempos de descanso; dice tenerlos razonablemente cubiertos. Coincide con el período de cierre trimestral del área. Queda pendiente conversarlo con su líder.",
+  "sentimiento": "neutro",
+  "temas": [
+    "relacion_con_lider",
+    "balance_vida_trabajo",
+    "cambio_organizacional"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "con el cambio de líder recién están calibrando la forma de trabajo",
+    "Conversamos sobre sus tiempos de descanso; dice tenerlos razonablemente cubiertos."
+  ],
+  "confianza": 0.85
+}

@@ -1,0 +1,18 @@
+{
+  "hash_nota": "6459bc3258831be79bafe3d8",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:58:39.941856+00:00",
+  "texto_scrubbed": "Instancia de seguimiento posterior al cierre de OKRs del trimestre. Se muestra contento con el reconocimiento recibido tras el cierre del proyecto con [CLIENTE]. Valora el espacio que le da [PERSONA_1] para tomar decisiones sin microgestión. Es la segunda conversación seguida en que aparece este punto en positivo. Queda de compartir lo aprendido con el resto del equipo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "reconocimiento",
+    "relacion_con_lider"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Se muestra contento con el reconocimiento recibido tras el cierre del proyecto con [CLIENTE].",
+    "Valora el espacio que le da [PERSONA_1] para tomar decisiones sin microgestión."
+  ],
+  "confianza": 0.95
+}

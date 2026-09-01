@@ -1,0 +1,18 @@
+{
+  "hash_nota": "408a07a91fb27b99744341af",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:50:28.969793+00:00",
+  "texto_scrubbed": "Café de seguimiento, sin agenda formal. Valora el espacio que le da [PERSONA_1] para tomar decisiones sin microgestión. Está entusiasmado con el plan de formación que armó con su líder para el próximo semestre. Mencionó de paso que recomendó a un conocido para una vacante del área. Sin acciones pendientes de mi parte; se retoma en el próximo ciclo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "relacion_con_lider",
+    "desarrollo_carrera"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Valora el espacio que le da [PERSONA_1] para tomar decisiones sin microgestión.",
+    "Está entusiasmado con el plan de formación que armó con su líder para el próximo semestre."
+  ],
+  "confianza": 0.95
+}

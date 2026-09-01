@@ -1,0 +1,18 @@
+{
+  "hash_nota": "3e95a9c2081613148582f53b",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:51:46.877355+00:00",
+  "texto_scrubbed": "Café de seguimiento, sin agenda formal. Destaca que su líder reconoció públicamente el trabajo del último release en la reunión de área. Postuló a un movimiento interno y está muy motivado con la posibilidad. Sin acciones pendientes de mi parte; se retoma en el próximo ciclo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "reconocimiento",
+    "movilidad_interna"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "su líder reconoció públicamente el trabajo del último release en la reunión de área",
+    "Postuló a un movimiento interno y está muy motivado con la posibilidad"
+  ],
+  "confianza": 0.95
+}

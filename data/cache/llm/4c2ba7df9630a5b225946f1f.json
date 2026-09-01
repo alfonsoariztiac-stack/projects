@@ -1,0 +1,17 @@
+{
+  "hash_nota": "4c2ba7df9630a5b225946f1f",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:51:27.270381+00:00",
+  "texto_scrubbed": "Instancia de seguimiento posterior al cierre de OKRs del trimestre. Valora especialmente las stock options y la flexibilidad por sobre el componente monetario. Su líder lo había anticipado en el comité de calibración. Acordamos mantener la cadencia mensual.",
+  "sentimiento": "positivo",
+  "temas": [
+    "compensacion",
+    "balance_vida_trabajo"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Valora especialmente las stock options y la flexibilidad por sobre el componente monetario."
+  ],
+  "confianza": 0.9
+}

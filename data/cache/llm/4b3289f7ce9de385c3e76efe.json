@@ -1,0 +1,21 @@
+{
+  "hash_nota": "4b3289f7ce9de385c3e76efe",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:51:25.793801+00:00",
+  "texto_scrubbed": "Check-in de rutina del ciclo de Happiness. Conversamos sobre el alcance de su rol; quedaron algunos bordes por definir con su líder. Reporta un volumen de trabajo por sobre lo habitual, asociado a la temporada. Quedamos de retomarlo cuando esté cerrado el ciclo en curso. Acordamos retomar el tema en la próxima instancia.",
+  "sentimiento": "neutro",
+  "temas": [
+    "claridad_rol",
+    "carga_trabajo"
+  ],
+  "senales": [
+    "carga_trabajo",
+    "claridad_rol"
+  ],
+  "citas_respaldo": [
+    "Conversamos sobre el alcance de su rol; quedaron algunos bordes por definir con su líder.",
+    "Reporta un volumen de trabajo por sobre lo habitual, asociado a la temporada."
+  ],
+  "confianza": 0.9
+}

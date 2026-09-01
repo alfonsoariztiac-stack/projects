@@ -1,0 +1,17 @@
+{
+  "hash_nota": "77f742c7b071fda539f500ef",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-01T01:18:11.806939+00:00",
+  "texto_scrubbed": "Conversación breve después de la reunión de área. Comenta que con el cambio de líder recién están calibrando la forma de trabajo. Planea tomar vacaciones en el próximo trimestre, aún sin fecha. Acordamos retomar el tema en la próxima instancia.",
+  "sentimiento": "neutro",
+  "temas": [
+    "cambio_organizacional",
+    "relacion_con_lider"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "con el cambio de líder recién están calibrando la forma de trabajo"
+  ],
+  "confianza": 0.9
+}

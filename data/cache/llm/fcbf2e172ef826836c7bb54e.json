@@ -1,0 +1,20 @@
+{
+  "hash_nota": "fcbf2e172ef826836c7bb54e",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:38:16.416677+00:00",
+  "texto_scrubbed": "Conversamos en el 1:1 mensual. Planea tomar vacaciones en el próximo trimestre, aún sin fecha. Menciona fricciones menores con algunas herramientas internas, nada bloqueante. Conversamos sobre el alcance de su rol; quedaron algunos bordes por definir con su líder. Sin acciones inmediatas; se deja registro para seguimiento.",
+  "sentimiento": "neutro",
+  "temas": [
+    "herramientas_procesos",
+    "claridad_rol"
+  ],
+  "senales": [
+    "herramientas_procesos"
+  ],
+  "citas_respaldo": [
+    "Menciona fricciones menores con algunas herramientas internas, nada bloqueante.",
+    "Conversamos sobre el alcance de su rol; quedaron algunos bordes por definir con su líder."
+  ],
+  "confianza": 0.9
+}

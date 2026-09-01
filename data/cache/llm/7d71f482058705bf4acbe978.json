@@ -1,0 +1,20 @@
+{
+  "hash_nota": "7d71f482058705bf4acbe978",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:38:52.102303+00:00",
+  "texto_scrubbed": "Instancia de seguimiento posterior al cierre de OKRs del trimestre. Reporta un volumen de trabajo por sobre lo habitual, asociado a la temporada. No plantea el reconocimiento como un tema relevante para él en este momento. Coincide con el período de cierre trimestral del área. Queda pendiente conversarlo con su líder.",
+  "sentimiento": "neutro",
+  "temas": [
+    "carga_trabajo",
+    "reconocimiento",
+    "relacion_con_lider"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Reporta un volumen de trabajo por sobre lo habitual, asociado a la temporada.",
+    "No plantea el reconocimiento como un tema relevante para él en este momento.",
+    "Queda pendiente conversarlo con su líder."
+  ],
+  "confianza": 0.9
+}

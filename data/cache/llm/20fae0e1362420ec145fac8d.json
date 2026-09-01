@@ -1,0 +1,20 @@
+{
+  "hash_nota": "20fae0e1362420ec145fac8d",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:53:16.774303+00:00",
+  "texto_scrubbed": "Nos juntamos a raíz de la última encuesta de clima del equipo. Menciona fricciones menores con algunas herramientas internas, nada bloqueante. Todavía está calibrando expectativas propias del período de adaptación. No hay antecedentes previos de este tema en su bitácora. Sin acciones inmediatas; se deja registro para seguimiento.",
+  "sentimiento": "neutro",
+  "temas": [
+    "herramientas_procesos",
+    "onboarding",
+    "clima_equipo"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Menciona fricciones menores con algunas herramientas internas, nada bloqueante.",
+    "Todavía está calibrando expectativas propias del período de adaptación.",
+    "Nos juntamos a raíz de la última encuesta de clima del equipo."
+  ],
+  "confianza": 0.9
+}

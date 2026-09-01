@@ -1,0 +1,18 @@
+{
+  "hash_nota": "f10e9d83ab9fbafd190c5770",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:39:57.956365+00:00",
+  "texto_scrubbed": "Instancia de seguimiento posterior al cierre de OKRs del trimestre. Destaca lo rápido que se sintió parte del equipo. Se mostró conforme con el último ajuste y valora la transparencia con que se le explicó la banda. Mencionó de paso que recomendó a un conocido para una vacante del área. Sin acciones pendientes de mi parte; se retoma en el próximo ciclo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "clima_equipo",
+    "compensacion"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Destaca lo rápido que se sintió parte del equipo.",
+    "Se mostró conforme con el último ajuste y valora la transparencia con que se le explicó la banda."
+  ],
+  "confianza": 0.95
+}

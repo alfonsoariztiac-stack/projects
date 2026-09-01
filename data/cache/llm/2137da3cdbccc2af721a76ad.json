@@ -1,0 +1,18 @@
+{
+  "hash_nota": "2137da3cdbccc2af721a76ad",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:53:23.507349+00:00",
+  "texto_scrubbed": "Conversamos en el 1:1 mensual. Aprovechó la política de vacaciones para tomarse dos semanas y volvió con mucha mejor energía. Mencionó de paso que recomendó a un conocido para una vacante del área. Queda de compartir lo aprendido con el resto del equipo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "balance_vida_trabajo",
+    "clima_equipo"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Aprovechó la política de vacaciones para tomarse dos semanas y volvió con mucha mejor energía.",
+    "Queda de compartir lo aprendido con el resto del equipo."
+  ],
+  "confianza": 0.95
+}

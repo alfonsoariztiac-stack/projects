@@ -1,0 +1,18 @@
+{
+  "hash_nota": "eaa6b7fa188f512ef636ca1a",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:53:58.856307+00:00",
+  "texto_scrubbed": "Café de seguimiento, sin agenda formal. Menciona el reciente cambio organizacional como un tema en curso. Comenta que con el cambio de líder recién están calibrando la forma de trabajo. Su líder está al tanto y lo viene conversando con él. Acordamos retomar el tema en la próxima instancia.",
+  "sentimiento": "neutro",
+  "temas": [
+    "cambio_organizacional",
+    "relacion_con_lider"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Menciona el reciente cambio organizacional como un tema en curso.",
+    "Comenta que con el cambio de líder recién están calibrando la forma de trabajo."
+  ],
+  "confianza": 0.9
+}

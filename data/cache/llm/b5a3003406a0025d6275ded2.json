@@ -1,0 +1,20 @@
+{
+  "hash_nota": "b5a3003406a0025d6275ded2",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:52:31.620781+00:00",
+  "texto_scrubbed": "Conversación de seguimiento a solicitud del propio buker. Menciona que la carga sube fuerte en cierres de mes y baja el resto, pero que ya lo tiene incorporado. Comenta que el reconocimiento en su equipo tiende a ser informal, y que le acomoda así. Consultó cómo funciona la banda salarial de su cargo; se le explicó el modelo. Quedamos de retomarlo cuando esté cerrado el ciclo en curso. Acordamos retomar el tema en la próxima instancia.",
+  "sentimiento": "neutro",
+  "temas": [
+    "carga_trabajo",
+    "reconocimiento",
+    "compensacion"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "la carga sube fuerte en cierres de mes y baja el resto, pero que ya lo tiene incorporado",
+    "el reconocimiento en su equipo tiende a ser informal, y que le acomoda así",
+    "Consultó cómo funciona la banda salarial de su cargo"
+  ],
+  "confianza": 0.95
+}

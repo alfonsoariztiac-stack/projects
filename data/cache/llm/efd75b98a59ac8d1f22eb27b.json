@@ -1,0 +1,18 @@
+{
+  "hash_nota": "efd75b98a59ac8d1f22eb27b",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:48:38.763292+00:00",
+  "texto_scrubbed": "Seguimiento agendado por la líder tras el mid year feedback. Comenta que el reconocimiento en su equipo tiende a ser informal, y que le acomoda así. Está adaptándose al cambio de estructura del área; sin mayores complicaciones. Sin acciones inmediatas; se deja registro para seguimiento.",
+  "sentimiento": "positivo",
+  "temas": [
+    "reconocimiento",
+    "cambio_organizacional"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "el reconocimiento en su equipo tiende a ser informal, y que le acomoda así",
+    "Está adaptándose al cambio de estructura del área; sin mayores complicaciones."
+  ],
+  "confianza": 0.9
+}

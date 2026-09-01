@@ -1,0 +1,19 @@
+{
+  "hash_nota": "a78bbc8bcd2b61cdce6f4470",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:48:28.614438+00:00",
+  "texto_scrubbed": "Conversación de seguimiento a solicitud del propio buker. Comenta que con el cambio de líder recién están calibrando la forma de trabajo. Conversamos sobre el alcance de su rol; quedaron algunos bordes por definir con su líder. Acordamos retomar el tema en la próxima instancia.",
+  "sentimiento": "neutro",
+  "temas": [
+    "claridad_rol",
+    "relacion_con_lider",
+    "cambio_organizacional"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "con el cambio de líder recién están calibrando la forma de trabajo",
+    "Conversamos sobre el alcance de su rol; quedaron algunos bordes por definir con su líder."
+  ],
+  "confianza": 0.9
+}

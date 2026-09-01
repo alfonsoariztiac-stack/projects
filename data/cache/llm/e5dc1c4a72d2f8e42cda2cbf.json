@@ -1,0 +1,20 @@
+{
+  "hash_nota": "e5dc1c4a72d2f8e42cda2cbf",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:51:44.382014+00:00",
+  "texto_scrubbed": "Nos juntamos a raíz de la última encuesta de clima del equipo. Le entusiasma la opción de rotar hacia otro equipo el próximo año. Destaca lo rápido que se sintió parte del equipo. Comenta que las automatizaciones nuevas le liberaron varias horas a la semana. Su líder lo había anticipado en el comité de calibración. Acordamos mantener la cadencia mensual.",
+  "sentimiento": "positivo",
+  "temas": [
+    "movilidad_interna",
+    "herramientas_procesos",
+    "clima_equipo"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Le entusiasma la opción de rotar hacia otro equipo el próximo año.",
+    "Destaca lo rápido que se sintió parte del equipo.",
+    "Comenta que las automatizaciones nuevas le liberaron varias horas a la semana."
+  ],
+  "confianza": 0.95
+}

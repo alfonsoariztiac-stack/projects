@@ -1,0 +1,20 @@
+{
+  "hash_nota": "12d389a3f90bae24e72ec8cd",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:49:39.422996+00:00",
+  "texto_scrubbed": "Conversamos en el 1:1 mensual. Conversamos sobre posibles rutas de desarrollo; todavía no tiene una definición. No plantea el reconocimiento como un tema relevante para él en este momento. El clima del equipo le parece normal; sin temas relevantes que reportar. Es primera vez que lo plantea en una instancia formal. Queda pendiente conversarlo con su líder.",
+  "sentimiento": "neutro",
+  "temas": [
+    "desarrollo_carrera",
+    "reconocimiento",
+    "clima_equipo"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Conversamos sobre posibles rutas de desarrollo; todavía no tiene una definición.",
+    "No plantea el reconocimiento como un tema relevante para él en este momento.",
+    "El clima del equipo le parece normal; sin temas relevantes que reportar."
+  ],
+  "confianza": 0.95
+}

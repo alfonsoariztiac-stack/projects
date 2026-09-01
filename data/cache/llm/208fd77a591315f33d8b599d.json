@@ -1,0 +1,20 @@
+{
+  "hash_nota": "208fd77a591315f33d8b599d",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:50:40.862354+00:00",
+  "texto_scrubbed": "Conversamos en el 1:1 mensual. Sugiere ajustes al proceso de documentación del área. Le hace sentido su objetivo anual aunque le cuesta traducirlo a métricas semanales. Todavía está calibrando expectativas propias del período de adaptación. Coincide con el período de cierre trimestral del área. Acordamos retomar el tema en la próxima instancia.",
+  "sentimiento": "neutro",
+  "temas": [
+    "herramientas_procesos",
+    "claridad_rol",
+    "onboarding"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Sugiere ajustes al proceso de documentación del área.",
+    "Le hace sentido su objetivo anual aunque le cuesta traducirlo a métricas semanales.",
+    "Todavía está calibrando expectativas propias del período de adaptación."
+  ],
+  "confianza": 0.9
+}

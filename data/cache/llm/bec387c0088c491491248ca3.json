@@ -1,0 +1,24 @@
+{
+  "hash_nota": "bec387c0088c491491248ca3",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:53:46.143707+00:00",
+  "texto_scrubbed": "Check-in de rutina del ciclo de Happiness. Manifiesta que lleva más de dos años en el mismo nivel y que no tiene visibilidad de cuál sería el siguiente paso. Plantea directamente que su renta quedó atrás respecto del mercado y que ha recibido acercamientos externos. Postuló a dos procesos internos y en ninguno recibió retroalimentación; dice que eso lo desanimó. Se le nota más distante que en conversaciones previas; respuestas breves. Le pedí que no lo deje pasar; quedo atenta a cómo evoluciona.",
+  "sentimiento": "negativo",
+  "temas": [
+    "desarrollo_carrera",
+    "compensacion",
+    "movilidad_interna"
+  ],
+  "senales": [
+    "desarrollo_carrera",
+    "compensacion",
+    "movilidad_interna"
+  ],
+  "citas_respaldo": [
+    "lleva más de dos años en el mismo nivel y que no tiene visibilidad de cuál sería el siguiente paso",
+    "su renta quedó atrás respecto del mercado",
+    "Postuló a dos procesos internos y en ninguno recibió retroalimentación; dice que eso lo desanimó"
+  ],
+  "confianza": 0.95
+}

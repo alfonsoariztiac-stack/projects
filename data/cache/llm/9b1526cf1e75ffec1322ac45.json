@@ -1,0 +1,20 @@
+{
+  "hash_nota": "9b1526cf1e75ffec1322ac45",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:47:47.343087+00:00",
+  "texto_scrubbed": "Conversamos en el 1:1 mensual. Sugiere ajustes al proceso de documentación del área. Le hace sentido su objetivo anual aunque le cuesta traducirlo a métricas semanales. Quedamos de retomarlo cuando esté cerrado el ciclo en curso. Acordamos retomar el tema en la próxima instancia.",
+  "sentimiento": "neutro",
+  "temas": [
+    "herramientas_procesos",
+    "claridad_rol"
+  ],
+  "senales": [
+    "claridad_rol"
+  ],
+  "citas_respaldo": [
+    "Sugiere ajustes al proceso de documentación del área.",
+    "le cuesta traducirlo a métricas semanales"
+  ],
+  "confianza": 0.9
+}

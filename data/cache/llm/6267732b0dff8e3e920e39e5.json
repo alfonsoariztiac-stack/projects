@@ -1,0 +1,21 @@
+{
+  "hash_nota": "6267732b0dff8e3e920e39e5",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:48:00.556585+00:00",
+  "texto_scrubbed": "Conversación de seguimiento a solicitud del propio buker. La relación con su líder es correcta; los 1:1 se realizan pero de forma irregular. Le hace sentido su objetivo anual aunque le cuesta traducirlo a métricas semanales. Es primera vez que lo plantea en una instancia formal. Queda pendiente conversarlo con su líder.",
+  "sentimiento": "neutro",
+  "temas": [
+    "relacion_con_lider",
+    "claridad_rol"
+  ],
+  "senales": [
+    "claridad_rol",
+    "relacion_con_lider"
+  ],
+  "citas_respaldo": [
+    "los 1:1 se realizan pero de forma irregular",
+    "le cuesta traducirlo a métricas semanales"
+  ],
+  "confianza": 0.9
+}

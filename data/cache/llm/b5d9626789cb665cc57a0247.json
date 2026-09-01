@@ -1,0 +1,24 @@
+{
+  "hash_nota": "b5d9626789cb665cc57a0247",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:38:33.955423+00:00",
+  "texto_scrubbed": "Conversamos en el 1:1 mensual. Comenta que se siente aislado del resto del equipo desde que pasó a trabajar full remoto. Plantea incertidumbre por la reestructuración del área y no sabe dónde queda su rol. Queda con la sensación de no ser escuchado. Requiere seguimiento cercano.",
+  "sentimiento": "negativo",
+  "temas": [
+    "clima_equipo",
+    "cambio_organizacional",
+    "claridad_rol"
+  ],
+  "senales": [
+    "clima_equipo",
+    "cambio_organizacional",
+    "claridad_rol"
+  ],
+  "citas_respaldo": [
+    "se siente aislado del resto del equipo desde que pasó a trabajar full remoto",
+    "incertidumbre por la reestructuración del área y no sabe dónde queda su rol",
+    "Queda con la sensación de no ser escuchado"
+  ],
+  "confianza": 0.95
+}

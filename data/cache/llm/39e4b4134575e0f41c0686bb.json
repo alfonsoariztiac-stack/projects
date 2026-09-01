@@ -1,0 +1,23 @@
+{
+  "hash_nota": "39e4b4134575e0f41c0686bb",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:49:12.410644+00:00",
+  "texto_scrubbed": "Check-in de rutina del ciclo de Happiness. Describe un clima tenso en el equipo tras las últimas salidas, con conversaciones de pasillo sobre quién sigue. Comenta que le cuesta desconectar y que ha estado respondiendo mensajes los fines de semana. Le pedí que no lo deje pasar; quedo atenta a cómo evoluciona.",
+  "sentimiento": "negativo",
+  "temas": [
+    "clima_equipo",
+    "balance_vida_trabajo",
+    "cambio_organizacional"
+  ],
+  "senales": [
+    "clima_equipo",
+    "balance_vida_trabajo",
+    "cambio_organizacional"
+  ],
+  "citas_respaldo": [
+    "Describe un clima tenso en el equipo tras las últimas salidas, con conversaciones de pasillo sobre quién sigue.",
+    "Comenta que le cuesta desconectar y que ha estado respondiendo mensajes los fines de semana."
+  ],
+  "confianza": 0.95
+}
