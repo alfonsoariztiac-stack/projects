@@ -1,0 +1,18 @@
+# Ignore file para `gcloud builds submit --ignore-file cloud/.gcloudignore`
+# corrido desde la RAÍZ del repo (el contexto tiene que incluir src/, no solo
+# cloud/, porque cloud/Dockerfile hace COPY src/). Sin este archivo, el tarball
+# que sube a Cloud Build arrastra los dos .venv (~740 MB), data/out/ y — el
+# punto que de verdad importa — .env con las credenciales del webhook y la key
+# de Gemini, que no tienen por qué salir del disco local.
+
+.git/
+.venv/
+cloud/.venv/
+cloud/.cuarentena/
+__pycache__/
+*.pyc
+.env
+data/out/
+deck/
+tests/
+.claude/
