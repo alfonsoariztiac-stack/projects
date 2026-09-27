@@ -1,0 +1,18 @@
+{
+  "hash_nota": "55f0b9861459e6468d603384",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:49:32.903668+00:00",
+  "texto_scrubbed": "Conversamos en el 1:1 mensual. Pregunta por el calendario de revisión de rentas del próximo ciclo. Su líder está al tanto y lo viene conversando con él. Sin acciones inmediatas; se deja registro para seguimiento.",
+  "sentimiento": "neutro",
+  "temas": [
+    "compensacion",
+    "relacion_con_lider"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Pregunta por el calendario de revisión de rentas del próximo ciclo.",
+    "Su líder está al tanto y lo viene conversando con él."
+  ],
+  "confianza": 0.95
+}

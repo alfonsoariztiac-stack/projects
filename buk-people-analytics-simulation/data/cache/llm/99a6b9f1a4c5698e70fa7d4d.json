@@ -1,0 +1,20 @@
+{
+  "hash_nota": "99a6b9f1a4c5698e70fa7d4d",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:48:42.248104+00:00",
+  "texto_scrubbed": "Instancia de seguimiento posterior al cierre de OKRs del trimestre. Conversamos sobre sus tiempos de descanso; dice tenerlos razonablemente cubiertos. Comenta que el equipo está en un momento de mucha exigencia pero con buena disposición. Su líder está al tanto y lo viene conversando con él. Acordamos retomar el tema en la próxima instancia.",
+  "sentimiento": "neutro",
+  "temas": [
+    "balance_vida_trabajo",
+    "carga_trabajo",
+    "relacion_con_lider"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Conversamos sobre sus tiempos de descanso; dice tenerlos razonablemente cubiertos.",
+    "el equipo está en un momento de mucha exigencia pero con buena disposición.",
+    "Su líder está al tanto y lo viene conversando con él."
+  ],
+  "confianza": 0.9
+}

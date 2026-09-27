@@ -1,0 +1,20 @@
+# `gcloud run jobs deploy --source .` no sirve acá: espera un Dockerfile en la
+# raíz del contexto, y el contexto que este build necesita es la raíz del
+# repo completa (para poder copiar `src/`), no `cloud/` solo. Por eso el build
+# se dispara aparte, con Cloud Build derecho:
+#
+#   gcloud builds submit --config cloud/cloudbuild.yaml \
+#     --ignore-file cloud/.gcloudignore \
+#     --substitutions=_IMAGE=southamerica-west1-docker.pkg.dev/buk-people-alertas/alertas/alertas-mensual \
+#     .
+#
+# "Cloud Build compila solo" se cumple igual: sigue siendo Cloud Build quien
+# arma la imagen, solo que invocado explícito en vez de por el atajo de
+# `run deploy --source`.
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args: ['build', '-f', 'cloud/Dockerfile', '-t', '${_IMAGE}', '.']
+images:
+  - '${_IMAGE}'
+options:
+  logging: CLOUD_LOGGING_ONLY

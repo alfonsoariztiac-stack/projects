@@ -1,0 +1,20 @@
+{
+  "hash_nota": "fa0f8657abeaebd7baaf46e1",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:51:42.350935+00:00",
+  "texto_scrubbed": "Instancia de seguimiento posterior al cierre de OKRs del trimestre. Dice que el volumen es alto pero manejable, y que le acomoda el ritmo actual. Valora las actividades de Happiness del último trimestre; dice que ayudaron a soltar tensión. Comenta que las automatizaciones nuevas le liberaron varias horas a la semana. Viene de cerrar un trimestre por sobre meta y se le nota tranquilo. Acordamos mantener la cadencia mensual.",
+  "sentimiento": "positivo",
+  "temas": [
+    "carga_trabajo",
+    "herramientas_procesos",
+    "clima_equipo"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "el volumen es alto pero manejable, y que le acomoda el ritmo actual",
+    "las automatizaciones nuevas le liberaron varias horas a la semana",
+    "Valora las actividades de Happiness del último trimestre; dice que ayudaron a soltar tensión"
+  ],
+  "confianza": 0.95
+}

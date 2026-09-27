@@ -1,0 +1,20 @@
+{
+  "hash_nota": "00be9a90816bca1b97b547e6",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:52:26.883720+00:00",
+  "texto_scrubbed": "Conversación de seguimiento a solicitud del propio buker. Valora el espacio que le da [PERSONA_1] para tomar decisiones sin microgestión. Habla muy bien del clima del equipo y de la cercanía con sus pares. Está entusiasmado con el plan de formación que armó con su líder para el próximo semestre. Su líder lo había anticipado en el comité de calibración. Sin acciones pendientes de mi parte; se retoma en el próximo ciclo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "relacion_con_lider",
+    "clima_equipo",
+    "desarrollo_carrera"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Valora el espacio que le da [PERSONA_1] para tomar decisiones sin microgestión.",
+    "Habla muy bien del clima del equipo y de la cercanía con sus pares.",
+    "Está entusiasmado con el plan de formación que armó con su líder para el próximo semestre."
+  ],
+  "confianza": 0.95
+}

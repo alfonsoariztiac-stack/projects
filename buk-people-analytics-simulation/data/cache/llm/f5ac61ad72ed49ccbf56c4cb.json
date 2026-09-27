@@ -1,0 +1,20 @@
+{
+  "hash_nota": "f5ac61ad72ed49ccbf56c4cb",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:53:43.822862+00:00",
+  "texto_scrubbed": "Check-in de rutina del ciclo de Happiness. El clima del equipo le parece normal; sin temas relevantes que reportar. Está adaptándose al cambio de estructura del área; sin mayores complicaciones. Queda pendiente conversarlo con su líder.",
+  "sentimiento": "neutro",
+  "temas": [
+    "clima_equipo",
+    "cambio_organizacional",
+    "relacion_con_lider"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "El clima del equipo le parece normal; sin temas relevantes que reportar.",
+    "Está adaptándose al cambio de estructura del área; sin mayores complicaciones.",
+    "Queda pendiente conversarlo con su líder."
+  ],
+  "confianza": 0.95
+}

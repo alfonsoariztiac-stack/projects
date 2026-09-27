@@ -1,0 +1,20 @@
+{
+  "hash_nota": "03d72f0dd2269b9071994837",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:48:17.085847+00:00",
+  "texto_scrubbed": "Nos juntamos a raíz de la última encuesta de clima del equipo. Destaca que su líder reconoció públicamente el trabajo del último release en la reunión de área. Valora enormemente el WFA; está trabajando desde el sur y le ha resultado muy bien. Sin acciones pendientes de mi parte; se retoma en el próximo ciclo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "reconocimiento",
+    "balance_vida_trabajo",
+    "clima_equipo"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "su líder reconoció públicamente el trabajo del último release en la reunión de área",
+    "Valora enormemente el WFA; está trabajando desde el sur y le ha resultado muy bien",
+    "Nos juntamos a raíz de la última encuesta de clima del equipo"
+  ],
+  "confianza": 0.95
+}

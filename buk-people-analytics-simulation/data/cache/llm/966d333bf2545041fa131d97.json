@@ -1,0 +1,16 @@
+{
+  "hash_nota": "966d333bf2545041fa131d97",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:38:31.237071+00:00",
+  "texto_scrubbed": "Conversación breve después de la reunión de área. Tiene claridad de sus objetivos del semestre y cómo se miden. Acordamos mantener la cadencia mensual.",
+  "sentimiento": "positivo",
+  "temas": [
+    "claridad_rol"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Tiene claridad de sus objetivos del semestre y cómo se miden."
+  ],
+  "confianza": 0.95
+}

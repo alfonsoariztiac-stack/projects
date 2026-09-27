@@ -1,0 +1,20 @@
+{
+  "hash_nota": "7be7647952dbdcf4dde48b8f",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:39:02.654553+00:00",
+  "texto_scrubbed": "Check-in de rutina del ciclo de Happiness. Está adaptándose al cambio de estructura del área; sin mayores complicaciones. Menciona que la carga sube fuerte en cierres de mes y baja el resto, pero que ya lo tiene incorporado. Es primera vez que lo plantea en una instancia formal. Queda pendiente conversarlo con su líder.",
+  "sentimiento": "neutro",
+  "temas": [
+    "cambio_organizacional",
+    "carga_trabajo",
+    "relacion_con_lider"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Está adaptándose al cambio de estructura del área; sin mayores complicaciones.",
+    "Menciona que la carga sube fuerte en cierres de mes y baja el resto, pero que ya lo tiene incorporado.",
+    "Queda pendiente conversarlo con su líder."
+  ],
+  "confianza": 0.9
+}

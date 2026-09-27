@@ -1,0 +1,19 @@
+{
+  "hash_nota": "9843cc5bed7697bf6a8d604e",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:49:35.595315+00:00",
+  "texto_scrubbed": "Conversamos en el 1:1 mensual. Sugiere ajustes al proceso de documentación del área. Comenta que con el cambio de líder recién están calibrando la forma de trabajo. Coincide con el período de cierre trimestral del área. Queda pendiente conversarlo con su líder.",
+  "sentimiento": "neutro",
+  "temas": [
+    "herramientas_procesos",
+    "cambio_organizacional",
+    "relacion_con_lider"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Sugiere ajustes al proceso de documentación del área.",
+    "Comenta que con el cambio de líder recién están calibrando la forma de trabajo."
+  ],
+  "confianza": 0.9
+}

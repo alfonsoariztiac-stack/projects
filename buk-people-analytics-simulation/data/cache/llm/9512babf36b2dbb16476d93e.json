@@ -1,0 +1,16 @@
+{
+  "hash_nota": "9512babf36b2dbb16476d93e",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-01T21:37:57.121863+00:00",
+  "texto_scrubbed": "Seguimiento agendado por la líder tras el mid year feedback. Aprovechó la política de vacaciones para tomarse dos semanas y volvió con mucha mejor energía. Sin acciones pendientes de mi parte; se retoma en el próximo ciclo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "balance_vida_trabajo"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Aprovechó la política de vacaciones para tomarse dos semanas y volvió con mucha mejor energía."
+  ],
+  "confianza": 0.9
+}

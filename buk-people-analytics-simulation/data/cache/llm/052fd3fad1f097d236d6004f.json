@@ -1,0 +1,19 @@
+{
+  "hash_nota": "052fd3fad1f097d236d6004f",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:49:06.739511+00:00",
+  "texto_scrubbed": "Nos juntamos a raíz de la última encuesta de clima del equipo. Está entusiasmado con el plan de formación que armó con su líder para el próximo semestre. Destaca lo rápido que se sintió parte del equipo. Mencionó de paso que recomendó a un conocido para una vacante del área. Acordamos mantener la cadencia mensual.",
+  "sentimiento": "positivo",
+  "temas": [
+    "desarrollo_carrera",
+    "clima_equipo",
+    "relacion_con_lider"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Está entusiasmado con el plan de formación que armó con su líder para el próximo semestre.",
+    "Destaca lo rápido que se sintió parte del equipo."
+  ],
+  "confianza": 0.95
+}

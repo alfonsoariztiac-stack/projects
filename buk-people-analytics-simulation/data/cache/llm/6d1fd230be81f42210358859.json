@@ -1,0 +1,24 @@
+{
+  "hash_nota": "6d1fd230be81f42210358859",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:51:29.293997+00:00",
+  "texto_scrubbed": "Conversación de seguimiento a solicitud del propio buker. Dice que ve a pares con menos tiempo avanzando y que no entiende con qué criterio se decide. Describe que buena parte de su semana se va en trabajo manual que debería estar automatizado. Comenta que no se siente cómodo planteando desacuerdos en su equipo. Es la primera vez que menciona explícitamente estar mirando otras opciones. Le pedí que no lo deje pasar; quedo atenta a cómo evoluciona.",
+  "sentimiento": "negativo",
+  "temas": [
+    "desarrollo_carrera",
+    "herramientas_procesos",
+    "clima_equipo"
+  ],
+  "senales": [
+    "desarrollo_carrera",
+    "herramientas_procesos",
+    "clima_equipo"
+  ],
+  "citas_respaldo": [
+    "ve a pares con menos tiempo avanzando y que no entiende con qué criterio se decide",
+    "buena parte de su semana se va en trabajo manual que debería estar automatizado",
+    "no se siente cómodo planteando desacuerdos en su equipo"
+  ],
+  "confianza": 0.95
+}

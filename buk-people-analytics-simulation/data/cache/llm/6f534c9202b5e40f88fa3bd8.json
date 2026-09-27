@@ -1,0 +1,20 @@
+{
+  "hash_nota": "6f534c9202b5e40f88fa3bd8",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:52:29.124716+00:00",
+  "texto_scrubbed": "Conversación breve después de la reunión de área. Habla muy bien del clima del equipo y de la cercanía con sus pares. Valora enormemente el WFA; está trabajando desde el sur y le ha resultado muy bien. Se mostró conforme con el último ajuste y valora la transparencia con que se le explicó la banda. Es la segunda conversación seguida en que aparece este punto en positivo. Queda de compartir lo aprendido con el resto del equipo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "clima_equipo",
+    "balance_vida_trabajo",
+    "compensacion"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Habla muy bien del clima del equipo y de la cercanía con sus pares.",
+    "Valora enormemente el WFA; está trabajando desde el sur y le ha resultado muy bien.",
+    "Se mostró conforme con el último ajuste y valora la transparencia con que se le explicó la banda."
+  ],
+  "confianza": 0.95
+}

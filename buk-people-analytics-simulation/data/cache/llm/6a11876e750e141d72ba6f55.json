@@ -1,0 +1,18 @@
+{
+  "hash_nota": "6a11876e750e141d72ba6f55",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:51:11.304620+00:00",
+  "texto_scrubbed": "Seguimiento agendado por la líder tras el mid year feedback. Valora las actividades de Happiness del último trimestre; dice que ayudaron a soltar tensión. Destaca lo rápido que se sintió parte del equipo. Dice que el volumen es alto pero manejable, y que le acomoda el ritmo actual. Viene de cerrar un trimestre por sobre meta y se le nota tranquilo. Sin acciones pendientes de mi parte; se retoma en el próximo ciclo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "clima_equipo",
+    "carga_trabajo"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Destaca lo rápido que se sintió parte del equipo.",
+    "Dice que el volumen es alto pero manejable, y que le acomoda el ritmo actual."
+  ],
+  "confianza": 0.95
+}

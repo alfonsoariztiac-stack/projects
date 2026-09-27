@@ -1,0 +1,16 @@
+{
+  "hash_nota": "3d6aae73651c8d5f998327ba",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:53:32.442800+00:00",
+  "texto_scrubbed": "Conversación de seguimiento a solicitud del propio buker. Sugiere ajustes al proceso de documentación del área. Quedamos de retomarlo cuando esté cerrado el ciclo en curso. Sin acciones inmediatas; se deja registro para seguimiento.",
+  "sentimiento": "neutro",
+  "temas": [
+    "herramientas_procesos"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Sugiere ajustes al proceso de documentación del área."
+  ],
+  "confianza": 0.9
+}

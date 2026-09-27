@@ -1,0 +1,20 @@
+{
+  "hash_nota": "32adf4741a15d25d98be789b",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:38:48.628365+00:00",
+  "texto_scrubbed": "Nos juntamos a raíz de la última encuesta de clima del equipo. Terminó dos rutas de Buk University y quiere seguir profundizando en la especialidad. Se muestra contento con el reconocimiento recibido tras el cierre del proyecto con [CLIENTE]. Viene de cerrar un trimestre por sobre meta y se le nota tranquilo. Sin acciones pendientes de mi parte; se retoma en el próximo ciclo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "reconocimiento",
+    "desarrollo_carrera",
+    "clima_equipo"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Se muestra contento con el reconocimiento recibido tras el cierre del proyecto con [CLIENTE].",
+    "Terminó dos rutas de Buk University y quiere seguir profundizando en la especialidad.",
+    "Nos juntamos a raíz de la última encuesta de clima del equipo."
+  ],
+  "confianza": 0.95
+}

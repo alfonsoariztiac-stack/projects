@@ -1,0 +1,20 @@
+{
+  "hash_nota": "708d1840a8cc5ce656259f2e",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:53:36.102593+00:00",
+  "texto_scrubbed": "Café de seguimiento, sin agenda formal. Postuló a un movimiento interno y está muy motivado con la posibilidad. Tiene claridad de sus objetivos del semestre y cómo se miden. Mencionó de paso que recomendó a un conocido para una vacante del área. Queda de compartir lo aprendido con el resto del equipo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "movilidad_interna",
+    "claridad_rol",
+    "clima_equipo"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Postuló a un movimiento interno y está muy motivado con la posibilidad.",
+    "Tiene claridad de sus objetivos del semestre y cómo se miden.",
+    "Queda de compartir lo aprendido con el resto del equipo."
+  ],
+  "confianza": 0.95
+}

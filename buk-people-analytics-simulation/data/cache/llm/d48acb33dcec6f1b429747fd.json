@@ -1,0 +1,20 @@
+{
+  "hash_nota": "d48acb33dcec6f1b429747fd",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-01T21:37:39.826956+00:00",
+  "texto_scrubbed": "Seguimiento agendado por la líder tras el mid year feedback. Le interesa el desarrollo técnico pero prefiere consolidarse en el rol actual antes de moverse. Comenta que el reconocimiento en su equipo tiende a ser informal, y que le acomoda así. Su líder está al tanto y lo viene conversando con él. Queda pendiente conversarlo con su líder.",
+  "sentimiento": "positivo",
+  "temas": [
+    "desarrollo_carrera",
+    "reconocimiento",
+    "relacion_con_lider"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Le interesa el desarrollo técnico pero prefiere consolidarse en el rol actual antes de moverse.",
+    "Comenta que el reconocimiento en su equipo tiende a ser informal, y que le acomoda así.",
+    "Su líder está al tanto y lo viene conversando con él."
+  ],
+  "confianza": 0.95
+}

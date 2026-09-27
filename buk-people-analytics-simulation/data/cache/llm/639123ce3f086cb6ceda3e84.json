@@ -1,0 +1,18 @@
+{
+  "hash_nota": "639123ce3f086cb6ceda3e84",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:50:38.327018+00:00",
+  "texto_scrubbed": "Check-in de rutina del ciclo de Happiness. Dice que ve a pares con menos tiempo avanzando y que no entiende con qué criterio se decide. Se le nota más distante que en conversaciones previas; respuestas breves. Acordamos volver a revisarlo en dos semanas.",
+  "sentimiento": "negativo",
+  "temas": [
+    "desarrollo_carrera"
+  ],
+  "senales": [
+    "desarrollo_carrera"
+  ],
+  "citas_respaldo": [
+    "Dice que ve a pares con menos tiempo avanzando y que no entiende con qué criterio se decide."
+  ],
+  "confianza": 0.9
+}

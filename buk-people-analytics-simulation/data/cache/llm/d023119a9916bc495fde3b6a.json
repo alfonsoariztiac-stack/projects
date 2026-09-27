@@ -1,0 +1,21 @@
+{
+  "hash_nota": "d023119a9916bc495fde3b6a",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:48:57.167050+00:00",
+  "texto_scrubbed": "Seguimiento agendado por la líder tras el mid year feedback. Plantea que la falta de un proceso claro de escalamiento lo deja expuesto frente al cliente. Comenta que no se siente cómodo planteando desacuerdos en su equipo. Coincide con la caída que veníamos observando en sus indicadores del área. Le pedí que no lo deje pasar; quedo atenta a cómo evoluciona.",
+  "sentimiento": "negativo",
+  "temas": [
+    "herramientas_procesos",
+    "clima_equipo"
+  ],
+  "senales": [
+    "herramientas_procesos",
+    "clima_equipo"
+  ],
+  "citas_respaldo": [
+    "la falta de un proceso claro de escalamiento lo deja expuesto frente al cliente",
+    "no se siente cómodo planteando desacuerdos en su equipo"
+  ],
+  "confianza": 0.95
+}

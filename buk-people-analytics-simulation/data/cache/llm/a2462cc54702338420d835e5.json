@@ -1,0 +1,20 @@
+{
+  "hash_nota": "a2462cc54702338420d835e5",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:52:51.745211+00:00",
+  "texto_scrubbed": "Instancia de seguimiento posterior al cierre de OKRs del trimestre. Conversamos sobre sus tiempos de descanso; dice tenerlos razonablemente cubiertos. Menciona que la carga sube fuerte en cierres de mes y baja el resto, pero que ya lo tiene incorporado. Menciona el reciente cambio organizacional como un tema en curso. Coincide con el período de cierre trimestral del área. Sin acciones inmediatas; se deja registro para seguimiento.",
+  "sentimiento": "neutro",
+  "temas": [
+    "carga_trabajo",
+    "balance_vida_trabajo",
+    "cambio_organizacional"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Conversamos sobre sus tiempos de descanso; dice tenerlos razonablemente cubiertos.",
+    "Menciona que la carga sube fuerte en cierres de mes y baja el resto, pero que ya lo tiene incorporado.",
+    "Menciona el reciente cambio organizacional como un tema en curso."
+  ],
+  "confianza": 0.9
+}

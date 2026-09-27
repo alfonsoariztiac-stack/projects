@@ -1,0 +1,18 @@
+{
+  "hash_nota": "915c1b72b43d891fe27127fb",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:51:34.528541+00:00",
+  "texto_scrubbed": "Conversación breve después de la reunión de área. Está adaptándose al cambio de estructura del área; sin mayores complicaciones. El clima del equipo le parece normal; sin temas relevantes que reportar. Quedamos de retomarlo cuando esté cerrado el ciclo en curso. Acordamos retomar el tema en la próxima instancia.",
+  "sentimiento": "neutro",
+  "temas": [
+    "cambio_organizacional",
+    "clima_equipo"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Está adaptándose al cambio de estructura del área; sin mayores complicaciones.",
+    "El clima del equipo le parece normal; sin temas relevantes que reportar."
+  ],
+  "confianza": 0.95
+}

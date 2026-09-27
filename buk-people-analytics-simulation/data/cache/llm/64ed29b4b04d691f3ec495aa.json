@@ -1,0 +1,20 @@
+{
+  "hash_nota": "64ed29b4b04d691f3ec495aa",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:39:55.585291+00:00",
+  "texto_scrubbed": "Conversación de seguimiento a solicitud del propio buker. Conversamos sobre posibles rutas de desarrollo; todavía no tiene una definición. Menciona el reciente cambio organizacional como un tema en curso. Su líder está al tanto y lo viene conversando con él. Queda pendiente conversarlo con su líder.",
+  "sentimiento": "neutro",
+  "temas": [
+    "desarrollo_carrera",
+    "cambio_organizacional",
+    "relacion_con_lider"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Conversamos sobre posibles rutas de desarrollo; todavía no tiene una definición.",
+    "Menciona el reciente cambio organizacional como un tema en curso.",
+    "Su líder está al tanto y lo viene conversando con él."
+  ],
+  "confianza": 0.9
+}

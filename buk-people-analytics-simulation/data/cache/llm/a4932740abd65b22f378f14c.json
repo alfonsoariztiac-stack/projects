@@ -1,0 +1,24 @@
+{
+  "hash_nota": "a4932740abd65b22f378f14c",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:48:14.711266+00:00",
+  "texto_scrubbed": "Café de seguimiento, sin agenda formal. Comenta que llegó sin accesos durante las primeras dos semanas y que eso le costó tomar ritmo. Relata que lleva varios meses cubriendo dos frentes tras la salida de [PERSONA_1] y que no ve cuándo se repone el cupo. Dice que no tiene claro qué se espera de él este semestre y que sus OKRs no se han revisado desde marzo. Evitó comprometerse con plazos cuando le pregunté por sus objetivos del semestre. Le pedí que no lo deje pasar; quedo atenta a cómo evoluciona.",
+  "sentimiento": "negativo",
+  "temas": [
+    "carga_trabajo",
+    "claridad_rol",
+    "onboarding"
+  ],
+  "senales": [
+    "carga_trabajo",
+    "claridad_rol",
+    "onboarding"
+  ],
+  "citas_respaldo": [
+    "llegó sin accesos durante las primeras dos semanas y que eso le costó tomar ritmo",
+    "lleva varios meses cubriendo dos frentes tras la salida de [PERSONA_1] y que no ve cuándo se repone el cupo",
+    "Dice que no tiene claro qué se espera de él este semestre y que sus OKRs no se han revisado desde marzo"
+  ],
+  "confianza": 0.95
+}

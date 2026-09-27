@@ -1,0 +1,24 @@
+{
+  "hash_nota": "0d66907e641292a21f497479",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-01T01:17:57.994933+00:00",
+  "texto_scrubbed": "Conversamos en el 1:1 mensual. Dice que no tiene claro qué se espera de él este semestre y que sus OKRs no se han revisado desde marzo. Manifiesta que lleva más de dos años en el mismo nivel y que no tiene visibilidad de cuál sería el siguiente paso. Describe una relación tensa con su líder: dice que el feedback llega tarde y en tono correctivo. Acordamos volver a revisarlo en dos semanas.",
+  "sentimiento": "negativo",
+  "temas": [
+    "claridad_rol",
+    "desarrollo_carrera",
+    "relacion_con_lider"
+  ],
+  "senales": [
+    "claridad_rol",
+    "desarrollo_carrera",
+    "relacion_con_lider"
+  ],
+  "citas_respaldo": [
+    "no tiene claro qué se espera de él este semestre y que sus OKRs no se han revisado desde marzo",
+    "lleva más de dos años en el mismo nivel y que no tiene visibilidad de cuál sería el siguiente paso",
+    "Describe una relación tensa con su líder: dice que el feedback llega tarde y en tono correctivo"
+  ],
+  "confianza": 0.95
+}

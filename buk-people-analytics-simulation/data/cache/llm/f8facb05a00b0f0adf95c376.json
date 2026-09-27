@@ -1,0 +1,20 @@
+{
+  "hash_nota": "f8facb05a00b0f0adf95c376",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:51:13.772335+00:00",
+  "texto_scrubbed": "Conversamos en el 1:1 mensual. Le hace sentido su objetivo anual aunque le cuesta traducirlo a métricas semanales. Menciona el reciente cambio organizacional como un tema en curso. Quedamos de retomarlo cuando esté cerrado el ciclo en curso. Acordamos retomar el tema en la próxima instancia.",
+  "sentimiento": "neutro",
+  "temas": [
+    "claridad_rol",
+    "cambio_organizacional"
+  ],
+  "senales": [
+    "claridad_rol"
+  ],
+  "citas_respaldo": [
+    "le cuesta traducirlo a métricas semanales",
+    "Menciona el reciente cambio organizacional como un tema en curso."
+  ],
+  "confianza": 0.85
+}

@@ -1,0 +1,20 @@
+{
+  "hash_nota": "3034ca32314035e6383b557a",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:38:18.872713+00:00",
+  "texto_scrubbed": "Seguimiento agendado por la líder tras el mid year feedback. El clima del equipo le parece normal; sin temas relevantes que reportar. No plantea el reconocimiento como un tema relevante para él en este momento. Conversamos sobre sus tiempos de descanso; dice tenerlos razonablemente cubiertos. Queda pendiente conversarlo con su líder.",
+  "sentimiento": "neutro",
+  "temas": [
+    "clima_equipo",
+    "reconocimiento",
+    "balance_vida_trabajo"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "El clima del equipo le parece normal; sin temas relevantes que reportar.",
+    "No plantea el reconocimiento como un tema relevante para él en este momento.",
+    "Conversamos sobre sus tiempos de descanso; dice tenerlos razonablemente cubiertos."
+  ],
+  "confianza": 0.95
+}

@@ -1,0 +1,18 @@
+{
+  "hash_nota": "2b442eaf48b4bd8315ec6e70",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:51:36.981580+00:00",
+  "texto_scrubbed": "Seguimiento agendado por la líder tras el mid year feedback. Destaca la mejora en el proceso de handoff con el equipo de implementación. Valora el espacio que le da [PERSONA_1] para tomar decisiones sin microgestión. Es la segunda conversación seguida en que aparece este punto en positivo. Queda de compartir lo aprendido con el resto del equipo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "herramientas_procesos",
+    "relacion_con_lider"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Destaca la mejora en el proceso de handoff con el equipo de implementación.",
+    "Valora el espacio que le da [PERSONA_1] para tomar decisiones sin microgestión."
+  ],
+  "confianza": 0.95
+}

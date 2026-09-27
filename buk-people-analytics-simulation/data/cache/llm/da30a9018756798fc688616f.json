@@ -1,0 +1,21 @@
+{
+  "hash_nota": "da30a9018756798fc688616f",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:52:57.489680+00:00",
+  "texto_scrubbed": "Check-in de rutina del ciclo de Happiness. Comenta que supo de una contratación reciente en su mismo nivel con una renta mayor y que eso le generó ruido. Postuló a dos procesos internos y en ninguno recibió retroalimentación; dice que eso lo desanimó. Acordamos volver a revisarlo en dos semanas.",
+  "sentimiento": "negativo",
+  "temas": [
+    "compensacion",
+    "movilidad_interna"
+  ],
+  "senales": [
+    "compensacion",
+    "movilidad_interna"
+  ],
+  "citas_respaldo": [
+    "supo de una contratación reciente en su mismo nivel con una renta mayor y que eso le generó ruido",
+    "Postuló a dos procesos internos y en ninguno recibió retroalimentación; dice que eso lo desanimó"
+  ],
+  "confianza": 0.95
+}

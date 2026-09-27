@@ -1,0 +1,24 @@
+{
+  "hash_nota": "3e85507c42980ebb7bd1adc2",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:51:54.590480+00:00",
+  "texto_scrubbed": "Conversación de seguimiento a solicitud del propio buker. Plantea incertidumbre por la reestructuración del área y no sabe dónde queda su rol. Reconoce que no toma vacaciones hace casi un año porque 'no es el momento' del equipo. Es la tercera conversación consecutiva en que aparece el mismo punto. Queda con la sensación de no ser escuchado. Requiere seguimiento cercano.",
+  "sentimiento": "negativo",
+  "temas": [
+    "cambio_organizacional",
+    "claridad_rol",
+    "balance_vida_trabajo"
+  ],
+  "senales": [
+    "cambio_organizacional",
+    "claridad_rol",
+    "balance_vida_trabajo"
+  ],
+  "citas_respaldo": [
+    "Plantea incertidumbre por la reestructuración del área y no sabe dónde queda su rol.",
+    "Reconoce que no toma vacaciones hace casi un año porque 'no es el momento' del equipo.",
+    "Queda con la sensación de no ser escuchado."
+  ],
+  "confianza": 0.95
+}

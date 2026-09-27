@@ -1,0 +1,21 @@
+{
+  "hash_nota": "106db4157fb7ea25b6aa7271",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:51:28.889925+00:00",
+  "texto_scrubbed": "Conversamos en el 1:1 mensual. Manifiesta que lleva más de dos años en el mismo nivel y que no tiene visibilidad de cuál sería el siguiente paso. Comenta que supo de una contratación reciente en su mismo nivel con una renta mayor y que eso le generó ruido. Coincide con la caída que veníamos observando en sus indicadores del área. Se compromete a levantarlo con su líder; le ofrecí acompañar esa conversación.",
+  "sentimiento": "negativo",
+  "temas": [
+    "desarrollo_carrera",
+    "compensacion"
+  ],
+  "senales": [
+    "desarrollo_carrera",
+    "compensacion"
+  ],
+  "citas_respaldo": [
+    "lleva más de dos años en el mismo nivel y que no tiene visibilidad de cuál sería el siguiente paso",
+    "supo de una contratación reciente en su mismo nivel con una renta mayor y que eso le generó ruido"
+  ],
+  "confianza": 0.95
+}

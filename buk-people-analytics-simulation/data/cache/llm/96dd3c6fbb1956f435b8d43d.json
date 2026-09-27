@@ -1,0 +1,20 @@
+{
+  "hash_nota": "96dd3c6fbb1956f435b8d43d",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:51:00.873020+00:00",
+  "texto_scrubbed": "Instancia de seguimiento posterior al cierre de OKRs del trimestre. Comenta que el reconocimiento en su equipo tiende a ser informal, y que le acomoda así. Le interesa el desarrollo técnico pero prefiere consolidarse en el rol actual antes de moverse. Exploramos si le interesaría un movimiento interno; lo está pensando. Su líder está al tanto y lo viene conversando con él. Queda pendiente conversarlo con su líder.",
+  "sentimiento": "neutro",
+  "temas": [
+    "reconocimiento",
+    "desarrollo_carrera",
+    "movilidad_interna"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Comenta que el reconocimiento en su equipo tiende a ser informal, y que le acomoda así.",
+    "Le interesa el desarrollo técnico pero prefiere consolidarse en el rol actual antes de moverse.",
+    "Exploramos si le interesaría un movimiento interno; lo está pensando."
+  ],
+  "confianza": 0.95
+}

@@ -1,0 +1,18 @@
+{
+  "hash_nota": "96034ced21e9a67745e636aa",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:51:54.391949+00:00",
+  "texto_scrubbed": "Instancia de seguimiento posterior al cierre de OKRs del trimestre. Pregunta por el calendario de revisión de rentas del próximo ciclo. Exploramos si le interesaría un movimiento interno; lo está pensando. Sin acciones inmediatas; se deja registro para seguimiento.",
+  "sentimiento": "neutro",
+  "temas": [
+    "compensacion",
+    "movilidad_interna"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Pregunta por el calendario de revisión de rentas del próximo ciclo.",
+    "Exploramos si le interesaría un movimiento interno; lo está pensando."
+  ],
+  "confianza": 0.95
+}

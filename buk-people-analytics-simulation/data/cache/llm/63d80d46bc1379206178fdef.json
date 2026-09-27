@@ -1,0 +1,23 @@
+{
+  "hash_nota": "63d80d46bc1379206178fdef",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:50:27.310251+00:00",
+  "texto_scrubbed": "Instancia de seguimiento posterior al cierre de OKRs del trimestre. Comenta que se siente aislado del resto del equipo desde que pasó a trabajar full remoto. Comenta que no se siente cómodo planteando desacuerdos en su equipo. Plantea que el proyecto con [CLIENTE] lo sacó adelante prácticamente solo y que eso no se visibilizó en ninguna instancia. Coincide con la caída que veníamos observando en sus indicadores del área. Se compromete a levantarlo con su líder; le ofrecí acompañar esa conversación.",
+  "sentimiento": "negativo",
+  "temas": [
+    "clima_equipo",
+    "reconocimiento",
+    "relacion_con_lider"
+  ],
+  "senales": [
+    "clima_equipo",
+    "reconocimiento"
+  ],
+  "citas_respaldo": [
+    "se siente aislado del resto del equipo desde que pasó a trabajar full remoto",
+    "no se siente cómodo planteando desacuerdos en su equipo",
+    "el proyecto con [CLIENTE] lo sacó adelante prácticamente solo y que eso no se visibilizó en ninguna instancia"
+  ],
+  "confianza": 0.95
+}

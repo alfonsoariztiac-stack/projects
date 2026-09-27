@@ -1,0 +1,20 @@
+{
+  "hash_nota": "f7d0b4d7fe7823708fe4fdc5",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:51:09.263276+00:00",
+  "texto_scrubbed": "Conversación de seguimiento a solicitud del propio buker. Todavía está calibrando expectativas propias del período de adaptación. Conversamos sobre el alcance de su rol; quedaron algunos bordes por definir con su líder. Sugiere ajustes al proceso de documentación del área. Es primera vez que lo plantea en una instancia formal. Queda pendiente conversarlo con su líder.",
+  "sentimiento": "neutro",
+  "temas": [
+    "onboarding",
+    "claridad_rol",
+    "herramientas_procesos"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Todavía está calibrando expectativas propias del período de adaptación.",
+    "Conversamos sobre el alcance de su rol; quedaron algunos bordes por definir con su líder.",
+    "Sugiere ajustes al proceso de documentación del área."
+  ],
+  "confianza": 0.9
+}

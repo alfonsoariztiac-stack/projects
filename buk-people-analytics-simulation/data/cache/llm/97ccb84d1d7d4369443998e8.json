@@ -1,0 +1,20 @@
+{
+  "hash_nota": "97ccb84d1d7d4369443998e8",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:51:04.056188+00:00",
+  "texto_scrubbed": "Check-in de rutina del ciclo de Happiness. Le entusiasma la opción de rotar hacia otro equipo el próximo año. Dice que el volumen es alto pero manejable, y que le acomoda el ritmo actual. Destaca la mejora en el proceso de handoff con el equipo de implementación. Su líder lo había anticipado en el comité de calibración. Queda de compartir lo aprendido con el resto del equipo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "movilidad_interna",
+    "carga_trabajo",
+    "herramientas_procesos"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Le entusiasma la opción de rotar hacia otro equipo el próximo año.",
+    "Dice que el volumen es alto pero manejable, y que le acomoda el ritmo actual.",
+    "Destaca la mejora en el proceso de handoff con el equipo de implementación."
+  ],
+  "confianza": 0.95
+}

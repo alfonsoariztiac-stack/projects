@@ -1,0 +1,16 @@
+{
+  "hash_nota": "b5ea5978efebf3a13d391ab4",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:39:30.297767+00:00",
+  "texto_scrubbed": "Conversación breve después de la reunión de área. Destaca lo rápido que se sintió parte del equipo. Mencionó de paso que recomendó a un conocido para una vacante del área. Sin acciones pendientes de mi parte; se retoma en el próximo ciclo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "clima_equipo"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Destaca lo rápido que se sintió parte del equipo."
+  ],
+  "confianza": 0.9
+}

@@ -1,0 +1,20 @@
+{
+  "hash_nota": "e922b767d4787be181b07220",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:40:04.274452+00:00",
+  "texto_scrubbed": "Check-in de rutina del ciclo de Happiness. El clima del equipo le parece normal; sin temas relevantes que reportar. Reporta un volumen de trabajo por sobre lo habitual, asociado a la temporada. Sabe que existen concursos internos pero no ha postulado. Quedamos de retomarlo cuando esté cerrado el ciclo en curso. Queda pendiente conversarlo con su líder.",
+  "sentimiento": "neutro",
+  "temas": [
+    "clima_equipo",
+    "carga_trabajo",
+    "movilidad_interna"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "El clima del equipo le parece normal",
+    "Reporta un volumen de trabajo por sobre lo habitual, asociado a la temporada.",
+    "Sabe que existen concursos internos pero no ha postulado."
+  ],
+  "confianza": 0.9
+}

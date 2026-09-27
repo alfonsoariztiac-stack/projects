@@ -1,0 +1,20 @@
+{
+  "hash_nota": "6195e476c5d166798ae23bf4",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:51:47.425851+00:00",
+  "texto_scrubbed": "Check-in de rutina del ciclo de Happiness. Comenta que la carga se estabilizó después de la redistribución del equipo y que hoy alcanza a cerrar sus temas dentro del horario. Postuló a un movimiento interno y está muy motivado con la posibilidad. Acordamos mantener la cadencia mensual.",
+  "sentimiento": "positivo",
+  "temas": [
+    "carga_trabajo",
+    "balance_vida_trabajo",
+    "movilidad_interna"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "la carga se estabilizó después de la redistribución del equipo",
+    "hoy alcanza a cerrar sus temas dentro del horario",
+    "Postuló a un movimiento interno y está muy motivado con la posibilidad"
+  ],
+  "confianza": 0.95
+}

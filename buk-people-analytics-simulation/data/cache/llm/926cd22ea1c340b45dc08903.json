@@ -1,0 +1,16 @@
+{
+  "hash_nota": "926cd22ea1c340b45dc08903",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:39:24.525806+00:00",
+  "texto_scrubbed": "Check-in de rutina del ciclo de Happiness. Exploramos si le interesaría un movimiento interno; lo está pensando. Quedamos de retomarlo cuando esté cerrado el ciclo en curso. Sin acciones inmediatas; se deja registro para seguimiento.",
+  "sentimiento": "neutro",
+  "temas": [
+    "movilidad_interna"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Exploramos si le interesaría un movimiento interno; lo está pensando."
+  ],
+  "confianza": 0.95
+}

@@ -1,0 +1,16 @@
+{
+  "hash_nota": "6686581e69f4257cb9199b45",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:50:56.308485+00:00",
+  "texto_scrubbed": "Check-in de rutina del ciclo de Happiness. Valora el espacio que le da [PERSONA_1] para tomar decisiones sin microgestión. Es la segunda conversación seguida en que aparece este punto en positivo. Acordamos mantener la cadencia mensual.",
+  "sentimiento": "positivo",
+  "temas": [
+    "relacion_con_lider"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Valora el espacio que le da [PERSONA_1] para tomar decisiones sin microgestión."
+  ],
+  "confianza": 0.95
+}

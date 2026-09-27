@@ -1,0 +1,20 @@
+{
+  "hash_nota": "80b2138b1fef5ef9be6e8dd8",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:51:32.425038+00:00",
+  "texto_scrubbed": "Conversación breve después de la reunión de área. Le interesa el desarrollo técnico pero prefiere consolidarse en el rol actual antes de moverse. Pregunta por el calendario de revisión de rentas del próximo ciclo. Comenta que el reconocimiento en su equipo tiende a ser informal, y que le acomoda así. Quedamos de retomarlo cuando esté cerrado el ciclo en curso. Sin acciones inmediatas; se deja registro para seguimiento.",
+  "sentimiento": "neutro",
+  "temas": [
+    "desarrollo_carrera",
+    "compensacion",
+    "reconocimiento"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Le interesa el desarrollo técnico pero prefiere consolidarse en el rol actual antes de moverse.",
+    "Pregunta por el calendario de revisión de rentas del próximo ciclo.",
+    "Comenta que el reconocimiento en su equipo tiende a ser informal, y que le acomoda así."
+  ],
+  "confianza": 0.95
+}

@@ -1,0 +1,12 @@
+{
+  "hash_nota": "67290bed631ff0af2c6ca9e3",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:49:27.389693+00:00",
+  "texto_scrubbed": "Conversamos en el 1:1 mensual. Planea tomar vacaciones en el próximo trimestre, aún sin fecha. Coincide con el período de cierre trimestral del área. Acordamos retomar el tema en la próxima instancia.",
+  "sentimiento": "insuficiente",
+  "temas": [],
+  "senales": [],
+  "citas_respaldo": [],
+  "confianza": 0.95
+}

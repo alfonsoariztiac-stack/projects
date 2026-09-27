@@ -1,0 +1,37 @@
+[project]
+name = "buk-people-alertas-cloud"
+version = "0.1.0"
+description = "Migración a Google Workspace del pipeline de alertas (BigQuery, Sheets, Docs, Chat, Cloud Run)"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    # Nube
+    "google-cloud-bigquery>=3.27",
+    "google-auth>=2.35",
+    "db-dtypes>=1.3",
+    "pyarrow>=17.0",
+    # Lo que necesita el código de `src/` que se reutiliza sin tocar:
+    # ingest.ingestar() lee CSV y XLSX, warehouse.tipar() aplica los tipos del
+    # contrato y warehouse.dim_periodos() arma el calendario. `duckdb` entra
+    # solo porque warehouse.py lo importa; en `cloud/` no se abre ninguna base.
+    # `pyyaml` entra porque motor.cargar() lee reglas.yaml (F3).
+    "pandas>=2.2",
+    "numpy>=2.0",
+    "openpyxl>=3.1",
+    "duckdb>=1.1",
+    "python-dateutil>=2.9",
+    "google-cloud-bigquery-storage>=2.27",
+    "pyyaml>=6.0",
+    "requests>=2.34.2",
+    "google-genai>=2.21.0",
+    "python-dotenv>=1.2.3",
+    "google-api-python-client>=2.200.0",
+    "jinja2>=3.1.6",
+]
+
+[tool.uv]
+package = false
+
+# `cloud/` es un proyecto uv independiente a propósito: su propio .venv y su
+# propio lock, para que nada de la migración pueda romper la demo local.
+[tool.uv.workspace]
+members = []

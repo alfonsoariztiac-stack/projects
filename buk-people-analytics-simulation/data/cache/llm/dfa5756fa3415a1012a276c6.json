@@ -1,0 +1,20 @@
+{
+  "hash_nota": "dfa5756fa3415a1012a276c6",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:49:42.497346+00:00",
+  "texto_scrubbed": "Nos juntamos a raíz de la última encuesta de clima del equipo. Conversamos sobre posibles rutas de desarrollo; todavía no tiene una definición. Conversamos sobre el alcance de su rol; quedaron algunos bordes por definir con su líder. Queda pendiente conversarlo con su líder.",
+  "sentimiento": "neutro",
+  "temas": [
+    "clima_equipo",
+    "desarrollo_carrera",
+    "claridad_rol"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Nos juntamos a raíz de la última encuesta de clima del equipo.",
+    "Conversamos sobre posibles rutas de desarrollo; todavía no tiene una definición.",
+    "Conversamos sobre el alcance de su rol; quedaron algunos bordes por definir con su líder."
+  ],
+  "confianza": 0.9
+}

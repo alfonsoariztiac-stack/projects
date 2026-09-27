@@ -1,0 +1,20 @@
+{
+  "hash_nota": "b373c7bc59db5ccf7f00cb8b",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:52:12.984255+00:00",
+  "texto_scrubbed": "Instancia de seguimiento posterior al cierre de OKRs del trimestre. Describe una relación muy buena con su líder, con feedback frecuente y directo. Comenta que la nueva organización del área le dio más autonomía. Valora especialmente las stock options y la flexibilidad por sobre el componente monetario. Es la segunda conversación seguida en que aparece este punto en positivo. Acordamos mantener la cadencia mensual.",
+  "sentimiento": "positivo",
+  "temas": [
+    "relacion_con_lider",
+    "cambio_organizacional",
+    "compensacion"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Describe una relación muy buena con su líder, con feedback frecuente y directo.",
+    "Comenta que la nueva organización del área le dio más autonomía.",
+    "Valora especialmente las stock options y la flexibilidad por sobre el componente monetario."
+  ],
+  "confianza": 0.95
+}

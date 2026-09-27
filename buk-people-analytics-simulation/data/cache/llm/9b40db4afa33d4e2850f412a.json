@@ -1,0 +1,19 @@
+{
+  "hash_nota": "9b40db4afa33d4e2850f412a",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:51:34.852973+00:00",
+  "texto_scrubbed": "Conversación breve después de la reunión de área. Sugiere ajustes al proceso de documentación del área. Conversamos sobre el alcance de su rol; quedaron algunos bordes por definir con su líder. Quedamos de retomarlo cuando esté cerrado el ciclo en curso. Acordamos retomar el tema en la próxima instancia.",
+  "sentimiento": "neutro",
+  "temas": [
+    "herramientas_procesos",
+    "claridad_rol",
+    "relacion_con_lider"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Sugiere ajustes al proceso de documentación del área.",
+    "Conversamos sobre el alcance de su rol; quedaron algunos bordes por definir con su líder."
+  ],
+  "confianza": 0.9
+}

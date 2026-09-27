@@ -1,0 +1,18 @@
+{
+  "hash_nota": "c559b2368d3f907bce3aa1bc",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:51:04.209474+00:00",
+  "texto_scrubbed": "Conversamos en el 1:1 mensual. Conversamos sobre el alcance de su rol; quedaron algunos bordes por definir con su líder. Conversamos sobre sus tiempos de descanso; dice tenerlos razonablemente cubiertos. Sin acciones inmediatas; se deja registro para seguimiento.",
+  "sentimiento": "neutro",
+  "temas": [
+    "claridad_rol",
+    "balance_vida_trabajo"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Conversamos sobre el alcance de su rol; quedaron algunos bordes por definir con su líder.",
+    "Conversamos sobre sus tiempos de descanso; dice tenerlos razonablemente cubiertos."
+  ],
+  "confianza": 0.9
+}

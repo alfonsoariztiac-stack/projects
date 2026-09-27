@@ -1,0 +1,18 @@
+{
+  "hash_nota": "90706ecf6c6bc38bd4520ef9",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:52:36.206985+00:00",
+  "texto_scrubbed": "Conversación de seguimiento a solicitud del propio buker. Comenta que el reconocimiento en su equipo tiende a ser informal, y que le acomoda así. Menciona que la carga sube fuerte en cierres de mes y baja el resto, pero que ya lo tiene incorporado. Planea tomar vacaciones en el próximo trimestre, aún sin fecha. Coincide con el período de cierre trimestral del área. Acordamos retomar el tema en la próxima instancia.",
+  "sentimiento": "neutro",
+  "temas": [
+    "reconocimiento",
+    "carga_trabajo"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Comenta que el reconocimiento en su equipo tiende a ser informal, y que le acomoda así.",
+    "Menciona que la carga sube fuerte en cierres de mes y baja el resto, pero que ya lo tiene incorporado."
+  ],
+  "confianza": 0.95
+}

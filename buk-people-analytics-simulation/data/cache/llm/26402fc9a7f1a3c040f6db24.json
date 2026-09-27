@@ -1,0 +1,20 @@
+{
+  "hash_nota": "26402fc9a7f1a3c040f6db24",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-01T21:37:30.360545+00:00",
+  "texto_scrubbed": "Conversación breve después de la reunión de área. No plantea el reconocimiento como un tema relevante para él en este momento. Consultó cómo funciona la banda salarial de su cargo; se le explicó el modelo. Exploramos si le interesaría un movimiento interno; lo está pensando. Sin acciones inmediatas; se deja registro para seguimiento.",
+  "sentimiento": "neutro",
+  "temas": [
+    "compensacion",
+    "movilidad_interna",
+    "reconocimiento"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Consultó cómo funciona la banda salarial de su cargo; se le explicó el modelo.",
+    "Exploramos si le interesaría un movimiento interno; lo está pensando.",
+    "No plantea el reconocimiento como un tema relevante para él en este momento."
+  ],
+  "confianza": 0.95
+}

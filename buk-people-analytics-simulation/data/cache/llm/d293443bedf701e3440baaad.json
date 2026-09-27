@@ -1,0 +1,24 @@
+{
+  "hash_nota": "d293443bedf701e3440baaad",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:49:15.003673+00:00",
+  "texto_scrubbed": "Conversamos en el 1:1 mensual. Describe un clima tenso en el equipo tras las últimas salidas, con conversaciones de pasillo sobre quién sigue. Relata que lleva varios meses cubriendo dos frentes tras la salida de [PERSONA_1] y que no ve cuándo se repone el cupo. Señala que desde el cambio de líder los 1:1 se suspendieron y que hoy no tiene con quién revisar prioridades. Es la primera vez que menciona explícitamente estar mirando otras opciones. Acordamos volver a revisarlo en dos semanas.",
+  "sentimiento": "negativo",
+  "temas": [
+    "clima_equipo",
+    "carga_trabajo",
+    "relacion_con_lider"
+  ],
+  "senales": [
+    "clima_equipo",
+    "carga_trabajo",
+    "relacion_con_lider"
+  ],
+  "citas_respaldo": [
+    "Describe un clima tenso en el equipo tras las últimas salidas",
+    "lleva varios meses cubriendo dos frentes tras la salida de [PERSONA_1]",
+    "desde el cambio de líder los 1:1 se suspendieron y que hoy no tiene con quién revisar prioridades"
+  ],
+  "confianza": 0.95
+}

@@ -1,0 +1,24 @@
+{
+  "hash_nota": "ba7abf5d027dae7618cc20ad",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:53:29.961026+00:00",
+  "texto_scrubbed": "Seguimiento agendado por la líder tras el mid year feedback. Comenta que le piden cosas de tres frentes distintos sin un criterio de priorización. Plantea que la falta de un proceso claro de escalamiento lo deja expuesto frente al cliente. Coincide con la caída que veníamos observando en sus indicadores del área. Queda con la sensación de no ser escuchado. Requiere seguimiento cercano.",
+  "sentimiento": "negativo",
+  "temas": [
+    "herramientas_procesos",
+    "claridad_rol",
+    "relacion_con_lider"
+  ],
+  "senales": [
+    "herramientas_procesos",
+    "claridad_rol",
+    "relacion_con_lider"
+  ],
+  "citas_respaldo": [
+    "le piden cosas de tres frentes distintos sin un criterio de priorización",
+    "la falta de un proceso claro de escalamiento lo deja expuesto frente al cliente",
+    "Queda con la sensación de no ser escuchado"
+  ],
+  "confianza": 0.95
+}

@@ -1,0 +1,24 @@
+{
+  "hash_nota": "244765e4dde7a3788c7cbe00",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:48:05.095076+00:00",
+  "texto_scrubbed": "Instancia de seguimiento posterior al cierre de OKRs del trimestre. Señala que desde el cambio de líder los 1:1 se suspendieron y que hoy no tiene con quién revisar prioridades. Refiere dificultad para conectar con el equipo; siente que le falta acompañamiento en esta etapa. Comenta que le piden cosas de tres frentes distintos sin un criterio de priorización. Es la primera vez que menciona explícitamente estar mirando otras opciones. Acordamos volver a revisarlo en dos semanas.",
+  "sentimiento": "negativo",
+  "temas": [
+    "relacion_con_lider",
+    "clima_equipo",
+    "claridad_rol"
+  ],
+  "senales": [
+    "relacion_con_lider",
+    "clima_equipo",
+    "claridad_rol"
+  ],
+  "citas_respaldo": [
+    "desde el cambio de líder los 1:1 se suspendieron y que hoy no tiene con quién revisar prioridades.",
+    "Refiere dificultad para conectar con el equipo; siente que le falta acompañamiento en esta etapa.",
+    "Comenta que le piden cosas de tres frentes distintos sin un criterio de priorización."
+  ],
+  "confianza": 0.95
+}

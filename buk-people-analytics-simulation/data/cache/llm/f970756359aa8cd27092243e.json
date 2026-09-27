@@ -1,0 +1,22 @@
+{
+  "hash_nota": "f970756359aa8cd27092243e",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:39:15.304597+00:00",
+  "texto_scrubbed": "Seguimiento agendado por la líder tras el mid year feedback. Conversamos sobre posibles rutas de desarrollo; todavía no tiene una definición. Sugiere ajustes al proceso de documentación del área. Le hace sentido su objetivo anual aunque le cuesta traducirlo a métricas semanales. Queda pendiente conversarlo con su líder.",
+  "sentimiento": "neutro",
+  "temas": [
+    "desarrollo_carrera",
+    "herramientas_procesos",
+    "claridad_rol"
+  ],
+  "senales": [
+    "claridad_rol"
+  ],
+  "citas_respaldo": [
+    "Conversamos sobre posibles rutas de desarrollo; todavía no tiene una definición.",
+    "Sugiere ajustes al proceso de documentación del área.",
+    "Le hace sentido su objetivo anual aunque le cuesta traducirlo a métricas semanales."
+  ],
+  "confianza": 0.9
+}

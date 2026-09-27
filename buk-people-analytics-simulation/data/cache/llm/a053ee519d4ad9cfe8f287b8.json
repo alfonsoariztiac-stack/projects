@@ -1,0 +1,18 @@
+{
+  "hash_nota": "a053ee519d4ad9cfe8f287b8",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:38:21.248413+00:00",
+  "texto_scrubbed": "Conversación breve después de la reunión de área. Dice que el volumen es alto pero manejable, y que le acomoda el ritmo actual. El cambio de estructura le resultó positivo: quedó más cerca de las decisiones de producto. Es la segunda conversación seguida en que aparece este punto en positivo. Queda de compartir lo aprendido con el resto del equipo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "carga_trabajo",
+    "cambio_organizacional"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Dice que el volumen es alto pero manejable, y que le acomoda el ritmo actual.",
+    "El cambio de estructura le resultó positivo: quedó más cerca de las decisiones de producto."
+  ],
+  "confianza": 0.95
+}

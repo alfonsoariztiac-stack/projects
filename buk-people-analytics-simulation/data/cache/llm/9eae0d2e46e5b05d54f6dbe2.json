@@ -1,0 +1,20 @@
+{
+  "hash_nota": "9eae0d2e46e5b05d54f6dbe2",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:39:11.939416+00:00",
+  "texto_scrubbed": "Café de seguimiento, sin agenda formal. Valora enormemente el WFA; está trabajando desde el sur y le ha resultado muy bien. Dice que el volumen es alto pero manejable, y que le acomoda el ritmo actual. Tiene claridad de sus objetivos del semestre y cómo se miden. Mencionó de paso que recomendó a un conocido para una vacante del área. Sin acciones pendientes de mi parte; se retoma en el próximo ciclo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "balance_vida_trabajo",
+    "carga_trabajo",
+    "claridad_rol"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Valora enormemente el WFA; está trabajando desde el sur y le ha resultado muy bien.",
+    "Dice que el volumen es alto pero manejable, y que le acomoda el ritmo actual.",
+    "Tiene claridad de sus objetivos del semestre y cómo se miden."
+  ],
+  "confianza": 0.95
+}

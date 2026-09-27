@@ -1,0 +1,72 @@
+2026-09-02T16:59:55.964554Z	== 1/5 · cargar_bq: refrescar stg_* (Sheets + CSV) ==
+2026-09-02T16:59:55.964569Z	Identidad: default
+2026-09-02T16:59:55.964573Z	Leyendo Sheets como: pipeline-alertas@buk-people-alertas.iam.gserviceaccount.com
+2026-09-02T16:59:55.964577Z	   directorio                 2,650 ->   2,650 filas  (0 rechazadas, 0 duplicadas)
+2026-09-02T16:59:55.964580Z	   compensaciones             2,650 ->   2,650 filas  (0 rechazadas, 0 duplicadas)
+2026-09-02T16:59:55.964583Z	   evaluaciones_90d           2,437 ->   2,437 filas  (0 rechazadas, 0 duplicadas)
+2026-09-02T16:59:55.964586Z	   evaluaciones_desempeno     5,296 ->   5,296 filas  (0 rechazadas, 0 duplicadas)
+2026-09-02T16:59:55.964590Z	 ! metricas_operativas       29,609 ->  28,718 filas  (546 rechazadas, 345 duplicadas)
+2026-09-02T16:59:55.964594Z	   cursos                     9,586 ->   9,586 filas  (0 rechazadas, 0 duplicadas)
+2026-09-02T16:59:55.964597Z	   bitacora                   9,274 ->   9,250 filas  (0 rechazadas, 24 duplicadas)
+2026-09-02T16:59:55.964600Z	   salidas                      650 ->     650 filas  (0 rechazadas, 0 duplicadas)
+2026-09-02T16:59:55.964605Z	   dim_cargos                 1,030 ->   1,030 filas  (0 rechazadas, 0 duplicadas)
+2026-09-02T16:59:55.964609Z	Cargando a buk-people-alertas.people_analytics (southamerica-west1):
+2026-09-02T16:59:55.964613Z	   stg_directorio                     2,650 filas · 18 columnas
+2026-09-02T16:59:55.964616Z	   stg_compensaciones                 2,650 filas · 11 columnas
+2026-09-02T16:59:55.964620Z	   stg_evaluaciones_90d               2,437 filas ·  5 columnas
+2026-09-02T16:59:55.964623Z	   stg_evaluaciones_desempeno         5,296 filas ·  9 columnas
+2026-09-02T16:59:55.964627Z	   stg_metricas_operativas           28,718 filas ·  6 columnas
+2026-09-02T16:59:55.964630Z	   stg_cursos                         9,586 filas ·  4 columnas
+2026-09-02T16:59:55.964633Z	   stg_bitacora                       9,250 filas ·  5 columnas
+2026-09-02T16:59:55.964636Z	   stg_salidas                          650 filas ·  7 columnas
+2026-09-02T16:59:55.964639Z	   stg_dim_cargos                     1,030 filas · 10 columnas
+2026-09-02T16:59:55.964642Z	   dim_periodos                          18 filas ·  5 columnas
+2026-09-02T16:59:55.964645Z	   dim_cargos_v                       vista
+2026-09-02T16:59:55.964649Z	10 tablas · 62,285 filas en BigQuery
+2026-09-02T16:59:55.964653Z	== 2/5 · correr_sql: materializar employee_360 ==
+2026-09-02T16:59:55.964656Z	Ejecutando 5 archivos de src/sql/ sobre buk-people-alertas.people_analytics · identidad: default
+2026-09-02T16:59:55.964659Z	   01_persona_mes.sql           ok           0.0 MiB
+2026-09-02T16:59:55.964661Z	   02_operativa.sql             ok           0.0 MiB
+2026-09-02T16:59:55.964665Z	   03_desempeno.sql             ok           0.0 MiB
+2026-09-02T16:59:55.964668Z	   04_desarrollo_escucha.sql    ok           0.0 MiB
+2026-09-02T16:59:55.964671Z	   05_employee_360.sql          ok         100.0 MiB
+2026-09-02T16:59:55.964675Z	   total                                   100.0 MiB facturados
+2026-09-02T16:59:55.964678Z	== 3/5 · pipeline: motor de reglas -> tabla alertas ==
+2026-09-02T16:59:55.964681Z	Validando src/rules/reglas.yaml ...
+2026-09-02T16:59:55.964685Z	Identidad: default
+2026-09-02T16:59:55.964688Z	Cargando a buk-people-alertas.people_analytics (southamerica-west1):
+2026-09-02T16:59:55.964692Z	   alertas                            2,162 filas · 53 columnas
+2026-09-02T16:59:55.964696Z	Catálogo v1.2.0 · 6 reglas · 11 señales · 5 descartadas
+2026-09-02T16:59:55.964700Z	Candidatas: 2,162 en 15 meses (144.1/mes) · emitidas 2,053 (136.9/mes) · en lista de seguimiento 109
+2026-09-02T16:59:55.964703Z	Personas distintas notificadas: 385
+2026-09-02T16:59:55.964707Z	Por canal (emitidas/mes contra su cupo):
+2026-09-02T16:59:55.964710Z	  conversacion    alerta   28.7/mes de  35 de cupo ( 35.9 candidatas/mes · 385 personas)
+2026-09-02T16:59:55.964714Z	  compensaciones  panel    51.5/mes sin cupo       ( 51.5 candidatas/mes · 137 personas)
+2026-09-02T16:59:55.964717Z	  desarrollo      panel    56.7/mes sin cupo       ( 56.7 candidatas/mes · 262 personas)
+2026-09-02T16:59:55.964721Z	Por regla (solo emitidas):
+2026-09-02T16:59:55.964724Z	  R01 · Deterioro en dos frentes         alto   11.4/mes
+2026-09-02T16:59:55.964728Z	  R02 · Fuera de banda cumpliendo        alto   13.3/mes
+2026-09-02T16:59:55.964731Z	  R03 · Desenganche operativo            alto   17.3/mes
+2026-09-02T16:59:55.964734Z	  R04 · Servicio y desgaste              medio  17.3/mes
+2026-09-02T16:59:55.964737Z	  R05 · Talento sobresaliente bajo banda medio  38.1/mes
+2026-09-02T16:59:55.964741Z	  R06 · Desempeño y productividad sostenidamente bajos medio  39.5/mes
+2026-09-02T16:59:55.964744Z	Último mes (2026-08): 35 alertas notificadas, 159 en panel de equidad, 17 en lista de seguimiento
+2026-09-02T16:59:55.964747Z	Alertas: tabla `alertas` en buk-people-alertas.people_analytics
+2026-09-02T16:59:55.964751Z	== 4/5 · enriquecer_notas: bitácora -> LLM -> bitacora_llm ==
+2026-09-02T16:59:55.964753Z	Identidad: default
+2026-09-02T16:59:55.964757Z	Modelo: gemini-flash-latest · backend api_key · prompt v1
+2026-09-02T16:59:55.964760Z	Alcance: alertas del último período · canal conversacion · ventana 6 meses
+2026-09-02T16:59:55.964763Z	   personas a enriquecer       45
+2026-09-02T16:59:55.964769Z	   notas en ventana            94
+2026-09-02T16:59:55.964774Z	   ya en bitacora_llm          94
+2026-09-02T16:59:55.964779Z	   nuevas procesadas            0 (0 desde caché · 0 llamadas al modelo)
+2026-09-02T16:59:55.964782Z	   no_procesado                 0
+2026-09-02T16:59:55.964786Z	Contexto cualitativo: tabla `bitacora_llm` en buk-people-alertas.people_analytics
+2026-09-02T16:59:55.964789Z	== 5/5 · enviar_chat: postear tarjetas al Space ==
+2026-09-02T16:59:55.964792Z	Identidad: default
+2026-09-02T16:59:55.964795Z	2 caso(s) real(es) de buk-people-alertas.people_analytics.alertas (canal conversacion) · 2 con contexto cualitativo
+2026-09-02T16:59:55.964799Z	[R01] BUK11578 (Sara Córdova Ruiz) → ✓ enviada a Chat · data/out/alertas_demo/BUK11578_R01.html
+2026-09-02T16:59:55.964802Z	[R03] BUK12082 (Noelia Ruiz) → ✓ enviada a Chat · data/out/alertas_demo/BUK12082_R03.html
+2026-09-02T16:59:55.964806Z	OK · corrida completa en 59.1 s
+2026-09-02T16:59:56.331959Z	Container called exit(0).
+2026-09-02T17:00:00.229224Z	

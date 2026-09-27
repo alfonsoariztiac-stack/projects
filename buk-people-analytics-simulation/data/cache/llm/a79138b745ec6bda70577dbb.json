@@ -1,0 +1,20 @@
+{
+  "hash_nota": "a79138b745ec6bda70577dbb",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:51:56.893051+00:00",
+  "texto_scrubbed": "Check-in de rutina del ciclo de Happiness. Conversamos sobre posibles rutas de desarrollo; todavía no tiene una definición. Sabe que existen concursos internos pero no ha postulado. Su líder está al tanto y lo viene conversando con él. Sin acciones inmediatas; se deja registro para seguimiento.",
+  "sentimiento": "neutro",
+  "temas": [
+    "desarrollo_carrera",
+    "movilidad_interna",
+    "relacion_con_lider"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Conversamos sobre posibles rutas de desarrollo",
+    "Sabe que existen concursos internos pero no ha postulado",
+    "Su líder está al tanto y lo viene conversando con él"
+  ],
+  "confianza": 0.95
+}

@@ -1,0 +1,24 @@
+{
+  "hash_nota": "dd2a8bff8bc7814b7d70d478",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:48:35.213515+00:00",
+  "texto_scrubbed": "Check-in de rutina del ciclo de Happiness. Señala que desde el cambio de líder los 1:1 se suspendieron y que hoy no tiene con quién revisar prioridades. Refiere dificultad para conectar con el equipo; siente que le falta acompañamiento en esta etapa. Comenta que le piden cosas de tres frentes distintos sin un criterio de priorización. Ya lo había planteado en la instancia anterior y no hubo cambios. Le pedí que no lo deje pasar; quedo atenta a cómo evoluciona.",
+  "sentimiento": "negativo",
+  "temas": [
+    "relacion_con_lider",
+    "clima_equipo",
+    "claridad_rol"
+  ],
+  "senales": [
+    "relacion_con_lider",
+    "clima_equipo",
+    "claridad_rol"
+  ],
+  "citas_respaldo": [
+    "desde el cambio de líder los 1:1 se suspendieron y que hoy no tiene con quién revisar prioridades",
+    "Refiere dificultad para conectar con el equipo; siente que le falta acompañamiento en esta etapa",
+    "le piden cosas de tres frentes distintos sin un criterio de priorización"
+  ],
+  "confianza": 0.95
+}

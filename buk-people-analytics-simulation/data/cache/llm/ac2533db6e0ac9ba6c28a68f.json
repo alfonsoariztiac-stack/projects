@@ -1,0 +1,24 @@
+{
+  "hash_nota": "ac2533db6e0ac9ba6c28a68f",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:51:43.280719+00:00",
+  "texto_scrubbed": "Check-in de rutina del ciclo de Happiness. Comenta que no se siente cómodo planteando desacuerdos en su equipo. Plantea incertidumbre por la reestructuración del área y no sabe dónde queda su rol. Se le nota cansado; dice que hace tiempo no tiene un fin de semana sin pendientes. Se le nota más distante que en conversaciones previas; respuestas breves. Queda con la sensación de no ser escuchado. Requiere seguimiento cercano.",
+  "sentimiento": "negativo",
+  "temas": [
+    "clima_equipo",
+    "cambio_organizacional",
+    "balance_vida_trabajo"
+  ],
+  "senales": [
+    "clima_equipo",
+    "cambio_organizacional",
+    "balance_vida_trabajo"
+  ],
+  "citas_respaldo": [
+    "no se siente cómodo planteando desacuerdos en su equipo",
+    "incertidumbre por la reestructuración del área y no sabe dónde queda su rol",
+    "dice que hace tiempo no tiene un fin de semana sin pendientes"
+  ],
+  "confianza": 0.95
+}

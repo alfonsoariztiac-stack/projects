@@ -1,0 +1,18 @@
+{
+  "hash_nota": "d093529f4af6edc4b599d319",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:52:02.365032+00:00",
+  "texto_scrubbed": "Café de seguimiento, sin agenda formal. Plantea que la falta de un proceso claro de escalamiento lo deja expuesto frente al cliente. Coincide con la caída que veníamos observando en sus indicadores del área. Se compromete a levantarlo con su líder; le ofrecí acompañar esa conversación.",
+  "sentimiento": "negativo",
+  "temas": [
+    "herramientas_procesos"
+  ],
+  "senales": [
+    "herramientas_procesos"
+  ],
+  "citas_respaldo": [
+    "la falta de un proceso claro de escalamiento lo deja expuesto frente al cliente"
+  ],
+  "confianza": 0.9
+}

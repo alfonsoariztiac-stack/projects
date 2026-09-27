@@ -1,0 +1,21 @@
+{
+  "hash_nota": "43596944a71ee8e2ef8a8418",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:53:26.857634+00:00",
+  "texto_scrubbed": "Café de seguimiento, sin agenda formal. Menciona con molestia que el mérito del último cierre se atribuyó al equipo completo sin mención a quienes lo empujaron. Describe una carga sostenida que le impide tomar los espacios de foco; dice sentirse 'apagando incendios' todo el día. Acordamos volver a revisarlo en dos semanas.",
+  "sentimiento": "negativo",
+  "temas": [
+    "reconocimiento",
+    "carga_trabajo"
+  ],
+  "senales": [
+    "reconocimiento",
+    "carga_trabajo"
+  ],
+  "citas_respaldo": [
+    "Menciona con molestia que el mérito del último cierre se atribuyó al equipo completo sin mención a quienes lo empujaron.",
+    "Describe una carga sostenida que le impide tomar los espacios de foco; dice sentirse 'apagando incendios' todo el día."
+  ],
+  "confianza": 0.95
+}

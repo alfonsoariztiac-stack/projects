@@ -1,0 +1,20 @@
+{
+  "hash_nota": "9d708e6fa5d3a31ac65fe6cf",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:51:22.679160+00:00",
+  "texto_scrubbed": "Seguimiento agendado por la líder tras el mid year feedback. Dice que el volumen es alto pero manejable, y que le acomoda el ritmo actual. Está entusiasmado con el plan de formación que armó con su líder para el próximo semestre. Le entusiasma la opción de rotar hacia otro equipo el próximo año. Mencionó de paso que recomendó a un conocido para una vacante del área. Queda de compartir lo aprendido con el resto del equipo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "desarrollo_carrera",
+    "movilidad_interna",
+    "carga_trabajo"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Dice que el volumen es alto pero manejable, y que le acomoda el ritmo actual.",
+    "Está entusiasmado con el plan de formación que armó con su líder para el próximo semestre.",
+    "Le entusiasma la opción de rotar hacia otro equipo el próximo año."
+  ],
+  "confianza": 0.95
+}

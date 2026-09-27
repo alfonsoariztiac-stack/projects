@@ -1,0 +1,20 @@
+{
+  "hash_nota": "c29a8a909c1d94c2aa59ef91",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:54:04.836047+00:00",
+  "texto_scrubbed": "Seguimiento agendado por la líder tras el mid year feedback. Describe una relación muy buena con su líder, con feedback frecuente y directo. Le entusiasma la opción de rotar hacia otro equipo el próximo año. Destaca la mejora en el proceso de handoff con el equipo de implementación. Queda de compartir lo aprendido con el resto del equipo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "relacion_con_lider",
+    "movilidad_interna",
+    "herramientas_procesos"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Describe una relación muy buena con su líder, con feedback frecuente y directo.",
+    "Le entusiasma la opción de rotar hacia otro equipo el próximo año.",
+    "Destaca la mejora en el proceso de handoff con el equipo de implementación."
+  ],
+  "confianza": 0.95
+}

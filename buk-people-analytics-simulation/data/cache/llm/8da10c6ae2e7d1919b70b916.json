@@ -1,0 +1,20 @@
+{
+  "hash_nota": "8da10c6ae2e7d1919b70b916",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:50:58.917888+00:00",
+  "texto_scrubbed": "Conversamos en el 1:1 mensual. Sugiere ajustes al proceso de documentación del área. Conversamos sobre sus tiempos de descanso; dice tenerlos razonablemente cubiertos. Consultó cómo funciona la banda salarial de su cargo; se le explicó el modelo. Sin acciones inmediatas; se deja registro para seguimiento.",
+  "sentimiento": "neutro",
+  "temas": [
+    "herramientas_procesos",
+    "balance_vida_trabajo",
+    "compensacion"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Sugiere ajustes al proceso de documentación del área.",
+    "Conversamos sobre sus tiempos de descanso; dice tenerlos razonablemente cubiertos.",
+    "Consultó cómo funciona la banda salarial de su cargo; se le explicó el modelo."
+  ],
+  "confianza": 0.95
+}

@@ -1,0 +1,19 @@
+{
+  "hash_nota": "25ca64fc9a769840da5332ea",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:48:31.244203+00:00",
+  "texto_scrubbed": "Conversación de seguimiento a solicitud del propio buker. Destaca que su líder reconoció públicamente el trabajo del último release en la reunión de área. Mencionó de paso que recomendó a un conocido para una vacante del área. Queda de compartir lo aprendido con el resto del equipo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "reconocimiento",
+    "relacion_con_lider",
+    "clima_equipo"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "su líder reconoció públicamente el trabajo del último release en la reunión de área",
+    "Queda de compartir lo aprendido con el resto del equipo."
+  ],
+  "confianza": 0.95
+}

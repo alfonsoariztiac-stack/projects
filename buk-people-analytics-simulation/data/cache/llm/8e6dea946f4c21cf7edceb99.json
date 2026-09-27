@@ -1,0 +1,19 @@
+{
+  "hash_nota": "8e6dea946f4c21cf7edceb99",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:50:47.194108+00:00",
+  "texto_scrubbed": "Nos juntamos a raíz de la última encuesta de clima del equipo. Está entusiasmado con el plan de formación que armó con su líder para el próximo semestre. Le entusiasma la opción de rotar hacia otro equipo el próximo año. Acordamos mantener la cadencia mensual.",
+  "sentimiento": "positivo",
+  "temas": [
+    "desarrollo_carrera",
+    "movilidad_interna",
+    "clima_equipo"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Está entusiasmado con el plan de formación que armó con su líder para el próximo semestre.",
+    "Le entusiasma la opción de rotar hacia otro equipo el próximo año."
+  ],
+  "confianza": 0.95
+}

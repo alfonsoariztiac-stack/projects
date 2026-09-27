@@ -1,0 +1,18 @@
+{
+  "hash_nota": "bcd692cdf9f91610606c0834",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-01T01:16:30.982785+00:00",
+  "texto_scrubbed": "Seguimiento agendado por la líder tras el mid year feedback. Conversamos sobre posibles rutas de desarrollo; todavía no tiene una definición. Es primera vez que lo plantea en una instancia formal. Queda pendiente conversarlo con su líder.",
+  "sentimiento": "neutro",
+  "temas": [
+    "desarrollo_carrera",
+    "relacion_con_lider"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Conversamos sobre posibles rutas de desarrollo; todavía no tiene una definición.",
+    "Queda pendiente conversarlo con su líder."
+  ],
+  "confianza": 0.9
+}

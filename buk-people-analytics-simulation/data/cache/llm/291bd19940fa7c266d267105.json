@@ -1,0 +1,20 @@
+{
+  "hash_nota": "291bd19940fa7c266d267105",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:53:51.991686+00:00",
+  "texto_scrubbed": "Instancia de seguimiento posterior al cierre de OKRs del trimestre. Menciona fricciones menores con algunas herramientas internas, nada bloqueante. Menciona que la carga sube fuerte en cierres de mes y baja el resto, pero que ya lo tiene incorporado. Su líder está al tanto y lo viene conversando con él. Acordamos retomar el tema en la próxima instancia.",
+  "sentimiento": "neutro",
+  "temas": [
+    "herramientas_procesos",
+    "carga_trabajo",
+    "relacion_con_lider"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "fricciones menores con algunas herramientas internas, nada bloqueante",
+    "la carga sube fuerte en cierres de mes y baja el resto, pero que ya lo tiene incorporado",
+    "Su líder está al tanto y lo viene conversando con él"
+  ],
+  "confianza": 0.9
+}

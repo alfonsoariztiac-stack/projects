@@ -1,0 +1,24 @@
+{
+  "hash_nota": "84aa917aea99eda1fee5b219",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:51:14.624406+00:00",
+  "texto_scrubbed": "Nos juntamos a raíz de la última encuesta de clima del equipo. Plantea que hay superposición entre su rol y el de [PERSONA_1], y que eso genera fricción innecesaria. Describe que buena parte de su semana se va en trabajo manual que debería estar automatizado. Evitó comprometerse con plazos cuando le pregunté por sus objetivos del semestre. Le pedí que no lo deje pasar; quedo atenta a cómo evoluciona.",
+  "sentimiento": "negativo",
+  "temas": [
+    "claridad_rol",
+    "herramientas_procesos",
+    "clima_equipo"
+  ],
+  "senales": [
+    "claridad_rol",
+    "herramientas_procesos",
+    "clima_equipo"
+  ],
+  "citas_respaldo": [
+    "Plantea que hay superposición entre su rol y el de [PERSONA_1], y que eso genera fricción innecesaria.",
+    "Describe que buena parte de su semana se va en trabajo manual que debería estar automatizado.",
+    "Nos juntamos a raíz de la última encuesta de clima del equipo."
+  ],
+  "confianza": 0.95
+}

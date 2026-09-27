@@ -1,0 +1,20 @@
+{
+  "hash_nota": "75fe3a0a9450d7499736ee3d",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:53:13.552802+00:00",
+  "texto_scrubbed": "Instancia de seguimiento posterior al cierre de OKRs del trimestre. Comenta que la nueva organización del área le dio más autonomía. Se mostró conforme con el último ajuste y valora la transparencia con que se le explicó la banda. Comenta que la carga se estabilizó después de la redistribución del equipo y que hoy alcanza a cerrar sus temas dentro del horario. Mencionó de paso que recomendó a un conocido para una vacante del área. Sin acciones pendientes de mi parte; se retoma en el próximo ciclo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "cambio_organizacional",
+    "compensacion",
+    "carga_trabajo"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Comenta que la nueva organización del área le dio más autonomía.",
+    "Se mostró conforme con el último ajuste y valora la transparencia con que se le explicó la banda.",
+    "Comenta que la carga se estabilizó después de la redistribución del equipo y que hoy alcanza a cerrar sus temas dentro del horario."
+  ],
+  "confianza": 0.95
+}

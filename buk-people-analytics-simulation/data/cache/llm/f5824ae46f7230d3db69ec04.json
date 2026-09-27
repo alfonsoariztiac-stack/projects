@@ -1,0 +1,24 @@
+{
+  "hash_nota": "f5824ae46f7230d3db69ec04",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:38:28.369151+00:00",
+  "texto_scrubbed": "Seguimiento agendado por la líder tras el mid year feedback. Menciona con molestia que el mérito del último cierre se atribuyó al equipo completo sin mención a quienes lo empujaron. Plantea directamente que su renta quedó atrás respecto del mercado y que ha recibido acercamientos externos. Comenta que no se siente cómodo planteando desacuerdos en su equipo. Coincide con la caída que veníamos observando en sus indicadores del área. Queda con la sensación de no ser escuchado. Requiere seguimiento cercano.",
+  "sentimiento": "negativo",
+  "temas": [
+    "reconocimiento",
+    "compensacion",
+    "clima_equipo"
+  ],
+  "senales": [
+    "reconocimiento",
+    "compensacion",
+    "clima_equipo"
+  ],
+  "citas_respaldo": [
+    "el mérito del último cierre se atribuyó al equipo completo sin mención a quienes lo empujaron",
+    "su renta quedó atrás respecto del mercado",
+    "no se siente cómodo planteando desacuerdos en su equipo"
+  ],
+  "confianza": 0.95
+}

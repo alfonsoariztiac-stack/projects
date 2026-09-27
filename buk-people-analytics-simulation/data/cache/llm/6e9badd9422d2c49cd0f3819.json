@@ -1,0 +1,18 @@
+{
+  "hash_nota": "6e9badd9422d2c49cd0f3819",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:39:52.508068+00:00",
+  "texto_scrubbed": "Conversamos en el 1:1 mensual. No plantea el reconocimiento como un tema relevante para él en este momento. El clima del equipo le parece normal; sin temas relevantes que reportar. Coincide con el período de cierre trimestral del área. Sin acciones inmediatas; se deja registro para seguimiento.",
+  "sentimiento": "neutro",
+  "temas": [
+    "reconocimiento",
+    "clima_equipo"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "No plantea el reconocimiento como un tema relevante para él en este momento.",
+    "El clima del equipo le parece normal; sin temas relevantes que reportar."
+  ],
+  "confianza": 0.9
+}

@@ -1,0 +1,23 @@
+{
+  "hash_nota": "49936519be885dbfc1c82835",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:53:40.742506+00:00",
+  "texto_scrubbed": "Conversación breve después de la reunión de área. Plantea que la falta de un proceso claro de escalamiento lo deja expuesto frente al cliente. Plantea que hay superposición entre su rol y el de [PERSONA_1], y que eso genera fricción innecesaria. Ya lo había planteado en la instancia anterior y no hubo cambios. Acordamos volver a revisarlo en dos semanas.",
+  "sentimiento": "negativo",
+  "temas": [
+    "herramientas_procesos",
+    "claridad_rol",
+    "clima_equipo"
+  ],
+  "senales": [
+    "herramientas_procesos",
+    "claridad_rol",
+    "clima_equipo"
+  ],
+  "citas_respaldo": [
+    "la falta de un proceso claro de escalamiento lo deja expuesto frente al cliente",
+    "hay superposición entre su rol y el de [PERSONA_1], y que eso genera fricción innecesaria"
+  ],
+  "confianza": 0.95
+}

@@ -1,0 +1,16 @@
+{
+  "hash_nota": "a379cbf4cc3931916b7b5222",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:50:31.350289+00:00",
+  "texto_scrubbed": "Check-in de rutina del ciclo de Happiness. Pregunta por el calendario de revisión de rentas del próximo ciclo. Coincide con el período de cierre trimestral del área. Sin acciones inmediatas; se deja registro para seguimiento.",
+  "sentimiento": "neutro",
+  "temas": [
+    "compensacion"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Pregunta por el calendario de revisión de rentas del próximo ciclo."
+  ],
+  "confianza": 0.9
+}

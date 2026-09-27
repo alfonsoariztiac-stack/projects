@@ -1,0 +1,17 @@
+{
+  "hash_nota": "012f19d2845e9abf25c7551c",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:47:44.559108+00:00",
+  "texto_scrubbed": "Conversamos en el 1:1 mensual. Terminó dos rutas de Buk University y quiere seguir profundizando en la especialidad. Viene de cerrar un trimestre por sobre meta y se le nota tranquilo. Sin acciones pendientes de mi parte; se retoma en el próximo ciclo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "desarrollo_carrera"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Terminó dos rutas de Buk University y quiere seguir profundizando en la especialidad.",
+    "Viene de cerrar un trimestre por sobre meta y se le nota tranquilo."
+  ],
+  "confianza": 0.95
+}

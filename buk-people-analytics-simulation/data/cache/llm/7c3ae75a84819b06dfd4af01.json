@@ -1,0 +1,18 @@
+{
+  "hash_nota": "7c3ae75a84819b06dfd4af01",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T02:51:36.811191+00:00",
+  "texto_scrubbed": "Conversamos en el 1:1 mensual. El cambio de estructura le resultó positivo: quedó más cerca de las decisiones de producto. Se muestra contento con el reconocimiento recibido tras el cierre del proyecto con [CLIENTE]. Es la segunda conversación seguida en que aparece este punto en positivo. Queda de compartir lo aprendido con el resto del equipo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "cambio_organizacional",
+    "reconocimiento"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "El cambio de estructura le resultó positivo: quedó más cerca de las decisiones de producto.",
+    "Se muestra contento con el reconocimiento recibido tras el cierre del proyecto con [CLIENTE]."
+  ],
+  "confianza": 0.95
+}

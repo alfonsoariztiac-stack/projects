@@ -1,0 +1,20 @@
+{
+  "hash_nota": "bb862c8ff15e52c19f7c0816",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:38:23.753036+00:00",
+  "texto_scrubbed": "Conversación de seguimiento a solicitud del propio buker. Terminó dos rutas de Buk University y quiere seguir profundizando en la especialidad. Destaca la mejora en el proceso de handoff con el equipo de implementación. El cambio de estructura le resultó positivo: quedó más cerca de las decisiones de producto. Sin acciones pendientes de mi parte; se retoma en el próximo ciclo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "desarrollo_carrera",
+    "herramientas_procesos",
+    "cambio_organizacional"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Terminó dos rutas de Buk University y quiere seguir profundizando en la especialidad.",
+    "Destaca la mejora en el proceso de handoff con el equipo de implementación.",
+    "El cambio de estructura le resultó positivo: quedó más cerca de las decisiones de producto."
+  ],
+  "confianza": 0.95
+}

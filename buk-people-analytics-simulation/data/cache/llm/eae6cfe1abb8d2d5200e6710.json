@@ -1,0 +1,18 @@
+{
+  "hash_nota": "eae6cfe1abb8d2d5200e6710",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:53:38.326629+00:00",
+  "texto_scrubbed": "Conversamos en el 1:1 mensual. Le entusiasma la opción de rotar hacia otro equipo el próximo año. Viene de cerrar un trimestre por sobre meta y se le nota tranquilo. Queda de compartir lo aprendido con el resto del equipo.",
+  "sentimiento": "positivo",
+  "temas": [
+    "movilidad_interna",
+    "clima_equipo"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Le entusiasma la opción de rotar hacia otro equipo el próximo año.",
+    "Viene de cerrar un trimestre por sobre meta y se le nota tranquilo."
+  ],
+  "confianza": 0.95
+}

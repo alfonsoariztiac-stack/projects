@@ -1,0 +1,24 @@
+{
+  "hash_nota": "8f56d059cbd4e12798e0f3e8",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:52:44.569029+00:00",
+  "texto_scrubbed": "Conversamos en el 1:1 mensual. Plantea que el proyecto con [CLIENTE] lo sacó adelante prácticamente solo y que eso no se visibilizó en ninguna instancia. Coincide con la caída que veníamos observando en sus indicadores del área. Queda con la sensación de no ser escuchado. Requiere seguimiento cercano.",
+  "sentimiento": "negativo",
+  "temas": [
+    "reconocimiento",
+    "carga_trabajo",
+    "relacion_con_lider"
+  ],
+  "senales": [
+    "reconocimiento",
+    "carga_trabajo",
+    "relacion_con_lider"
+  ],
+  "citas_respaldo": [
+    "eso no se visibilizó en ninguna instancia",
+    "lo sacó adelante prácticamente solo",
+    "Queda con la sensación de no ser escuchado"
+  ],
+  "confianza": 0.95
+}

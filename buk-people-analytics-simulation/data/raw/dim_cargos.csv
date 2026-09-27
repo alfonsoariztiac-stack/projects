@@ -1,0 +1,1031 @@
+cargo,job_family,job_level,etiqueta_nivel,area,pais_contrato,moneda,banda_min,banda_med,banda_max,es_liderazgo
+Software Engineer Aprendiz,Ingeniería,IC1,Aprendiz,Tecnología,CL,CLP,860000,1080000,1350000,False
+Software Engineer Aprendiz,Ingeniería,IC1,Aprendiz,Tecnología,CO,COP,2800000,3500000,4400000,False
+Software Engineer Aprendiz,Ingeniería,IC1,Aprendiz,Tecnología,PE,PEN,2700,3400,4200,False
+Software Engineer Aprendiz,Ingeniería,IC1,Aprendiz,Tecnología,MX,MXN,16500,20500,25500,False
+Software Engineer Aprendiz,Ingeniería,IC1,Aprendiz,Tecnología,BR,BRL,4500,5600,7000,False
+Software Engineer,Ingeniería,IC2,Analista,Tecnología,CL,CLP,1300000,1620000,2020000,False
+Software Engineer,Ingeniería,IC2,Analista,Tecnología,CO,COP,4250000,5300000,6600000,False
+Software Engineer,Ingeniería,IC2,Analista,Tecnología,PE,PEN,4100,5100,6400,False
+Software Engineer,Ingeniería,IC2,Analista,Tecnología,MX,MXN,25000,31000,39000,False
+Software Engineer,Ingeniería,IC2,Analista,Tecnología,BR,BRL,6600,8300,10400,False
+Software Engineer Semi Senior,Ingeniería,IC3,Semi Senior,Tecnología,CL,CLP,1820000,2280000,2850000,False
+Software Engineer Semi Senior,Ingeniería,IC3,Semi Senior,Tecnología,CO,COP,5950000,7450000,9300000,False
+Software Engineer Semi Senior,Ingeniería,IC3,Semi Senior,Tecnología,PE,PEN,5800,7200,9000,False
+Software Engineer Semi Senior,Ingeniería,IC3,Semi Senior,Tecnología,MX,MXN,35000,43500,54500,False
+Software Engineer Semi Senior,Ingeniería,IC3,Semi Senior,Tecnología,BR,BRL,9400,11700,14600,False
+Software Engineer Senior,Ingeniería,IC4,Senior,Tecnología,CL,CLP,2590000,3240000,4050000,False
+Software Engineer Senior,Ingeniería,IC4,Senior,Tecnología,CO,COP,8450000,10550000,13200000,False
+Software Engineer Senior,Ingeniería,IC4,Senior,Tecnología,PE,PEN,8200,10200,12800,False
+Software Engineer Senior,Ingeniería,IC4,Senior,Tecnología,MX,MXN,49000,61500,77000,False
+Software Engineer Senior,Ingeniería,IC4,Senior,Tecnología,BR,BRL,13400,16700,20900,False
+Software Engineer Especialista,Ingeniería,IC5,Especialista,Tecnología,CL,CLP,3460000,4320000,5400000,False
+Software Engineer Especialista,Ingeniería,IC5,Especialista,Tecnología,CO,COP,11300000,14100000,17600000,False
+Software Engineer Especialista,Ingeniería,IC5,Especialista,Tecnología,PE,PEN,10900,13600,17000,False
+Software Engineer Especialista,Ingeniería,IC5,Especialista,Tecnología,MX,MXN,65500,82000,102500,False
+Software Engineer Especialista,Ingeniería,IC5,Especialista,Tecnología,BR,BRL,17800,22200,27800,False
+Líder de Ingeniería,Ingeniería,M1,Líder,Tecnología,CL,CLP,2500000,3120000,3900000,True
+Líder de Ingeniería,Ingeniería,M1,Líder,Tecnología,CO,COP,8100000,10150000,12700000,True
+Líder de Ingeniería,Ingeniería,M1,Líder,Tecnología,PE,PEN,7800,9800,12200,True
+Líder de Ingeniería,Ingeniería,M1,Líder,Tecnología,MX,MXN,47500,59500,74500,True
+Líder de Ingeniería,Ingeniería,M1,Líder,Tecnología,BR,BRL,12800,16000,20000,True
+Subgerente de Ingeniería,Ingeniería,M2,Subgerente,Tecnología,CL,CLP,3650000,4560000,5700000,True
+Subgerente de Ingeniería,Ingeniería,M2,Subgerente,Tecnología,CO,COP,11900000,14850000,18550000,True
+Subgerente de Ingeniería,Ingeniería,M2,Subgerente,Tecnología,PE,PEN,11400,14300,17900,True
+Subgerente de Ingeniería,Ingeniería,M2,Subgerente,Tecnología,MX,MXN,69000,86500,108000,True
+Subgerente de Ingeniería,Ingeniería,M2,Subgerente,Tecnología,BR,BRL,18800,23500,29400,True
+Gerente de Ingeniería,Ingeniería,M3,Gerente,Tecnología,CL,CLP,5280000,6600000,8250000,True
+Gerente de Ingeniería,Ingeniería,M3,Gerente,Tecnología,CO,COP,17200000,21500000,26900000,True
+Gerente de Ingeniería,Ingeniería,M3,Gerente,Tecnología,PE,PEN,16600,20700,25900,True
+Gerente de Ingeniería,Ingeniería,M3,Gerente,Tecnología,MX,MXN,100500,125500,157000,True
+Gerente de Ingeniería,Ingeniería,M3,Gerente,Tecnología,BR,BRL,27100,33900,42400,True
+QA Engineer Aprendiz,Ingeniería,IC1,Aprendiz,Tecnología,CL,CLP,860000,1080000,1350000,False
+QA Engineer Aprendiz,Ingeniería,IC1,Aprendiz,Tecnología,CO,COP,2800000,3500000,4400000,False
+QA Engineer Aprendiz,Ingeniería,IC1,Aprendiz,Tecnología,PE,PEN,2700,3400,4200,False
+QA Engineer Aprendiz,Ingeniería,IC1,Aprendiz,Tecnología,MX,MXN,16500,20500,25500,False
+QA Engineer Aprendiz,Ingeniería,IC1,Aprendiz,Tecnología,BR,BRL,4500,5600,7000,False
+QA Engineer,Ingeniería,IC2,Analista,Tecnología,CL,CLP,1300000,1620000,2020000,False
+QA Engineer,Ingeniería,IC2,Analista,Tecnología,CO,COP,4250000,5300000,6600000,False
+QA Engineer,Ingeniería,IC2,Analista,Tecnología,PE,PEN,4100,5100,6400,False
+QA Engineer,Ingeniería,IC2,Analista,Tecnología,MX,MXN,25000,31000,39000,False
+QA Engineer,Ingeniería,IC2,Analista,Tecnología,BR,BRL,6600,8300,10400,False
+QA Engineer Semi Senior,Ingeniería,IC3,Semi Senior,Tecnología,CL,CLP,1820000,2280000,2850000,False
+QA Engineer Semi Senior,Ingeniería,IC3,Semi Senior,Tecnología,CO,COP,5950000,7450000,9300000,False
+QA Engineer Semi Senior,Ingeniería,IC3,Semi Senior,Tecnología,PE,PEN,5800,7200,9000,False
+QA Engineer Semi Senior,Ingeniería,IC3,Semi Senior,Tecnología,MX,MXN,35000,43500,54500,False
+QA Engineer Semi Senior,Ingeniería,IC3,Semi Senior,Tecnología,BR,BRL,9400,11700,14600,False
+QA Engineer Senior,Ingeniería,IC4,Senior,Tecnología,CL,CLP,2590000,3240000,4050000,False
+QA Engineer Senior,Ingeniería,IC4,Senior,Tecnología,CO,COP,8450000,10550000,13200000,False
+QA Engineer Senior,Ingeniería,IC4,Senior,Tecnología,PE,PEN,8200,10200,12800,False
+QA Engineer Senior,Ingeniería,IC4,Senior,Tecnología,MX,MXN,49000,61500,77000,False
+QA Engineer Senior,Ingeniería,IC4,Senior,Tecnología,BR,BRL,13400,16700,20900,False
+QA Engineer Especialista,Ingeniería,IC5,Especialista,Tecnología,CL,CLP,3460000,4320000,5400000,False
+QA Engineer Especialista,Ingeniería,IC5,Especialista,Tecnología,CO,COP,11300000,14100000,17600000,False
+QA Engineer Especialista,Ingeniería,IC5,Especialista,Tecnología,PE,PEN,10900,13600,17000,False
+QA Engineer Especialista,Ingeniería,IC5,Especialista,Tecnología,MX,MXN,65500,82000,102500,False
+QA Engineer Especialista,Ingeniería,IC5,Especialista,Tecnología,BR,BRL,17800,22200,27800,False
+SRE Aprendiz,Ingeniería,IC1,Aprendiz,Tecnología,CL,CLP,860000,1080000,1350000,False
+SRE Aprendiz,Ingeniería,IC1,Aprendiz,Tecnología,CO,COP,2800000,3500000,4400000,False
+SRE Aprendiz,Ingeniería,IC1,Aprendiz,Tecnología,PE,PEN,2700,3400,4200,False
+SRE Aprendiz,Ingeniería,IC1,Aprendiz,Tecnología,MX,MXN,16500,20500,25500,False
+SRE Aprendiz,Ingeniería,IC1,Aprendiz,Tecnología,BR,BRL,4500,5600,7000,False
+SRE,Ingeniería,IC2,Analista,Tecnología,CL,CLP,1300000,1620000,2020000,False
+SRE,Ingeniería,IC2,Analista,Tecnología,CO,COP,4250000,5300000,6600000,False
+SRE,Ingeniería,IC2,Analista,Tecnología,PE,PEN,4100,5100,6400,False
+SRE,Ingeniería,IC2,Analista,Tecnología,MX,MXN,25000,31000,39000,False
+SRE,Ingeniería,IC2,Analista,Tecnología,BR,BRL,6600,8300,10400,False
+SRE Semi Senior,Ingeniería,IC3,Semi Senior,Tecnología,CL,CLP,1820000,2280000,2850000,False
+SRE Semi Senior,Ingeniería,IC3,Semi Senior,Tecnología,CO,COP,5950000,7450000,9300000,False
+SRE Semi Senior,Ingeniería,IC3,Semi Senior,Tecnología,PE,PEN,5800,7200,9000,False
+SRE Semi Senior,Ingeniería,IC3,Semi Senior,Tecnología,MX,MXN,35000,43500,54500,False
+SRE Semi Senior,Ingeniería,IC3,Semi Senior,Tecnología,BR,BRL,9400,11700,14600,False
+SRE Senior,Ingeniería,IC4,Senior,Tecnología,CL,CLP,2590000,3240000,4050000,False
+SRE Senior,Ingeniería,IC4,Senior,Tecnología,CO,COP,8450000,10550000,13200000,False
+SRE Senior,Ingeniería,IC4,Senior,Tecnología,PE,PEN,8200,10200,12800,False
+SRE Senior,Ingeniería,IC4,Senior,Tecnología,MX,MXN,49000,61500,77000,False
+SRE Senior,Ingeniería,IC4,Senior,Tecnología,BR,BRL,13400,16700,20900,False
+SRE Especialista,Ingeniería,IC5,Especialista,Tecnología,CL,CLP,3460000,4320000,5400000,False
+SRE Especialista,Ingeniería,IC5,Especialista,Tecnología,CO,COP,11300000,14100000,17600000,False
+SRE Especialista,Ingeniería,IC5,Especialista,Tecnología,PE,PEN,10900,13600,17000,False
+SRE Especialista,Ingeniería,IC5,Especialista,Tecnología,MX,MXN,65500,82000,102500,False
+SRE Especialista,Ingeniería,IC5,Especialista,Tecnología,BR,BRL,17800,22200,27800,False
+Data Engineer Aprendiz,Ingeniería,IC1,Aprendiz,Tecnología,CL,CLP,860000,1080000,1350000,False
+Data Engineer Aprendiz,Ingeniería,IC1,Aprendiz,Tecnología,CO,COP,2800000,3500000,4400000,False
+Data Engineer Aprendiz,Ingeniería,IC1,Aprendiz,Tecnología,PE,PEN,2700,3400,4200,False
+Data Engineer Aprendiz,Ingeniería,IC1,Aprendiz,Tecnología,MX,MXN,16500,20500,25500,False
+Data Engineer Aprendiz,Ingeniería,IC1,Aprendiz,Tecnología,BR,BRL,4500,5600,7000,False
+Data Engineer,Ingeniería,IC2,Analista,Tecnología,CL,CLP,1300000,1620000,2020000,False
+Data Engineer,Ingeniería,IC2,Analista,Tecnología,CO,COP,4250000,5300000,6600000,False
+Data Engineer,Ingeniería,IC2,Analista,Tecnología,PE,PEN,4100,5100,6400,False
+Data Engineer,Ingeniería,IC2,Analista,Tecnología,MX,MXN,25000,31000,39000,False
+Data Engineer,Ingeniería,IC2,Analista,Tecnología,BR,BRL,6600,8300,10400,False
+Data Engineer Semi Senior,Ingeniería,IC3,Semi Senior,Tecnología,CL,CLP,1820000,2280000,2850000,False
+Data Engineer Semi Senior,Ingeniería,IC3,Semi Senior,Tecnología,CO,COP,5950000,7450000,9300000,False
+Data Engineer Semi Senior,Ingeniería,IC3,Semi Senior,Tecnología,PE,PEN,5800,7200,9000,False
+Data Engineer Semi Senior,Ingeniería,IC3,Semi Senior,Tecnología,MX,MXN,35000,43500,54500,False
+Data Engineer Semi Senior,Ingeniería,IC3,Semi Senior,Tecnología,BR,BRL,9400,11700,14600,False
+Data Engineer Senior,Ingeniería,IC4,Senior,Tecnología,CL,CLP,2590000,3240000,4050000,False
+Data Engineer Senior,Ingeniería,IC4,Senior,Tecnología,CO,COP,8450000,10550000,13200000,False
+Data Engineer Senior,Ingeniería,IC4,Senior,Tecnología,PE,PEN,8200,10200,12800,False
+Data Engineer Senior,Ingeniería,IC4,Senior,Tecnología,MX,MXN,49000,61500,77000,False
+Data Engineer Senior,Ingeniería,IC4,Senior,Tecnología,BR,BRL,13400,16700,20900,False
+Data Engineer Especialista,Ingeniería,IC5,Especialista,Tecnología,CL,CLP,3460000,4320000,5400000,False
+Data Engineer Especialista,Ingeniería,IC5,Especialista,Tecnología,CO,COP,11300000,14100000,17600000,False
+Data Engineer Especialista,Ingeniería,IC5,Especialista,Tecnología,PE,PEN,10900,13600,17000,False
+Data Engineer Especialista,Ingeniería,IC5,Especialista,Tecnología,MX,MXN,65500,82000,102500,False
+Data Engineer Especialista,Ingeniería,IC5,Especialista,Tecnología,BR,BRL,17800,22200,27800,False
+Security Engineer Aprendiz,Ingeniería,IC1,Aprendiz,Tecnología,CL,CLP,860000,1080000,1350000,False
+Security Engineer Aprendiz,Ingeniería,IC1,Aprendiz,Tecnología,CO,COP,2800000,3500000,4400000,False
+Security Engineer Aprendiz,Ingeniería,IC1,Aprendiz,Tecnología,PE,PEN,2700,3400,4200,False
+Security Engineer Aprendiz,Ingeniería,IC1,Aprendiz,Tecnología,MX,MXN,16500,20500,25500,False
+Security Engineer Aprendiz,Ingeniería,IC1,Aprendiz,Tecnología,BR,BRL,4500,5600,7000,False
+Security Engineer,Ingeniería,IC2,Analista,Tecnología,CL,CLP,1300000,1620000,2020000,False
+Security Engineer,Ingeniería,IC2,Analista,Tecnología,CO,COP,4250000,5300000,6600000,False
+Security Engineer,Ingeniería,IC2,Analista,Tecnología,PE,PEN,4100,5100,6400,False
+Security Engineer,Ingeniería,IC2,Analista,Tecnología,MX,MXN,25000,31000,39000,False
+Security Engineer,Ingeniería,IC2,Analista,Tecnología,BR,BRL,6600,8300,10400,False
+Security Engineer Semi Senior,Ingeniería,IC3,Semi Senior,Tecnología,CL,CLP,1820000,2280000,2850000,False
+Security Engineer Semi Senior,Ingeniería,IC3,Semi Senior,Tecnología,CO,COP,5950000,7450000,9300000,False
+Security Engineer Semi Senior,Ingeniería,IC3,Semi Senior,Tecnología,PE,PEN,5800,7200,9000,False
+Security Engineer Semi Senior,Ingeniería,IC3,Semi Senior,Tecnología,MX,MXN,35000,43500,54500,False
+Security Engineer Semi Senior,Ingeniería,IC3,Semi Senior,Tecnología,BR,BRL,9400,11700,14600,False
+Security Engineer Senior,Ingeniería,IC4,Senior,Tecnología,CL,CLP,2590000,3240000,4050000,False
+Security Engineer Senior,Ingeniería,IC4,Senior,Tecnología,CO,COP,8450000,10550000,13200000,False
+Security Engineer Senior,Ingeniería,IC4,Senior,Tecnología,PE,PEN,8200,10200,12800,False
+Security Engineer Senior,Ingeniería,IC4,Senior,Tecnología,MX,MXN,49000,61500,77000,False
+Security Engineer Senior,Ingeniería,IC4,Senior,Tecnología,BR,BRL,13400,16700,20900,False
+Security Engineer Especialista,Ingeniería,IC5,Especialista,Tecnología,CL,CLP,3460000,4320000,5400000,False
+Security Engineer Especialista,Ingeniería,IC5,Especialista,Tecnología,CO,COP,11300000,14100000,17600000,False
+Security Engineer Especialista,Ingeniería,IC5,Especialista,Tecnología,PE,PEN,10900,13600,17000,False
+Security Engineer Especialista,Ingeniería,IC5,Especialista,Tecnología,MX,MXN,65500,82000,102500,False
+Security Engineer Especialista,Ingeniería,IC5,Especialista,Tecnología,BR,BRL,17800,22200,27800,False
+Product Manager Aprendiz,Producto,IC1,Aprendiz,Tecnología,CL,CLP,820000,1030000,1290000,False
+Product Manager Aprendiz,Producto,IC1,Aprendiz,Tecnología,CO,COP,2700000,3350000,4200000,False
+Product Manager Aprendiz,Producto,IC1,Aprendiz,Tecnología,PE,PEN,2600,3200,4000,False
+Product Manager Aprendiz,Producto,IC1,Aprendiz,Tecnología,MX,MXN,15500,19500,24500,False
+Product Manager Aprendiz,Producto,IC1,Aprendiz,Tecnología,BR,BRL,4200,5300,6600,False
+Product Manager,Producto,IC2,Analista,Tecnología,CL,CLP,1240000,1550000,1940000,False
+Product Manager,Producto,IC2,Analista,Tecnología,CO,COP,4050000,5050000,6300000,False
+Product Manager,Producto,IC2,Analista,Tecnología,PE,PEN,3900,4900,6100,False
+Product Manager,Producto,IC2,Analista,Tecnología,MX,MXN,23500,29500,37000,False
+Product Manager,Producto,IC2,Analista,Tecnología,BR,BRL,6400,8000,10000,False
+Product Manager Semi Senior,Producto,IC3,Semi Senior,Tecnología,CL,CLP,1740000,2180000,2720000,False
+Product Manager Semi Senior,Producto,IC3,Semi Senior,Tecnología,CO,COP,5700000,7100000,8900000,False
+Product Manager Semi Senior,Producto,IC3,Semi Senior,Tecnología,PE,PEN,5500,6900,8600,False
+Product Manager Semi Senior,Producto,IC3,Semi Senior,Tecnología,MX,MXN,33000,41500,52000,False
+Product Manager Semi Senior,Producto,IC3,Semi Senior,Tecnología,BR,BRL,9000,11200,14000,False
+Product Manager Senior,Producto,IC4,Senior,Tecnología,CL,CLP,2480000,3100000,3880000,False
+Product Manager Senior,Producto,IC4,Senior,Tecnología,CO,COP,8100000,10100000,12600000,False
+Product Manager Senior,Producto,IC4,Senior,Tecnología,PE,PEN,7800,9700,12100,False
+Product Manager Senior,Producto,IC4,Senior,Tecnología,MX,MXN,47000,59000,74000,False
+Product Manager Senior,Producto,IC4,Senior,Tecnología,BR,BRL,12800,16000,20000,False
+Product Manager Especialista,Producto,IC5,Especialista,Tecnología,CL,CLP,3310000,4140000,5180000,False
+Product Manager Especialista,Producto,IC5,Especialista,Tecnología,CO,COP,10800000,13500000,16900000,False
+Product Manager Especialista,Producto,IC5,Especialista,Tecnología,PE,PEN,10400,13000,16200,False
+Product Manager Especialista,Producto,IC5,Especialista,Tecnología,MX,MXN,63000,78500,98000,False
+Product Manager Especialista,Producto,IC5,Especialista,Tecnología,BR,BRL,17000,21300,26600,False
+Líder de Producto,Producto,M1,Líder,Tecnología,CL,CLP,2390000,2990000,3740000,True
+Líder de Producto,Producto,M1,Líder,Tecnología,CO,COP,7800000,9750000,12200000,True
+Líder de Producto,Producto,M1,Líder,Tecnología,PE,PEN,7500,9400,11800,True
+Líder de Producto,Producto,M1,Líder,Tecnología,MX,MXN,45500,57000,71000,True
+Líder de Producto,Producto,M1,Líder,Tecnología,BR,BRL,12300,15400,19200,True
+Subgerente de Producto,Producto,M2,Subgerente,Tecnología,CL,CLP,3500000,4370000,5460000,True
+Subgerente de Producto,Producto,M2,Subgerente,Tecnología,CO,COP,11400000,14250000,17800000,True
+Subgerente de Producto,Producto,M2,Subgerente,Tecnología,PE,PEN,11000,13700,17100,True
+Subgerente de Producto,Producto,M2,Subgerente,Tecnología,MX,MXN,66500,83000,104000,True
+Subgerente de Producto,Producto,M2,Subgerente,Tecnología,BR,BRL,18000,22500,28100,True
+Gerente de Producto,Producto,M3,Gerente,Tecnología,CL,CLP,5060000,6320000,7900000,True
+Gerente de Producto,Producto,M3,Gerente,Tecnología,CO,COP,16500000,20600000,25750000,True
+Gerente de Producto,Producto,M3,Gerente,Tecnología,PE,PEN,15800,19800,24800,True
+Gerente de Producto,Producto,M3,Gerente,Tecnología,MX,MXN,96000,120000,150000,True
+Gerente de Producto,Producto,M3,Gerente,Tecnología,BR,BRL,26000,32500,40600,True
+Product Designer Aprendiz,Producto,IC1,Aprendiz,Tecnología,CL,CLP,820000,1030000,1290000,False
+Product Designer Aprendiz,Producto,IC1,Aprendiz,Tecnología,CO,COP,2700000,3350000,4200000,False
+Product Designer Aprendiz,Producto,IC1,Aprendiz,Tecnología,PE,PEN,2600,3200,4000,False
+Product Designer Aprendiz,Producto,IC1,Aprendiz,Tecnología,MX,MXN,15500,19500,24500,False
+Product Designer Aprendiz,Producto,IC1,Aprendiz,Tecnología,BR,BRL,4200,5300,6600,False
+Product Designer,Producto,IC2,Analista,Tecnología,CL,CLP,1240000,1550000,1940000,False
+Product Designer,Producto,IC2,Analista,Tecnología,CO,COP,4050000,5050000,6300000,False
+Product Designer,Producto,IC2,Analista,Tecnología,PE,PEN,3900,4900,6100,False
+Product Designer,Producto,IC2,Analista,Tecnología,MX,MXN,23500,29500,37000,False
+Product Designer,Producto,IC2,Analista,Tecnología,BR,BRL,6400,8000,10000,False
+Product Designer Semi Senior,Producto,IC3,Semi Senior,Tecnología,CL,CLP,1740000,2180000,2720000,False
+Product Designer Semi Senior,Producto,IC3,Semi Senior,Tecnología,CO,COP,5700000,7100000,8900000,False
+Product Designer Semi Senior,Producto,IC3,Semi Senior,Tecnología,PE,PEN,5500,6900,8600,False
+Product Designer Semi Senior,Producto,IC3,Semi Senior,Tecnología,MX,MXN,33000,41500,52000,False
+Product Designer Semi Senior,Producto,IC3,Semi Senior,Tecnología,BR,BRL,9000,11200,14000,False
+Product Designer Senior,Producto,IC4,Senior,Tecnología,CL,CLP,2480000,3100000,3880000,False
+Product Designer Senior,Producto,IC4,Senior,Tecnología,CO,COP,8100000,10100000,12600000,False
+Product Designer Senior,Producto,IC4,Senior,Tecnología,PE,PEN,7800,9700,12100,False
+Product Designer Senior,Producto,IC4,Senior,Tecnología,MX,MXN,47000,59000,74000,False
+Product Designer Senior,Producto,IC4,Senior,Tecnología,BR,BRL,12800,16000,20000,False
+Product Designer Especialista,Producto,IC5,Especialista,Tecnología,CL,CLP,3310000,4140000,5180000,False
+Product Designer Especialista,Producto,IC5,Especialista,Tecnología,CO,COP,10800000,13500000,16900000,False
+Product Designer Especialista,Producto,IC5,Especialista,Tecnología,PE,PEN,10400,13000,16200,False
+Product Designer Especialista,Producto,IC5,Especialista,Tecnología,MX,MXN,63000,78500,98000,False
+Product Designer Especialista,Producto,IC5,Especialista,Tecnología,BR,BRL,17000,21300,26600,False
+UX Researcher Aprendiz,Producto,IC1,Aprendiz,Tecnología,CL,CLP,820000,1030000,1290000,False
+UX Researcher Aprendiz,Producto,IC1,Aprendiz,Tecnología,CO,COP,2700000,3350000,4200000,False
+UX Researcher Aprendiz,Producto,IC1,Aprendiz,Tecnología,PE,PEN,2600,3200,4000,False
+UX Researcher Aprendiz,Producto,IC1,Aprendiz,Tecnología,MX,MXN,15500,19500,24500,False
+UX Researcher Aprendiz,Producto,IC1,Aprendiz,Tecnología,BR,BRL,4200,5300,6600,False
+UX Researcher,Producto,IC2,Analista,Tecnología,CL,CLP,1240000,1550000,1940000,False
+UX Researcher,Producto,IC2,Analista,Tecnología,CO,COP,4050000,5050000,6300000,False
+UX Researcher,Producto,IC2,Analista,Tecnología,PE,PEN,3900,4900,6100,False
+UX Researcher,Producto,IC2,Analista,Tecnología,MX,MXN,23500,29500,37000,False
+UX Researcher,Producto,IC2,Analista,Tecnología,BR,BRL,6400,8000,10000,False
+UX Researcher Semi Senior,Producto,IC3,Semi Senior,Tecnología,CL,CLP,1740000,2180000,2720000,False
+UX Researcher Semi Senior,Producto,IC3,Semi Senior,Tecnología,CO,COP,5700000,7100000,8900000,False
+UX Researcher Semi Senior,Producto,IC3,Semi Senior,Tecnología,PE,PEN,5500,6900,8600,False
+UX Researcher Semi Senior,Producto,IC3,Semi Senior,Tecnología,MX,MXN,33000,41500,52000,False
+UX Researcher Semi Senior,Producto,IC3,Semi Senior,Tecnología,BR,BRL,9000,11200,14000,False
+UX Researcher Senior,Producto,IC4,Senior,Tecnología,CL,CLP,2480000,3100000,3880000,False
+UX Researcher Senior,Producto,IC4,Senior,Tecnología,CO,COP,8100000,10100000,12600000,False
+UX Researcher Senior,Producto,IC4,Senior,Tecnología,PE,PEN,7800,9700,12100,False
+UX Researcher Senior,Producto,IC4,Senior,Tecnología,MX,MXN,47000,59000,74000,False
+UX Researcher Senior,Producto,IC4,Senior,Tecnología,BR,BRL,12800,16000,20000,False
+UX Researcher Especialista,Producto,IC5,Especialista,Tecnología,CL,CLP,3310000,4140000,5180000,False
+UX Researcher Especialista,Producto,IC5,Especialista,Tecnología,CO,COP,10800000,13500000,16900000,False
+UX Researcher Especialista,Producto,IC5,Especialista,Tecnología,PE,PEN,10400,13000,16200,False
+UX Researcher Especialista,Producto,IC5,Especialista,Tecnología,MX,MXN,63000,78500,98000,False
+UX Researcher Especialista,Producto,IC5,Especialista,Tecnología,BR,BRL,17000,21300,26600,False
+Data Analyst Aprendiz,Datos,IC1,Aprendiz,Tecnología,CL,CLP,820000,1030000,1290000,False
+Data Analyst Aprendiz,Datos,IC1,Aprendiz,Tecnología,CO,COP,2700000,3350000,4200000,False
+Data Analyst Aprendiz,Datos,IC1,Aprendiz,Tecnología,PE,PEN,2600,3200,4000,False
+Data Analyst Aprendiz,Datos,IC1,Aprendiz,Tecnología,MX,MXN,15500,19500,24500,False
+Data Analyst Aprendiz,Datos,IC1,Aprendiz,Tecnología,BR,BRL,4200,5300,6600,False
+Data Analyst,Datos,IC2,Analista,Tecnología,CL,CLP,1240000,1550000,1940000,False
+Data Analyst,Datos,IC2,Analista,Tecnología,CO,COP,4050000,5050000,6300000,False
+Data Analyst,Datos,IC2,Analista,Tecnología,PE,PEN,3900,4900,6100,False
+Data Analyst,Datos,IC2,Analista,Tecnología,MX,MXN,23500,29500,37000,False
+Data Analyst,Datos,IC2,Analista,Tecnología,BR,BRL,6400,8000,10000,False
+Data Analyst Semi Senior,Datos,IC3,Semi Senior,Tecnología,CL,CLP,1740000,2180000,2720000,False
+Data Analyst Semi Senior,Datos,IC3,Semi Senior,Tecnología,CO,COP,5700000,7100000,8900000,False
+Data Analyst Semi Senior,Datos,IC3,Semi Senior,Tecnología,PE,PEN,5500,6900,8600,False
+Data Analyst Semi Senior,Datos,IC3,Semi Senior,Tecnología,MX,MXN,33000,41500,52000,False
+Data Analyst Semi Senior,Datos,IC3,Semi Senior,Tecnología,BR,BRL,9000,11200,14000,False
+Data Analyst Senior,Datos,IC4,Senior,Tecnología,CL,CLP,2480000,3100000,3880000,False
+Data Analyst Senior,Datos,IC4,Senior,Tecnología,CO,COP,8100000,10100000,12600000,False
+Data Analyst Senior,Datos,IC4,Senior,Tecnología,PE,PEN,7800,9700,12100,False
+Data Analyst Senior,Datos,IC4,Senior,Tecnología,MX,MXN,47000,59000,74000,False
+Data Analyst Senior,Datos,IC4,Senior,Tecnología,BR,BRL,12800,16000,20000,False
+Data Analyst Especialista,Datos,IC5,Especialista,Tecnología,CL,CLP,3310000,4140000,5180000,False
+Data Analyst Especialista,Datos,IC5,Especialista,Tecnología,CO,COP,10800000,13500000,16900000,False
+Data Analyst Especialista,Datos,IC5,Especialista,Tecnología,PE,PEN,10400,13000,16200,False
+Data Analyst Especialista,Datos,IC5,Especialista,Tecnología,MX,MXN,63000,78500,98000,False
+Data Analyst Especialista,Datos,IC5,Especialista,Tecnología,BR,BRL,17000,21300,26600,False
+Líder de Datos,Datos,M1,Líder,Tecnología,CL,CLP,2390000,2990000,3740000,True
+Líder de Datos,Datos,M1,Líder,Tecnología,CO,COP,7800000,9750000,12200000,True
+Líder de Datos,Datos,M1,Líder,Tecnología,PE,PEN,7500,9400,11800,True
+Líder de Datos,Datos,M1,Líder,Tecnología,MX,MXN,45500,57000,71000,True
+Líder de Datos,Datos,M1,Líder,Tecnología,BR,BRL,12300,15400,19200,True
+Subgerente de Datos,Datos,M2,Subgerente,Tecnología,CL,CLP,3500000,4370000,5460000,True
+Subgerente de Datos,Datos,M2,Subgerente,Tecnología,CO,COP,11400000,14250000,17800000,True
+Subgerente de Datos,Datos,M2,Subgerente,Tecnología,PE,PEN,11000,13700,17100,True
+Subgerente de Datos,Datos,M2,Subgerente,Tecnología,MX,MXN,66500,83000,104000,True
+Subgerente de Datos,Datos,M2,Subgerente,Tecnología,BR,BRL,18000,22500,28100,True
+Gerente de Datos,Datos,M3,Gerente,Tecnología,CL,CLP,5060000,6320000,7900000,True
+Gerente de Datos,Datos,M3,Gerente,Tecnología,CO,COP,16500000,20600000,25750000,True
+Gerente de Datos,Datos,M3,Gerente,Tecnología,PE,PEN,15800,19800,24800,True
+Gerente de Datos,Datos,M3,Gerente,Tecnología,MX,MXN,96000,120000,150000,True
+Gerente de Datos,Datos,M3,Gerente,Tecnología,BR,BRL,26000,32500,40600,True
+Analytics Engineer Aprendiz,Datos,IC1,Aprendiz,Tecnología,CL,CLP,820000,1030000,1290000,False
+Analytics Engineer Aprendiz,Datos,IC1,Aprendiz,Tecnología,CO,COP,2700000,3350000,4200000,False
+Analytics Engineer Aprendiz,Datos,IC1,Aprendiz,Tecnología,PE,PEN,2600,3200,4000,False
+Analytics Engineer Aprendiz,Datos,IC1,Aprendiz,Tecnología,MX,MXN,15500,19500,24500,False
+Analytics Engineer Aprendiz,Datos,IC1,Aprendiz,Tecnología,BR,BRL,4200,5300,6600,False
+Analytics Engineer,Datos,IC2,Analista,Tecnología,CL,CLP,1240000,1550000,1940000,False
+Analytics Engineer,Datos,IC2,Analista,Tecnología,CO,COP,4050000,5050000,6300000,False
+Analytics Engineer,Datos,IC2,Analista,Tecnología,PE,PEN,3900,4900,6100,False
+Analytics Engineer,Datos,IC2,Analista,Tecnología,MX,MXN,23500,29500,37000,False
+Analytics Engineer,Datos,IC2,Analista,Tecnología,BR,BRL,6400,8000,10000,False
+Analytics Engineer Semi Senior,Datos,IC3,Semi Senior,Tecnología,CL,CLP,1740000,2180000,2720000,False
+Analytics Engineer Semi Senior,Datos,IC3,Semi Senior,Tecnología,CO,COP,5700000,7100000,8900000,False
+Analytics Engineer Semi Senior,Datos,IC3,Semi Senior,Tecnología,PE,PEN,5500,6900,8600,False
+Analytics Engineer Semi Senior,Datos,IC3,Semi Senior,Tecnología,MX,MXN,33000,41500,52000,False
+Analytics Engineer Semi Senior,Datos,IC3,Semi Senior,Tecnología,BR,BRL,9000,11200,14000,False
+Analytics Engineer Senior,Datos,IC4,Senior,Tecnología,CL,CLP,2480000,3100000,3880000,False
+Analytics Engineer Senior,Datos,IC4,Senior,Tecnología,CO,COP,8100000,10100000,12600000,False
+Analytics Engineer Senior,Datos,IC4,Senior,Tecnología,PE,PEN,7800,9700,12100,False
+Analytics Engineer Senior,Datos,IC4,Senior,Tecnología,MX,MXN,47000,59000,74000,False
+Analytics Engineer Senior,Datos,IC4,Senior,Tecnología,BR,BRL,12800,16000,20000,False
+Analytics Engineer Especialista,Datos,IC5,Especialista,Tecnología,CL,CLP,3310000,4140000,5180000,False
+Analytics Engineer Especialista,Datos,IC5,Especialista,Tecnología,CO,COP,10800000,13500000,16900000,False
+Analytics Engineer Especialista,Datos,IC5,Especialista,Tecnología,PE,PEN,10400,13000,16200,False
+Analytics Engineer Especialista,Datos,IC5,Especialista,Tecnología,MX,MXN,63000,78500,98000,False
+Analytics Engineer Especialista,Datos,IC5,Especialista,Tecnología,BR,BRL,17000,21300,26600,False
+People Analytics Aprendiz,Datos,IC1,Aprendiz,Tecnología,CL,CLP,820000,1030000,1290000,False
+People Analytics Aprendiz,Datos,IC1,Aprendiz,Tecnología,CO,COP,2700000,3350000,4200000,False
+People Analytics Aprendiz,Datos,IC1,Aprendiz,Tecnología,PE,PEN,2600,3200,4000,False
+People Analytics Aprendiz,Datos,IC1,Aprendiz,Tecnología,MX,MXN,15500,19500,24500,False
+People Analytics Aprendiz,Datos,IC1,Aprendiz,Tecnología,BR,BRL,4200,5300,6600,False
+People Analytics,Datos,IC2,Analista,Tecnología,CL,CLP,1240000,1550000,1940000,False
+People Analytics,Datos,IC2,Analista,Tecnología,CO,COP,4050000,5050000,6300000,False
+People Analytics,Datos,IC2,Analista,Tecnología,PE,PEN,3900,4900,6100,False
+People Analytics,Datos,IC2,Analista,Tecnología,MX,MXN,23500,29500,37000,False
+People Analytics,Datos,IC2,Analista,Tecnología,BR,BRL,6400,8000,10000,False
+People Analytics Semi Senior,Datos,IC3,Semi Senior,Tecnología,CL,CLP,1740000,2180000,2720000,False
+People Analytics Semi Senior,Datos,IC3,Semi Senior,Tecnología,CO,COP,5700000,7100000,8900000,False
+People Analytics Semi Senior,Datos,IC3,Semi Senior,Tecnología,PE,PEN,5500,6900,8600,False
+People Analytics Semi Senior,Datos,IC3,Semi Senior,Tecnología,MX,MXN,33000,41500,52000,False
+People Analytics Semi Senior,Datos,IC3,Semi Senior,Tecnología,BR,BRL,9000,11200,14000,False
+People Analytics Senior,Datos,IC4,Senior,Tecnología,CL,CLP,2480000,3100000,3880000,False
+People Analytics Senior,Datos,IC4,Senior,Tecnología,CO,COP,8100000,10100000,12600000,False
+People Analytics Senior,Datos,IC4,Senior,Tecnología,PE,PEN,7800,9700,12100,False
+People Analytics Senior,Datos,IC4,Senior,Tecnología,MX,MXN,47000,59000,74000,False
+People Analytics Senior,Datos,IC4,Senior,Tecnología,BR,BRL,12800,16000,20000,False
+People Analytics Especialista,Datos,IC5,Especialista,Tecnología,CL,CLP,3310000,4140000,5180000,False
+People Analytics Especialista,Datos,IC5,Especialista,Tecnología,CO,COP,10800000,13500000,16900000,False
+People Analytics Especialista,Datos,IC5,Especialista,Tecnología,PE,PEN,10400,13000,16200,False
+People Analytics Especialista,Datos,IC5,Especialista,Tecnología,MX,MXN,63000,78500,98000,False
+People Analytics Especialista,Datos,IC5,Especialista,Tecnología,BR,BRL,17000,21300,26600,False
+Account Executive Aprendiz,Ventas,IC1,Aprendiz,Comercial,CL,CLP,720000,900000,1120000,False
+Account Executive Aprendiz,Ventas,IC1,Aprendiz,Comercial,CO,COP,2350000,2950000,3700000,False
+Account Executive Aprendiz,Ventas,IC1,Aprendiz,Comercial,PE,PEN,2200,2800,3500,False
+Account Executive Aprendiz,Ventas,IC1,Aprendiz,Comercial,MX,MXN,13500,17000,21000,False
+Account Executive Aprendiz,Ventas,IC1,Aprendiz,Comercial,BR,BRL,3700,4600,5800,False
+Account Executive,Ventas,IC2,Analista,Comercial,CL,CLP,1080000,1350000,1690000,False
+Account Executive,Ventas,IC2,Analista,Comercial,CO,COP,3500000,4400000,5500000,False
+Account Executive,Ventas,IC2,Analista,Comercial,PE,PEN,3400,4200,5200,False
+Account Executive,Ventas,IC2,Analista,Comercial,MX,MXN,20500,25500,32000,False
+Account Executive,Ventas,IC2,Analista,Comercial,BR,BRL,5500,6900,8600,False
+Account Executive Semi Senior,Ventas,IC3,Semi Senior,Comercial,CL,CLP,1520000,1900000,2380000,False
+Account Executive Semi Senior,Ventas,IC3,Semi Senior,Comercial,CO,COP,4950000,6200000,7750000,False
+Account Executive Semi Senior,Ventas,IC3,Semi Senior,Comercial,PE,PEN,4800,6000,7500,False
+Account Executive Semi Senior,Ventas,IC3,Semi Senior,Comercial,MX,MXN,29000,36000,45000,False
+Account Executive Semi Senior,Ventas,IC3,Semi Senior,Comercial,BR,BRL,7800,9800,12200,False
+Account Executive Senior,Ventas,IC4,Senior,Comercial,CL,CLP,2160000,2700000,3380000,False
+Account Executive Senior,Ventas,IC4,Senior,Comercial,CO,COP,7050000,8800000,11000000,False
+Account Executive Senior,Ventas,IC4,Senior,Comercial,PE,PEN,6800,8500,10600,False
+Account Executive Senior,Ventas,IC4,Senior,Comercial,MX,MXN,41000,51500,64500,False
+Account Executive Senior,Ventas,IC4,Senior,Comercial,BR,BRL,11100,13900,17400,False
+Account Executive Especialista,Ventas,IC5,Especialista,Comercial,CL,CLP,2880000,3600000,4500000,False
+Account Executive Especialista,Ventas,IC5,Especialista,Comercial,CO,COP,9400000,11750000,14700000,False
+Account Executive Especialista,Ventas,IC5,Especialista,Comercial,PE,PEN,9000,11300,14100,False
+Account Executive Especialista,Ventas,IC5,Especialista,Comercial,MX,MXN,55000,68500,85500,False
+Account Executive Especialista,Ventas,IC5,Especialista,Comercial,BR,BRL,14800,18500,23100,False
+Líder de Ventas,Ventas,M1,Líder,Comercial,CL,CLP,2080000,2600000,3250000,True
+Líder de Ventas,Ventas,M1,Líder,Comercial,CO,COP,6800000,8500000,10600000,True
+Líder de Ventas,Ventas,M1,Líder,Comercial,PE,PEN,6600,8200,10200,True
+Líder de Ventas,Ventas,M1,Líder,Comercial,MX,MXN,39500,49500,62000,True
+Líder de Ventas,Ventas,M1,Líder,Comercial,BR,BRL,10700,13400,16800,True
+Subgerente de Ventas,Ventas,M2,Subgerente,Comercial,CL,CLP,3040000,3800000,4750000,True
+Subgerente de Ventas,Ventas,M2,Subgerente,Comercial,CO,COP,9900000,12400000,15500000,True
+Subgerente de Ventas,Ventas,M2,Subgerente,Comercial,PE,PEN,9500,11900,14900,True
+Subgerente de Ventas,Ventas,M2,Subgerente,Comercial,MX,MXN,57500,72000,90000,True
+Subgerente de Ventas,Ventas,M2,Subgerente,Comercial,BR,BRL,15600,19500,24400,True
+Gerente de Ventas,Ventas,M3,Gerente,Comercial,CL,CLP,4400000,5500000,6880000,True
+Gerente de Ventas,Ventas,M3,Gerente,Comercial,CO,COP,14350000,17950000,22450000,True
+Gerente de Ventas,Ventas,M3,Gerente,Comercial,PE,PEN,13800,17300,21600,True
+Gerente de Ventas,Ventas,M3,Gerente,Comercial,MX,MXN,83500,104500,130500,True
+Gerente de Ventas,Ventas,M3,Gerente,Comercial,BR,BRL,22600,28300,35400,True
+SDR Aprendiz,Ventas,IC1,Aprendiz,Comercial,CL,CLP,720000,900000,1120000,False
+SDR Aprendiz,Ventas,IC1,Aprendiz,Comercial,CO,COP,2350000,2950000,3700000,False
+SDR Aprendiz,Ventas,IC1,Aprendiz,Comercial,PE,PEN,2200,2800,3500,False
+SDR Aprendiz,Ventas,IC1,Aprendiz,Comercial,MX,MXN,13500,17000,21000,False
+SDR Aprendiz,Ventas,IC1,Aprendiz,Comercial,BR,BRL,3700,4600,5800,False
+SDR,Ventas,IC2,Analista,Comercial,CL,CLP,1080000,1350000,1690000,False
+SDR,Ventas,IC2,Analista,Comercial,CO,COP,3500000,4400000,5500000,False
+SDR,Ventas,IC2,Analista,Comercial,PE,PEN,3400,4200,5200,False
+SDR,Ventas,IC2,Analista,Comercial,MX,MXN,20500,25500,32000,False
+SDR,Ventas,IC2,Analista,Comercial,BR,BRL,5500,6900,8600,False
+SDR Semi Senior,Ventas,IC3,Semi Senior,Comercial,CL,CLP,1520000,1900000,2380000,False
+SDR Semi Senior,Ventas,IC3,Semi Senior,Comercial,CO,COP,4950000,6200000,7750000,False
+SDR Semi Senior,Ventas,IC3,Semi Senior,Comercial,PE,PEN,4800,6000,7500,False
+SDR Semi Senior,Ventas,IC3,Semi Senior,Comercial,MX,MXN,29000,36000,45000,False
+SDR Semi Senior,Ventas,IC3,Semi Senior,Comercial,BR,BRL,7800,9800,12200,False
+SDR Senior,Ventas,IC4,Senior,Comercial,CL,CLP,2160000,2700000,3380000,False
+SDR Senior,Ventas,IC4,Senior,Comercial,CO,COP,7050000,8800000,11000000,False
+SDR Senior,Ventas,IC4,Senior,Comercial,PE,PEN,6800,8500,10600,False
+SDR Senior,Ventas,IC4,Senior,Comercial,MX,MXN,41000,51500,64500,False
+SDR Senior,Ventas,IC4,Senior,Comercial,BR,BRL,11100,13900,17400,False
+SDR Especialista,Ventas,IC5,Especialista,Comercial,CL,CLP,2880000,3600000,4500000,False
+SDR Especialista,Ventas,IC5,Especialista,Comercial,CO,COP,9400000,11750000,14700000,False
+SDR Especialista,Ventas,IC5,Especialista,Comercial,PE,PEN,9000,11300,14100,False
+SDR Especialista,Ventas,IC5,Especialista,Comercial,MX,MXN,55000,68500,85500,False
+SDR Especialista,Ventas,IC5,Especialista,Comercial,BR,BRL,14800,18500,23100,False
+Ejecutivo Comercial Aprendiz,Ventas,IC1,Aprendiz,Comercial,CL,CLP,720000,900000,1120000,False
+Ejecutivo Comercial Aprendiz,Ventas,IC1,Aprendiz,Comercial,CO,COP,2350000,2950000,3700000,False
+Ejecutivo Comercial Aprendiz,Ventas,IC1,Aprendiz,Comercial,PE,PEN,2200,2800,3500,False
+Ejecutivo Comercial Aprendiz,Ventas,IC1,Aprendiz,Comercial,MX,MXN,13500,17000,21000,False
+Ejecutivo Comercial Aprendiz,Ventas,IC1,Aprendiz,Comercial,BR,BRL,3700,4600,5800,False
+Ejecutivo Comercial,Ventas,IC2,Analista,Comercial,CL,CLP,1080000,1350000,1690000,False
+Ejecutivo Comercial,Ventas,IC2,Analista,Comercial,CO,COP,3500000,4400000,5500000,False
+Ejecutivo Comercial,Ventas,IC2,Analista,Comercial,PE,PEN,3400,4200,5200,False
+Ejecutivo Comercial,Ventas,IC2,Analista,Comercial,MX,MXN,20500,25500,32000,False
+Ejecutivo Comercial,Ventas,IC2,Analista,Comercial,BR,BRL,5500,6900,8600,False
+Ejecutivo Comercial Semi Senior,Ventas,IC3,Semi Senior,Comercial,CL,CLP,1520000,1900000,2380000,False
+Ejecutivo Comercial Semi Senior,Ventas,IC3,Semi Senior,Comercial,CO,COP,4950000,6200000,7750000,False
+Ejecutivo Comercial Semi Senior,Ventas,IC3,Semi Senior,Comercial,PE,PEN,4800,6000,7500,False
+Ejecutivo Comercial Semi Senior,Ventas,IC3,Semi Senior,Comercial,MX,MXN,29000,36000,45000,False
+Ejecutivo Comercial Semi Senior,Ventas,IC3,Semi Senior,Comercial,BR,BRL,7800,9800,12200,False
+Ejecutivo Comercial Senior,Ventas,IC4,Senior,Comercial,CL,CLP,2160000,2700000,3380000,False
+Ejecutivo Comercial Senior,Ventas,IC4,Senior,Comercial,CO,COP,7050000,8800000,11000000,False
+Ejecutivo Comercial Senior,Ventas,IC4,Senior,Comercial,PE,PEN,6800,8500,10600,False
+Ejecutivo Comercial Senior,Ventas,IC4,Senior,Comercial,MX,MXN,41000,51500,64500,False
+Ejecutivo Comercial Senior,Ventas,IC4,Senior,Comercial,BR,BRL,11100,13900,17400,False
+Ejecutivo Comercial Especialista,Ventas,IC5,Especialista,Comercial,CL,CLP,2880000,3600000,4500000,False
+Ejecutivo Comercial Especialista,Ventas,IC5,Especialista,Comercial,CO,COP,9400000,11750000,14700000,False
+Ejecutivo Comercial Especialista,Ventas,IC5,Especialista,Comercial,PE,PEN,9000,11300,14100,False
+Ejecutivo Comercial Especialista,Ventas,IC5,Especialista,Comercial,MX,MXN,55000,68500,85500,False
+Ejecutivo Comercial Especialista,Ventas,IC5,Especialista,Comercial,BR,BRL,14800,18500,23100,False
+Customer Success Manager Aprendiz,Customer Success,IC1,Aprendiz,Comercial,CL,CLP,650000,810000,1010000,False
+Customer Success Manager Aprendiz,Customer Success,IC1,Aprendiz,Comercial,CO,COP,2100000,2650000,3300000,False
+Customer Success Manager Aprendiz,Customer Success,IC1,Aprendiz,Comercial,PE,PEN,2000,2500,3100,False
+Customer Success Manager Aprendiz,Customer Success,IC1,Aprendiz,Comercial,MX,MXN,12500,15500,19500,False
+Customer Success Manager Aprendiz,Customer Success,IC1,Aprendiz,Comercial,BR,BRL,3400,4200,5200,False
+Customer Success Manager,Customer Success,IC2,Analista,Comercial,CL,CLP,980000,1220000,1520000,False
+Customer Success Manager,Customer Success,IC2,Analista,Comercial,CO,COP,3150000,3950000,4950000,False
+Customer Success Manager,Customer Success,IC2,Analista,Comercial,PE,PEN,3000,3800,4800,False
+Customer Success Manager,Customer Success,IC2,Analista,Comercial,MX,MXN,18500,23000,29000,False
+Customer Success Manager,Customer Success,IC2,Analista,Comercial,BR,BRL,5000,6200,7800,False
+Customer Success Manager Semi Senior,Customer Success,IC3,Semi Senior,Comercial,CL,CLP,1370000,1710000,2140000,False
+Customer Success Manager Semi Senior,Customer Success,IC3,Semi Senior,Comercial,CO,COP,4500000,5600000,7000000,False
+Customer Success Manager Semi Senior,Customer Success,IC3,Semi Senior,Comercial,PE,PEN,4300,5400,6800,False
+Customer Success Manager Semi Senior,Customer Success,IC3,Semi Senior,Comercial,MX,MXN,26000,32500,40500,False
+Customer Success Manager Semi Senior,Customer Success,IC3,Semi Senior,Comercial,BR,BRL,7000,8800,11000,False
+Customer Success Manager Senior,Customer Success,IC4,Senior,Comercial,CL,CLP,1940000,2430000,3040000,False
+Customer Success Manager Senior,Customer Success,IC4,Senior,Comercial,CO,COP,6300000,7900000,9900000,False
+Customer Success Manager Senior,Customer Success,IC4,Senior,Comercial,PE,PEN,6100,7600,9500,False
+Customer Success Manager Senior,Customer Success,IC4,Senior,Comercial,MX,MXN,37000,46000,57500,False
+Customer Success Manager Senior,Customer Success,IC4,Senior,Comercial,BR,BRL,10000,12500,15600,False
+Customer Success Manager Especialista,Customer Success,IC5,Especialista,Comercial,CL,CLP,2590000,3240000,4050000,False
+Customer Success Manager Especialista,Customer Success,IC5,Especialista,Comercial,CO,COP,8450000,10550000,13200000,False
+Customer Success Manager Especialista,Customer Success,IC5,Especialista,Comercial,PE,PEN,8200,10200,12800,False
+Customer Success Manager Especialista,Customer Success,IC5,Especialista,Comercial,MX,MXN,49000,61500,77000,False
+Customer Success Manager Especialista,Customer Success,IC5,Especialista,Comercial,BR,BRL,13400,16700,20900,False
+Líder de Customer Success,Customer Success,M1,Líder,Comercial,CL,CLP,1870000,2340000,2920000,True
+Líder de Customer Success,Customer Success,M1,Líder,Comercial,CO,COP,6100000,7650000,9550000,True
+Líder de Customer Success,Customer Success,M1,Líder,Comercial,PE,PEN,5800,7300,9100,True
+Líder de Customer Success,Customer Success,M1,Líder,Comercial,MX,MXN,35500,44500,55500,True
+Líder de Customer Success,Customer Success,M1,Líder,Comercial,BR,BRL,9600,12000,15000,True
+Subgerente de Customer Success,Customer Success,M2,Subgerente,Comercial,CL,CLP,2740000,3420000,4280000,True
+Subgerente de Customer Success,Customer Success,M2,Subgerente,Comercial,CO,COP,8900000,11150000,13950000,True
+Subgerente de Customer Success,Customer Success,M2,Subgerente,Comercial,PE,PEN,8600,10700,13400,True
+Subgerente de Customer Success,Customer Success,M2,Subgerente,Comercial,MX,MXN,52000,65000,81000,True
+Subgerente de Customer Success,Customer Success,M2,Subgerente,Comercial,BR,BRL,14100,17600,22000,True
+Gerente de Customer Success,Customer Success,M3,Gerente,Comercial,CL,CLP,3960000,4950000,6190000,True
+Gerente de Customer Success,Customer Success,M3,Gerente,Comercial,CO,COP,12900000,16150000,20200000,True
+Gerente de Customer Success,Customer Success,M3,Gerente,Comercial,PE,PEN,12400,15500,19400,True
+Gerente de Customer Success,Customer Success,M3,Gerente,Comercial,MX,MXN,75000,94000,117500,True
+Gerente de Customer Success,Customer Success,M3,Gerente,Comercial,BR,BRL,20400,25500,31900,True
+Account Manager Aprendiz,Customer Success,IC1,Aprendiz,Comercial,CL,CLP,650000,810000,1010000,False
+Account Manager Aprendiz,Customer Success,IC1,Aprendiz,Comercial,CO,COP,2100000,2650000,3300000,False
+Account Manager Aprendiz,Customer Success,IC1,Aprendiz,Comercial,PE,PEN,2000,2500,3100,False
+Account Manager Aprendiz,Customer Success,IC1,Aprendiz,Comercial,MX,MXN,12500,15500,19500,False
+Account Manager Aprendiz,Customer Success,IC1,Aprendiz,Comercial,BR,BRL,3400,4200,5200,False
+Account Manager,Customer Success,IC2,Analista,Comercial,CL,CLP,980000,1220000,1520000,False
+Account Manager,Customer Success,IC2,Analista,Comercial,CO,COP,3150000,3950000,4950000,False
+Account Manager,Customer Success,IC2,Analista,Comercial,PE,PEN,3000,3800,4800,False
+Account Manager,Customer Success,IC2,Analista,Comercial,MX,MXN,18500,23000,29000,False
+Account Manager,Customer Success,IC2,Analista,Comercial,BR,BRL,5000,6200,7800,False
+Account Manager Semi Senior,Customer Success,IC3,Semi Senior,Comercial,CL,CLP,1370000,1710000,2140000,False
+Account Manager Semi Senior,Customer Success,IC3,Semi Senior,Comercial,CO,COP,4500000,5600000,7000000,False
+Account Manager Semi Senior,Customer Success,IC3,Semi Senior,Comercial,PE,PEN,4300,5400,6800,False
+Account Manager Semi Senior,Customer Success,IC3,Semi Senior,Comercial,MX,MXN,26000,32500,40500,False
+Account Manager Semi Senior,Customer Success,IC3,Semi Senior,Comercial,BR,BRL,7000,8800,11000,False
+Account Manager Senior,Customer Success,IC4,Senior,Comercial,CL,CLP,1940000,2430000,3040000,False
+Account Manager Senior,Customer Success,IC4,Senior,Comercial,CO,COP,6300000,7900000,9900000,False
+Account Manager Senior,Customer Success,IC4,Senior,Comercial,PE,PEN,6100,7600,9500,False
+Account Manager Senior,Customer Success,IC4,Senior,Comercial,MX,MXN,37000,46000,57500,False
+Account Manager Senior,Customer Success,IC4,Senior,Comercial,BR,BRL,10000,12500,15600,False
+Account Manager Especialista,Customer Success,IC5,Especialista,Comercial,CL,CLP,2590000,3240000,4050000,False
+Account Manager Especialista,Customer Success,IC5,Especialista,Comercial,CO,COP,8450000,10550000,13200000,False
+Account Manager Especialista,Customer Success,IC5,Especialista,Comercial,PE,PEN,8200,10200,12800,False
+Account Manager Especialista,Customer Success,IC5,Especialista,Comercial,MX,MXN,49000,61500,77000,False
+Account Manager Especialista,Customer Success,IC5,Especialista,Comercial,BR,BRL,13400,16700,20900,False
+Especialista de Renovaciones Aprendiz,Customer Success,IC1,Aprendiz,Comercial,CL,CLP,650000,810000,1010000,False
+Especialista de Renovaciones Aprendiz,Customer Success,IC1,Aprendiz,Comercial,CO,COP,2100000,2650000,3300000,False
+Especialista de Renovaciones Aprendiz,Customer Success,IC1,Aprendiz,Comercial,PE,PEN,2000,2500,3100,False
+Especialista de Renovaciones Aprendiz,Customer Success,IC1,Aprendiz,Comercial,MX,MXN,12500,15500,19500,False
+Especialista de Renovaciones Aprendiz,Customer Success,IC1,Aprendiz,Comercial,BR,BRL,3400,4200,5200,False
+Especialista de Renovaciones,Customer Success,IC2,Analista,Comercial,CL,CLP,980000,1220000,1520000,False
+Especialista de Renovaciones,Customer Success,IC2,Analista,Comercial,CO,COP,3150000,3950000,4950000,False
+Especialista de Renovaciones,Customer Success,IC2,Analista,Comercial,PE,PEN,3000,3800,4800,False
+Especialista de Renovaciones,Customer Success,IC2,Analista,Comercial,MX,MXN,18500,23000,29000,False
+Especialista de Renovaciones,Customer Success,IC2,Analista,Comercial,BR,BRL,5000,6200,7800,False
+Especialista de Renovaciones Semi Senior,Customer Success,IC3,Semi Senior,Comercial,CL,CLP,1370000,1710000,2140000,False
+Especialista de Renovaciones Semi Senior,Customer Success,IC3,Semi Senior,Comercial,CO,COP,4500000,5600000,7000000,False
+Especialista de Renovaciones Semi Senior,Customer Success,IC3,Semi Senior,Comercial,PE,PEN,4300,5400,6800,False
+Especialista de Renovaciones Semi Senior,Customer Success,IC3,Semi Senior,Comercial,MX,MXN,26000,32500,40500,False
+Especialista de Renovaciones Semi Senior,Customer Success,IC3,Semi Senior,Comercial,BR,BRL,7000,8800,11000,False
+Especialista de Renovaciones Senior,Customer Success,IC4,Senior,Comercial,CL,CLP,1940000,2430000,3040000,False
+Especialista de Renovaciones Senior,Customer Success,IC4,Senior,Comercial,CO,COP,6300000,7900000,9900000,False
+Especialista de Renovaciones Senior,Customer Success,IC4,Senior,Comercial,PE,PEN,6100,7600,9500,False
+Especialista de Renovaciones Senior,Customer Success,IC4,Senior,Comercial,MX,MXN,37000,46000,57500,False
+Especialista de Renovaciones Senior,Customer Success,IC4,Senior,Comercial,BR,BRL,10000,12500,15600,False
+Especialista de Renovaciones Especialista,Customer Success,IC5,Especialista,Comercial,CL,CLP,2590000,3240000,4050000,False
+Especialista de Renovaciones Especialista,Customer Success,IC5,Especialista,Comercial,CO,COP,8450000,10550000,13200000,False
+Especialista de Renovaciones Especialista,Customer Success,IC5,Especialista,Comercial,PE,PEN,8200,10200,12800,False
+Especialista de Renovaciones Especialista,Customer Success,IC5,Especialista,Comercial,MX,MXN,49000,61500,77000,False
+Especialista de Renovaciones Especialista,Customer Success,IC5,Especialista,Comercial,BR,BRL,13400,16700,20900,False
+Agente de Soporte Aprendiz,Soporte,IC1,Aprendiz,Operaciones,CL,CLP,540000,680000,850000,False
+Agente de Soporte Aprendiz,Soporte,IC1,Aprendiz,Operaciones,CO,COP,1750000,2200000,2750000,False
+Agente de Soporte Aprendiz,Soporte,IC1,Aprendiz,Operaciones,PE,PEN,1700,2100,2600,False
+Agente de Soporte Aprendiz,Soporte,IC1,Aprendiz,Operaciones,MX,MXN,10500,13000,16000,False
+Agente de Soporte Aprendiz,Soporte,IC1,Aprendiz,Operaciones,BR,BRL,2800,3500,4400,False
+Agente de Soporte,Soporte,IC2,Analista,Operaciones,CL,CLP,810000,1010000,1260000,False
+Agente de Soporte,Soporte,IC2,Analista,Operaciones,CO,COP,2650000,3300000,4100000,False
+Agente de Soporte,Soporte,IC2,Analista,Operaciones,PE,PEN,2600,3200,4000,False
+Agente de Soporte,Soporte,IC2,Analista,Operaciones,MX,MXN,15000,19000,24000,False
+Agente de Soporte,Soporte,IC2,Analista,Operaciones,BR,BRL,4200,5200,6500,False
+Agente de Soporte Semi Senior,Soporte,IC3,Semi Senior,Operaciones,CL,CLP,1140000,1420000,1780000,False
+Agente de Soporte Semi Senior,Soporte,IC3,Semi Senior,Operaciones,CO,COP,3700000,4650000,5800000,False
+Agente de Soporte Semi Senior,Soporte,IC3,Semi Senior,Operaciones,PE,PEN,3600,4500,5600,False
+Agente de Soporte Semi Senior,Soporte,IC3,Semi Senior,Operaciones,MX,MXN,21500,27000,34000,False
+Agente de Soporte Semi Senior,Soporte,IC3,Semi Senior,Operaciones,BR,BRL,5800,7300,9100,False
+Agente de Soporte Senior,Soporte,IC4,Senior,Operaciones,CL,CLP,1620000,2020000,2520000,False
+Agente de Soporte Senior,Soporte,IC4,Senior,Operaciones,CO,COP,5300000,6600000,8250000,False
+Agente de Soporte Senior,Soporte,IC4,Senior,Operaciones,PE,PEN,5100,6400,8000,False
+Agente de Soporte Senior,Soporte,IC4,Senior,Operaciones,MX,MXN,31000,38500,48000,False
+Agente de Soporte Senior,Soporte,IC4,Senior,Operaciones,BR,BRL,8300,10400,13000,False
+Agente de Soporte Especialista,Soporte,IC5,Especialista,Operaciones,CL,CLP,2160000,2700000,3380000,False
+Agente de Soporte Especialista,Soporte,IC5,Especialista,Operaciones,CO,COP,7050000,8800000,11000000,False
+Agente de Soporte Especialista,Soporte,IC5,Especialista,Operaciones,PE,PEN,6800,8500,10600,False
+Agente de Soporte Especialista,Soporte,IC5,Especialista,Operaciones,MX,MXN,41000,51500,64500,False
+Agente de Soporte Especialista,Soporte,IC5,Especialista,Operaciones,BR,BRL,11100,13900,17400,False
+Líder de Soporte,Soporte,M1,Líder,Operaciones,CL,CLP,1560000,1950000,2440000,True
+Líder de Soporte,Soporte,M1,Líder,Operaciones,CO,COP,5100000,6350000,7950000,True
+Líder de Soporte,Soporte,M1,Líder,Operaciones,PE,PEN,4900,6100,7600,True
+Líder de Soporte,Soporte,M1,Líder,Operaciones,MX,MXN,29500,37000,46000,True
+Líder de Soporte,Soporte,M1,Líder,Operaciones,BR,BRL,8000,10000,12500,True
+Subgerente de Soporte,Soporte,M2,Subgerente,Operaciones,CL,CLP,2280000,2850000,3560000,True
+Subgerente de Soporte,Soporte,M2,Subgerente,Operaciones,CO,COP,7450000,9300000,11600000,True
+Subgerente de Soporte,Soporte,M2,Subgerente,Operaciones,PE,PEN,7100,8900,11100,True
+Subgerente de Soporte,Soporte,M2,Subgerente,Operaciones,MX,MXN,43000,54000,67500,True
+Subgerente de Soporte,Soporte,M2,Subgerente,Operaciones,BR,BRL,11800,14700,18400,True
+Gerente de Soporte,Soporte,M3,Gerente,Operaciones,CL,CLP,3300000,4120000,5150000,True
+Gerente de Soporte,Soporte,M3,Gerente,Operaciones,CO,COP,10750000,13450000,16800000,True
+Gerente de Soporte,Soporte,M3,Gerente,Operaciones,PE,PEN,10300,12900,16100,True
+Gerente de Soporte,Soporte,M3,Gerente,Operaciones,MX,MXN,63000,78500,98000,True
+Gerente de Soporte,Soporte,M3,Gerente,Operaciones,BR,BRL,17000,21200,26500,True
+Especialista de Soporte Aprendiz,Soporte,IC1,Aprendiz,Operaciones,CL,CLP,540000,680000,850000,False
+Especialista de Soporte Aprendiz,Soporte,IC1,Aprendiz,Operaciones,CO,COP,1750000,2200000,2750000,False
+Especialista de Soporte Aprendiz,Soporte,IC1,Aprendiz,Operaciones,PE,PEN,1700,2100,2600,False
+Especialista de Soporte Aprendiz,Soporte,IC1,Aprendiz,Operaciones,MX,MXN,10500,13000,16000,False
+Especialista de Soporte Aprendiz,Soporte,IC1,Aprendiz,Operaciones,BR,BRL,2800,3500,4400,False
+Especialista de Soporte,Soporte,IC2,Analista,Operaciones,CL,CLP,810000,1010000,1260000,False
+Especialista de Soporte,Soporte,IC2,Analista,Operaciones,CO,COP,2650000,3300000,4100000,False
+Especialista de Soporte,Soporte,IC2,Analista,Operaciones,PE,PEN,2600,3200,4000,False
+Especialista de Soporte,Soporte,IC2,Analista,Operaciones,MX,MXN,15000,19000,24000,False
+Especialista de Soporte,Soporte,IC2,Analista,Operaciones,BR,BRL,4200,5200,6500,False
+Especialista de Soporte Semi Senior,Soporte,IC3,Semi Senior,Operaciones,CL,CLP,1140000,1420000,1780000,False
+Especialista de Soporte Semi Senior,Soporte,IC3,Semi Senior,Operaciones,CO,COP,3700000,4650000,5800000,False
+Especialista de Soporte Semi Senior,Soporte,IC3,Semi Senior,Operaciones,PE,PEN,3600,4500,5600,False
+Especialista de Soporte Semi Senior,Soporte,IC3,Semi Senior,Operaciones,MX,MXN,21500,27000,34000,False
+Especialista de Soporte Semi Senior,Soporte,IC3,Semi Senior,Operaciones,BR,BRL,5800,7300,9100,False
+Especialista de Soporte Senior,Soporte,IC4,Senior,Operaciones,CL,CLP,1620000,2020000,2520000,False
+Especialista de Soporte Senior,Soporte,IC4,Senior,Operaciones,CO,COP,5300000,6600000,8250000,False
+Especialista de Soporte Senior,Soporte,IC4,Senior,Operaciones,PE,PEN,5100,6400,8000,False
+Especialista de Soporte Senior,Soporte,IC4,Senior,Operaciones,MX,MXN,31000,38500,48000,False
+Especialista de Soporte Senior,Soporte,IC4,Senior,Operaciones,BR,BRL,8300,10400,13000,False
+Especialista de Soporte Especialista,Soporte,IC5,Especialista,Operaciones,CL,CLP,2160000,2700000,3380000,False
+Especialista de Soporte Especialista,Soporte,IC5,Especialista,Operaciones,CO,COP,7050000,8800000,11000000,False
+Especialista de Soporte Especialista,Soporte,IC5,Especialista,Operaciones,PE,PEN,6800,8500,10600,False
+Especialista de Soporte Especialista,Soporte,IC5,Especialista,Operaciones,MX,MXN,41000,51500,64500,False
+Especialista de Soporte Especialista,Soporte,IC5,Especialista,Operaciones,BR,BRL,11100,13900,17400,False
+Especialista de Soporte Payroll Aprendiz,Soporte,IC1,Aprendiz,Operaciones,CL,CLP,540000,680000,850000,False
+Especialista de Soporte Payroll Aprendiz,Soporte,IC1,Aprendiz,Operaciones,CO,COP,1750000,2200000,2750000,False
+Especialista de Soporte Payroll Aprendiz,Soporte,IC1,Aprendiz,Operaciones,PE,PEN,1700,2100,2600,False
+Especialista de Soporte Payroll Aprendiz,Soporte,IC1,Aprendiz,Operaciones,MX,MXN,10500,13000,16000,False
+Especialista de Soporte Payroll Aprendiz,Soporte,IC1,Aprendiz,Operaciones,BR,BRL,2800,3500,4400,False
+Especialista de Soporte Payroll,Soporte,IC2,Analista,Operaciones,CL,CLP,810000,1010000,1260000,False
+Especialista de Soporte Payroll,Soporte,IC2,Analista,Operaciones,CO,COP,2650000,3300000,4100000,False
+Especialista de Soporte Payroll,Soporte,IC2,Analista,Operaciones,PE,PEN,2600,3200,4000,False
+Especialista de Soporte Payroll,Soporte,IC2,Analista,Operaciones,MX,MXN,15000,19000,24000,False
+Especialista de Soporte Payroll,Soporte,IC2,Analista,Operaciones,BR,BRL,4200,5200,6500,False
+Especialista de Soporte Payroll Semi Senior,Soporte,IC3,Semi Senior,Operaciones,CL,CLP,1140000,1420000,1780000,False
+Especialista de Soporte Payroll Semi Senior,Soporte,IC3,Semi Senior,Operaciones,CO,COP,3700000,4650000,5800000,False
+Especialista de Soporte Payroll Semi Senior,Soporte,IC3,Semi Senior,Operaciones,PE,PEN,3600,4500,5600,False
+Especialista de Soporte Payroll Semi Senior,Soporte,IC3,Semi Senior,Operaciones,MX,MXN,21500,27000,34000,False
+Especialista de Soporte Payroll Semi Senior,Soporte,IC3,Semi Senior,Operaciones,BR,BRL,5800,7300,9100,False
+Especialista de Soporte Payroll Senior,Soporte,IC4,Senior,Operaciones,CL,CLP,1620000,2020000,2520000,False
+Especialista de Soporte Payroll Senior,Soporte,IC4,Senior,Operaciones,CO,COP,5300000,6600000,8250000,False
+Especialista de Soporte Payroll Senior,Soporte,IC4,Senior,Operaciones,PE,PEN,5100,6400,8000,False
+Especialista de Soporte Payroll Senior,Soporte,IC4,Senior,Operaciones,MX,MXN,31000,38500,48000,False
+Especialista de Soporte Payroll Senior,Soporte,IC4,Senior,Operaciones,BR,BRL,8300,10400,13000,False
+Especialista de Soporte Payroll Especialista,Soporte,IC5,Especialista,Operaciones,CL,CLP,2160000,2700000,3380000,False
+Especialista de Soporte Payroll Especialista,Soporte,IC5,Especialista,Operaciones,CO,COP,7050000,8800000,11000000,False
+Especialista de Soporte Payroll Especialista,Soporte,IC5,Especialista,Operaciones,PE,PEN,6800,8500,10600,False
+Especialista de Soporte Payroll Especialista,Soporte,IC5,Especialista,Operaciones,MX,MXN,41000,51500,64500,False
+Especialista de Soporte Payroll Especialista,Soporte,IC5,Especialista,Operaciones,BR,BRL,11100,13900,17400,False
+Consultor de Implementación Aprendiz,Implementación,IC1,Aprendiz,Operaciones,CL,CLP,610000,760000,950000,False
+Consultor de Implementación Aprendiz,Implementación,IC1,Aprendiz,Operaciones,CO,COP,2000000,2500000,3100000,False
+Consultor de Implementación Aprendiz,Implementación,IC1,Aprendiz,Operaciones,PE,PEN,1900,2400,3000,False
+Consultor de Implementación Aprendiz,Implementación,IC1,Aprendiz,Operaciones,MX,MXN,11500,14500,18000,False
+Consultor de Implementación Aprendiz,Implementación,IC1,Aprendiz,Operaciones,BR,BRL,3100,3900,4900,False
+Consultor de Implementación,Implementación,IC2,Analista,Operaciones,CL,CLP,920000,1150000,1440000,False
+Consultor de Implementación,Implementación,IC2,Analista,Operaciones,CO,COP,3000000,3750000,4700000,False
+Consultor de Implementación,Implementación,IC2,Analista,Operaciones,PE,PEN,2900,3600,4500,False
+Consultor de Implementación,Implementación,IC2,Analista,Operaciones,MX,MXN,17500,22000,27500,False
+Consultor de Implementación,Implementación,IC2,Analista,Operaciones,BR,BRL,4700,5900,7400,False
+Consultor de Implementación Semi Senior,Implementación,IC3,Semi Senior,Operaciones,CL,CLP,1300000,1620000,2020000,False
+Consultor de Implementación Semi Senior,Implementación,IC3,Semi Senior,Operaciones,CO,COP,4200000,5250000,6550000,False
+Consultor de Implementación Semi Senior,Implementación,IC3,Semi Senior,Operaciones,PE,PEN,4100,5100,6400,False
+Consultor de Implementación Semi Senior,Implementación,IC3,Semi Senior,Operaciones,MX,MXN,24500,30500,38000,False
+Consultor de Implementación Semi Senior,Implementación,IC3,Semi Senior,Operaciones,BR,BRL,6600,8300,10400,False
+Consultor de Implementación Senior,Implementación,IC4,Senior,Operaciones,CL,CLP,1840000,2300000,2880000,False
+Consultor de Implementación Senior,Implementación,IC4,Senior,Operaciones,CO,COP,6000000,7500000,9400000,False
+Consultor de Implementación Senior,Implementación,IC4,Senior,Operaciones,PE,PEN,5800,7200,9000,False
+Consultor de Implementación Senior,Implementación,IC4,Senior,Operaciones,MX,MXN,35000,43500,54500,False
+Consultor de Implementación Senior,Implementación,IC4,Senior,Operaciones,BR,BRL,9400,11800,14800,False
+Consultor de Implementación Especialista,Implementación,IC5,Especialista,Operaciones,CL,CLP,2450000,3060000,3820000,False
+Consultor de Implementación Especialista,Implementación,IC5,Especialista,Operaciones,CO,COP,8000000,10000000,12500000,False
+Consultor de Implementación Especialista,Implementación,IC5,Especialista,Operaciones,PE,PEN,7700,9600,12000,False
+Consultor de Implementación Especialista,Implementación,IC5,Especialista,Operaciones,MX,MXN,46500,58000,72500,False
+Consultor de Implementación Especialista,Implementación,IC5,Especialista,Operaciones,BR,BRL,12600,15700,19600,False
+Líder de Implementación,Implementación,M1,Líder,Operaciones,CL,CLP,1770000,2210000,2760000,True
+Líder de Implementación,Implementación,M1,Líder,Operaciones,CO,COP,5750000,7200000,9000000,True
+Líder de Implementación,Implementación,M1,Líder,Operaciones,PE,PEN,5500,6900,8600,True
+Líder de Implementación,Implementación,M1,Líder,Operaciones,MX,MXN,33500,42000,52500,True
+Líder de Implementación,Implementación,M1,Líder,Operaciones,BR,BRL,9100,11400,14200,True
+Subgerente de Implementación,Implementación,M2,Subgerente,Operaciones,CL,CLP,2580000,3230000,4040000,True
+Subgerente de Implementación,Implementación,M2,Subgerente,Operaciones,CO,COP,8450000,10550000,13200000,True
+Subgerente de Implementación,Implementación,M2,Subgerente,Operaciones,PE,PEN,8100,10100,12600,True
+Subgerente de Implementación,Implementación,M2,Subgerente,Operaciones,MX,MXN,49000,61500,77000,True
+Subgerente de Implementación,Implementación,M2,Subgerente,Operaciones,BR,BRL,13300,16600,20800,True
+Gerente de Implementación,Implementación,M3,Gerente,Operaciones,CL,CLP,3740000,4680000,5850000,True
+Gerente de Implementación,Implementación,M3,Gerente,Operaciones,CO,COP,12200000,15250000,19050000,True
+Gerente de Implementación,Implementación,M3,Gerente,Operaciones,PE,PEN,11800,14700,18400,True
+Gerente de Implementación,Implementación,M3,Gerente,Operaciones,MX,MXN,71000,89000,111000,True
+Gerente de Implementación,Implementación,M3,Gerente,Operaciones,BR,BRL,19200,24000,30000,True
+Project Manager de Implementación Aprendiz,Implementación,IC1,Aprendiz,Operaciones,CL,CLP,610000,760000,950000,False
+Project Manager de Implementación Aprendiz,Implementación,IC1,Aprendiz,Operaciones,CO,COP,2000000,2500000,3100000,False
+Project Manager de Implementación Aprendiz,Implementación,IC1,Aprendiz,Operaciones,PE,PEN,1900,2400,3000,False
+Project Manager de Implementación Aprendiz,Implementación,IC1,Aprendiz,Operaciones,MX,MXN,11500,14500,18000,False
+Project Manager de Implementación Aprendiz,Implementación,IC1,Aprendiz,Operaciones,BR,BRL,3100,3900,4900,False
+Project Manager de Implementación,Implementación,IC2,Analista,Operaciones,CL,CLP,920000,1150000,1440000,False
+Project Manager de Implementación,Implementación,IC2,Analista,Operaciones,CO,COP,3000000,3750000,4700000,False
+Project Manager de Implementación,Implementación,IC2,Analista,Operaciones,PE,PEN,2900,3600,4500,False
+Project Manager de Implementación,Implementación,IC2,Analista,Operaciones,MX,MXN,17500,22000,27500,False
+Project Manager de Implementación,Implementación,IC2,Analista,Operaciones,BR,BRL,4700,5900,7400,False
+Project Manager de Implementación Semi Senior,Implementación,IC3,Semi Senior,Operaciones,CL,CLP,1300000,1620000,2020000,False
+Project Manager de Implementación Semi Senior,Implementación,IC3,Semi Senior,Operaciones,CO,COP,4200000,5250000,6550000,False
+Project Manager de Implementación Semi Senior,Implementación,IC3,Semi Senior,Operaciones,PE,PEN,4100,5100,6400,False
+Project Manager de Implementación Semi Senior,Implementación,IC3,Semi Senior,Operaciones,MX,MXN,24500,30500,38000,False
+Project Manager de Implementación Semi Senior,Implementación,IC3,Semi Senior,Operaciones,BR,BRL,6600,8300,10400,False
+Project Manager de Implementación Senior,Implementación,IC4,Senior,Operaciones,CL,CLP,1840000,2300000,2880000,False
+Project Manager de Implementación Senior,Implementación,IC4,Senior,Operaciones,CO,COP,6000000,7500000,9400000,False
+Project Manager de Implementación Senior,Implementación,IC4,Senior,Operaciones,PE,PEN,5800,7200,9000,False
+Project Manager de Implementación Senior,Implementación,IC4,Senior,Operaciones,MX,MXN,35000,43500,54500,False
+Project Manager de Implementación Senior,Implementación,IC4,Senior,Operaciones,BR,BRL,9400,11800,14800,False
+Project Manager de Implementación Especialista,Implementación,IC5,Especialista,Operaciones,CL,CLP,2450000,3060000,3820000,False
+Project Manager de Implementación Especialista,Implementación,IC5,Especialista,Operaciones,CO,COP,8000000,10000000,12500000,False
+Project Manager de Implementación Especialista,Implementación,IC5,Especialista,Operaciones,PE,PEN,7700,9600,12000,False
+Project Manager de Implementación Especialista,Implementación,IC5,Especialista,Operaciones,MX,MXN,46500,58000,72500,False
+Project Manager de Implementación Especialista,Implementación,IC5,Especialista,Operaciones,BR,BRL,12600,15700,19600,False
+Analista de Operaciones Aprendiz,Operaciones,IC1,Aprendiz,Operaciones,CL,CLP,580000,720000,900000,False
+Analista de Operaciones Aprendiz,Operaciones,IC1,Aprendiz,Operaciones,CO,COP,1900000,2350000,2950000,False
+Analista de Operaciones Aprendiz,Operaciones,IC1,Aprendiz,Operaciones,PE,PEN,1800,2300,2900,False
+Analista de Operaciones Aprendiz,Operaciones,IC1,Aprendiz,Operaciones,MX,MXN,11000,13500,17000,False
+Analista de Operaciones Aprendiz,Operaciones,IC1,Aprendiz,Operaciones,BR,BRL,3000,3700,4600,False
+Analista de Operaciones,Operaciones,IC2,Analista,Operaciones,CL,CLP,860000,1080000,1350000,False
+Analista de Operaciones,Operaciones,IC2,Analista,Operaciones,CO,COP,2800000,3500000,4400000,False
+Analista de Operaciones,Operaciones,IC2,Analista,Operaciones,PE,PEN,2700,3400,4200,False
+Analista de Operaciones,Operaciones,IC2,Analista,Operaciones,MX,MXN,16500,20500,25500,False
+Analista de Operaciones,Operaciones,IC2,Analista,Operaciones,BR,BRL,4500,5600,7000,False
+Analista de Operaciones Semi Senior,Operaciones,IC3,Semi Senior,Operaciones,CL,CLP,1220000,1520000,1900000,False
+Analista de Operaciones Semi Senior,Operaciones,IC3,Semi Senior,Operaciones,CO,COP,3950000,4950000,6200000,False
+Analista de Operaciones Semi Senior,Operaciones,IC3,Semi Senior,Operaciones,PE,PEN,3800,4800,6000,False
+Analista de Operaciones Semi Senior,Operaciones,IC3,Semi Senior,Operaciones,MX,MXN,23000,29000,36000,False
+Analista de Operaciones Semi Senior,Operaciones,IC3,Semi Senior,Operaciones,BR,BRL,6200,7800,9800,False
+Analista de Operaciones Senior,Operaciones,IC4,Senior,Operaciones,CL,CLP,1730000,2160000,2700000,False
+Analista de Operaciones Senior,Operaciones,IC4,Senior,Operaciones,CO,COP,5650000,7050000,8800000,False
+Analista de Operaciones Senior,Operaciones,IC4,Senior,Operaciones,PE,PEN,5400,6800,8500,False
+Analista de Operaciones Senior,Operaciones,IC4,Senior,Operaciones,MX,MXN,33000,41000,51000,False
+Analista de Operaciones Senior,Operaciones,IC4,Senior,Operaciones,BR,BRL,8900,11100,13900,False
+Analista de Operaciones Especialista,Operaciones,IC5,Especialista,Operaciones,CL,CLP,2300000,2880000,3600000,False
+Analista de Operaciones Especialista,Operaciones,IC5,Especialista,Operaciones,CO,COP,7500000,9400000,11750000,False
+Analista de Operaciones Especialista,Operaciones,IC5,Especialista,Operaciones,PE,PEN,7200,9000,11200,False
+Analista de Operaciones Especialista,Operaciones,IC5,Especialista,Operaciones,MX,MXN,43500,54500,68000,False
+Analista de Operaciones Especialista,Operaciones,IC5,Especialista,Operaciones,BR,BRL,11800,14800,18500,False
+Líder de Operaciones,Operaciones,M1,Líder,Operaciones,CL,CLP,1660000,2080000,2600000,True
+Líder de Operaciones,Operaciones,M1,Líder,Operaciones,CO,COP,5450000,6800000,8500000,True
+Líder de Operaciones,Operaciones,M1,Líder,Operaciones,PE,PEN,5200,6500,8100,True
+Líder de Operaciones,Operaciones,M1,Líder,Operaciones,MX,MXN,31500,39500,49500,True
+Líder de Operaciones,Operaciones,M1,Líder,Operaciones,BR,BRL,8600,10700,13400,True
+Subgerente de Operaciones,Operaciones,M2,Subgerente,Operaciones,CL,CLP,2430000,3040000,3800000,True
+Subgerente de Operaciones,Operaciones,M2,Subgerente,Operaciones,CO,COP,7900000,9900000,12400000,True
+Subgerente de Operaciones,Operaciones,M2,Subgerente,Operaciones,PE,PEN,7600,9500,11900,True
+Subgerente de Operaciones,Operaciones,M2,Subgerente,Operaciones,MX,MXN,46500,58000,72500,True
+Subgerente de Operaciones,Operaciones,M2,Subgerente,Operaciones,BR,BRL,12500,15600,19500,True
+Gerente de Operaciones,Operaciones,M3,Gerente,Operaciones,CL,CLP,3520000,4400000,5500000,True
+Gerente de Operaciones,Operaciones,M3,Gerente,Operaciones,CO,COP,11500000,14350000,17950000,True
+Gerente de Operaciones,Operaciones,M3,Gerente,Operaciones,PE,PEN,11000,13800,17200,True
+Gerente de Operaciones,Operaciones,M3,Gerente,Operaciones,MX,MXN,67000,83500,104500,True
+Gerente de Operaciones,Operaciones,M3,Gerente,Operaciones,BR,BRL,18100,22600,28200,True
+Especialista Payroll Ops Aprendiz,Operaciones,IC1,Aprendiz,Operaciones,CL,CLP,580000,720000,900000,False
+Especialista Payroll Ops Aprendiz,Operaciones,IC1,Aprendiz,Operaciones,CO,COP,1900000,2350000,2950000,False
+Especialista Payroll Ops Aprendiz,Operaciones,IC1,Aprendiz,Operaciones,PE,PEN,1800,2300,2900,False
+Especialista Payroll Ops Aprendiz,Operaciones,IC1,Aprendiz,Operaciones,MX,MXN,11000,13500,17000,False
+Especialista Payroll Ops Aprendiz,Operaciones,IC1,Aprendiz,Operaciones,BR,BRL,3000,3700,4600,False
+Especialista Payroll Ops,Operaciones,IC2,Analista,Operaciones,CL,CLP,860000,1080000,1350000,False
+Especialista Payroll Ops,Operaciones,IC2,Analista,Operaciones,CO,COP,2800000,3500000,4400000,False
+Especialista Payroll Ops,Operaciones,IC2,Analista,Operaciones,PE,PEN,2700,3400,4200,False
+Especialista Payroll Ops,Operaciones,IC2,Analista,Operaciones,MX,MXN,16500,20500,25500,False
+Especialista Payroll Ops,Operaciones,IC2,Analista,Operaciones,BR,BRL,4500,5600,7000,False
+Especialista Payroll Ops Semi Senior,Operaciones,IC3,Semi Senior,Operaciones,CL,CLP,1220000,1520000,1900000,False
+Especialista Payroll Ops Semi Senior,Operaciones,IC3,Semi Senior,Operaciones,CO,COP,3950000,4950000,6200000,False
+Especialista Payroll Ops Semi Senior,Operaciones,IC3,Semi Senior,Operaciones,PE,PEN,3800,4800,6000,False
+Especialista Payroll Ops Semi Senior,Operaciones,IC3,Semi Senior,Operaciones,MX,MXN,23000,29000,36000,False
+Especialista Payroll Ops Semi Senior,Operaciones,IC3,Semi Senior,Operaciones,BR,BRL,6200,7800,9800,False
+Especialista Payroll Ops Senior,Operaciones,IC4,Senior,Operaciones,CL,CLP,1730000,2160000,2700000,False
+Especialista Payroll Ops Senior,Operaciones,IC4,Senior,Operaciones,CO,COP,5650000,7050000,8800000,False
+Especialista Payroll Ops Senior,Operaciones,IC4,Senior,Operaciones,PE,PEN,5400,6800,8500,False
+Especialista Payroll Ops Senior,Operaciones,IC4,Senior,Operaciones,MX,MXN,33000,41000,51000,False
+Especialista Payroll Ops Senior,Operaciones,IC4,Senior,Operaciones,BR,BRL,8900,11100,13900,False
+Especialista Payroll Ops Especialista,Operaciones,IC5,Especialista,Operaciones,CL,CLP,2300000,2880000,3600000,False
+Especialista Payroll Ops Especialista,Operaciones,IC5,Especialista,Operaciones,CO,COP,7500000,9400000,11750000,False
+Especialista Payroll Ops Especialista,Operaciones,IC5,Especialista,Operaciones,PE,PEN,7200,9000,11200,False
+Especialista Payroll Ops Especialista,Operaciones,IC5,Especialista,Operaciones,MX,MXN,43500,54500,68000,False
+Especialista Payroll Ops Especialista,Operaciones,IC5,Especialista,Operaciones,BR,BRL,11800,14800,18500,False
+Growth Marketer Aprendiz,Marketing,IC1,Aprendiz,Comercial,CL,CLP,650000,810000,1010000,False
+Growth Marketer Aprendiz,Marketing,IC1,Aprendiz,Comercial,CO,COP,2100000,2650000,3300000,False
+Growth Marketer Aprendiz,Marketing,IC1,Aprendiz,Comercial,PE,PEN,2000,2500,3100,False
+Growth Marketer Aprendiz,Marketing,IC1,Aprendiz,Comercial,MX,MXN,12500,15500,19500,False
+Growth Marketer Aprendiz,Marketing,IC1,Aprendiz,Comercial,BR,BRL,3400,4200,5200,False
+Growth Marketer,Marketing,IC2,Analista,Comercial,CL,CLP,980000,1220000,1520000,False
+Growth Marketer,Marketing,IC2,Analista,Comercial,CO,COP,3150000,3950000,4950000,False
+Growth Marketer,Marketing,IC2,Analista,Comercial,PE,PEN,3000,3800,4800,False
+Growth Marketer,Marketing,IC2,Analista,Comercial,MX,MXN,18500,23000,29000,False
+Growth Marketer,Marketing,IC2,Analista,Comercial,BR,BRL,5000,6200,7800,False
+Growth Marketer Semi Senior,Marketing,IC3,Semi Senior,Comercial,CL,CLP,1370000,1710000,2140000,False
+Growth Marketer Semi Senior,Marketing,IC3,Semi Senior,Comercial,CO,COP,4500000,5600000,7000000,False
+Growth Marketer Semi Senior,Marketing,IC3,Semi Senior,Comercial,PE,PEN,4300,5400,6800,False
+Growth Marketer Semi Senior,Marketing,IC3,Semi Senior,Comercial,MX,MXN,26000,32500,40500,False
+Growth Marketer Semi Senior,Marketing,IC3,Semi Senior,Comercial,BR,BRL,7000,8800,11000,False
+Growth Marketer Senior,Marketing,IC4,Senior,Comercial,CL,CLP,1940000,2430000,3040000,False
+Growth Marketer Senior,Marketing,IC4,Senior,Comercial,CO,COP,6300000,7900000,9900000,False
+Growth Marketer Senior,Marketing,IC4,Senior,Comercial,PE,PEN,6100,7600,9500,False
+Growth Marketer Senior,Marketing,IC4,Senior,Comercial,MX,MXN,37000,46000,57500,False
+Growth Marketer Senior,Marketing,IC4,Senior,Comercial,BR,BRL,10000,12500,15600,False
+Growth Marketer Especialista,Marketing,IC5,Especialista,Comercial,CL,CLP,2590000,3240000,4050000,False
+Growth Marketer Especialista,Marketing,IC5,Especialista,Comercial,CO,COP,8450000,10550000,13200000,False
+Growth Marketer Especialista,Marketing,IC5,Especialista,Comercial,PE,PEN,8200,10200,12800,False
+Growth Marketer Especialista,Marketing,IC5,Especialista,Comercial,MX,MXN,49000,61500,77000,False
+Growth Marketer Especialista,Marketing,IC5,Especialista,Comercial,BR,BRL,13400,16700,20900,False
+Líder de Marketing,Marketing,M1,Líder,Comercial,CL,CLP,1870000,2340000,2920000,True
+Líder de Marketing,Marketing,M1,Líder,Comercial,CO,COP,6100000,7650000,9550000,True
+Líder de Marketing,Marketing,M1,Líder,Comercial,PE,PEN,5800,7300,9100,True
+Líder de Marketing,Marketing,M1,Líder,Comercial,MX,MXN,35500,44500,55500,True
+Líder de Marketing,Marketing,M1,Líder,Comercial,BR,BRL,9600,12000,15000,True
+Subgerente de Marketing,Marketing,M2,Subgerente,Comercial,CL,CLP,2740000,3420000,4280000,True
+Subgerente de Marketing,Marketing,M2,Subgerente,Comercial,CO,COP,8900000,11150000,13950000,True
+Subgerente de Marketing,Marketing,M2,Subgerente,Comercial,PE,PEN,8600,10700,13400,True
+Subgerente de Marketing,Marketing,M2,Subgerente,Comercial,MX,MXN,52000,65000,81000,True
+Subgerente de Marketing,Marketing,M2,Subgerente,Comercial,BR,BRL,14100,17600,22000,True
+Gerente de Marketing,Marketing,M3,Gerente,Comercial,CL,CLP,3960000,4950000,6190000,True
+Gerente de Marketing,Marketing,M3,Gerente,Comercial,CO,COP,12900000,16150000,20200000,True
+Gerente de Marketing,Marketing,M3,Gerente,Comercial,PE,PEN,12400,15500,19400,True
+Gerente de Marketing,Marketing,M3,Gerente,Comercial,MX,MXN,75000,94000,117500,True
+Gerente de Marketing,Marketing,M3,Gerente,Comercial,BR,BRL,20400,25500,31900,True
+Content Manager Aprendiz,Marketing,IC1,Aprendiz,Comercial,CL,CLP,650000,810000,1010000,False
+Content Manager Aprendiz,Marketing,IC1,Aprendiz,Comercial,CO,COP,2100000,2650000,3300000,False
+Content Manager Aprendiz,Marketing,IC1,Aprendiz,Comercial,PE,PEN,2000,2500,3100,False
+Content Manager Aprendiz,Marketing,IC1,Aprendiz,Comercial,MX,MXN,12500,15500,19500,False
+Content Manager Aprendiz,Marketing,IC1,Aprendiz,Comercial,BR,BRL,3400,4200,5200,False
+Content Manager,Marketing,IC2,Analista,Comercial,CL,CLP,980000,1220000,1520000,False
+Content Manager,Marketing,IC2,Analista,Comercial,CO,COP,3150000,3950000,4950000,False
+Content Manager,Marketing,IC2,Analista,Comercial,PE,PEN,3000,3800,4800,False
+Content Manager,Marketing,IC2,Analista,Comercial,MX,MXN,18500,23000,29000,False
+Content Manager,Marketing,IC2,Analista,Comercial,BR,BRL,5000,6200,7800,False
+Content Manager Semi Senior,Marketing,IC3,Semi Senior,Comercial,CL,CLP,1370000,1710000,2140000,False
+Content Manager Semi Senior,Marketing,IC3,Semi Senior,Comercial,CO,COP,4500000,5600000,7000000,False
+Content Manager Semi Senior,Marketing,IC3,Semi Senior,Comercial,PE,PEN,4300,5400,6800,False
+Content Manager Semi Senior,Marketing,IC3,Semi Senior,Comercial,MX,MXN,26000,32500,40500,False
+Content Manager Semi Senior,Marketing,IC3,Semi Senior,Comercial,BR,BRL,7000,8800,11000,False
+Content Manager Senior,Marketing,IC4,Senior,Comercial,CL,CLP,1940000,2430000,3040000,False
+Content Manager Senior,Marketing,IC4,Senior,Comercial,CO,COP,6300000,7900000,9900000,False
+Content Manager Senior,Marketing,IC4,Senior,Comercial,PE,PEN,6100,7600,9500,False
+Content Manager Senior,Marketing,IC4,Senior,Comercial,MX,MXN,37000,46000,57500,False
+Content Manager Senior,Marketing,IC4,Senior,Comercial,BR,BRL,10000,12500,15600,False
+Content Manager Especialista,Marketing,IC5,Especialista,Comercial,CL,CLP,2590000,3240000,4050000,False
+Content Manager Especialista,Marketing,IC5,Especialista,Comercial,CO,COP,8450000,10550000,13200000,False
+Content Manager Especialista,Marketing,IC5,Especialista,Comercial,PE,PEN,8200,10200,12800,False
+Content Manager Especialista,Marketing,IC5,Especialista,Comercial,MX,MXN,49000,61500,77000,False
+Content Manager Especialista,Marketing,IC5,Especialista,Comercial,BR,BRL,13400,16700,20900,False
+Brand Manager Aprendiz,Marketing,IC1,Aprendiz,Comercial,CL,CLP,650000,810000,1010000,False
+Brand Manager Aprendiz,Marketing,IC1,Aprendiz,Comercial,CO,COP,2100000,2650000,3300000,False
+Brand Manager Aprendiz,Marketing,IC1,Aprendiz,Comercial,PE,PEN,2000,2500,3100,False
+Brand Manager Aprendiz,Marketing,IC1,Aprendiz,Comercial,MX,MXN,12500,15500,19500,False
+Brand Manager Aprendiz,Marketing,IC1,Aprendiz,Comercial,BR,BRL,3400,4200,5200,False
+Brand Manager,Marketing,IC2,Analista,Comercial,CL,CLP,980000,1220000,1520000,False
+Brand Manager,Marketing,IC2,Analista,Comercial,CO,COP,3150000,3950000,4950000,False
+Brand Manager,Marketing,IC2,Analista,Comercial,PE,PEN,3000,3800,4800,False
+Brand Manager,Marketing,IC2,Analista,Comercial,MX,MXN,18500,23000,29000,False
+Brand Manager,Marketing,IC2,Analista,Comercial,BR,BRL,5000,6200,7800,False
+Brand Manager Semi Senior,Marketing,IC3,Semi Senior,Comercial,CL,CLP,1370000,1710000,2140000,False
+Brand Manager Semi Senior,Marketing,IC3,Semi Senior,Comercial,CO,COP,4500000,5600000,7000000,False
+Brand Manager Semi Senior,Marketing,IC3,Semi Senior,Comercial,PE,PEN,4300,5400,6800,False
+Brand Manager Semi Senior,Marketing,IC3,Semi Senior,Comercial,MX,MXN,26000,32500,40500,False
+Brand Manager Semi Senior,Marketing,IC3,Semi Senior,Comercial,BR,BRL,7000,8800,11000,False
+Brand Manager Senior,Marketing,IC4,Senior,Comercial,CL,CLP,1940000,2430000,3040000,False
+Brand Manager Senior,Marketing,IC4,Senior,Comercial,CO,COP,6300000,7900000,9900000,False
+Brand Manager Senior,Marketing,IC4,Senior,Comercial,PE,PEN,6100,7600,9500,False
+Brand Manager Senior,Marketing,IC4,Senior,Comercial,MX,MXN,37000,46000,57500,False
+Brand Manager Senior,Marketing,IC4,Senior,Comercial,BR,BRL,10000,12500,15600,False
+Brand Manager Especialista,Marketing,IC5,Especialista,Comercial,CL,CLP,2590000,3240000,4050000,False
+Brand Manager Especialista,Marketing,IC5,Especialista,Comercial,CO,COP,8450000,10550000,13200000,False
+Brand Manager Especialista,Marketing,IC5,Especialista,Comercial,PE,PEN,8200,10200,12800,False
+Brand Manager Especialista,Marketing,IC5,Especialista,Comercial,MX,MXN,49000,61500,77000,False
+Brand Manager Especialista,Marketing,IC5,Especialista,Comercial,BR,BRL,13400,16700,20900,False
+Analista Contable Aprendiz,Finanzas,IC1,Aprendiz,Administración,CL,CLP,650000,810000,1010000,False
+Analista Contable Aprendiz,Finanzas,IC1,Aprendiz,Administración,CO,COP,2100000,2650000,3300000,False
+Analista Contable Aprendiz,Finanzas,IC1,Aprendiz,Administración,PE,PEN,2000,2500,3100,False
+Analista Contable Aprendiz,Finanzas,IC1,Aprendiz,Administración,MX,MXN,12500,15500,19500,False
+Analista Contable Aprendiz,Finanzas,IC1,Aprendiz,Administración,BR,BRL,3400,4200,5200,False
+Analista Contable,Finanzas,IC2,Analista,Administración,CL,CLP,980000,1220000,1520000,False
+Analista Contable,Finanzas,IC2,Analista,Administración,CO,COP,3150000,3950000,4950000,False
+Analista Contable,Finanzas,IC2,Analista,Administración,PE,PEN,3000,3800,4800,False
+Analista Contable,Finanzas,IC2,Analista,Administración,MX,MXN,18500,23000,29000,False
+Analista Contable,Finanzas,IC2,Analista,Administración,BR,BRL,5000,6200,7800,False
+Analista Contable Semi Senior,Finanzas,IC3,Semi Senior,Administración,CL,CLP,1370000,1710000,2140000,False
+Analista Contable Semi Senior,Finanzas,IC3,Semi Senior,Administración,CO,COP,4500000,5600000,7000000,False
+Analista Contable Semi Senior,Finanzas,IC3,Semi Senior,Administración,PE,PEN,4300,5400,6800,False
+Analista Contable Semi Senior,Finanzas,IC3,Semi Senior,Administración,MX,MXN,26000,32500,40500,False
+Analista Contable Semi Senior,Finanzas,IC3,Semi Senior,Administración,BR,BRL,7000,8800,11000,False
+Analista Contable Senior,Finanzas,IC4,Senior,Administración,CL,CLP,1940000,2430000,3040000,False
+Analista Contable Senior,Finanzas,IC4,Senior,Administración,CO,COP,6300000,7900000,9900000,False
+Analista Contable Senior,Finanzas,IC4,Senior,Administración,PE,PEN,6100,7600,9500,False
+Analista Contable Senior,Finanzas,IC4,Senior,Administración,MX,MXN,37000,46000,57500,False
+Analista Contable Senior,Finanzas,IC4,Senior,Administración,BR,BRL,10000,12500,15600,False
+Analista Contable Especialista,Finanzas,IC5,Especialista,Administración,CL,CLP,2590000,3240000,4050000,False
+Analista Contable Especialista,Finanzas,IC5,Especialista,Administración,CO,COP,8450000,10550000,13200000,False
+Analista Contable Especialista,Finanzas,IC5,Especialista,Administración,PE,PEN,8200,10200,12800,False
+Analista Contable Especialista,Finanzas,IC5,Especialista,Administración,MX,MXN,49000,61500,77000,False
+Analista Contable Especialista,Finanzas,IC5,Especialista,Administración,BR,BRL,13400,16700,20900,False
+Líder de Finanzas,Finanzas,M1,Líder,Administración,CL,CLP,1870000,2340000,2920000,True
+Líder de Finanzas,Finanzas,M1,Líder,Administración,CO,COP,6100000,7650000,9550000,True
+Líder de Finanzas,Finanzas,M1,Líder,Administración,PE,PEN,5800,7300,9100,True
+Líder de Finanzas,Finanzas,M1,Líder,Administración,MX,MXN,35500,44500,55500,True
+Líder de Finanzas,Finanzas,M1,Líder,Administración,BR,BRL,9600,12000,15000,True
+Subgerente de Finanzas,Finanzas,M2,Subgerente,Administración,CL,CLP,2740000,3420000,4280000,True
+Subgerente de Finanzas,Finanzas,M2,Subgerente,Administración,CO,COP,8900000,11150000,13950000,True
+Subgerente de Finanzas,Finanzas,M2,Subgerente,Administración,PE,PEN,8600,10700,13400,True
+Subgerente de Finanzas,Finanzas,M2,Subgerente,Administración,MX,MXN,52000,65000,81000,True
+Subgerente de Finanzas,Finanzas,M2,Subgerente,Administración,BR,BRL,14100,17600,22000,True
+Gerente de Finanzas,Finanzas,M3,Gerente,Administración,CL,CLP,3960000,4950000,6190000,True
+Gerente de Finanzas,Finanzas,M3,Gerente,Administración,CO,COP,12900000,16150000,20200000,True
+Gerente de Finanzas,Finanzas,M3,Gerente,Administración,PE,PEN,12400,15500,19400,True
+Gerente de Finanzas,Finanzas,M3,Gerente,Administración,MX,MXN,75000,94000,117500,True
+Gerente de Finanzas,Finanzas,M3,Gerente,Administración,BR,BRL,20400,25500,31900,True
+Control de Gestión Aprendiz,Finanzas,IC1,Aprendiz,Administración,CL,CLP,650000,810000,1010000,False
+Control de Gestión Aprendiz,Finanzas,IC1,Aprendiz,Administración,CO,COP,2100000,2650000,3300000,False
+Control de Gestión Aprendiz,Finanzas,IC1,Aprendiz,Administración,PE,PEN,2000,2500,3100,False
+Control de Gestión Aprendiz,Finanzas,IC1,Aprendiz,Administración,MX,MXN,12500,15500,19500,False
+Control de Gestión Aprendiz,Finanzas,IC1,Aprendiz,Administración,BR,BRL,3400,4200,5200,False
+Control de Gestión,Finanzas,IC2,Analista,Administración,CL,CLP,980000,1220000,1520000,False
+Control de Gestión,Finanzas,IC2,Analista,Administración,CO,COP,3150000,3950000,4950000,False
+Control de Gestión,Finanzas,IC2,Analista,Administración,PE,PEN,3000,3800,4800,False
+Control de Gestión,Finanzas,IC2,Analista,Administración,MX,MXN,18500,23000,29000,False
+Control de Gestión,Finanzas,IC2,Analista,Administración,BR,BRL,5000,6200,7800,False
+Control de Gestión Semi Senior,Finanzas,IC3,Semi Senior,Administración,CL,CLP,1370000,1710000,2140000,False
+Control de Gestión Semi Senior,Finanzas,IC3,Semi Senior,Administración,CO,COP,4500000,5600000,7000000,False
+Control de Gestión Semi Senior,Finanzas,IC3,Semi Senior,Administración,PE,PEN,4300,5400,6800,False
+Control de Gestión Semi Senior,Finanzas,IC3,Semi Senior,Administración,MX,MXN,26000,32500,40500,False
+Control de Gestión Semi Senior,Finanzas,IC3,Semi Senior,Administración,BR,BRL,7000,8800,11000,False
+Control de Gestión Senior,Finanzas,IC4,Senior,Administración,CL,CLP,1940000,2430000,3040000,False
+Control de Gestión Senior,Finanzas,IC4,Senior,Administración,CO,COP,6300000,7900000,9900000,False
+Control de Gestión Senior,Finanzas,IC4,Senior,Administración,PE,PEN,6100,7600,9500,False
+Control de Gestión Senior,Finanzas,IC4,Senior,Administración,MX,MXN,37000,46000,57500,False
+Control de Gestión Senior,Finanzas,IC4,Senior,Administración,BR,BRL,10000,12500,15600,False
+Control de Gestión Especialista,Finanzas,IC5,Especialista,Administración,CL,CLP,2590000,3240000,4050000,False
+Control de Gestión Especialista,Finanzas,IC5,Especialista,Administración,CO,COP,8450000,10550000,13200000,False
+Control de Gestión Especialista,Finanzas,IC5,Especialista,Administración,PE,PEN,8200,10200,12800,False
+Control de Gestión Especialista,Finanzas,IC5,Especialista,Administración,MX,MXN,49000,61500,77000,False
+Control de Gestión Especialista,Finanzas,IC5,Especialista,Administración,BR,BRL,13400,16700,20900,False
+Analista de Cobranza Aprendiz,Finanzas,IC1,Aprendiz,Administración,CL,CLP,650000,810000,1010000,False
+Analista de Cobranza Aprendiz,Finanzas,IC1,Aprendiz,Administración,CO,COP,2100000,2650000,3300000,False
+Analista de Cobranza Aprendiz,Finanzas,IC1,Aprendiz,Administración,PE,PEN,2000,2500,3100,False
+Analista de Cobranza Aprendiz,Finanzas,IC1,Aprendiz,Administración,MX,MXN,12500,15500,19500,False
+Analista de Cobranza Aprendiz,Finanzas,IC1,Aprendiz,Administración,BR,BRL,3400,4200,5200,False
+Analista de Cobranza,Finanzas,IC2,Analista,Administración,CL,CLP,980000,1220000,1520000,False
+Analista de Cobranza,Finanzas,IC2,Analista,Administración,CO,COP,3150000,3950000,4950000,False
+Analista de Cobranza,Finanzas,IC2,Analista,Administración,PE,PEN,3000,3800,4800,False
+Analista de Cobranza,Finanzas,IC2,Analista,Administración,MX,MXN,18500,23000,29000,False
+Analista de Cobranza,Finanzas,IC2,Analista,Administración,BR,BRL,5000,6200,7800,False
+Analista de Cobranza Semi Senior,Finanzas,IC3,Semi Senior,Administración,CL,CLP,1370000,1710000,2140000,False
+Analista de Cobranza Semi Senior,Finanzas,IC3,Semi Senior,Administración,CO,COP,4500000,5600000,7000000,False
+Analista de Cobranza Semi Senior,Finanzas,IC3,Semi Senior,Administración,PE,PEN,4300,5400,6800,False
+Analista de Cobranza Semi Senior,Finanzas,IC3,Semi Senior,Administración,MX,MXN,26000,32500,40500,False
+Analista de Cobranza Semi Senior,Finanzas,IC3,Semi Senior,Administración,BR,BRL,7000,8800,11000,False
+Analista de Cobranza Senior,Finanzas,IC4,Senior,Administración,CL,CLP,1940000,2430000,3040000,False
+Analista de Cobranza Senior,Finanzas,IC4,Senior,Administración,CO,COP,6300000,7900000,9900000,False
+Analista de Cobranza Senior,Finanzas,IC4,Senior,Administración,PE,PEN,6100,7600,9500,False
+Analista de Cobranza Senior,Finanzas,IC4,Senior,Administración,MX,MXN,37000,46000,57500,False
+Analista de Cobranza Senior,Finanzas,IC4,Senior,Administración,BR,BRL,10000,12500,15600,False
+Analista de Cobranza Especialista,Finanzas,IC5,Especialista,Administración,CL,CLP,2590000,3240000,4050000,False
+Analista de Cobranza Especialista,Finanzas,IC5,Especialista,Administración,CO,COP,8450000,10550000,13200000,False
+Analista de Cobranza Especialista,Finanzas,IC5,Especialista,Administración,PE,PEN,8200,10200,12800,False
+Analista de Cobranza Especialista,Finanzas,IC5,Especialista,Administración,MX,MXN,49000,61500,77000,False
+Analista de Cobranza Especialista,Finanzas,IC5,Especialista,Administración,BR,BRL,13400,16700,20900,False
+People Happiness Manager Aprendiz,Personas,IC1,Aprendiz,Administración,CL,CLP,610000,760000,950000,False
+People Happiness Manager Aprendiz,Personas,IC1,Aprendiz,Administración,CO,COP,2000000,2500000,3100000,False
+People Happiness Manager Aprendiz,Personas,IC1,Aprendiz,Administración,PE,PEN,1900,2400,3000,False
+People Happiness Manager Aprendiz,Personas,IC1,Aprendiz,Administración,MX,MXN,11500,14500,18000,False
+People Happiness Manager Aprendiz,Personas,IC1,Aprendiz,Administración,BR,BRL,3100,3900,4900,False
+People Happiness Manager,Personas,IC2,Analista,Administración,CL,CLP,920000,1150000,1440000,False
+People Happiness Manager,Personas,IC2,Analista,Administración,CO,COP,3000000,3750000,4700000,False
+People Happiness Manager,Personas,IC2,Analista,Administración,PE,PEN,2900,3600,4500,False
+People Happiness Manager,Personas,IC2,Analista,Administración,MX,MXN,17500,22000,27500,False
+People Happiness Manager,Personas,IC2,Analista,Administración,BR,BRL,4700,5900,7400,False
+People Happiness Manager Semi Senior,Personas,IC3,Semi Senior,Administración,CL,CLP,1300000,1620000,2020000,False
+People Happiness Manager Semi Senior,Personas,IC3,Semi Senior,Administración,CO,COP,4200000,5250000,6550000,False
+People Happiness Manager Semi Senior,Personas,IC3,Semi Senior,Administración,PE,PEN,4100,5100,6400,False
+People Happiness Manager Semi Senior,Personas,IC3,Semi Senior,Administración,MX,MXN,24500,30500,38000,False
+People Happiness Manager Semi Senior,Personas,IC3,Semi Senior,Administración,BR,BRL,6600,8300,10400,False
+People Happiness Manager Senior,Personas,IC4,Senior,Administración,CL,CLP,1840000,2300000,2880000,False
+People Happiness Manager Senior,Personas,IC4,Senior,Administración,CO,COP,6000000,7500000,9400000,False
+People Happiness Manager Senior,Personas,IC4,Senior,Administración,PE,PEN,5800,7200,9000,False
+People Happiness Manager Senior,Personas,IC4,Senior,Administración,MX,MXN,35000,43500,54500,False
+People Happiness Manager Senior,Personas,IC4,Senior,Administración,BR,BRL,9400,11800,14800,False
+People Happiness Manager Especialista,Personas,IC5,Especialista,Administración,CL,CLP,2450000,3060000,3820000,False
+People Happiness Manager Especialista,Personas,IC5,Especialista,Administración,CO,COP,8000000,10000000,12500000,False
+People Happiness Manager Especialista,Personas,IC5,Especialista,Administración,PE,PEN,7700,9600,12000,False
+People Happiness Manager Especialista,Personas,IC5,Especialista,Administración,MX,MXN,46500,58000,72500,False
+People Happiness Manager Especialista,Personas,IC5,Especialista,Administración,BR,BRL,12600,15700,19600,False
+Líder de Personas,Personas,M1,Líder,Administración,CL,CLP,1770000,2210000,2760000,True
+Líder de Personas,Personas,M1,Líder,Administración,CO,COP,5750000,7200000,9000000,True
+Líder de Personas,Personas,M1,Líder,Administración,PE,PEN,5500,6900,8600,True
+Líder de Personas,Personas,M1,Líder,Administración,MX,MXN,33500,42000,52500,True
+Líder de Personas,Personas,M1,Líder,Administración,BR,BRL,9100,11400,14200,True
+Subgerente de Personas,Personas,M2,Subgerente,Administración,CL,CLP,2580000,3230000,4040000,True
+Subgerente de Personas,Personas,M2,Subgerente,Administración,CO,COP,8450000,10550000,13200000,True
+Subgerente de Personas,Personas,M2,Subgerente,Administración,PE,PEN,8100,10100,12600,True
+Subgerente de Personas,Personas,M2,Subgerente,Administración,MX,MXN,49000,61500,77000,True
+Subgerente de Personas,Personas,M2,Subgerente,Administración,BR,BRL,13300,16600,20800,True
+Gerente de Personas,Personas,M3,Gerente,Administración,CL,CLP,3740000,4680000,5850000,True
+Gerente de Personas,Personas,M3,Gerente,Administración,CO,COP,12200000,15250000,19050000,True
+Gerente de Personas,Personas,M3,Gerente,Administración,PE,PEN,11800,14700,18400,True
+Gerente de Personas,Personas,M3,Gerente,Administración,MX,MXN,71000,89000,111000,True
+Gerente de Personas,Personas,M3,Gerente,Administración,BR,BRL,19200,24000,30000,True
+Talent Acquisition Aprendiz,Personas,IC1,Aprendiz,Administración,CL,CLP,610000,760000,950000,False
+Talent Acquisition Aprendiz,Personas,IC1,Aprendiz,Administración,CO,COP,2000000,2500000,3100000,False
+Talent Acquisition Aprendiz,Personas,IC1,Aprendiz,Administración,PE,PEN,1900,2400,3000,False
+Talent Acquisition Aprendiz,Personas,IC1,Aprendiz,Administración,MX,MXN,11500,14500,18000,False
+Talent Acquisition Aprendiz,Personas,IC1,Aprendiz,Administración,BR,BRL,3100,3900,4900,False
+Talent Acquisition,Personas,IC2,Analista,Administración,CL,CLP,920000,1150000,1440000,False
+Talent Acquisition,Personas,IC2,Analista,Administración,CO,COP,3000000,3750000,4700000,False
+Talent Acquisition,Personas,IC2,Analista,Administración,PE,PEN,2900,3600,4500,False
+Talent Acquisition,Personas,IC2,Analista,Administración,MX,MXN,17500,22000,27500,False
+Talent Acquisition,Personas,IC2,Analista,Administración,BR,BRL,4700,5900,7400,False
+Talent Acquisition Semi Senior,Personas,IC3,Semi Senior,Administración,CL,CLP,1300000,1620000,2020000,False
+Talent Acquisition Semi Senior,Personas,IC3,Semi Senior,Administración,CO,COP,4200000,5250000,6550000,False
+Talent Acquisition Semi Senior,Personas,IC3,Semi Senior,Administración,PE,PEN,4100,5100,6400,False
+Talent Acquisition Semi Senior,Personas,IC3,Semi Senior,Administración,MX,MXN,24500,30500,38000,False
+Talent Acquisition Semi Senior,Personas,IC3,Semi Senior,Administración,BR,BRL,6600,8300,10400,False
+Talent Acquisition Senior,Personas,IC4,Senior,Administración,CL,CLP,1840000,2300000,2880000,False
+Talent Acquisition Senior,Personas,IC4,Senior,Administración,CO,COP,6000000,7500000,9400000,False
+Talent Acquisition Senior,Personas,IC4,Senior,Administración,PE,PEN,5800,7200,9000,False
+Talent Acquisition Senior,Personas,IC4,Senior,Administración,MX,MXN,35000,43500,54500,False
+Talent Acquisition Senior,Personas,IC4,Senior,Administración,BR,BRL,9400,11800,14800,False
+Talent Acquisition Especialista,Personas,IC5,Especialista,Administración,CL,CLP,2450000,3060000,3820000,False
+Talent Acquisition Especialista,Personas,IC5,Especialista,Administración,CO,COP,8000000,10000000,12500000,False
+Talent Acquisition Especialista,Personas,IC5,Especialista,Administración,PE,PEN,7700,9600,12000,False
+Talent Acquisition Especialista,Personas,IC5,Especialista,Administración,MX,MXN,46500,58000,72500,False
+Talent Acquisition Especialista,Personas,IC5,Especialista,Administración,BR,BRL,12600,15700,19600,False
+Especialista de Formación Aprendiz,Personas,IC1,Aprendiz,Administración,CL,CLP,610000,760000,950000,False
+Especialista de Formación Aprendiz,Personas,IC1,Aprendiz,Administración,CO,COP,2000000,2500000,3100000,False
+Especialista de Formación Aprendiz,Personas,IC1,Aprendiz,Administración,PE,PEN,1900,2400,3000,False
+Especialista de Formación Aprendiz,Personas,IC1,Aprendiz,Administración,MX,MXN,11500,14500,18000,False
+Especialista de Formación Aprendiz,Personas,IC1,Aprendiz,Administración,BR,BRL,3100,3900,4900,False
+Especialista de Formación,Personas,IC2,Analista,Administración,CL,CLP,920000,1150000,1440000,False
+Especialista de Formación,Personas,IC2,Analista,Administración,CO,COP,3000000,3750000,4700000,False
+Especialista de Formación,Personas,IC2,Analista,Administración,PE,PEN,2900,3600,4500,False
+Especialista de Formación,Personas,IC2,Analista,Administración,MX,MXN,17500,22000,27500,False
+Especialista de Formación,Personas,IC2,Analista,Administración,BR,BRL,4700,5900,7400,False
+Especialista de Formación Semi Senior,Personas,IC3,Semi Senior,Administración,CL,CLP,1300000,1620000,2020000,False
+Especialista de Formación Semi Senior,Personas,IC3,Semi Senior,Administración,CO,COP,4200000,5250000,6550000,False
+Especialista de Formación Semi Senior,Personas,IC3,Semi Senior,Administración,PE,PEN,4100,5100,6400,False
+Especialista de Formación Semi Senior,Personas,IC3,Semi Senior,Administración,MX,MXN,24500,30500,38000,False
+Especialista de Formación Semi Senior,Personas,IC3,Semi Senior,Administración,BR,BRL,6600,8300,10400,False
+Especialista de Formación Senior,Personas,IC4,Senior,Administración,CL,CLP,1840000,2300000,2880000,False
+Especialista de Formación Senior,Personas,IC4,Senior,Administración,CO,COP,6000000,7500000,9400000,False
+Especialista de Formación Senior,Personas,IC4,Senior,Administración,PE,PEN,5800,7200,9000,False
+Especialista de Formación Senior,Personas,IC4,Senior,Administración,MX,MXN,35000,43500,54500,False
+Especialista de Formación Senior,Personas,IC4,Senior,Administración,BR,BRL,9400,11800,14800,False
+Especialista de Formación Especialista,Personas,IC5,Especialista,Administración,CL,CLP,2450000,3060000,3820000,False
+Especialista de Formación Especialista,Personas,IC5,Especialista,Administración,CO,COP,8000000,10000000,12500000,False
+Especialista de Formación Especialista,Personas,IC5,Especialista,Administración,PE,PEN,7700,9600,12000,False
+Especialista de Formación Especialista,Personas,IC5,Especialista,Administración,MX,MXN,46500,58000,72500,False
+Especialista de Formación Especialista,Personas,IC5,Especialista,Administración,BR,BRL,12600,15700,19600,False
+Abogado Corporativo Aprendiz,Legal,IC1,Aprendiz,Administración,CL,CLP,720000,900000,1120000,False
+Abogado Corporativo Aprendiz,Legal,IC1,Aprendiz,Administración,CO,COP,2350000,2950000,3700000,False
+Abogado Corporativo Aprendiz,Legal,IC1,Aprendiz,Administración,PE,PEN,2200,2800,3500,False
+Abogado Corporativo Aprendiz,Legal,IC1,Aprendiz,Administración,MX,MXN,13500,17000,21000,False
+Abogado Corporativo Aprendiz,Legal,IC1,Aprendiz,Administración,BR,BRL,3700,4600,5800,False
+Abogado Corporativo,Legal,IC2,Analista,Administración,CL,CLP,1080000,1350000,1690000,False
+Abogado Corporativo,Legal,IC2,Analista,Administración,CO,COP,3500000,4400000,5500000,False
+Abogado Corporativo,Legal,IC2,Analista,Administración,PE,PEN,3400,4200,5200,False
+Abogado Corporativo,Legal,IC2,Analista,Administración,MX,MXN,20500,25500,32000,False
+Abogado Corporativo,Legal,IC2,Analista,Administración,BR,BRL,5500,6900,8600,False
+Abogado Corporativo Semi Senior,Legal,IC3,Semi Senior,Administración,CL,CLP,1520000,1900000,2380000,False
+Abogado Corporativo Semi Senior,Legal,IC3,Semi Senior,Administración,CO,COP,4950000,6200000,7750000,False
+Abogado Corporativo Semi Senior,Legal,IC3,Semi Senior,Administración,PE,PEN,4800,6000,7500,False
+Abogado Corporativo Semi Senior,Legal,IC3,Semi Senior,Administración,MX,MXN,29000,36000,45000,False
+Abogado Corporativo Semi Senior,Legal,IC3,Semi Senior,Administración,BR,BRL,7800,9800,12200,False
+Abogado Corporativo Senior,Legal,IC4,Senior,Administración,CL,CLP,2160000,2700000,3380000,False
+Abogado Corporativo Senior,Legal,IC4,Senior,Administración,CO,COP,7050000,8800000,11000000,False
+Abogado Corporativo Senior,Legal,IC4,Senior,Administración,PE,PEN,6800,8500,10600,False
+Abogado Corporativo Senior,Legal,IC4,Senior,Administración,MX,MXN,41000,51500,64500,False
+Abogado Corporativo Senior,Legal,IC4,Senior,Administración,BR,BRL,11100,13900,17400,False
+Abogado Corporativo Especialista,Legal,IC5,Especialista,Administración,CL,CLP,2880000,3600000,4500000,False
+Abogado Corporativo Especialista,Legal,IC5,Especialista,Administración,CO,COP,9400000,11750000,14700000,False
+Abogado Corporativo Especialista,Legal,IC5,Especialista,Administración,PE,PEN,9000,11300,14100,False
+Abogado Corporativo Especialista,Legal,IC5,Especialista,Administración,MX,MXN,55000,68500,85500,False
+Abogado Corporativo Especialista,Legal,IC5,Especialista,Administración,BR,BRL,14800,18500,23100,False
+Líder de Legal,Legal,M1,Líder,Administración,CL,CLP,2080000,2600000,3250000,True
+Líder de Legal,Legal,M1,Líder,Administración,CO,COP,6800000,8500000,10600000,True
+Líder de Legal,Legal,M1,Líder,Administración,PE,PEN,6600,8200,10200,True
+Líder de Legal,Legal,M1,Líder,Administración,MX,MXN,39500,49500,62000,True
+Líder de Legal,Legal,M1,Líder,Administración,BR,BRL,10700,13400,16800,True
+Subgerente de Legal,Legal,M2,Subgerente,Administración,CL,CLP,3040000,3800000,4750000,True
+Subgerente de Legal,Legal,M2,Subgerente,Administración,CO,COP,9900000,12400000,15500000,True
+Subgerente de Legal,Legal,M2,Subgerente,Administración,PE,PEN,9500,11900,14900,True
+Subgerente de Legal,Legal,M2,Subgerente,Administración,MX,MXN,57500,72000,90000,True
+Subgerente de Legal,Legal,M2,Subgerente,Administración,BR,BRL,15600,19500,24400,True
+Gerente de Legal,Legal,M3,Gerente,Administración,CL,CLP,4400000,5500000,6880000,True
+Gerente de Legal,Legal,M3,Gerente,Administración,CO,COP,14350000,17950000,22450000,True
+Gerente de Legal,Legal,M3,Gerente,Administración,PE,PEN,13800,17300,21600,True
+Gerente de Legal,Legal,M3,Gerente,Administración,MX,MXN,83500,104500,130500,True
+Gerente de Legal,Legal,M3,Gerente,Administración,BR,BRL,22600,28300,35400,True

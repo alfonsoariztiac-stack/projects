@@ -1,0 +1,20 @@
+{
+  "hash_nota": "76ed2bbc0d47b1cfb98379a7",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:50:57.641812+00:00",
+  "texto_scrubbed": "Conversamos en el 1:1 mensual. Se muestra contento con el reconocimiento recibido tras el cierre del proyecto con [CLIENTE]. Comenta que la definición del rol quedó mucho más nítida después del último ajuste de estructura. Terminó dos rutas de Buk University y quiere seguir profundizando en la especialidad. Viene de cerrar un trimestre por sobre meta y se le nota tranquilo. Acordamos mantener la cadencia mensual.",
+  "sentimiento": "positivo",
+  "temas": [
+    "reconocimiento",
+    "claridad_rol",
+    "desarrollo_carrera"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Se muestra contento con el reconocimiento recibido tras el cierre del proyecto con [CLIENTE].",
+    "Comenta que la definición del rol quedó mucho más nítida después del último ajuste de estructura.",
+    "Terminó dos rutas de Buk University y quiere seguir profundizando en la especialidad."
+  ],
+  "confianza": 0.95
+}

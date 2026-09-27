@@ -1,0 +1,18 @@
+{
+  "hash_nota": "832ce6181689b9de40612cc1",
+  "modelo": "gemini-flash-latest",
+  "version_prompt": "v1",
+  "procesado_en": "2026-09-02T16:49:48.574630+00:00",
+  "texto_scrubbed": "Check-in de rutina del ciclo de Happiness. Conversamos sobre sus tiempos de descanso; dice tenerlos razonablemente cubiertos. Su líder está al tanto y lo viene conversando con él. Acordamos retomar el tema en la próxima instancia.",
+  "sentimiento": "neutro",
+  "temas": [
+    "balance_vida_trabajo",
+    "relacion_con_lider"
+  ],
+  "senales": [],
+  "citas_respaldo": [
+    "Conversamos sobre sus tiempos de descanso; dice tenerlos razonablemente cubiertos.",
+    "Su líder está al tanto y lo viene conversando con él."
+  ],
+  "confianza": 0.9
+}
