@@ -36,7 +36,7 @@ Diseño y desarrollo completo del sistema con Claude Code como herramienta princ
 
 ## Estado
 
-Desarrollo completo y revisado. En preparación para el despliegue final en producción: el servidor ya está provisionado, pero falta la aprobación de Meta Business para uso de WhatsApp Business API y la prueba de extremo a extremo antes de encender el sistema en vivo. Última iteración: agosto 2026.
+En producción: los agentes de creación y modificación llevan meses operando sin intervención manual. La aprobación de Meta Business para WhatsApp Business API llegó a fines de septiembre de 2026, así que el agente de choferes ya está listo para su despliegue final, pendiente solo de la prueba de extremo a extremo. Última iteración: septiembre 2026.
 
 ---
 
